@@ -19,7 +19,7 @@ import {
 
 export async function generateStaticParams() {
   const index = await getSearchIndex();
-  return index.slice(0, 10).map((e) => ({ slug: e.slug }));
+  return index.map((e) => ({ slug: e.slug }));
 }
 
 export async function generateMetadata({
