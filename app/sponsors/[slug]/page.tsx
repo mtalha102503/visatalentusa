@@ -18,7 +18,7 @@ import {
 } from "@/lib/analysis";
 
 export async function generateStaticParams() {
-  return getSearchIndex().map((e) => ({ slug: e.slug }));
+  return (await getSearchIndex()).map((e) => ({ slug: e.slug }));
 }
 
 export async function generateMetadata({
@@ -27,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const s = getSponsor(slug);
+  const s = await getSponsor(slug);
   if (!s) return {};
   const y = s.years["2026"];
   return {
@@ -62,13 +62,13 @@ export default async function SponsorPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const s = getSponsor(slug);
+  const s = await getSponsor(slug);
   if (!s) notFound();
 
   const y = s.years["2026"];
   const prev = s.years["2025"];
-  const index = getSearchIndex();
-  const stats = getSiteStats();
+  const index = await getSearchIndex();
+  const stats = await getSiteStats();
   const rank = index.findIndex((e) => e.slug === slug) + 1;
 
   const intro = composeIntro(s, y, rank, stats.total_sponsors_fy2026);
