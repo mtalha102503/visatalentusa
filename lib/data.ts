@@ -58,7 +58,6 @@ async function sb<T>(path: string): Promise<T> {
     );
   }
   const res = await fetch(`${SUPABASE_URL}/rest/v1${path}`, {
-    cache: "force-cache",
     headers: {
       apikey: SUPABASE_ANON_KEY,
       Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
