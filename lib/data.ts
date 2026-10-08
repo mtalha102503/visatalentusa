@@ -122,11 +122,13 @@ async function loadIndex(): Promise<(EmployerRow & IndexEntry)[]> {
 }
 
 export async function getSearchIndex(): Promise<IndexEntry[]> {
+  "use cache";
   const rows = await loadIndex();
   return rows.map((r) => ({ slug: r.slug, name: r.display_name, cases: r.total_cases }));
 }
 
 export async function getSponsor(slug: string): Promise<Sponsor | null> {
+  "use cache";
   const rows = await sb<EmployerRow[]>(
     `/h1b_employers?select=*&slug=eq.${encodeURIComponent(slug)}&order=fiscal_year`
   );
@@ -137,6 +139,7 @@ export async function getSponsor(slug: string): Promise<Sponsor | null> {
 }
 
 export async function getSiteStats(): Promise<SiteStats> {
+  "use cache";
   const rows = await loadIndex();
   const total_cases_fy2026 = rows.reduce((a, r) => a + r.total_cases, 0);
   const wages = rows
