@@ -18,7 +18,8 @@ import {
 } from "@/lib/analysis";
 
 export async function generateStaticParams() {
-  return (await getSearchIndex()).map((e) => ({ slug: e.slug }));
+  const index = await getSearchIndex();
+  return index.slice(0, 10).map((e) => ({ slug: e.slug }));
 }
 
 export async function generateMetadata({
