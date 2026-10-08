@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/fetch-search-index.mjs"
+    "prebuild": "node scripts/fetch-all-data.mjs && node scripts/fetch-search-index.mjs"
   },
   "dependencies": {
     "next": "16.4.0",
