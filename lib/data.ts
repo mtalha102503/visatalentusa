@@ -50,7 +50,7 @@ export interface SiteStats {
   }[];
 }
 
-const DATA_DIR = path.join(process.cwd(), "public", "data");
+const DATA_DIR = path.join(process.cwd(), ".build-data");
 
 function readJson<T>(filename: string): T {
   const fp = path.join(DATA_DIR, filename);
