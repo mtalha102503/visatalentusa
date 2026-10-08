@@ -44,3 +44,5 @@ npm run build   # verifies all 1000+ static pages prerender
   wage-level lottery analysis, top roles/states, FAQ)
 - `/about`, `/contact`, `/privacy`
 - `/sitemap.xml`, `/robots.txt`
+
+# Build trigger
