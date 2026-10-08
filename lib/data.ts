@@ -106,29 +106,20 @@ function toYearData(r: EmployerRow): YearData {
   };
 }
 
-// All employer data, bulk-loaded once — avoids 1000+ individual API calls during build.
-let allRowsCache: EmployerRow[] | null = null;
-async function loadAllRows(): Promise<EmployerRow[]> {
-  if (!allRowsCache) {
-    allRowsCache = await sb<EmployerRow[]>(
-      "/h1b_employers?select=*&order=slug,fiscal_year"
-    );
-  }
-  return allRowsCache;
-}
-
 // All FY2026 employers, ordered by filings — the canonical top-1000 list.
+let indexCache: (EmployerRow & IndexEntry)[] | null = null;
 async function loadIndex(): Promise<(EmployerRow & IndexEntry)[]> {
-  const rows = await loadAllRows();
-  const fy2026 = rows
-    .filter((r) => r.fiscal_year === 2026)
-    .sort((a, b) => b.total_cases - a.total_cases)
-    .slice(0, 1000);
-  return fy2026.map((r) => ({
-    ...r,
-    name: r.display_name,
-    cases: r.total_cases,
-  }));
+  if (!indexCache) {
+    const rows = await sb<EmployerRow[]>(
+      "/h1b_employers?select=slug,display_name,total_cases,approval_rate,median_wage_annual&fiscal_year=eq.2026&order=total_cases.desc&limit=1000"
+    );
+    indexCache = rows.map((r) => ({
+      ...r,
+      name: r.display_name,
+      cases: r.total_cases,
+    }));
+  }
+  return indexCache;
 }
 
 export async function getSearchIndex(): Promise<IndexEntry[]> {
@@ -137,7 +128,9 @@ export async function getSearchIndex(): Promise<IndexEntry[]> {
 }
 
 export async function getSponsor(slug: string): Promise<Sponsor | null> {
-  const rows = (await loadAllRows()).filter((r) => r.slug === slug);
+  const rows = await sb<EmployerRow[]>(
+    `/h1b_employers?select=*&slug=eq.${encodeURIComponent(slug)}&order=fiscal_year`
+  );
   if (!rows.length) return null;
   const years: Record<string, YearData> = {};
   for (const r of rows) years[String(r.fiscal_year)] = toYearData(r);
