@@ -2,8 +2,8 @@ import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import { getSiteStats, formatNum, formatUSD, formatPct } from "@/lib/data";
 
-export default function Home() {
-  const stats = getSiteStats();
+export default async function Home() {
+  const stats = await getSiteStats();
 
   return (
     <div>
