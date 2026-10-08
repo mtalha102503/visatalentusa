@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
-const OUT_DIR = path.join(ROOT, "public", "data");
+const OUT_DIR = path.join(ROOT, ".build-data");
 
 const SUPABASE_URL = process.env.SUPABASE_URL ?? "";
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ?? "";
@@ -29,12 +29,29 @@ async function sb(path) {
   return res.json();
 }
 
+function parseJson(v, fallback) {
+  if (v == null) return fallback;
+  if (typeof v === "string") {
+    try { return JSON.parse(v); } catch { return fallback; }
+  }
+  return v;
+}
+
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
-// Fetch all employer rows (2,938 rows)
+// Fetch all employer rows with pagination (Supabase caps at 1000/req)
 console.log("Fetching all employer data...");
-const rows = await sb("/h1b_employers?select=*&order=slug,fiscal_year&limit=5000");
-console.log(`Got ${rows.length} rows`);
+let rows = [];
+let offset = 0;
+const PAGE = 1000;
+for (;;) {
+  const batch = await sb(`/h1b_employers?select=*&order=slug,fiscal_year&limit=${PAGE}&offset=${offset}`);
+  rows.push(...batch);
+  console.log(`  got ${batch.length} rows (offset ${offset})`);
+  if (batch.length < PAGE) break;
+  offset += PAGE;
+}
+console.log(`Got ${rows.length} rows total`);
 
 // Write index (FY2026 top 1000)
 const fy2026 = rows
@@ -67,9 +84,9 @@ for (const [slug, slugRows] of Object.entries(bySlug)) {
       approval_rate: r.approval_rate,
       avg_wage_annual: r.avg_wage_annual,
       median_wage_annual: r.median_wage_annual,
-      wage_level_mix: r.wage_level_mix ?? {},
-      top_titles: r.top_titles ?? [],
-      top_states: r.top_states ?? [],
+      wage_level_mix: parseJson(r.wage_level_mix, {}),
+      top_titles: parseJson(r.top_titles, []),
+      top_states: parseJson(r.top_states, []),
       naics_code: r.naics_code,
       is_cap_exempt_candidate: r.is_cap_exempt_candidate,
       yoy_change_pct: r.yoy_change_pct,
