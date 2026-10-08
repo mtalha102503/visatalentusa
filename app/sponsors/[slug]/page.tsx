@@ -180,7 +180,7 @@ export default async function SponsorPage({
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
-            {y.top_titles.map((t) => (
+            {(Array.isArray(y.top_titles) ? y.top_titles : []).map((t) => (
               <tr key={t.title} className="hover:bg-slate-50">
                 <td className="px-4 py-2.5 font-medium text-slate-800">
                   {t.title}
@@ -202,7 +202,7 @@ export default async function SponsorPage({
         Top worksite states
       </h2>
       <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-5">
-        {y.top_states.map((st) => (
+        {(Array.isArray(y.top_states) ? y.top_states : []).map((st) => (
           <div
             key={st.state}
             className="rounded-lg border border-slate-200 bg-white p-4 text-center"
