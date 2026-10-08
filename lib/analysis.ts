@@ -86,8 +86,8 @@ export function composeIntro(
     );
   }
 
-  const titles = y.top_titles.slice(0, 3);
-  const states = y.top_states.slice(0, 3);
+  const titles = Array.isArray(y.top_titles) ? y.top_titles.slice(0, 3) : [];
+  const states = Array.isArray(y.top_states) ? y.top_states.slice(0, 3) : [];
   if (titles.length > 0) {
     const titleBit = titles
       .map((t) => `${t.title} (${formatNum(t.cases)} cases)`)
@@ -137,7 +137,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
     },
   ];
 
-  const top = y.top_titles[0];
+  const top = Array.isArray(y.top_titles) ? y.top_titles[0] : undefined;
   if (top) {
     faqs.push({
       q: `Which jobs does ${name} sponsor most on H-1B?`,
@@ -145,11 +145,12 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
     });
   }
 
-  const st = y.top_states[0];
+  const st = Array.isArray(y.top_states) ? y.top_states[0] : undefined;
   if (st) {
+    const statesArr = Array.isArray(y.top_states) ? y.top_states : [];
     faqs.push({
       q: `Where does ${name} hire H-1B workers?`,
-      a: `${st.state} is ${name}'s top H-1B worksite state with ${formatNum(st.cases)} filings in FY2026, followed by ${y.top_states
+      a: `${st.state} is ${name}'s top H-1B worksite state with ${formatNum(st.cases)} filings in FY2026, followed by ${statesArr
         .slice(1, 3)
         .map((x) => `${x.state} (${formatNum(x.cases)})`)
         .join(" and ")}. Worksite reflects where the job is performed, which may differ from headquarters.`,
