@@ -3,8 +3,8 @@ import { getSearchIndex } from "@/lib/data";
 
 const BASE = "https://visatalentusa.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const index = getSearchIndex();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const index = await getSearchIndex();
   const now = new Date("2026-10-08");
   return [
     { url: BASE, lastModified: now, changeFrequency: "daily", priority: 1 },
