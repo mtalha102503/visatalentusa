@@ -101,14 +101,48 @@ export default async function SponsorPage({
   const mixOrder = ["I", "II", "III", "IV"];
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
 
+  const pageUrl = `https://visatalentusa.com/sponsors/${slug}/`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% approval rate.`;
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: `${s.display_name} H-1B Visa Sponsorship Data 2026`,
-    description: `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% approval rate.`,
-    author: { "@type": "Organization", name: "VisaTalentUSA" },
-    publisher: { "@type": "Organization", name: "VisaTalentUSA" },
-    mainEntityOfPage: `https://visatalentusa.com/sponsors/${slug}/`,
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: `${s.display_name} H-1B Visa Sponsorship Data 2026`,
+        description,
+        author: { "@type": "Organization", name: "VisaTalentUSA" },
+        publisher: { "@type": "Organization", name: "VisaTalentUSA" },
+        mainEntityOfPage: pageUrl,
+        datePublished: "2026-10-09",
+        dateModified: "2026-10-09",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://visatalentusa.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: s.display_name,
+            item: pageUrl,
+          },
+        ],
+      },
+    ],
   };
 
   return (
