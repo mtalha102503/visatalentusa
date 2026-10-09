@@ -94,9 +94,26 @@ export default async function SponsorPage({
   const faqs = composeFaqs(s, y, rank);
   const avgEntries = avgLotteryEntries(y.wage_level_mix);
   const senior = seniorShare(y.wage_level_mix);
-  const related = stats.top50
-    .filter((e) => e.slug !== slug)
-    .slice(0, 4);
+  // Related = neighbors in the ranking (similar filing volume), not always the top 4.
+  // This gives each page unique related links — better for UX and SEO.
+  const rankIdx = index.findIndex((e) => e.slug === slug);
+  const related: { slug: string; name: string; cases: number }[] = [];
+  if (rankIdx >= 0) {
+    // Take 2 above and 2 below in ranking
+    for (const offset of [-2, -1, 1, 2]) {
+      const e = index[rankIdx + offset];
+      if (e && e.slug !== slug) related.push(e);
+    }
+  }
+  // Fallback: fill from top50 if not enough neighbors (e.g. rank 1 or 2)
+  if (related.length < 4) {
+    for (const e of stats.top50) {
+      if (e.slug !== slug && !related.some((r) => r.slug === e.slug)) {
+        related.push(e);
+        if (related.length >= 4) break;
+      }
+    }
+  }
 
   const mixOrder = ["I", "II", "III", "IV"];
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
@@ -114,9 +131,8 @@ export default async function SponsorPage({
         author: { "@type": "Organization", name: "VisaTalentUSA" },
         publisher: { "@type": "Organization", name: "VisaTalentUSA" },
         mainEntityOfPage: pageUrl,
-        datePublished: "2026-10-09T00:00:00+00:00",
-dateModified: "2026-10-09T00:00:00+00:00",
-
+        datePublished: "2026-10-09",
+        dateModified: "2026-10-09",
       },
       {
         "@type": "FAQPage",
