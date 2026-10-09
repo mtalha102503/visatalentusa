@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "./Header";
+import RouteProgress from "./RouteProgress";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -86,6 +87,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-white text-slate-900 antialiased">
+        <RouteProgress />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
