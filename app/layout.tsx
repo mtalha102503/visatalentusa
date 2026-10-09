@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   description:
     "Search 50,000+ U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor disclosure data.",
   metadataBase: new URL("https://visatalentusa.com"),
+  openGraph: {
+    siteName: "VisaTalentUSA",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 function Header() {
