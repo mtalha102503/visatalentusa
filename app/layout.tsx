@@ -71,12 +71,24 @@ function Footer() {
             </p>
           </div>
         </div>
-        <p className="mt-8 border-t border-slate-200 pt-4 text-xs text-slate-500">
-          © 2026 VisaTalentUSA. All rights reserved. This
-          site is an independent research project and is not affiliated with
-          the U.S. Department of Labor or USCIS. Filing data does not guarantee
-          visa sponsorship or approval.
-        </p>
+        <div className="mt-8 flex flex-col gap-2 border-t border-slate-200 pt-4 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+          <p>
+            © 2026 VisaTalentUSA. All rights reserved. This
+            site is an independent research project and is not affiliated with
+            the U.S. Department of Labor or USCIS. Filing data does not guarantee
+            visa sponsorship or approval.
+          </p>
+          <p>
+            A{" "}
+            <a
+              href="https://hireskys.com"
+              className="font-semibold text-blue-700 hover:underline"
+            >
+              HireSkys
+            </a>{" "}
+            company
+          </p>
+        </div>
       </div>
     </footer>
   );
