@@ -5,8 +5,37 @@ import { getSiteStats, formatNum, formatUSD, formatPct } from "@/lib/data";
 export default async function Home() {
   const stats = await getSiteStats();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "VisaTalentUSA",
+        url: "https://visatalentusa.com/",
+        description:
+          "Search U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor data.",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://visatalentusa.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "Organization",
+        name: "VisaTalentUSA",
+        url: "https://visatalentusa.com/",
+        description:
+          "The H-1B sponsor intelligence database: which U.S. companies sponsor work visas, what they pay, and how the lottery treats their filings.",
+      },
+    ],
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center">
