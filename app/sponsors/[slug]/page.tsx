@@ -131,8 +131,8 @@ export default async function SponsorPage({
         author: { "@type": "Organization", name: "VisaTalentUSA" },
         publisher: { "@type": "Organization", name: "VisaTalentUSA" },
         mainEntityOfPage: pageUrl,
-        datePublished: "2026-10-09",
-        dateModified: "2026-10-09",
+        datePublished: "2026-10-09T00:00:00+00:00",
+        dateModified: "2026-10-09T00:00:00+00:00",
       },
       {
         "@type": "FAQPage",
