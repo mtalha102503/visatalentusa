@@ -10,8 +10,11 @@ export const metadata: Metadata = {
     template: "%s | VisaTalentUSA",
   },
   description:
-    "Search 50,000+ U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor disclosure data.",
+    "Search 1,000 top U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor disclosure data.",
   metadataBase: new URL("https://visatalentusa.com"),
+  alternates: {
+    canonical: "https://visatalentusa.com/",
+  },
   icons: {
     icon: "/favicon.svg",
   },
