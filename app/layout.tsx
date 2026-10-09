@@ -78,22 +78,15 @@ function Footer() {
             the U.S. Department of Labor or USCIS. Filing data does not guarantee
             visa sponsorship or approval.
           </p>
-          <p className="flex items-center gap-2">
+          <p className="text-sm">
             A{" "}
             <a
               href="https://hireskys.com"
-              className="flex items-center gap-1.5 font-semibold text-blue-700 hover:underline"
+              className="font-bold text-blue-800 hover:underline"
             >
-              <img
-                src="/hireskys-logo.png"
-                alt="HireSkys"
-                width={28}
-                height={16}
-                className="h-4 w-auto"
-              />
               HireSkys
             </a>{" "}
-            company
+            company — the #1 remote job marketplace
           </p>
         </div>
       </div>
