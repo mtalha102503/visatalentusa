@@ -31,9 +31,27 @@ export async function generateMetadata({
   const s = await getSponsor(slug);
   if (!s) return {};
   const y = s.years["2026"];
+  const title = `${s.display_name} H-1B Visa Sponsorship Data 2026 — Filings, Salaries, Approval Rate`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} approval rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
+  const url = `https://visatalentusa.com/sponsors/${slug}/`;
   return {
-    title: `${s.display_name} H-1B Visa Sponsorship Data 2026 — Filings, Salaries, Approval Rate`,
-    description: `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} approval rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "VisaTalentUSA",
+      type: "article",
+      images: [{ url: `/sponsors/${slug}/opengraph-image`, width: 1200, height: 630, alt: `${s.display_name} H-1B sponsorship data` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`/sponsors/${slug}/opengraph-image`],
+    },
   };
 }
 
@@ -83,8 +101,22 @@ export default async function SponsorPage({
   const mixOrder = ["I", "II", "III", "IV"];
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${s.display_name} H-1B Visa Sponsorship Data 2026`,
+    description: `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% approval rate.`,
+    author: { "@type": "Organization", name: "VisaTalentUSA" },
+    publisher: { "@type": "Organization", name: "VisaTalentUSA" },
+    mainEntityOfPage: `https://visatalentusa.com/sponsors/${slug}/`,
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Breadcrumb */}
       <nav className="text-sm text-slate-500">
         <Link href="/" className="hover:text-blue-700">
