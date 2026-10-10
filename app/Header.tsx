@@ -9,6 +9,11 @@ const tools = [
     label: "H-1B Lottery Odds Calculator",
     desc: "Estimate your selection odds by wage level",
   },
+  {
+    href: "/tools/sponsor-match",
+    label: "H-1B Sponsor Match Finder",
+    desc: "Find companies that sponsor your job title",
+  },
 ];
 
 export default function Header() {
