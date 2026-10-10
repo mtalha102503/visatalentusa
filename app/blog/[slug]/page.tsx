@@ -1,1 +1,185 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgTGluayBmcm9tICJuZXh0L2xpbmsiOwppbXBvcnQgeyBub3RGb3VuZCB9IGZyb20gIm5leHQvbmF2aWdhdGlvbiI7CmltcG9ydCB7IGdldEJsb2dQb3N0LCBnZXRBbGxCbG9nU2x1Z3MsIGJsb2dQb3N0cyB9IGZyb20gIkAvbGliL2Jsb2ciOwoKY29uc3QgQkFTRSA9ICJodHRwczovL3Zpc2F0YWxlbnR1c2EuY29tIjsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZW5lcmF0ZVN0YXRpY1BhcmFtcygpIHsKICByZXR1cm4gZ2V0QWxsQmxvZ1NsdWdzKCkubWFwKChzbHVnKSA9PiAoeyBzbHVnIH0pKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdlbmVyYXRlTWV0YWRhdGEoewogIHBhcmFtcywKfTogewogIHBhcmFtczogUHJvbWlzZTx7IHNsdWc6IHN0cmluZyB9PjsKfSk6IFByb21pc2U8TWV0YWRhdGE+IHsKICBjb25zdCB7IHNsdWcgfSA9IGF3YWl0IHBhcmFtczsKICBjb25zdCBwb3N0ID0gZ2V0QmxvZ1Bvc3Qoc2x1Zyk7CiAgaWYgKCFwb3N0KSByZXR1cm4ge307CiAgY29uc3QgdXJsID0gYCR7QkFTRX0vYmxvZy8ke3Bvc3Quc2x1Z30vYDsKICByZXR1cm4gewogICAgdGl0bGU6IHBvc3QudGl0bGUsCiAgICBkZXNjcmlwdGlvbjogcG9zdC5leGNlcnB0LAogICAgYWx0ZXJuYXRlczogeyBjYW5vbmljYWw6IHVybCB9LAogICAgb3BlbkdyYXBoOiB7CiAgICAgIHRpdGxlOiBwb3N0LnRpdGxlLAogICAgICBkZXNjcmlwdGlvbjogcG9zdC5leGNlcnB0LAogICAgICB1cmwsCiAgICAgIHR5cGU6ICJhcnRpY2xlIiwKICAgICAgcHVibGlzaGVkVGltZTogcG9zdC5kYXRlUHVibGlzaGVkLAogICAgICBtb2RpZmllZFRpbWU6IHBvc3QuZGF0ZU1vZGlmaWVkLAogICAgICBzaXRlTmFtZTogIlZpc2FUYWxlbnRVU0EiLAogICAgfSwKICAgIHR3aXR0ZXI6IHsgY2FyZDogInN1bW1hcnlfbGFyZ2VfaW1hZ2UiIH0sCiAgfTsKfQoKZXhwb3J0IGRlZmF1bHQgYXN5bmMgZnVuY3Rpb24gQmxvZ1Bvc3RQYWdlKHsKICBwYXJhbXMsCn06IHsKICBwYXJhbXM6IFByb21pc2U8eyBzbHVnOiBzdHJpbmcgfT47Cn0pIHsKICBjb25zdCB7IHNsdWcgfSA9IGF3YWl0IHBhcmFtczsKICBjb25zdCBwb3N0ID0gZ2V0QmxvZ1Bvc3Qoc2x1Zyk7CiAgaWYgKCFwb3N0KSBub3RGb3VuZCgpOwoKICAvLyBEeW5hbWljIGltcG9ydCBvZiB0aGUgcG9zdCBjb250ZW50IGNvbXBvbmVudAogIGNvbnN0IENvbnRlbnQgPSAoYXdhaXQgaW1wb3J0KGBAL2xpYi9ibG9nL3Bvc3RzLyR7c2x1Z31gKSkuZGVmYXVsdDsKICBjb25zdCB1cmwgPSBgJHtCQVNFfS9ibG9nLyR7cG9zdC5zbHVnfS9gOwoKICBjb25zdCBqc29uTGQgPSB7CiAgICAiQGNvbnRleHQiOiAiaHR0cHM6Ly9zY2hlbWEub3JnIiwKICAgICJAZ3JhcGgiOiBbCiAgICAgIHsKICAgICAgICAiQHR5cGUiOiAiQXJ0aWNsZSIsCiAgICAgICAgaGVhZGxpbmU6IHBvc3QudGl0bGUsCiAgICAgICAgZGVzY3JpcHRpb246IHBvc3QuZXhjZXJwdCwKICAgICAgICB1cmwsCiAgICAgICAgZGF0ZVB1Ymxpc2hlZDogcG9zdC5kYXRlUHVibGlzaGVkLAogICAgICAgIGRhdGVNb2RpZmllZDogcG9zdC5kYXRlTW9kaWZpZWQsCiAgICAgICAgYXV0aG9yOiB7CiAgICAgICAgICAiQHR5cGUiOiAiT3JnYW5pemF0aW9uIiwKICAgICAgICAgIG5hbWU6ICJWaXNhVGFsZW50VVNBIiwKICAgICAgICAgIHVybDogYCR7QkFTRX0vYCwKICAgICAgICB9LAogICAgICAgIHB1Ymxpc2hlcjogewogICAgICAgICAgIkB0eXBlIjogIk9yZ2FuaXphdGlvbiIsCiAgICAgICAgICBuYW1lOiAiVmlzYVRhbGVudFVTQSIsCiAgICAgICAgICB1cmw6IGAke0JBU0V9L2AsCiAgICAgICAgfSwKICAgICAgICBtYWluRW50aXR5T2ZQYWdlOiB1cmwsCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAiQHR5cGUiOiAiQnJlYWRjcnVtYkxpc3QiLAogICAgICAgIGl0ZW1MaXN0RWxlbWVudDogWwogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICBwb3NpdGlvbjogMSwKICAgICAgICAgICAgbmFtZTogIkhvbWUiLAogICAgICAgICAgICBpdGVtOiBgJHtCQVNFfS9gLAogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgcG9zaXRpb246IDIsCiAgICAgICAgICAgIG5hbWU6ICJHdWlkZXMiLAogICAgICAgICAgICBpdGVtOiBgJHtCQVNFfS9ibG9nYCwKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgIHBvc2l0aW9uOiAzLAogICAgICAgICAgICBuYW1lOiBwb3N0LnRpdGxlLAogICAgICAgICAgICBpdGVtOiB1cmwsCiAgICAgICAgICB9LAogICAgICAgIF0sCiAgICAgIH0sCiAgICBdLAogIH07CgogIGNvbnN0IHJlbGF0ZWQgPSBibG9nUG9zdHMuZmlsdGVyKChwKSA9PiBwLnNsdWcgIT09IHBvc3Quc2x1Zykuc2xpY2UoMCwgMyk7CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibXgtYXV0byBtYXgtdy0zeGwgcHgtNCBweS0xMiI+CiAgICAgIDxzY3JpcHQKICAgICAgICB0eXBlPSJhcHBsaWNhdGlvbi9sZCtqc29uIgogICAgICAgIGRhbmdlcm91c2x5U2V0SW5uZXJIVE1MPXt7IF9faHRtbDogSlNPTi5zdHJpbmdpZnkoanNvbkxkKSB9fQogICAgICAvPgoKICAgICAgey8qIEJyZWFkY3J1bWIgKi99CiAgICAgIDxuYXYgYXJpYS1sYWJlbD0iQnJlYWRjcnVtYiIgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtc2xhdGUtNTAwIj4KICAgICAgICA8TGluayBocmVmPSIvIiBjbGFzc05hbWU9ImhvdmVyOnRleHQtYmx1ZS03MDAgaG92ZXI6dW5kZXJsaW5lIj4KICAgICAgICAgIEhvbWUKICAgICAgICA8L0xpbms+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJteC0yIj4vPC9zcGFuPgogICAgICAgIDxMaW5rIGhyZWY9Ii9ibG9nIiBjbGFzc05hbWU9ImhvdmVyOnRleHQtYmx1ZS03MDAgaG92ZXI6dW5kZXJsaW5lIj4KICAgICAgICAgIEd1aWRlcwogICAgICAgIDwvTGluaz4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im14LTIiPi88L3NwYW4+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXNsYXRlLTcwMCI+e3Bvc3QudGl0bGV9PC9zcGFuPgogICAgICA8L25hdj4KCiAgICAgIHsvKiBBcnRpY2xlIGhlYWRlciAqL30KICAgICAgPGhlYWRlciBjbGFzc05hbWU9Im10LTYiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBnYXAtMiI+CiAgICAgICAgICB7cG9zdC50YWdzLm1hcCgodGFnKSA9PiAoCiAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAga2V5PXt0YWd9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJyb3VuZGVkLWZ1bGwgYmctYmx1ZS01MCBweC0zIHB5LTEgdGV4dC14cyBmb250LW1lZGl1bSB0ZXh0LWJsdWUtNzAwIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAge3RhZ30KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0ibXQtNCB0ZXh0LTN4bCBmb250LWJvbGQgdHJhY2tpbmctdGlnaHQgdGV4dC1zbGF0ZS05MDAgbWQ6dGV4dC00eGwiPgogICAgICAgICAge3Bvc3QudGl0bGV9CiAgICAgICAgPC9oMT4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCB0ZXh0LXNtIHRleHQtc2xhdGUtNTAwIj4KICAgICAgICAgIDxzcGFuPgogICAgICAgICAgICBQdWJsaXNoZWR7IiAifQogICAgICAgICAgICB7bmV3IERhdGUocG9zdC5kYXRlUHVibGlzaGVkKS50b0xvY2FsZURhdGVTdHJpbmcoImVuLVVTIiwgewogICAgICAgICAgICAgIHllYXI6ICJudW1lcmljIiwKICAgICAgICAgICAgICBtb250aDogImxvbmciLAogICAgICAgICAgICAgIGRheTogIm51bWVyaWMiLAogICAgICAgICAgICB9KX0KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxzcGFuPsK3PC9zcGFuPgogICAgICAgICAgPHNwYW4+e3Bvc3QucmVhZGluZ01pbnV0ZXN9IG1pbiByZWFkPC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICA8L2hlYWRlcj4KCiAgICAgIHsvKiBBcnRpY2xlIGJvZHkgKi99CiAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT0icHJvc2UtaDIgbXQtOCBzcGFjZS15LTUgdGV4dC1zbGF0ZS03MDAgWyZfaDJdOnB0LTYgWyZfaDJdOnRleHQtMnhsIFsmX2gyXTpmb250LWJvbGQgWyZfaDJdOnRleHQtc2xhdGUtOTAwIFsmX2gzXTpwdC00IFsmX2gzXTp0ZXh0LWxnIFsmX2gzXTpmb250LXNlbWlib2xkIFsmX2gzXTp0ZXh0LXNsYXRlLTkwMCBbJl9wLmxlYWRdOnRleHQtbGcgWyZfcC5sZWFkXTp0ZXh0LXNsYXRlLTYwMCBbJl90YWJsZV06dy1mdWxsIFsmX3RhYmxlXTpib3JkZXItY29sbGFwc2UgWyZfdGFibGVdOnRleHQtc20gWyZfdGhdOmJvcmRlciBbJl90aF06Ym9yZGVyLXNsYXRlLTIwMCBbJl90aF06Ymctc2xhdGUtNTAgWyZfdGhdOnB4LTMgWyZfdGhdOnB5LTIgWyZfdGhdOnRleHQtbGVmdCBbJl90ZF06Ym9yZGVyIFsmX3RkXTpib3JkZXItc2xhdGUtMjAwIFsmX3RkXTpweC0zIFsmX3RkXTpweS0yIFsmX3VsXTpsaXN0LWRpc2MgWyZfdWxdOnBsLTUgWyZfdWxdOnNwYWNlLXktMSI+CiAgICAgICAgPENvbnRlbnQgLz4KICAgICAgPC9hcnRpY2xlPgoKICAgICAgey8qIERpc2NsYWltZXIgKi99CiAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMTAgcm91bmRlZC1sZyBiZy1zbGF0ZS01MCBwLTQgdGV4dC14cyB0ZXh0LXNsYXRlLTUwMCI+CiAgICAgICAgPHN0cm9uZz5EaXNjbGFpbWVyOjwvc3Ryb25nPiBUaGlzIGd1aWRlIGlzIGZvciBpbmZvcm1hdGlvbmFsIHB1cnBvc2VzCiAgICAgICAgb25seSBhbmQgaXMgbm90IGxlZ2FsIGFkdmljZS4gSW1taWdyYXRpb24gcnVsZXMgY2hhbmdlIGZyZXF1ZW50bHkg4oCUCiAgICAgICAgY29uc3VsdCBhIHF1YWxpZmllZCBpbW1pZ3JhdGlvbiBhdHRvcm5leSBmb3IgYWR2aWNlIGFib3V0IHlvdXIgc3BlY2lmaWMKICAgICAgICBzaXR1YXRpb24uIFZpc2FUYWxlbnRVU0EgaXMgYSA8YSBocmVmPSJodHRwczovL2hpcmVza3lzLmNvbSIgY2xhc3NOYW1lPSJ0ZXh0LWJsdWUtNzAwIGhvdmVyOnVuZGVybGluZSI+SGlyZVNreXM8L2E+IGNvbXBhbnkuCiAgICAgIDwvcD4KCiAgICAgIHsvKiBSZWxhdGVkICovfQogICAgICB7cmVsYXRlZC5sZW5ndGggPiAwICYmICgKICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im10LTEyIGJvcmRlci10IGJvcmRlci1zbGF0ZS0yMDAgcHQtOCI+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTkwMCI+TW9yZSBndWlkZXM8L2gyPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTQgc3BhY2UteS00Ij4KICAgICAgICAgICAge3JlbGF0ZWQubWFwKChyKSA9PiAoCiAgICAgICAgICAgICAgPExpbmsKICAgICAgICAgICAgICAgIGtleT17ci5zbHVnfQogICAgICAgICAgICAgICAgaHJlZj17YC9ibG9nLyR7ci5zbHVnfS9gfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJibG9jayByb3VuZGVkLWxnIGJvcmRlciBib3JkZXItc2xhdGUtMjAwIHAtNCBob3Zlcjpib3JkZXItYmx1ZS0zMDAgaG92ZXI6YmctYmx1ZS01MC8zMCIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtc2VtaWJvbGQgdGV4dC1zbGF0ZS05MDAgaG92ZXI6dGV4dC1ibHVlLTcwMCI+CiAgICAgICAgICAgICAgICAgIHtyLnRpdGxlfQogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJtdC0xIHRleHQtc20gdGV4dC1zbGF0ZS02MDAiPntyLmV4Y2VycHR9PC9wPgogICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getBlogPost, getAllBlogSlugs, blogPosts } from "@/lib/blog";
+
+const BASE = "https://visatalentusa.com";
+
+export async function generateStaticParams() {
+  return getAllBlogSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+  if (!post) return {};
+  const url = `${BASE}/blog/${post.slug}/`;
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: "article",
+      publishedTime: post.datePublished,
+      modifiedTime: post.dateModified,
+      siteName: "VisaTalentUSA",
+    },
+    twitter: { card: "summary_large_image" },
+  };
+}
+
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+  if (!post) notFound();
+
+  // Dynamic import of the post content component
+  const Content = (await import(`@/lib/blog/posts/${slug}`)).default;
+  const url = `${BASE}/blog/${post.slug}/`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: post.title,
+        description: post.excerpt,
+        url,
+        datePublished: post.datePublished,
+        dateModified: post.dateModified,
+        author: {
+          "@type": "Organization",
+          name: "VisaTalentUSA",
+          url: `${BASE}/`,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "VisaTalentUSA",
+          url: `${BASE}/`,
+        },
+        mainEntityOfPage: url,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${BASE}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Guides",
+            item: `${BASE}/blog`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: url,
+          },
+        ],
+      },
+    ],
+  };
+
+  const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
+        <Link href="/" className="hover:text-blue-700 hover:underline">
+          Home
+        </Link>
+        <span className="mx-2">/</span>
+        <Link href="/blog" className="hover:text-blue-700 hover:underline">
+          Guides
+        </Link>
+        <span className="mx-2">/</span>
+        <span className="text-slate-700">{post.title}</span>
+      </nav>
+
+      {/* Article header */}
+      <header className="mt-6">
+        <div className="flex flex-wrap gap-2">
+          {post.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+          {post.title}
+        </h1>
+        <div className="mt-4 flex items-center gap-4 text-sm text-slate-500">
+          <span>
+            Published{" "}
+            {new Date(post.datePublished).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </span>
+          <span>·</span>
+          <span>{post.readingMinutes} min read</span>
+        </div>
+      </header>
+
+      {/* Article body */}
+      <article className="prose-h2 mt-8 space-y-5 text-slate-700 [&_h2]:pt-6 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-slate-900 [&_h3]:pt-4 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-slate-900 [&_p.lead]:text-lg [&_p.lead]:text-slate-600 [&_table]:w-full [&_table]:border-collapse [&_table]:text-sm [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_td]:border [&_td]:border-slate-200 [&_td]:px-3 [&_td]:py-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1">
+        <Content />
+      </article>
+
+      {/* Disclaimer */}
+      <p className="mt-10 rounded-lg bg-slate-50 p-4 text-xs text-slate-500">
+        <strong>Disclaimer:</strong> This guide is for informational purposes
+        only and is not legal advice. Immigration rules change frequently —
+        consult a qualified immigration attorney for advice about your specific
+        situation. VisaTalentUSA is a <a href="https://hireskys.com" className="text-blue-700 hover:underline">HireSkys</a> company.
+      </p>
+
+      {/* Related */}
+      {related.length > 0 && (
+        <section className="mt-12 border-t border-slate-200 pt-8">
+          <h2 className="text-xl font-bold text-slate-900">More guides</h2>
+          <div className="mt-4 space-y-4">
+            {related.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/blog/${r.slug}/`}
+                className="block rounded-lg border border-slate-200 p-4 hover:border-blue-300 hover:bg-blue-50/30"
+              >
+                <p className="font-semibold text-slate-900 hover:text-blue-700">
+                  {r.title}
+                </p>
+                <p className="mt-1 text-sm text-slate-600">{r.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
