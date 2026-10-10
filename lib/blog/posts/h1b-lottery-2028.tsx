@@ -1,1 +1,284 @@
-ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSDFCTG90dGVyeTIwMjhDb250ZW50KCkgewogIHJldHVybiAoCiAgICA8PgogICAgICA8cCBjbGFzc05hbWU9ImxlYWQiPgogICAgICAgIFRoZSBILTFCIGxvdHRlcnkgaXMgbm8gbG9uZ2VyIGEgbG90dGVyeSBpbiB0aGUgb2xkIHNlbnNlLiBTaW5jZSB0aGUKICAgICAgICBGZWJydWFyeSAyMDI2IGZpbmFsIHJ1bGUsIFVTQ0lTIHNlbGVjdHMgcmVnaXN0cmF0aW9ucyB1c2luZ3siICJ9CiAgICAgICAgPHN0cm9uZz53YWdlLWxldmVsIHdlaWdodGluZzwvc3Ryb25nPiDigJQgaGlnaGVyLXBhaWQgZmlsaW5ncyBnZXQgbW9yZQogICAgICAgIGVudHJpZXMsIGFuZCBsb3dlci1wYWlkIGZpbGluZ3MgZ2V0IGZld2VyLiBJZiB5b3UgYXJlIHBsYW5uaW5nIGZvciB0aGUKICAgICAgICBGWTIwMjggY2FwIHNlYXNvbiAocmVnaXN0cmF0aW9uIGV4cGVjdGVkIE1hcmNoIDIwMjcpLCB0aGlzIGd1aWRlCiAgICAgICAgZXhwbGFpbnMgZXhhY3RseSBob3cgdGhlIHN5c3RlbSB3b3Jrcywgd2hhdCB5b3VyIHJlYWwgb2RkcyBhcmUsIGFuZAogICAgICAgIHdoYXQgeW91IGFuZCB5b3VyIGVtcGxveWVyIGNhbiBkbyB0byBpbXByb3ZlIHRoZW0uCiAgICAgIDwvcD4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyb3VuZGVkLWxnIGJvcmRlciBib3JkZXItYmx1ZS0yMDAgYmctYmx1ZS01MCBwLTUiPgogICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zZW1pYm9sZCB0ZXh0LWJsdWUtOTAwIj5LZXkgdGFrZWF3YXlzPC9wPgogICAgICAgIDx1bCBjbGFzc05hbWU9Im10LTIgbGlzdC1kaXNjIHNwYWNlLXktMSBwbC01IHRleHQtc20gdGV4dC1ibHVlLTkwMCI+CiAgICAgICAgICA8bGk+V2FnZSBMZXZlbCBJViA9IDQgZW50cmllcywgTGV2ZWwgSUlJID0gMywgTGV2ZWwgSUkgPSAyLCBMZXZlbCBJID0gMTwvbGk+CiAgICAgICAgICA8bGk+REhTIHByb2plY3RzIHNlbGVjdGlvbiByYXRlcyBvZiByb3VnaGx5IDE1JSAoTGV2ZWwgSSkgdG8gNjElIChMZXZlbCBJVik8L2xpPgogICAgICAgICAgPGxpPlJlZ2lzdHJhdGlvbiBmZWUgaXMgJDIxNSBwZXIgYmVuZWZpY2lhcnk7IHRoZSAkMTAwSyBmZWUgcmVtYWlucyBibG9ja2VkIGJ5IGNvdXJ0czwvbGk+CiAgICAgICAgICA8bGk+TXVsdGlwbGUgZW1wbG95ZXJzIHJlZ2lzdGVyaW5nIHlvdT8gVGhlIDxlbT5sb3dlc3Q8L2VtPiB3YWdlIGxldmVsIGFwcGxpZXM8L2xpPgogICAgICAgICAgPGxpPkxhc3QgdXBkYXRlZDogT2N0b2JlciAxMCwgMjAyNjwvbGk+CiAgICAgICAgPC91bD4KICAgICAgPC9kaXY+CgogICAgICA8aDI+SG93IHRoZSB3YWdlLXdlaWdodGVkIEgtMUIgbG90dGVyeSB3b3JrczwvaDI+CiAgICAgIDxwPgogICAgICAgIEJlZm9yZSAyMDI2LCBldmVyeSBILTFCIGNhcCByZWdpc3RyYXRpb24gaGFkIGFuIGVxdWFsIGNoYW5jZSDigJQgYSBwdXJlCiAgICAgICAgcmFuZG9tIGRyYXcuIFRoZSBEZXBhcnRtZW50IG9mIEhvbWVsYW5kIFNlY3VyaXR5IGNoYW5nZWQgdGhhdCB3aXRoIGEKICAgICAgICBmaW5hbCBydWxlIGVmZmVjdGl2ZSBGZWJydWFyeSAyNywgMjAyNiwgZmlyc3QgYXBwbGllZCB0byB0aGUgRlkyMDI3IGNhcAogICAgICAgIHNlYXNvbi4gVGhlIG5ldyBzeXN0ZW0gYXNzaWducyA8c3Ryb25nPndlaWdodGVkIGVudHJpZXM8L3N0cm9uZz4gYmFzZWQKICAgICAgICBvbiB0aGUgd2FnZSBsZXZlbCBvZiB0aGUgb2ZmZXJlZCBwb3NpdGlvbjoKICAgICAgPC9wPgogICAgICA8dGFibGU+CiAgICAgICAgPHRoZWFkPgogICAgICAgICAgPHRyPgogICAgICAgICAgICA8dGg+V2FnZSBsZXZlbDwvdGg+CiAgICAgICAgICAgIDx0aD5Mb3R0ZXJ5IGVudHJpZXM8L3RoPgogICAgICAgICAgICA8dGg+REhTLXByb2plY3RlZCBzZWxlY3Rpb24gcmF0ZTwvdGg+CiAgICAgICAgICA8L3RyPgogICAgICAgIDwvdGhlYWQ+CiAgICAgICAgPHRib2R5PgogICAgICAgICAgPHRyPgogICAgICAgICAgICA8dGQ+TGV2ZWwgSSAoZW50cnkpPC90ZD4KICAgICAgICAgICAgPHRkPjE8L3RkPgogICAgICAgICAgICA8dGQ+fjE1JTwvdGQ+CiAgICAgICAgICA8L3RyPgogICAgICAgICAgPHRyPgogICAgICAgICAgICA8dGQ+TGV2ZWwgSUkgKHF1YWxpZmllZCk8L3RkPgogICAgICAgICAgICA8dGQ+MjwvdGQ+CiAgICAgICAgICAgIDx0ZD5+MzElPC90ZD4KICAgICAgICAgIDwvdHI+CiAgICAgICAgICA8dHI+CiAgICAgICAgICAgIDx0ZD5MZXZlbCBJSUkgKGV4cGVyaWVuY2VkKTwvdGQ+CiAgICAgICAgICAgIDx0ZD4zPC90ZD4KICAgICAgICAgICAgPHRkPn40NiU8L3RkPgogICAgICAgICAgPC90cj4KICAgICAgICAgIDx0cj4KICAgICAgICAgICAgPHRkPkxldmVsIElWIChmdWxseSBjb21wZXRlbnQpPC90ZD4KICAgICAgICAgICAgPHRkPjQ8L3RkPgogICAgICAgICAgICA8dGQ+fjYxJTwvdGQ+CiAgICAgICAgICA8L3RyPgogICAgICAgIDwvdGJvZHk+CiAgICAgIDwvdGFibGU+CiAgICAgIDxwPgogICAgICAgIFRoZXNlIHByb2plY3Rpb25zIGNvbWUgZnJvbSBESFMgbW9kZWxpbmcsIG5vdCBmcm9tIHB1Ymxpc2hlZCBVU0NJUwogICAgICAgIHJlc3VsdHMuIFRoZSBvbGQgcmFuZG9tIGJhc2VsaW5lIHNlbGVjdGVkIGFib3V0IDI5LjYlIG9mCiAgICAgICAgcmVnaXN0cmF0aW9ucyDigJQgc28gTGV2ZWwgSSBmaWxpbmdzIG5vdyBkbyByb3VnaGx5IDxlbT5oYWxmPC9lbT4gYXMgd2VsbAogICAgICAgIGFzIGJlZm9yZSwgd2hpbGUgTGV2ZWwgSVYgZmlsaW5ncyBkbyByb3VnaGx5IDxlbT50d2ljZTwvZW0+IGFzIHdlbGwuCiAgICAgIDwvcD4KCiAgICAgIDxoMz5Ib3cgeW91ciB3YWdlIGxldmVsIGlzIGRldGVybWluZWQ8L2gzPgogICAgICA8cD4KICAgICAgICBZb3VyIHdhZ2UgbGV2ZWwgY29tZXMgZnJvbSB0aGUgRGVwYXJ0bWVudCBvZiBMYWJvciZhcG9zO3MgT2NjdXBhdGlvbmFsCiAgICAgICAgRW1wbG95bWVudCBhbmQgV2FnZSBTdGF0aXN0aWNzIChPRVdTKSBkYXRhIGZvciB5b3VyIG9jY3VwYXRpb24gKFNPQwogICAgICAgIGNvZGUpIGFuZCB3b3Jrc2l0ZSBhcmVhLiBUaGUgb2ZmZXJlZCB3YWdlIGlzIGNvbXBhcmVkIGFnYWluc3QgdGhlIGZvdXIKICAgICAgICBwcmV2YWlsaW5nLXdhZ2UgbGV2ZWxzIGZvciB0aGF0IG9jY3VwYXRpb24gYW5kIGxvY2F0aW9uIOKAlCB3aGljaGV2ZXIKICAgICAgICBsZXZlbCB0aGUgd2FnZSBtZWV0cyBvciBleGNlZWRzIGRldGVybWluZXMgeW91ciBlbnRyaWVzLiBBICQ5NSwwMDAKICAgICAgICBvZmZlciBtaWdodCBiZSBMZXZlbCBJSSBpbiBvbmUgbWV0cm8gYW5kIExldmVsIEkgaW4gYW5vdGhlciwgYmVjYXVzZQogICAgICAgIHByZXZhaWxpbmcgd2FnZXMgdmFyeSBzaGFycGx5IGJ5IGxvY2F0aW9uLgogICAgICA8L3A+CgogICAgICA8aDM+VGhlIGFudGktZ2FtaW5nIHJ1bGVzPC9oMz4KICAgICAgPHA+CiAgICAgICAgREhTIGJ1aWx0IGluIHJ1bGVzIHRvIHByZXZlbnQgbWFuaXB1bGF0aW9uLiBJZiBtdWx0aXBsZSBlbXBsb3llcnMKICAgICAgICByZWdpc3RlciB0aGUgc2FtZSBiZW5lZmljaWFyeSwgdGhlIDxzdHJvbmc+bG93ZXN0PC9zdHJvbmc+IHdhZ2UgbGV2ZWwKICAgICAgICBhbW9uZyB0aG9zZSByZWdpc3RyYXRpb25zIGFwcGxpZXMgdG8gYWxsIG9mIHRoZW0uIFRoZSBzYW1lIGxvd2VzdC1sZXZlbAogICAgICAgIGxvZ2ljIGFwcGxpZXMgd2hlbiBhIHBvc2l0aW9uIHNwYW5zIG11bHRpcGxlIHdvcmtzaXRlIGFyZWFzLiBBbmQgaWYgYW4KICAgICAgICBlbXBsb3llciBjdXRzIHRoZSB3YWdlIGFmdGVyIHNlbGVjdGlvbiwgdGhlIHBldGl0aW9uIHJpc2tzIGRlbmlhbCBvcgogICAgICAgIHJldm9jYXRpb24uIFRoZSBtZXNzYWdlIGlzIGNsZWFyOiB0aGUgd2FnZSB5b3UgcmVnaXN0ZXIgd2l0aCBzaG91bGQgYmUKICAgICAgICB0aGUgd2FnZSB5b3UgYWN0dWFsbHkgaW50ZW5kIHRvIHBheS4KICAgICAgPC9wPgoKICAgICAgPGgyPkgtMUIgbG90dGVyeSAyMDI4OiBrZXkgZGF0ZXMgYW5kIHRpbWVsaW5lPC9oMj4KICAgICAgPHA+CiAgICAgICAgVVNDSVMgaGFzIG5vdCB5ZXQgYW5ub3VuY2VkIEZZMjAyOCBjYXAtc2Vhc29uIGRhdGVzLiBCYXNlZCBvbiB0aGUKICAgICAgICBGWTIwMjcgY3ljbGUsIGV4cGVjdCBhIHNpbWlsYXIgY2FkZW5jZSDigJQgYnV0IHRyZWF0IGV2ZXJ5IGRhdGUgYmVsb3cgYXMKICAgICAgICBwcm9qZWN0ZWQgdW50aWwgVVNDSVMgY29uZmlybXMgaXQ6CiAgICAgIDwvcD4KICAgICAgPHRhYmxlPgogICAgICAgIDx0aGVhZD4KICAgICAgICAgIDx0cj4KICAgICAgICAgICAgPHRoPk1pbGVzdG9uZTwvdGg+CiAgICAgICAgICAgIDx0aD5GWTIwMjcgKGFjdHVhbCk8L3RoPgogICAgICAgICAgICA8dGg+RlkyMDI4IChwcm9qZWN0ZWQpPC90aD4KICAgICAgICAgIDwvdHI+CiAgICAgICAgPC90aGVhZD4KICAgICAgICA8dGJvZHk+CiAgICAgICAgICA8dHI+CiAgICAgICAgICAgIDx0ZD5SZWdpc3RyYXRpb24gb3BlbnM8L3RkPgogICAgICAgICAgICA8dGQ+RWFybHkgTWFyY2ggMjAyNjwvdGQ+CiAgICAgICAgICAgIDx0ZD5FYXJseSBNYXJjaCAyMDI3IChUQkEpPC90ZD4KICAgICAgICAgIDwvdHI+CiAgICAgICAgICA8dHI+CiAgICAgICAgICAgIDx0ZD5SZWdpc3RyYXRpb24gY2xvc2VzPC90ZD4KICAgICAgICAgICAgPHRkPk1pZC9sYXRlIE1hcmNoIDIwMjY8L3RkPgogICAgICAgICAgICA8dGQ+TWlkL2xhdGUgTWFyY2ggMjAyNyAoVEJBKTwvdGQ+CiAgICAgICAgICA8L3RyPgogICAgICAgICAgPHRyPgogICAgICAgICAgICA8dGQ+U2VsZWN0aW9uIG5vdGljZXM8L3RkPgogICAgICAgICAgICA8dGQ+fk1hcmNoIDMxLCAyMDI2PC90ZD4KICAgICAgICAgICAgPHRkPkxhdGUgTWFyY2ggMjAyNyAoVEJBKTwvdGQ+CiAgICAgICAgICA8L3RyPgogICAgICAgICAgPHRyPgogICAgICAgICAgICA8dGQ+UGV0aXRpb24gZmlsaW5nIHdpbmRvdzwvdGQ+CiAgICAgICAgICAgIDx0ZD5BcHJpbCAxIOKAkyBKdW5lIDMwLCAyMDI2PC90ZD4KICAgICAgICAgICAgPHRkPkFwcmlsIOKAkyBKdW5lIDIwMjcgKFRCQSk8L3RkPgogICAgICAgICAgPC90cj4KICAgICAgICAgIDx0cj4KICAgICAgICAgICAgPHRkPkVtcGxveW1lbnQgc3RhcnQgZGF0ZTwvdGQ+CiAgICAgICAgICAgIDx0ZD5PY3RvYmVyIDEsIDIwMjY8L3RkPgogICAgICAgICAgICA8dGQ+T2N0b2JlciAxLCAyMDI3PC90ZD4KICAgICAgICAgIDwvdHI+CiAgICAgICAgPC90Ym9keT4KICAgICAgPC90YWJsZT4KCiAgICAgIDxoMz5GZWVzIHlvdSB3aWxsIHBheTwvaDM+CiAgICAgIDx1bD4KICAgICAgICA8bGk+CiAgICAgICAgICA8c3Ryb25nPlJlZ2lzdHJhdGlvbjo8L3N0cm9uZz4gJDIxNSBwZXIgYmVuZWZpY2lhcnkgKHBhaWQgYnkgdGhlCiAgICAgICAgICBlbXBsb3llciBhdCByZWdpc3RyYXRpb24pCiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgICA8c3Ryb25nPkZvcm0gSS0xMjkgcGV0aXRpb246PC9zdHJvbmc+IGJhc2UgZmlsaW5nIGZlZSBwbHVzIEFDV0lBCiAgICAgICAgICB0cmFpbmluZyBmZWUgKCQ3NTAgb3IgJDEsNTAwIGRlcGVuZGluZyBvbiBlbXBsb3llciBzaXplKSwgZnJhdWQKICAgICAgICAgIHByZXZlbnRpb24gZmVlICgkNTAwKSwgYW5kIG9wdGlvbmFsIHByZW1pdW0gcHJvY2Vzc2luZyAoJDIsOTY1KQogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgICAgPHN0cm9uZz5UaGUgJDEwMCwwMDAgZmVlOjwvc3Ryb25nPiBhIGNvbnRyb3ZlcnNpYWwgcHJvY2xhbWF0aW9uLWVyYQogICAgICAgICAgZmVlIHdhcyBibG9ja2VkIGJ5IGEgZmVkZXJhbCBjb3VydCBvbiBTZXB0ZW1iZXIgMzAsIDIwMjYgYW5kIGlzeyIgIn0KICAgICAgICAgIDxzdHJvbmc+bm90IGN1cnJlbnRseSBpbiBlZmZlY3Q8L3N0cm9uZz4uIERIUyBoYXMgcHJvcG9zZWQgYSBzZXBhcmF0ZQogICAgICAgICAgZmVlIHRocm91Z2ggcnVsZW1ha2luZy4gQ2hlY2sgb3VyIGZlZSB0cmFja2VyIGZvciB0aGUgbGF0ZXN0IHN0YXR1cwogICAgICAgICAgYmVmb3JlIHlvdSBwbGFuIGFyb3VuZCBpdC4KICAgICAgICA8L2xpPgogICAgICA8L3VsPgoKICAgICAgPGgyPldoYXQgYXJlIG15IGNoYW5jZXM/IFNlbGVjdGlvbiBvZGRzIGJ5IHdhZ2UgbGV2ZWw8L2gyPgogICAgICA8cD4KICAgICAgICBFdmVyeSBvZGRzIGNhbGN1bGF0b3Igb24gdGhlIGludGVybmV0IOKAlCBpbmNsdWRpbmcgdGhlIHdlbGwta25vd24gb25lcyDigJQKICAgICAgICB1c2VzIDxlbT5hc3N1bWVkPC9lbT4gd2FnZSBkaXN0cmlidXRpb25zLiBOb2JvZHkgcHVibGlzaGVzIHRoZSBhY3R1YWwKICAgICAgICBtaXggb2YgTGV2ZWwgSSB0aHJvdWdoIElWIGZpbGluZ3MsIGJlY2F1c2UgY29tcHV0aW5nIGl0IHJlcXVpcmVzCiAgICAgICAgYW5hbHl6aW5nIG1pbGxpb25zIG9mIExhYm9yIENvbmRpdGlvbiBBcHBsaWNhdGlvbiByZWNvcmRzLiBUaGF0IGlzCiAgICAgICAgZXhhY3RseSB3aGF0IG91ciBkYXRhc2V0IGRvZXMuCiAgICAgIDwvcD4KICAgICAgPHA+CiAgICAgICAgREhTJmFwb3M7cyBvZmZpY2lhbCBwcm9qZWN0aW9ucyAoTGV2ZWwgSSB+MTUlLCBJSSB+MzElLCBJSUkgfjQ2JSwgSVYKICAgICAgICB+NjElKSBhc3N1bWUgYSBwYXJ0aWN1bGFyIGRpc3RyaWJ1dGlvbiBvZiByZWdpc3RyYXRpb25zIGFjcm9zcyB3YWdlCiAgICAgICAgbGV2ZWxzLiBUaGUgcmVhbCBkaXN0cmlidXRpb24g4oCUIHdoaWNoIHdlIGNvbXB1dGUgZnJvbSBGWTIwMjTigJMyMDI2IExDQQogICAgICAgIGZpbGluZ3Mg4oCUIGRldGVybWluZXMgaG93IHRob3NlIHByb2plY3Rpb25zIHBsYXkgb3V0IGluIHByYWN0aWNlLiBUd28KICAgICAgICB0aGluZ3MgbWF0dGVyIGZvciB5b3VyIHBlcnNvbmFsIG9kZHM6IDxzdHJvbmc+d2hpY2ggbGV2ZWwgeW91CiAgICAgICAgZmlsZSBhdDwvc3Ryb25nPiwgYW5kIDxzdHJvbmc+aG93IGNyb3dkZWQgZWFjaCBsZXZlbCBpczwvc3Ryb25nPi4KICAgICAgPC9wPgoKICAgICAgPGgzPk1hc3RlciZhcG9zO3MgY2FwIHZzLiByZWd1bGFyIGNhcDwvaDM+CiAgICAgIDxwPgogICAgICAgIFRoZSAyMCwwMDAgYWR2YW5jZWQtZGVncmVlIChtYXN0ZXImYXBvcztzIGNhcCkgcmVnaXN0cmF0aW9ucyBhcmUgZHJhd24KICAgICAgICBmaXJzdCwgdGhlbiB1bnNlbGVjdGVkIG1hc3RlciZhcG9zO3MtY2FwIHJlZ2lzdHJhdGlvbnMgcm9sbCBpbnRvIHRoZQogICAgICAgIDY1LDAwMCByZWd1bGFyIGNhcCDigJQgYW5kIHdhZ2Ugd2VpZ2h0aW5nIGFwcGxpZXMgd2l0aGluIGVhY2ggZHJhdy4gQQogICAgICAgIG1hc3RlciZhcG9zO3MgZGVncmVlIHN0aWxsIGhlbHBzLCBidXQgaXQgbm8gbG9uZ2VyIGhlbHBzIGFzIG11Y2ggYXMgaXQKICAgICAgICBkaWQgdW5kZXIgcHVyZSByYW5kb20gc2VsZWN0aW9uIGlmIHlvdXIgd2FnZSBsZXZlbCBpcyBsb3cuIEEgTGV2ZWwgSQogICAgICAgIG1hc3RlciZhcG9zO3MgcmVnaXN0cmF0aW9uIGdldHMgMSBlbnRyeSBpbiBlYWNoIGRyYXc7IGEgTGV2ZWwgSUlJCiAgICAgICAgYmFjaGVsb3ImYXBvcztzIHJlZ2lzdHJhdGlvbiBnZXRzIDMuCiAgICAgIDwvcD4KCiAgICAgIDxoMj5TdHJhdGVneTogaG93IHRvIG1heGltaXplIHlvdXIgc2VsZWN0aW9uIG9kZHM8L2gyPgoKICAgICAgPGgzPkZvciBGLTEgLyBPUFQgc3R1ZGVudHM8L2gzPgogICAgICA8cD4KICAgICAgICBUaGlzIGlzIHRoZSBoYXJkIHRydXRoIG5vYm9keSBlbHNlIHN0YXRlcyBwbGFpbmx5OiBtb3N0IGVudHJ5LWxldmVsCiAgICAgICAgb2ZmZXJzIGZvciBuZXcgZ3JhZHVhdGVzIGxhbmQgYXQgPHN0cm9uZz5MZXZlbCBJPC9zdHJvbmc+LCB3aGljaCBub3cKICAgICAgICBjYXJyaWVzIHJvdWdobHkgMTUlIHNlbGVjdGlvbiBvZGRzIOKAlCBhYm91dCBoYWxmIHRoZSBvbGQgcmFuZG9tIHJhdGUuCiAgICAgICAgSWYgeW91ciBlbXBsb3llciBjYW4gcmFpc2UgdGhlIG9mZmVyIHRvIGNsZWFyIExldmVsIElJLCB5b3VyIGVudHJpZXMKICAgICAgICBkb3VibGUuIFRoYXQgY29udmVyc2F0aW9uIGlzIHdvcnRoIGhhdmluZyBlYXJseSwgYmVmb3JlIHJlZ2lzdHJhdGlvbi4KICAgICAgICBBbHNvIGNvbnNpZGVyOiBjYXAtZXhlbXB0IGVtcGxveWVycyAodW5pdmVyc2l0aWVzLCBub25wcm9maXQgcmVzZWFyY2gKICAgICAgICBvcmdhbml6YXRpb25zKSBza2lwIHRoZSBsb3R0ZXJ5IGVudGlyZWx5LgogICAgICA8L3A+CgogICAgICA8aDM+Rm9yIGVtcGxveWVyczwvaDM+CiAgICAgIDxwPgogICAgICAgIFdhZ2UtbGV2ZWwgcGxhbm5pbmcgaXMgbm93IGxvdHRlcnkgcGxhbm5pbmcuIFNldHRpbmcgdGhlIG9mZmVyZWQgd2FnZQogICAgICAgIGF0IHRoZSB0b3Agb2YgYSBsZXZlbCBiYW5kIHZlcnN1cyB0aGUgYm90dG9tIG9mIHRoZSBuZXh0IGJhbmQgY2FuIG1lYW4KICAgICAgICB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIDEgYW5kIDIgZW50cmllcyDigJQgYSBkb3VibGluZyBvZiBvZGRzIGZvciBhCiAgICAgICAgbWFyZ2luYWwgc2FsYXJ5IGRpZmZlcmVuY2UuIERvY3VtZW50IHRoZSB3YWdlIGJhc2lzIGNhcmVmdWxseTsgREhTCiAgICAgICAgc2NydXRpbml6ZXMgcG9zdC1zZWxlY3Rpb24gd2FnZSBjaGFuZ2VzLgogICAgICA8L3A+CgogICAgICA8aDM+V2hpY2ggZW1wbG95ZXJzIGZpbGUgYXQgTGV2ZWwgSUlJIGFuZCBJViB3YWdlcz88L2gzPgogICAgICA8cD4KICAgICAgICBUaGlzIGlzIGEgcXVlc3Rpb24gbm8gb3RoZXIgZ3VpZGUgYW5zd2VycywgYmVjYXVzZSBpdCByZXF1aXJlcwogICAgICAgIGVtcGxveWVyLWxldmVsIGZpbGluZyBkYXRhLiBPdXIgc3BvbnNvciBwYWdlcyBzaG93IGVhY2gKICAgICAgICBlbXBsb3llciZhcG9zO3Mgd2FnZSBkaXN0cmlidXRpb24g4oCUIGNoZWNrIHRoZSB0b3Agc3BvbnNvcnMgdG8gc2VlIHdoaWNoCiAgICAgICAgY29tcGFuaWVzIGNvbmNlbnRyYXRlIHRoZWlyIGZpbGluZ3MgYXQgaGlnaGVyIHdhZ2UgbGV2ZWxzLiBUZWNobm9sb2d5CiAgICAgICAgcHJvZHVjdCBjb21wYW5pZXMgYW5kIHF1YW50aXRhdGl2ZSBmaW5hbmNlIGZpcm1zIHNrZXcgaGVhdmlseSB0b3dhcmQKICAgICAgICBMZXZlbHMgSUlJIGFuZCBJVjsgaGlnaC12b2x1bWUgSVQgc2VydmljZXMgZmlybXMgc2tldyB0b3dhcmQgTGV2ZWxzIEkKICAgICAgICBhbmQgSUkuCiAgICAgIDwvcD4KCiAgICAgIDxoMj5XaGF0IGhhcHBlbnMgaWYgeW91IGFyZSBub3Qgc2VsZWN0ZWQ8L2gyPgogICAgICA8cD4KICAgICAgICBOb3QgYmVpbmcgc2VsZWN0ZWQgaXMgbm90IHRoZSBlbmQgb2YgdGhlIHJvYWQuIE9wdGlvbnMgaW5jbHVkZTogdHJ5aW5nCiAgICAgICAgYWdhaW4gbmV4dCB5ZWFyIChtYW55IGJlbmVmaWNpYXJpZXMgYXJlIHNlbGVjdGVkIG9uIGEgc2Vjb25kIGF0dGVtcHQpLAogICAgICAgIGNhcC1leGVtcHQgZW1wbG95bWVudCAobm8gbG90dGVyeSwgbm8gY2FwLCB5ZWFyLXJvdW5kIGZpbGluZyksCiAgICAgICAgRGF5IDEgQ1BUIHByb2dyYW1zIChoaWdoIHJpc2sg4oCUIFVTQ0lTIHNjcnV0aW5pemVzIHRoZXNlIGhlYXZpbHkpLAogICAgICAgIE8tMSB2aXNhcyBmb3IgZXh0cmFvcmRpbmFyeSBhYmlsaXR5LCBMLTEgaW50cmFjb21wYW55IHRyYW5zZmVycywgb3IKICAgICAgICByZW1vdGUgd29yayBmcm9tIGFicm9hZCB3aGlsZSByZS1lbnRlcmluZyB0aGUgbG90dGVyeS4gRWFjaCBoYXMKICAgICAgICB0cmFkZS1vZmZzOyB0YWxrIHRvIGFuIGltbWlncmF0aW9uIGF0dG9ybmV5IGJlZm9yZSBjb21taXR0aW5nIHRvIGFueQogICAgICAgIG9mIHRoZW0uCiAgICAgIDwvcD4KCiAgICAgIDxoMj5GcmVxdWVudGx5IGFza2VkIHF1ZXN0aW9uczwvaDI+CgogICAgICA8aDM+SXMgdGhlIEgtMUIgc3RpbGwgYSBsb3R0ZXJ5PzwvaDM+CiAgICAgIDxwPgogICAgICAgIFllcywgYnV0IGEgd2VpZ2h0ZWQgb25lLiBTZWxlY3Rpb24gaXMgc3RpbGwgcmFuZG9tIHdpdGhpbiBlYWNoIHdhZ2UKICAgICAgICBsZXZlbCZhcG9zO3MgZW50cnkgcG9vbCDigJQgYSBMZXZlbCBJIHJlZ2lzdHJhdGlvbiBjYW4gYWJzb2x1dGVseSBiZQogICAgICAgIHNlbGVjdGVkLCBpdCBqdXN0IGhhcyBmZXdlciBlbnRyaWVzIHRoYW4gaGlnaGVyLXdhZ2UgcmVnaXN0cmF0aW9ucy4KICAgICAgPC9wPgoKICAgICAgPGgzPkNhbiB0d28gZW1wbG95ZXJzIHJlZ2lzdGVyIG1lIHRvIGRvdWJsZSBteSBjaGFuY2VzPzwvaDM+CiAgICAgIDxwPgogICAgICAgIFRoZXkgY2FuIGJvdGggcmVnaXN0ZXIgeW91LCBidXQgdGhlIGFudGktZ2FtaW5nIHJ1bGUgYXNzaWducyB0aGV7IiAifQogICAgICAgIDxlbT5sb3dlc3Q8L2VtPiB3YWdlIGxldmVsIGFjcm9zcyBhbGwgeW91ciByZWdpc3RyYXRpb25zLiBUd28KICAgICAgICBsZWdpdGltYXRlIGpvYiBvZmZlcnMgYXJlIGZpbmU7IG1hbnVmYWN0dXJpbmcgZXh0cmEgcmVnaXN0cmF0aW9ucyBpcwogICAgICAgIG5vdCBhIHN0cmF0ZWd5LgogICAgICA8L3A+CgogICAgICA8aDM+RG9lcyBhIGhpZ2hlciBzYWxhcnkgZ3VhcmFudGVlIHNlbGVjdGlvbj88L2gzPgogICAgICA8cD4KICAgICAgICBOby4gTGV2ZWwgSVYmYXBvcztzIHByb2plY3RlZCB+NjElIGlzIHRoZSBiZXN0IG9kZHMgaW4gdGhlIHN5c3RlbSwgYnV0CiAgICAgICAgbW9yZSB0aGFuIGEgdGhpcmQgb2YgTGV2ZWwgSVYgcmVnaXN0cmF0aW9ucyBhcmUgc3RpbGwgbm90IHNlbGVjdGVkIGluCiAgICAgICAgREhTJmFwb3M7cyBtb2RlbC4gSXQgZHJhbWF0aWNhbGx5IGltcHJvdmVzIHlvdXIgY2hhbmNlczsgaXQgZG9lcyBub3QKICAgICAgICBndWFyYW50ZWUgYW55dGhpbmcuCiAgICAgIDwvcD4KCiAgICAgIDxoMz5XaWxsIHRoZXJlIGJlIGEgc2Vjb25kIGxvdHRlcnkgcm91bmQ/PC9oMz4KICAgICAgPHA+CiAgICAgICAgVVNDSVMgc29tZXRpbWVzIHJ1bnMgYSBzZWNvbmQgc2VsZWN0aW9uIGlmIHRoZSBmaXJzdCByb3VuZAogICAgICAgIGRvZXNuJmFwb3M7dCBmaWxsIHRoZSBjYXAgKGl0IGRpZCBub3QgbmVlZCBvbmUgZm9yIEZZMjAyNiwgd2l0aCBhCiAgICAgICAgfjM1LjMlIHNlbGVjdGlvbiByYXRlKS4gV2F0Y2ggZm9yIGFubm91bmNlbWVudHMgaW4gbGF0ZSBzcHJpbmcuCiAgICAgIDwvcD4KCiAgICAgIDxoMz5Ib3cgZG8gSSBmaW5kIG15IHdhZ2UgbGV2ZWw/PC9oMz4KICAgICAgPHA+CiAgICAgICAgQXNrIHlvdXIgZW1wbG95ZXIgb3IgYXR0b3JuZXkgZm9yIHRoZSBTT0MgY29kZSBhbmQgd29ya3NpdGUgYXJlYSwgdGhlbgogICAgICAgIGNoZWNrIHRoZSBET0wmYXBvcztzIE9FV1Mgd2FnZSBkYXRhIGZvciB0aGF0IG9jY3VwYXRpb24gYW5kIGFyZWEuIFlvdXIKICAgICAgICBvZmZlcmVkIHdhZ2UgZGV0ZXJtaW5lcyB3aGljaCBvZiB0aGUgZm91ciBsZXZlbHMgeW91IGNsZWFyLgogICAgICA8L3A+CgogICAgICA8aDI+TWV0aG9kb2xvZ3kgYW5kIHNvdXJjZXM8L2gyPgogICAgICA8cD4KICAgICAgICBGaWxpbmcgc3RhdGlzdGljcyByZWZlcmVuY2VkIGluIHRoaXMgZ3VpZGUgYXJlIGNvbXB1dGVkIGZyb20gdGhlIFUuUy4KICAgICAgICBEZXBhcnRtZW50IG9mIExhYm9yJmFwb3M7cyBwdWJsaWMgTGFib3IgQ29uZGl0aW9uIEFwcGxpY2F0aW9uIChMQ0EpCiAgICAgICAgZGlzY2xvc3VyZSBkYXRhLCBGWTIwMjTigJNGWTIwMjYuIExvdHRlcnkgbWVjaGFuaWNzIGFyZSBkcmF3biBmcm9tIHRoZQogICAgICAgIERIUyBmaW5hbCBydWxlIChlZmZlY3RpdmUgRmVicnVhcnkgMjcsIDIwMjYpIGFuZCBVU0NJUyBjYXAtc2Vhc29uCiAgICAgICAgZ3VpZGFuY2UuIERIUyBzZWxlY3Rpb24tcmF0ZSBwcm9qZWN0aW9ucyBhcmUgdGhlIGFnZW5jeSZhcG9zO3MKICAgICAgICBwdWJsaXNoZWQgZXN0aW1hdGVzLiBUaGlzIGd1aWRlIGlzIGZvciBpbmZvcm1hdGlvbiBvbmx5IGFuZCBpcyBub3QKICAgICAgICBsZWdhbCBhZHZpY2Ug4oCUIGNvbnN1bHQgYW4gaW1taWdyYXRpb24gYXR0b3JuZXkgZm9yIHlvdXIgc2l0dWF0aW9uLgogICAgICA8L3A+CiAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LXNsYXRlLTUwMCI+CiAgICAgICAgTGFzdCB1cGRhdGVkOiBPY3RvYmVyIDEwLCAyMDI2LiBXZSByZWZyZXNoIHRoaXMgZ3VpZGUgYXMgVVNDSVMKICAgICAgICBhbm5vdW5jZXMgRlkyMDI4IGRhdGVzLgogICAgICA8L3A+CiAgICA8Lz4KICApOwp9Cg==
+export default function H1BLottery2028Content() {
+  return (
+    <>
+      <p className="lead">
+        The H-1B lottery is no longer a lottery in the old sense. Since the
+        February 2026 final rule, USCIS selects registrations using{" "}
+        <strong>wage-level weighting</strong> — higher-paid filings get more
+        entries, and lower-paid filings get fewer. If you are planning for the
+        FY2028 cap season (registration expected March 2027), this guide
+        explains exactly how the system works, what your real odds are, and
+        what you and your employer can do to improve them.
+      </p>
+
+      <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
+        <p className="font-semibold text-blue-900">Key takeaways</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-blue-900">
+          <li>Wage Level IV = 4 entries, Level III = 3, Level II = 2, Level I = 1</li>
+          <li>DHS projects selection rates of roughly 15% (Level I) to 61% (Level IV)</li>
+          <li>Registration fee is $215 per beneficiary; the $100K fee remains blocked by courts</li>
+          <li>Multiple employers registering you? The <em>lowest</em> wage level applies</li>
+          <li>Last updated: October 10, 2026</li>
+        </ul>
+      </div>
+
+      <h2>How the wage-weighted H-1B lottery works</h2>
+      <p>
+        Before 2026, every H-1B cap registration had an equal chance — a pure
+        random draw. The Department of Homeland Security changed that with a
+        final rule effective February 27, 2026, first applied to the FY2027 cap
+        season. The new system assigns <strong>weighted entries</strong> based
+        on the wage level of the offered position:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Wage level</th>
+            <th>Lottery entries</th>
+            <th>DHS-projected selection rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Level I (entry)</td>
+            <td>1</td>
+            <td>~15%</td>
+          </tr>
+          <tr>
+            <td>Level II (qualified)</td>
+            <td>2</td>
+            <td>~31%</td>
+          </tr>
+          <tr>
+            <td>Level III (experienced)</td>
+            <td>3</td>
+            <td>~46%</td>
+          </tr>
+          <tr>
+            <td>Level IV (fully competent)</td>
+            <td>4</td>
+            <td>~61%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        These projections come from DHS modeling, not from published USCIS
+        results. The old random baseline selected about 29.6% of
+        registrations — so Level I filings now do roughly <em>half</em> as well
+        as before, while Level IV filings do roughly <em>twice</em> as well.
+      </p>
+
+      <h3>How your wage level is determined</h3>
+      <p>
+        Your wage level comes from the Department of Labor&apos;s Occupational
+        Employment and Wage Statistics (OEWS) data for your occupation (SOC
+        code) and worksite area. The offered wage is compared against the four
+        prevailing-wage levels for that occupation and location — whichever
+        level the wage meets or exceeds determines your entries. A $95,000
+        offer might be Level II in one metro and Level I in another, because
+        prevailing wages vary sharply by location.
+      </p>
+
+      <h3>The anti-gaming rules</h3>
+      <p>
+        DHS built in rules to prevent manipulation. If multiple employers
+        register the same beneficiary, the <strong>lowest</strong> wage level
+        among those registrations applies to all of them. The same lowest-level
+        logic applies when a position spans multiple worksite areas. And if an
+        employer cuts the wage after selection, the petition risks denial or
+        revocation. The message is clear: the wage you register with should be
+        the wage you actually intend to pay.
+      </p>
+
+      <h2>H-1B lottery 2028: key dates and timeline</h2>
+      <p>
+        USCIS has not yet announced FY2028 cap-season dates. Based on the
+        FY2027 cycle, expect a similar cadence — but treat every date below as
+        projected until USCIS confirms it:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>FY2027 (actual)</th>
+            <th>FY2028 (projected)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Registration opens</td>
+            <td>Early March 2026</td>
+            <td>Early March 2027 (TBA)</td>
+          </tr>
+          <tr>
+            <td>Registration closes</td>
+            <td>Mid/late March 2026</td>
+            <td>Mid/late March 2027 (TBA)</td>
+          </tr>
+          <tr>
+            <td>Selection notices</td>
+            <td>~March 31, 2026</td>
+            <td>Late March 2027 (TBA)</td>
+          </tr>
+          <tr>
+            <td>Petition filing window</td>
+            <td>April 1 – June 30, 2026</td>
+            <td>April – June 2027 (TBA)</td>
+          </tr>
+          <tr>
+            <td>Employment start date</td>
+            <td>October 1, 2026</td>
+            <td>October 1, 2027</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Fees you will pay</h3>
+      <ul>
+        <li>
+          <strong>Registration:</strong> $215 per beneficiary (paid by the
+          employer at registration)
+        </li>
+        <li>
+          <strong>Form I-129 petition:</strong> base filing fee plus ACWIA
+          training fee ($750 or $1,500 depending on employer size), fraud
+          prevention fee ($500), and optional premium processing ($2,965)
+        </li>
+        <li>
+          <strong>The $100,000 fee:</strong> a controversial proclamation-era
+          fee was blocked by a federal court on September 30, 2026 and is{" "}
+          <strong>not currently in effect</strong>. DHS has proposed a separate
+          fee through rulemaking. Check our fee tracker for the latest status
+          before you plan around it.
+        </li>
+      </ul>
+
+      <h2>What are my chances? Selection odds by wage level</h2>
+      <p>
+        Every odds calculator on the internet — including the well-known ones —
+        uses <em>assumed</em> wage distributions. Nobody publishes the actual
+        mix of Level I through IV filings, because computing it requires
+        analyzing millions of Labor Condition Application records. That is
+        exactly what our dataset does.
+      </p>
+      <p>
+        DHS&apos;s official projections (Level I ~15%, II ~31%, III ~46%, IV
+        ~61%) assume a particular distribution of registrations across wage
+        levels. The real distribution — which we compute from FY2024–2026 LCA
+        filings — determines how those projections play out in practice. Two
+        things matter for your personal odds: <strong>which level you
+        file at</strong>, and <strong>how crowded each level is</strong>.
+      </p>
+
+      <h3>Master&apos;s cap vs. regular cap</h3>
+      <p>
+        The 20,000 advanced-degree (master&apos;s cap) registrations are drawn
+        first, then unselected master&apos;s-cap registrations roll into the
+        65,000 regular cap — and wage weighting applies within each draw. A
+        master&apos;s degree still helps, but it no longer helps as much as it
+        did under pure random selection if your wage level is low. A Level I
+        master&apos;s registration gets 1 entry in each draw; a Level III
+        bachelor&apos;s registration gets 3.
+      </p>
+
+      <h2>Strategy: how to maximize your selection odds</h2>
+
+      <h3>For F-1 / OPT students</h3>
+      <p>
+        This is the hard truth nobody else states plainly: most entry-level
+        offers for new graduates land at <strong>Level I</strong>, which now
+        carries roughly 15% selection odds — about half the old random rate.
+        If your employer can raise the offer to clear Level II, your entries
+        double. That conversation is worth having early, before registration.
+        Also consider: cap-exempt employers (universities, nonprofit research
+        organizations) skip the lottery entirely.
+      </p>
+
+      <h3>For employers</h3>
+      <p>
+        Wage-level planning is now lottery planning. Setting the offered wage
+        at the top of a level band versus the bottom of the next band can mean
+        the difference between 1 and 2 entries — a doubling of odds for a
+        marginal salary difference. Document the wage basis carefully; DHS
+        scrutinizes post-selection wage changes.
+      </p>
+
+      <h3>Which employers file at Level III and IV wages?</h3>
+      <p>
+        This is a question no other guide answers, because it requires
+        employer-level filing data. Our sponsor pages show each
+        employer&apos;s wage distribution — check the top sponsors to see which
+        companies concentrate their filings at higher wage levels. Technology
+        product companies and quantitative finance firms skew heavily toward
+        Levels III and IV; high-volume IT services firms skew toward Levels I
+        and II.
+      </p>
+
+      <h2>What happens if you are not selected</h2>
+      <p>
+        Not being selected is not the end of the road. Options include: trying
+        again next year (many beneficiaries are selected on a second attempt),
+        cap-exempt employment (no lottery, no cap, year-round filing),
+        Day 1 CPT programs (high risk — USCIS scrutinizes these heavily),
+        O-1 visas for extraordinary ability, L-1 intracompany transfers, or
+        remote work from abroad while re-entering the lottery. Each has
+        trade-offs; talk to an immigration attorney before committing to any
+        of them.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Is the H-1B still a lottery?</h3>
+      <p>
+        Yes, but a weighted one. Selection is still random within each wage
+        level&apos;s entry pool — a Level I registration can absolutely be
+        selected, it just has fewer entries than higher-wage registrations.
+      </p>
+
+      <h3>Can two employers register me to double my chances?</h3>
+      <p>
+        They can both register you, but the anti-gaming rule assigns the{" "}
+        <em>lowest</em> wage level across all your registrations. Two
+        legitimate job offers are fine; manufacturing extra registrations is
+        not a strategy.
+      </p>
+
+      <h3>Does a higher salary guarantee selection?</h3>
+      <p>
+        No. Level IV&apos;s projected ~61% is the best odds in the system, but
+        more than a third of Level IV registrations are still not selected in
+        DHS&apos;s model. It dramatically improves your chances; it does not
+        guarantee anything.
+      </p>
+
+      <h3>Will there be a second lottery round?</h3>
+      <p>
+        USCIS sometimes runs a second selection if the first round
+        doesn&apos;t fill the cap (it did not need one for FY2026, with a
+        ~35.3% selection rate). Watch for announcements in late spring.
+      </p>
+
+      <h3>How do I find my wage level?</h3>
+      <p>
+        Ask your employer or attorney for the SOC code and worksite area, then
+        check the DOL&apos;s OEWS wage data for that occupation and area. Your
+        offered wage determines which of the four levels you clear.
+      </p>
+
+      <h2>Methodology and sources</h2>
+      <p>
+        Filing statistics referenced in this guide are computed from the U.S.
+        Department of Labor&apos;s public Labor Condition Application (LCA)
+        disclosure data, FY2024–FY2026. Lottery mechanics are drawn from the
+        DHS final rule (effective February 27, 2026) and USCIS cap-season
+        guidance. DHS selection-rate projections are the agency&apos;s
+        published estimates. This guide is for information only and is not
+        legal advice — consult an immigration attorney for your situation.
+      </p>
+      <p className="text-sm text-slate-500">
+        Last updated: October 10, 2026. We refresh this guide as USCIS
+        announces FY2028 dates.
+      </p>
+    </>
+  );
+}
