@@ -36,6 +36,8 @@ export interface IndexEntry {
   slug: string;
   name: string;
   cases: number;
+  approval_rate: number | null;
+  median_wage: number | null;
 }
 export interface SiteStats {
   total_sponsors_fy2026: number;
@@ -73,17 +75,6 @@ export async function getSiteStats(): Promise<SiteStats> {
   return readJson<SiteStats>("stats.json");
 }
 
-export function formatNum(n: number | null | undefined): string {
-  if (n == null) return "—";
-  return Math.round(n).toLocaleString("en-US");
-}
-
-export function formatUSD(n: number | null | undefined): string {
-  if (n == null) return "—";
-  return "$" + Math.round(n).toLocaleString("en-US");
-}
-
-export function formatPct(n: number | null | undefined, digits = 1): string {
-  if (n == null) return "—";
-  return (n * 100).toFixed(digits) + "%";
-}
+// Formatting helpers live in the client-safe "./format" module.
+// Re-exported here so existing "@/lib/data" imports keep working.
+export { formatNum, formatUSD, formatPct } from "./format";
