@@ -71,8 +71,26 @@ export async function getSponsor(slug: string): Promise<Sponsor | null> {
   }
 }
 
+export interface TitleEntry {
+  slug: string;
+  title: string;
+  total_cases: number;
+  certified_cases: number;
+  median_wage: number | null;
+  avg_wage: number | null;
+  top_employers: { employer: string; cases: number }[];
+}
+
 export async function getSiteStats(): Promise<SiteStats> {
   return readJson<SiteStats>("stats.json");
+}
+
+export async function getTitles(): Promise<TitleEntry[]> {
+  try {
+    return readJson<TitleEntry[]>("titles.json");
+  } catch {
+    return [];
+  }
 }
 
 // Formatting helpers live in the client-safe "./format" module.
