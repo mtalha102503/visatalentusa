@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getSearchIndex } from "@/lib/data";
+import { getSearchIndex, getTitles } from "@/lib/data";
 import { blogPosts } from "@/lib/blog";
 
 const BASE = "https://visatalentusa.com";
@@ -34,6 +34,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
   add(cleanUrl("/sponsors"), now, "weekly", 0.9);
   add(cleanUrl("/tools/lottery-odds"), now, "monthly", 0.8);
+  add(cleanUrl("/tools/sponsor-match"), now, "weekly", 0.85);
+  const titles = await getTitles();
+  for (const t of titles) {
+    if (!t.slug || typeof t.slug !== "string") continue;
+    const slug = t.slug.trim().toLowerCase();
+    if (!slug || !/^[a-z0-9-]+$/.test(slug)) continue;
+    add(cleanUrl(`/tools/sponsor-match/${slug}`), now, "monthly", 0.7);
+  }
   add(cleanUrl("/about"), now, "monthly", 0.5);
   add(cleanUrl("/contact"), now, "yearly", 0.3);
   add(cleanUrl("/privacy"), now, "yearly", 0.3);
