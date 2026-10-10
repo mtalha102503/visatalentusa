@@ -13,16 +13,6 @@ export default function H1BLottery2028Content() {
         in our analysis of 2M+ real Department of Labor filing records.
       </p>
 
-      <div className="overflow-hidden rounded-lg border border-slate-200">
-        <img
-          src="/blog/h1b-lottery-2028-hero.webp"
-          alt="H-1B lottery 2028 wage-weighted selection concept illustration"
-          className="h-auto w-full"
-          width={1200}
-          height={630}
-        />
-      </div>
-
       <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
         <p className="font-semibold text-blue-900">H-1B Lottery 2028: Key Facts</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-blue-900">
@@ -115,25 +105,19 @@ export default function H1BLottery2028Content() {
         October 2026 — we will update this guide when they are.
       </p>
 
-      <div className="overflow-hidden rounded-lg border border-slate-200">
-        <img
-          src="/blog/h1b-wage-levels.webp"
-          alt="H-1B lottery wage levels visualization showing increasing lottery entries from Level I to Level IV"
-          className="h-auto w-full"
-          width={1200}
-          height={630}
-        />
-        <p className="bg-slate-50 px-4 py-2 text-xs text-slate-500">
-          Higher wage levels earn more lottery entries under the weighted selection system.
-        </p>
-      </div>
-
       <h3>How Your Wage Level Is Determined</h3>
       <p>
         Your wage level is not chosen by your employer — it is derived from the
-        Department of Labor&apos;s <strong>Occupational Employment and Wage
-        Statistics (OEWS)</strong> for your specific occupation (SOC code) and
-        worksite geographic area. The DOL publishes four prevailing-wage levels
+        Department of Labor&apos;s{" "}
+        <a
+          href="https://www.dol.gov/agencies/eta/foreign-labor/wages"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          <strong>Occupational Employment and Wage Statistics (OEWS)</strong>
+        </a>{" "}
+        for your specific occupation (SOC code) and worksite geographic area. The DOL publishes four prevailing-wage levels
         for every occupation-area combination:
       </p>
       <ul>
@@ -179,8 +163,16 @@ export default function H1BLottery2028Content() {
       <p>
         USCIS typically announces cap-season dates in January or February. Based
         on the FY2027 cycle pattern, here is the projected H-1B lottery 2028
-        timeline — <strong>all FY2028 dates are projections</strong> until USCIS
-        confirms them:
+        timeline — <strong>all FY2028 dates are projections</strong> until{" "}
+        <a
+          href="https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          USCIS confirms them
+        </a>
+        :
       </p>
       <table>
         <thead>
@@ -522,9 +514,43 @@ export default function H1BLottery2028Content() {
         </p>
       </div>
       <p className="text-sm text-slate-500">
-        <strong>Sources:</strong> DHS Final Rule on wage-weighted H-1B selection (Dec 2025,
-        effective Feb 27, 2026); USCIS FY2027 cap-season announcements; DOL LCA disclosure
-        data FY2024–FY2026; DOL OEWS wage data; USCIS fee schedule (2026).
+        <strong>Sources:</strong>{" "}
+        <a
+          href="https://www.dhs.gov"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          DHS Final Rule on wage-weighted H-1B selection
+        </a>{" "}
+        (Dec 2025, effective Feb 27, 2026);{" "}
+        <a
+          href="https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          USCIS H-1B cap-season guidance
+        </a>
+        ;{" "}
+        <a
+          href="https://www.dol.gov/agencies/eta/foreign-labor/performance"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          DOL LCA disclosure data FY2024–FY2026
+        </a>
+        ; DOL OEWS wage data;{" "}
+        <a
+          href="https://www.uscis.gov/forms/all-forms"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          USCIS fee schedule
+        </a>{" "}
+        (2026).
       </p>
       <p className="text-sm text-slate-500">
         Last updated: October 10, 2026. We refresh this guide as USCIS announces FY2028
