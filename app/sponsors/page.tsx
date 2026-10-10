@@ -120,7 +120,7 @@ export default async function SponsorsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link href="/" className="hover:text-blue-700 hover:underline">
+        <Link href="/" className="hover:text-blue-700 underline underline-offset-2">
           Home
         </Link>
         <span className="mx-2">/</span>
@@ -179,7 +179,7 @@ export default async function SponsorsPage() {
               and top worksite states. Also try our{" "}
               <Link
                 href="/tools/lottery-odds"
-                className="text-blue-700 hover:underline"
+                className="text-blue-700 underline underline-offset-2"
               >
                 H-1B lottery odds calculator
               </Link>{" "}
@@ -202,7 +202,7 @@ export default async function SponsorsPage() {
       <p className="mt-8 text-xs text-slate-500">
         Data: U.S. Department of Labor LCA disclosure files, FY2026. Approval
         rates are LCA certification rates, not USCIS petition outcomes.{" "}
-        <Link href="/about" className="text-blue-700 hover:underline">
+        <Link href="/about" className="text-blue-700 underline underline-offset-2">
           Learn about our methodology
         </Link>
         .
