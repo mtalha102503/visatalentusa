@@ -13,6 +13,16 @@ export default function H1BLottery2028Content() {
         in our analysis of 2M+ real Department of Labor filing records.
       </p>
 
+      <div className="overflow-hidden rounded-lg border border-slate-200">
+        <img
+          src="/blog/h1b-lottery-2028-hero.svg"
+          alt="H-1B lottery 2028: lottery tickets showing 1x to 4x entries by wage level"
+          className="h-auto w-full"
+          width={1200}
+          height={630}
+        />
+      </div>
+
       <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
         <p className="font-semibold text-blue-900">H-1B Lottery 2028: Key Facts</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-blue-900">
@@ -104,6 +114,17 @@ export default function H1BLottery2028Content() {
         FY2027 selection results by wage level had not been published by USCIS as of
         October 2026 — we will update this guide when they are.
       </p>
+
+      <div className="overflow-hidden rounded-lg border border-slate-200">
+        <img
+          src="/blog/h1b-lottery-odds.svg"
+          alt="H-1B lottery infographic: wage levels Level I to IV with 1 to 4 lottery entries and projected odds from 15% to 61%"
+          className="h-auto w-full"
+          width={1200}
+          height={630}
+          loading="lazy"
+        />
+      </div>
 
       <h3>How Your Wage Level Is Determined</h3>
       <p>
