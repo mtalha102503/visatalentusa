@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
-  const url = `${BASE}/blog/${post.slug}/`;
+  const url = `${BASE}/blog/${post.slug}`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -46,7 +46,7 @@ export default async function BlogPostPage({
 
   // Dynamic import of the post content component
   const Content = (await import(`@/lib/blog/posts/${slug}`)).default;
-  const url = `${BASE}/blog/${post.slug}/`;
+  const url = `${BASE}/blog/${post.slug}`;
 
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
