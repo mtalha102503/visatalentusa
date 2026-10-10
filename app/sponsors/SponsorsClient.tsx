@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { formatNum, formatUSD, formatPct, type IndexEntry } from "@/lib/data";
+import { formatNum, formatUSD, formatPct } from "@/lib/format";
+import type { IndexEntry } from "@/lib/data";
 
 type SortKey = "cases" | "approval_rate" | "median_wage" | "name";
 
