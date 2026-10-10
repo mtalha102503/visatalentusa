@@ -1,1 +1,30 @@
-ZXhwb3J0IGludGVyZmFjZSBCbG9nUG9zdE1ldGEgewogIHNsdWc6IHN0cmluZzsKICB0aXRsZTogc3RyaW5nOwogIGV4Y2VycHQ6IHN0cmluZzsKICBkYXRlUHVibGlzaGVkOiBzdHJpbmc7CiAgZGF0ZU1vZGlmaWVkOiBzdHJpbmc7CiAgcmVhZGluZ01pbnV0ZXM6IG51bWJlcjsKICB0YWdzOiBzdHJpbmdbXTsKfQoKZXhwb3J0IGNvbnN0IGJsb2dQb3N0czogQmxvZ1Bvc3RNZXRhW10gPSBbCiAgewogICAgc2x1ZzogImgxYi1sb3R0ZXJ5LTIwMjgiLAogICAgdGl0bGU6ICJILTFCIExvdHRlcnkgMjAyODogV2FnZS1XZWlnaHRlZCBTZWxlY3Rpb24gT2RkcywgRGF0ZXMgJiBTdHJhdGVneSIsCiAgICBleGNlcnB0OgogICAgICAiVGhlIEgtMUIgbG90dGVyeSBpcyBubyBsb25nZXIgcmFuZG9tLiBTaW5jZSAyMDI2LCBVU0NJUyB3ZWlnaHRzIHNlbGVjdGlvbiBieSB3YWdlIGxldmVsIOKAlCBMZXZlbCBJViBmaWxpbmdzIGdldCA0IGVudHJpZXMsIExldmVsIEkgZ2V0cyBqdXN0IDEuIEhlcmUncyBob3cgdGhlIG5ldyBzeXN0ZW0gd29ya3MsIHdoYXQgeW91ciByZWFsIG9kZHMgYXJlLCBhbmQgaG93IHRvIG1heGltaXplIHRoZW0uIiwKICAgIGRhdGVQdWJsaXNoZWQ6ICIyMDI2LTEwLTEwVDAwOjAwOjAwKzAwOjAwIiwKICAgIGRhdGVNb2RpZmllZDogIjIwMjYtMTAtMTBUMDA6MDA6MDArMDA6MDAiLAogICAgcmVhZGluZ01pbnV0ZXM6IDEyLAogICAgdGFnczogWyJILTFCIExvdHRlcnkiLCAiR3VpZGVzIl0sCiAgfSwKXTsKCmV4cG9ydCBmdW5jdGlvbiBnZXRCbG9nUG9zdChzbHVnOiBzdHJpbmcpOiBCbG9nUG9zdE1ldGEgfCB1bmRlZmluZWQgewogIHJldHVybiBibG9nUG9zdHMuZmluZCgocCkgPT4gcC5zbHVnID09PSBzbHVnKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGdldEFsbEJsb2dTbHVncygpOiBzdHJpbmdbXSB7CiAgcmV0dXJuIGJsb2dQb3N0cy5tYXAoKHApID0+IHAuc2x1Zyk7Cn0K
+export interface BlogPostMeta {
+  slug: string;
+  title: string;
+  excerpt: string;
+  datePublished: string;
+  dateModified: string;
+  readingMinutes: number;
+  tags: string[];
+}
+
+export const blogPosts: BlogPostMeta[] = [
+  {
+    slug: "h1b-lottery-2028",
+    title: "H-1B Lottery 2028: Wage-Weighted Selection Odds, Dates & Strategy",
+    excerpt:
+      "The H-1B lottery is no longer random. Since 2026, USCIS weights selection by wage level — Level IV filings get 4 entries, Level I gets just 1. Here's how the new system works, what your real odds are, and how to maximize them.",
+    datePublished: "2026-10-10T00:00:00+00:00",
+    dateModified: "2026-10-10T00:00:00+00:00",
+    readingMinutes: 12,
+    tags: ["H-1B Lottery", "Guides"],
+  },
+];
+
+export function getBlogPost(slug: string): BlogPostMeta | undefined {
+  return blogPosts.find((p) => p.slug === slug);
+}
+
+export function getAllBlogSlugs(): string[] {
+  return blogPosts.map((p) => p.slug);
+}
