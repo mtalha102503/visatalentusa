@@ -29,6 +29,10 @@ function matchScore(title: string, query: string): number {
   return -1;
 }
 
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "employer";
+}
+
 export default function SponsorMatchSearch({ titles }: { titles: TitleEntry[] }) {
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<TitleEntry | null>(null);
@@ -152,8 +156,13 @@ export default function SponsorMatchSearch({ titles }: { titles: TitleEntry[] })
                 {selected.top_employers.slice(0, 10).map((e, i) => (
                   <tr key={e.employer} className="border-t border-slate-100">
                     <td className="px-4 py-2.5 text-slate-500">{i + 1}</td>
-                    <td className="px-4 py-2.5 font-medium text-slate-800">
-                      {e.employer}
+                    <td className="px-4 py-2.5 font-medium">
+                      <Link
+                        href={`/sponsors/${slugify(e.employer)}`}
+                        className="text-blue-700 underline underline-offset-2 hover:text-blue-900"
+                      >
+                        {e.employer}
+                      </Link>
                     </td>
                     <td className="px-4 py-2.5 text-right tabular-nums text-slate-700">
                       {formatNum(e.cases)}
