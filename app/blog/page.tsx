@@ -1,1 +1,76 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgTGluayBmcm9tICJuZXh0L2xpbmsiOwppbXBvcnQgeyBibG9nUG9zdHMgfSBmcm9tICJAL2xpYi9ibG9nIjsKCmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7CiAgdGl0bGU6ICJILTFCIFZpc2EgR3VpZGVzICYgQW5hbHlzaXMiLAogIGRlc2NyaXB0aW9uOgogICAgIkluLWRlcHRoIGd1aWRlcyBvbiB0aGUgSC0xQiBsb3R0ZXJ5LCBzYWxhcmllcywgc3BvbnNvcnNoaXAsIGFuZCB2aXNhIHN0cmF0ZWd5IOKAlCBiYWNrZWQgYnkgcmVhbCBVLlMuIERlcGFydG1lbnQgb2YgTGFib3IgZmlsaW5nIGRhdGEuIiwKICBhbHRlcm5hdGVzOiB7IGNhbm9uaWNhbDogImh0dHBzOi8vdmlzYXRhbGVudHVzYS5jb20vYmxvZyIgfSwKICBvcGVuR3JhcGg6IHsKICAgIHRpdGxlOiAiSC0xQiBWaXNhIEd1aWRlcyAmIEFuYWx5c2lzIHwgVmlzYVRhbGVudFVTQSIsCiAgICBkZXNjcmlwdGlvbjoKICAgICAgIkluLWRlcHRoIGd1aWRlcyBvbiB0aGUgSC0xQiBsb3R0ZXJ5LCBzYWxhcmllcywgc3BvbnNvcnNoaXAsIGFuZCB2aXNhIHN0cmF0ZWd5IOKAlCBiYWNrZWQgYnkgcmVhbCBmaWxpbmcgZGF0YS4iLAogICAgdXJsOiAiaHR0cHM6Ly92aXNhdGFsZW50dXNhLmNvbS9ibG9nIiwKICAgIHR5cGU6ICJ3ZWJzaXRlIiwKICB9LAp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQmxvZ0luZGV4KCkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0ibXgtYXV0byBtYXgtdy02eGwgcHgtNCBweS0xMiI+CiAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtM3hsIGZvbnQtYm9sZCB0cmFja2luZy10aWdodCB0ZXh0LXNsYXRlLTkwMCBtZDp0ZXh0LTR4bCI+CiAgICAgICAgSC0xQiBWaXNhIEd1aWRlcyAmYW1wOyBBbmFseXNpcwogICAgICA8L2gxPgogICAgICA8cCBjbGFzc05hbWU9Im10LTMgbWF4LXctMnhsIHRleHQtbGcgdGV4dC1zbGF0ZS02MDAiPgogICAgICAgIExvbmctZm9ybSBndWlkZXMgb24gdGhlIGxvdHRlcnksIHNhbGFyaWVzLCBzcG9uc29yc2hpcCBzdHJhdGVneSwgYW5kCiAgICAgICAgbW9yZSDigJQgZXZlcnkgY2xhaW0gZ3JvdW5kZWQgaW4gcmVhbCBEZXBhcnRtZW50IG9mIExhYm9yIGZpbGluZyBkYXRhLgogICAgICA8L3A+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtMTAgZ3JpZCBnYXAtNiBtZDpncmlkLWNvbHMtMiI+CiAgICAgICAge2Jsb2dQb3N0cy5tYXAoKHBvc3QpID0+ICgKICAgICAgICAgIDxhcnRpY2xlCiAgICAgICAgICAgIGtleT17cG9zdC5zbHVnfQogICAgICAgICAgICBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgcm91bmRlZC1sZyBib3JkZXIgYm9yZGVyLXNsYXRlLTIwMCBiZy13aGl0ZSBwLTYgdHJhbnNpdGlvbi1zaGFkb3cgaG92ZXI6c2hhZG93LW1kIgogICAgICAgICAgPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgZ2FwLTIiPgogICAgICAgICAgICAgIHtwb3N0LnRhZ3MubWFwKCh0YWcpID0+ICgKICAgICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICAgIGtleT17dGFnfQogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InJvdW5kZWQtZnVsbCBiZy1ibHVlLTUwIHB4LTMgcHktMSB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRleHQtYmx1ZS03MDAiCiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIHt0YWd9CiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJtdC0zIHRleHQteGwgZm9udC1ib2xkIHRleHQtc2xhdGUtOTAwIj4KICAgICAgICAgICAgICA8TGluawogICAgICAgICAgICAgICAgaHJlZj17YC9ibG9nLyR7cG9zdC5zbHVnfS9gfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJob3Zlcjp0ZXh0LWJsdWUtNzAwIGhvdmVyOnVuZGVybGluZSIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7cG9zdC50aXRsZX0KICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgIDwvaDI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMiBmbGV4LTEgdGV4dC1zbSB0ZXh0LXNsYXRlLTYwMCI+e3Bvc3QuZXhjZXJwdH08L3A+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC00IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiB0ZXh0LXhzIHRleHQtc2xhdGUtNTAwIj4KICAgICAgICAgICAgICA8c3Bhbj4KICAgICAgICAgICAgICAgIHtuZXcgRGF0ZShwb3N0LmRhdGVQdWJsaXNoZWQpLnRvTG9jYWxlRGF0ZVN0cmluZygiZW4tVVMiLCB7CiAgICAgICAgICAgICAgICAgIHllYXI6ICJudW1lcmljIiwKICAgICAgICAgICAgICAgICAgbW9udGg6ICJsb25nIiwKICAgICAgICAgICAgICAgICAgZGF5OiAibnVtZXJpYyIsCiAgICAgICAgICAgICAgICB9KX0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4+e3Bvc3QucmVhZGluZ01pbnV0ZXN9IG1pbiByZWFkPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPExpbmsKICAgICAgICAgICAgICBocmVmPXtgL2Jsb2cvJHtwb3N0LnNsdWd9L2B9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJtdC00IGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1ibHVlLTcwMCBob3Zlcjp1bmRlcmxpbmUiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICBSZWFkIHRoZSBndWlkZSDihpIKICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPC9hcnRpY2xlPgogICAgICAgICkpfQogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+import type { Metadata } from "next";
+import Link from "next/link";
+import { blogPosts } from "@/lib/blog";
+
+export const metadata: Metadata = {
+  title: "H-1B Visa Guides & Analysis",
+  description:
+    "In-depth guides on the H-1B lottery, salaries, sponsorship, and visa strategy — backed by real U.S. Department of Labor filing data.",
+  alternates: { canonical: "https://visatalentusa.com/blog" },
+  openGraph: {
+    title: "H-1B Visa Guides & Analysis | VisaTalentUSA",
+    description:
+      "In-depth guides on the H-1B lottery, salaries, sponsorship, and visa strategy — backed by real filing data.",
+    url: "https://visatalentusa.com/blog",
+    type: "website",
+  },
+};
+
+export default function BlogIndex() {
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-12">
+      <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+        H-1B Visa Guides &amp; Analysis
+      </h1>
+      <p className="mt-3 max-w-2xl text-lg text-slate-600">
+        Long-form guides on the lottery, salaries, sponsorship strategy, and
+        more — every claim grounded in real Department of Labor filing data.
+      </p>
+
+      <div className="mt-10 grid gap-6 md:grid-cols-2">
+        {blogPosts.map((post) => (
+          <article
+            key={post.slug}
+            className="flex flex-col rounded-lg border border-slate-200 bg-white p-6 transition-shadow hover:shadow-md"
+          >
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <h2 className="mt-3 text-xl font-bold text-slate-900">
+              <Link
+                href={`/blog/${post.slug}/`}
+                className="hover:text-blue-700 hover:underline"
+              >
+                {post.title}
+              </Link>
+            </h2>
+            <p className="mt-2 flex-1 text-sm text-slate-600">{post.excerpt}</p>
+            <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
+              <span>
+                {new Date(post.datePublished).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+              <span>{post.readingMinutes} min read</span>
+            </div>
+            <Link
+              href={`/blog/${post.slug}/`}
+              className="mt-4 inline-flex items-center text-sm font-semibold text-blue-700 hover:underline"
+            >
+              Read the guide →
+            </Link>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
