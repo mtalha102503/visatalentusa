@@ -33,7 +33,7 @@ function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           <div>
             <p className="text-lg font-bold text-blue-800">
               VisaTalent<span className="text-slate-500">USA</span>
@@ -82,6 +82,21 @@ function Footer() {
                   Sitemap
                 </a>
               </li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-slate-800">Popular Titles</p>
+            <ul className="mt-2 space-y-1 text-sm text-slate-600">
+              <li><Link href="/tools/sponsor-match/software-engineer-2" className="hover:text-blue-700">Software Engineer</Link></li>
+              <li><Link href="/tools/sponsor-match/software-developer-2" className="hover:text-blue-700">Software Developer</Link></li>
+              <li><Link href="/tools/sponsor-match/data-engineer" className="hover:text-blue-700">Data Engineer</Link></li>
+              <li><Link href="/tools/sponsor-match/data-scientist" className="hover:text-blue-700">Data Scientist</Link></li>
+              <li><Link href="/tools/sponsor-match/manager" className="hover:text-blue-700">Manager</Link></li>
+              <li><Link href="/tools/sponsor-match/engineer" className="hover:text-blue-700">Engineer</Link></li>
+              <li><Link href="/tools/sponsor-match/assistant-professor" className="hover:text-blue-700">Assistant Professor</Link></li>
+              <li><Link href="/tools/sponsor-match/software-dev-engineer" className="hover:text-blue-700">Software Dev Engineer</Link></li>
+              <li><Link href="/tools/sponsor-match/associate" className="hover:text-blue-700">Associate</Link></li>
+              <li><Link href="/tools/sponsor-match/software-development-engineer" className="hover:text-blue-700">Software Dev. Engineer</Link></li>
             </ul>
           </div>
           <div>
