@@ -57,7 +57,7 @@ export default async function Home() {
                 {i > 0 && " · "}
                 <Link
                   href={`/sponsors/${e.slug}/`}
-                  className="text-blue-700 hover:underline"
+                  className="text-blue-700 underline underline-offset-2"
                 >
                   {e.name}
                 </Link>
@@ -120,7 +120,7 @@ export default async function Home() {
                   <td className="px-4 py-2.5">
                     <Link
                       href={`/sponsors/${e.slug}/`}
-                      className="font-medium text-blue-700 hover:underline active:text-blue-900"
+                      className="font-medium text-blue-700 underline underline-offset-2 active:text-blue-900"
                     >
                       {e.name}
                     </Link>
