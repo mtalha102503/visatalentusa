@@ -62,6 +62,8 @@ const index = fy2026.map((r) => ({
   slug: r.slug,
   name: r.display_name,
   cases: r.total_cases,
+  approval_rate: r.approval_rate ?? null,
+  median_wage: r.median_wage ?? null,
 }));
 fs.writeFileSync(path.join(OUT_DIR, "index.json"), JSON.stringify(index));
 console.log(`Wrote index.json (${index.length} entries)`);
@@ -126,4 +128,29 @@ const stats = {
 };
 fs.writeFileSync(path.join(OUT_DIR, "stats.json"), JSON.stringify(stats));
 console.log("Wrote stats.json");
+
+// Fetch title data (top 500 by FY2026 cases for sponsor-match tool)
+console.log("Fetching title data...");
+let titleRows = [];
+offset = 0;
+for (;;) {
+  const batch = await sb(`/h1b_titles?select=*&fiscal_year=eq.2026&order=total_cases.desc&limit=${PAGE}&offset=${offset}`);
+  titleRows.push(...batch);
+  console.log(`  got ${batch.length} title rows (offset ${offset})`);
+  if (batch.length < PAGE || titleRows.length >= 500) break;
+  offset += PAGE;
+}
+// Keep top 500
+titleRows = titleRows.slice(0, 500);
+const titles = titleRows.map((r) => ({
+  slug: r.slug,
+  title: r.display_title,
+  total_cases: r.total_cases,
+  certified_cases: r.certified_cases,
+  median_wage: r.median_wage_annual,
+  avg_wage: r.avg_wage_annual,
+  top_employers: parseJson(r.top_employers, []).slice(0, 10),
+}));
+fs.writeFileSync(path.join(OUT_DIR, "titles.json"), JSON.stringify(titles));
+console.log(`Wrote titles.json (${titles.length} entries)`);
 console.log("Done!");
