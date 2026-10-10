@@ -33,7 +33,7 @@ export async function generateMetadata({
   const y = s.years["2026"];
   const title = `${s.display_name} H-1B Visa Sponsorship Data 2026 — Filings, Salaries, Approval Rate`;
   const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} approval rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
-  const url = `https://visatalentusa.com/sponsors/${slug}/`;
+  const url = `https://visatalentusa.com/sponsors/${slug}`;
   return {
     title,
     description,
