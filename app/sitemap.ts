@@ -37,6 +37,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add(cleanUrl("/about"), now, "monthly", 0.5);
   add(cleanUrl("/contact"), now, "yearly", 0.3);
   add(cleanUrl("/privacy"), now, "yearly", 0.3);
+  add(cleanUrl("/disclaimer"), now, "yearly", 0.3);
+  add(cleanUrl("/terms"), now, "yearly", 0.3);
   for (const e of index) {
     if (!e.slug || typeof e.slug !== "string") continue;
     const slug = e.slug.trim().toLowerCase();
