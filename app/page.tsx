@@ -139,6 +139,14 @@ export default async function Home() {
             </tbody>
           </table>
         </div>
+        <div className="mt-6 text-center">
+          <Link
+            href="/sponsors"
+            className="inline-flex items-center rounded-lg bg-blue-700 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-800"
+          >
+            View all 1,000 sponsors →
+          </Link>
+        </div>
       </section>
 
       {/* Why section */}
