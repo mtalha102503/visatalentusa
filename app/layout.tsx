@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import Header from "./Header";
 import RouteProgress from "./RouteProgress";
@@ -122,6 +123,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-white text-slate-900 antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N9EKFJDEB3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-N9EKFJDEB3');
+          `}
+        </Script>
         <RouteProgress />
         <Header />
         <main className="flex-1">{children}</main>
