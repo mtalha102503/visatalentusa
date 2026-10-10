@@ -144,7 +144,7 @@ export default function LotteryOddsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link href="/" className="hover:text-blue-700 hover:underline">
+        <Link href="/" className="hover:text-blue-700 underline underline-offset-2">
           Home
         </Link>
         <span className="mx-2">/</span>
@@ -211,7 +211,7 @@ export default function LotteryOddsPage() {
               explore{" "}
               <Link
                 href="/sponsors"
-                className="text-blue-700 hover:underline"
+                className="text-blue-700 underline underline-offset-2"
               >
                 top H-1B sponsors
               </Link>{" "}
