@@ -179,6 +179,30 @@ export default async function SponsorMatchPage() {
         <SponsorMatchSearch titles={sorted} />
       </div>
 
+      {/* Popular titles - internal links to SEO pages */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-slate-900">
+          Popular Job Titles
+        </h2>
+        <p className="mt-2 text-slate-600">
+          Browse H-1B sponsor data for the most-searched job titles:
+        </p>
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+          {sorted.slice(0, 24).map((t) => (
+            <Link
+              key={t.slug}
+              href={`/tools/sponsor-match/${t.slug}`}
+              className="rounded-lg border border-slate-200 bg-white p-3 text-sm font-medium text-blue-700 hover:border-blue-300 hover:bg-blue-50"
+            >
+              {t.title}
+              <span className="block text-xs font-normal text-slate-500">
+                {t.total_cases.toLocaleString()} filings
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* How to use */}
       <section className="mt-14">
         <h2 className="text-2xl font-bold text-slate-900">
