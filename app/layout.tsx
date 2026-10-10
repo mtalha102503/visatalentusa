@@ -47,6 +47,11 @@ function Footer() {
             <p className="text-sm font-semibold text-slate-800">Company</p>
             <ul className="mt-2 space-y-1 text-sm text-slate-600">
               <li>
+                <Link href="/blog" className="hover:text-blue-700">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-blue-700">
                   About
                 </Link>
