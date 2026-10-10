@@ -66,6 +66,21 @@ function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/terms" className="hover:text-blue-700">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/disclaimer" className="hover:text-blue-700">
+                  Disclaimer
+                </Link>
+              </li>
+              <li>
+                <a href="/sitemap.xml" className="hover:text-blue-700">
+                  Sitemap
+                </a>
+              </li>
             </ul>
           </div>
           <div>
