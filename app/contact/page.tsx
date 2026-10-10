@@ -15,7 +15,7 @@ export default function ContactPage() {
           feedback on the site? Reach us at{" "}
           <a
             href="mailto:contact@visatalentusa.com"
-            className="font-medium text-blue-700 hover:underline"
+            className="font-medium text-blue-700 underline underline-offset-2"
           >
             contact@visatalentusa.com
           </a>
