@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="H-1B lottery wage-weighted selection: lottery entries and projected odds by wage level">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fca5a5"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#93c5fd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" rx="16"/>
+
+  <text x="600" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#1e3a8a">H-1B Lottery: Wage-Weighted Selection</text>
+  <text x="600" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#64748b">Lottery entries &amp; projected odds by wage level (DHS projections)</text>
+
+  <!-- Level I -->
+  <text x="80" y="170" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e293b">Level I</text>
+  <text x="80" y="196" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Entry level</text>
+  <rect x="280" y="150" width="140" height="36" rx="8" fill="url(#bar1)"/>
+  <text x="350" y="174" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#fff">1 entry</text>
+  <text x="1050" y="174" text-anchor="end" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#dc2626">~15%</text>
+
+  <!-- Level II -->
+  <text x="80" y="270" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e293b">Level II</text>
+  <text x="80" y="296" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Qualified</text>
+  <rect x="280" y="250" width="280" height="36" rx="8" fill="url(#bar2)"/>
+  <text x="420" y="274" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#fff">2 entries</text>
+  <text x="1050" y="274" text-anchor="end" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#ea580c">~31%</text>
+
+  <!-- Level III -->
+  <text x="80" y="370" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e293b">Level III</text>
+  <text x="80" y="396" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Experienced</text>
+  <rect x="280" y="350" width="420" height="36" rx="8" fill="url(#bar3)"/>
+  <text x="490" y="374" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#fff">3 entries</text>
+  <text x="1050" y="374" text-anchor="end" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#2563eb">~46%</text>
+
+  <!-- Level IV -->
+  <text x="80" y="470" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e293b">Level IV</text>
+  <text x="80" y="496" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Fully competent</text>
+  <rect x="280" y="450" width="560" height="36" rx="8" fill="url(#bar4)"/>
+  <text x="560" y="474" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#fff">4 entries</text>
+  <text x="1050" y="474" text-anchor="end" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#059669">~61%</text>
+
+  <!-- Column headers -->
+  <text x="560" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#94a3b8">LOTTERY ENTRIES</text>
+  <text x="1050" y="130" text-anchor="end" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#94a3b8">PROJECTED ODDS</text>
+
+  <text x="600" y="560" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Source: DHS projections, Dec 2025 final rule</text>
+  <text x="600" y="586" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">visatalentusa.com</text>
+</svg>
