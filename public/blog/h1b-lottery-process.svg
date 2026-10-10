@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="H-1B lottery process timeline infographic">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#pbg)" rx="16"/>
+
+  <text x="600" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#1e3a8a">H-1B Lottery Timeline</text>
+  <text x="600" y="110" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">From registration to visa — the full journey</text>
+
+  <!-- timeline line -->
+  <line x1="100" y1="300" x2="1100" y2="300" stroke="#3b82f6" stroke-width="4"/>
+
+  <!-- step 1 -->
+  <g>
+    <circle cx="180" cy="300" r="36" fill="#1d4ed8"/>
+    <text x="180" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1</text>
+    <text x="180" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Registration</text>
+    <text x="180" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">March • $215 fee</text>
+    <text x="180" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Employer submits online</text>
+  </g>
+
+  <!-- step 2 -->
+  <g>
+    <circle cx="440" cy="300" r="36" fill="#1d4ed8"/>
+    <text x="440" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#ffffff">2</text>
+    <text x="440" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Lottery Draw</text>
+    <text x="440" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Late March</text>
+    <text x="440" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Random selection</text>
+  </g>
+
+  <!-- step 3 -->
+  <g>
+    <circle cx="700" cy="300" r="36" fill="#1d4ed8"/>
+    <text x="700" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#ffffff">3</text>
+    <text x="700" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Results</text>
+    <text x="700" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">By March 31</text>
+    <text x="700" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Check USCIS account</text>
+  </g>
+
+  <!-- step 4 -->
+  <g>
+    <circle cx="960" cy="300" r="36" fill="#1d4ed8"/>
+    <text x="960" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#ffffff">4</text>
+    <text x="960" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">File Petition</text>
+    <text x="960" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">90-day window</text>
+    <text x="960" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Form I-129 + LCA</text>
+  </g>
+
+  <!-- master's note -->
+  <rect x="350" y="490" width="500" height="70" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#1e3a8a">U.S. Master's Degree? You get TWO draws!</text>
+  <text x="600" y="545" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Regular cap first, then 20,000 master's exemption</text>
+
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#93c5fd">VisaTalentUSA.com</text>
+</svg>
