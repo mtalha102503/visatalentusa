@@ -9,6 +9,7 @@ export default function Header() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/#top-sponsors", label: "Top Sponsors" },
+    { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
