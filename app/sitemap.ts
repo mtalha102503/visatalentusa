@@ -4,28 +4,45 @@ import { blogPosts } from "@/lib/blog";
 
 const BASE = "https://visatalentusa.com";
 
+// No trailing slashes anywhere — matches Next.js default (trailingSlash: false).
+// A trailing slash on these routes returns 308, so the sitemap must use the
+// canonical non-slash form.
+function cleanUrl(path: string): string {
+  const noSlash = path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
+  return `${BASE}${encodeURI(noSlash)}`;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const index = await getSearchIndex();
-  const now = new Date("2026-10-08");
-  return [
-    { url: BASE, lastModified: now, changeFrequency: "daily", priority: 1 },
-    { url: `${BASE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    ...blogPosts.map((p) => ({
-      url: `${BASE}/blog/${p.slug}/`,
-      lastModified: new Date(p.dateModified),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    })),
-    { url: `${BASE}/sponsors`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE}/tools/lottery-odds`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${BASE}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    ...index.map((e) => ({
-      url: `${BASE}/sponsors/${e.slug}/`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-  ];
+  // Use the real build date so lastmod reflects when the data was generated,
+  // not a hardcoded stale date.
+  const now = new Date();
+
+  const seen = new Set<string>();
+  const entries: MetadataRoute.Sitemap = [];
+
+  function add(url: string, lastModified: Date, changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"], priority: number) {
+    if (seen.has(url)) return;
+    seen.add(url);
+    entries.push({ url, lastModified, changeFrequency, priority });
+  }
+
+  add(BASE, now, "daily", 1);
+  add(cleanUrl("/blog"), now, "weekly", 0.8);
+  for (const p of blogPosts) {
+    add(cleanUrl(`/blog/${p.slug}`), new Date(p.dateModified), "monthly", 0.8);
+  }
+  add(cleanUrl("/sponsors"), now, "weekly", 0.9);
+  add(cleanUrl("/tools/lottery-odds"), now, "monthly", 0.8);
+  add(cleanUrl("/about"), now, "monthly", 0.5);
+  add(cleanUrl("/contact"), now, "yearly", 0.3);
+  add(cleanUrl("/privacy"), now, "yearly", 0.3);
+  for (const e of index) {
+    if (!e.slug || typeof e.slug !== "string") continue;
+    const slug = e.slug.trim().toLowerCase();
+    if (!slug || !/^[a-z0-9-]+$/.test(slug)) continue;
+    add(cleanUrl(`/sponsors/${slug}`), now, "monthly", 0.7);
+  }
+
+  return entries;
 }
