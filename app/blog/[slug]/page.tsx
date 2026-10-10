@@ -122,11 +122,11 @@ export default async function BlogPostPage({
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link href="/" className="hover:text-blue-700 hover:underline">
+        <Link href="/" className="hover:text-blue-700 underline underline-offset-2">
           Home
         </Link>
         <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:text-blue-700 hover:underline">
+        <Link href="/blog" className="hover:text-blue-700 underline underline-offset-2">
           Guides
         </Link>
         <span className="mx-2">/</span>
@@ -172,7 +172,7 @@ export default async function BlogPostPage({
         <strong>Disclaimer:</strong> This guide is for informational purposes
         only and is not legal advice. Immigration rules change frequently —
         consult a qualified immigration attorney for advice about your specific
-        situation. VisaTalentUSA is a <a href="https://hireskys.com" className="text-blue-700 hover:underline">HireSkys</a> company.
+        situation. VisaTalentUSA is a <a href="https://hireskys.com" className="text-blue-700 underline underline-offset-2">HireSkys</a> company.
       </p>
 
       {/* Related */}
