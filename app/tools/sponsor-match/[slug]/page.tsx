@@ -62,7 +62,7 @@ export default async function TitleReportPage({
         description: `Which companies sponsor H-1B visas for ${t.title}s? Filing counts, median salaries, and top employers from official DOL LCA disclosure data.`,
         url,
         datePublished: "2026-10-11T00:00:00+00:00",
-        dateModified: new Date().toISOString(),
+        dateModified: "2026-10-11T00:00:00+00:00",
         author: {
           "@type": "Organization",
           name: "VisaTalentUSA",
