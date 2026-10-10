@@ -48,7 +48,7 @@ export default async function BlogPostPage({
   const Content = (await import(`@/lib/blog/posts/${slug}`)).default;
   const url = `${BASE}/blog/${post.slug}/`;
 
-  const jsonLd = {
+  const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@graph": [
       {
@@ -93,6 +93,21 @@ export default async function BlogPostPage({
           },
         ],
       },
+      ...(post.faqs && post.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 
