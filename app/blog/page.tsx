@@ -46,7 +46,7 @@ export default function BlogIndex() {
             <h2 className="mt-3 text-xl font-bold text-slate-900">
               <Link
                 href={`/blog/${post.slug}/`}
-                className="hover:text-blue-700 hover:underline"
+                className="hover:text-blue-700 underline underline-offset-2"
               >
                 {post.title}
               </Link>
@@ -64,7 +64,7 @@ export default function BlogIndex() {
             </div>
             <Link
               href={`/blog/${post.slug}/`}
-              className="mt-4 inline-flex items-center text-sm font-semibold text-blue-700 hover:underline"
+              className="mt-4 inline-flex items-center text-sm font-semibold text-blue-700 underline underline-offset-2"
             >
               Read the guide →
             </Link>
