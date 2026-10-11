@@ -14,6 +14,11 @@ const tools = [
     label: "H-1B Sponsor Match Finder",
     desc: "Find companies that sponsor your job title",
   },
+  {
+    href: "/tools/wage-level",
+    label: "H-1B Wage Level Checker",
+    desc: "Estimate your DOL wage level (I–IV) from real filings",
+  },
 ];
 
 export default function Header() {
