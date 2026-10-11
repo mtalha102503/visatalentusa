@@ -35,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add(cleanUrl("/sponsors"), now, "weekly", 0.9);
   add(cleanUrl("/tools/lottery-odds"), now, "monthly", 0.8);
   add(cleanUrl("/tools/sponsor-match"), now, "weekly", 0.85);
+  add(cleanUrl("/tools/wage-level"), now, "weekly", 0.85);
   const titles = await getTitles();
   for (const t of titles) {
     if (!t.slug || typeof t.slug !== "string") continue;
