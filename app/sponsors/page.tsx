@@ -3,10 +3,13 @@ import Link from "next/link";
 import { getSearchIndex, formatNum, formatUSD } from "@/lib/data";
 import SponsorsClient from "./SponsorsClient";
 
-export const metadata: Metadata = {
-  title: "All 1,000 Top H-1B Visa Sponsors (2026) — Complete Ranked List",
+export async function generateMetadata(): Promise<Metadata> {
+  const sponsors = await getSearchIndex();
+  const count = sponsors.length.toLocaleString("en-US");
+  return {
+  title: `All ${count} Top H-1B Visa Sponsors (2026) — Complete Ranked List`,
   description:
-    "Browse the complete ranked list of all 1,000 top H-1B visa sponsors for FY2026. Search any U.S. employer, sort by filings, LCA approval rate, or median salary. Real Department of Labor data.",
+    `Browse the complete ranked list of all ${count} top H-1B visa sponsors for FY2026. Search any U.S. employer, sort by filings, LCA approval rate, or median salary. Real Department of Labor data.`,
   keywords: [
     "h1b sponsors",
     "companies that sponsor h1b",
@@ -16,27 +19,29 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/sponsors" },
   openGraph: {
-    title: "All 1,000 Top H-1B Visa Sponsors (2026) | VisaTalentUSA",
+    title: `All ${count} Top H-1B Visa Sponsors (2026) | VisaTalentUSA`,
     description:
-      "The complete ranked list of 1,000 top H-1B sponsors. Search, sort by approval rate or salary — real DOL data.",
+      `The complete ranked list of ${count} top H-1B sponsors. Search, sort by approval rate or salary — real DOL data.`,
     url: "https://visatalentusa.com/sponsors",
     type: "website",
     siteName: "VisaTalentUSA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "All 1,000 Top H-1B Visa Sponsors (2026)",
+    title: `All ${count} Top H-1B Visa Sponsors (2026)`,
     description:
-      "Search and rank 1,000 U.S. employers by H-1B filings, approval rates, and salaries.",
+      `Search and rank ${count} U.S. employers by H-1B filings, approval rates, and salaries.`,
   },
   robots: {
     index: true,
     follow: true,
   },
-};
+  };
+}
 
 export default async function SponsorsPage() {
   const sponsors = await getSearchIndex();
+  const count = sponsors.length.toLocaleString("en-US");
   const top10 = sponsors.slice(0, 10);
 
   const jsonLd = {
@@ -44,9 +49,9 @@ export default async function SponsorsPage() {
     "@graph": [
       {
         "@type": "CollectionPage",
-        name: "All 1,000 Top H-1B Visa Sponsors (2026) — Complete Ranked List",
+        name: `All ${count} Top H-1B Visa Sponsors (2026) — Complete Ranked List`,
         description:
-          "Complete ranked list of the top 1,000 H-1B visa sponsors by FY2026 certified filings, with approval rates and median salaries from U.S. Department of Labor disclosure data.",
+          `Complete ranked list of the top ${count} H-1B visa sponsors by FY2026 certified filings, with approval rates and median salaries from U.S. Department of Labor disclosure data.`,
         url: "https://visatalentusa.com/sponsors",
         isPartOf: {
           "@type": "WebSite",
@@ -89,7 +94,7 @@ export default async function SponsorsPage() {
             name: "Which companies sponsor the most H-1B visas?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "In FY2026, Amazon led with nearly 20,000 H-1B filings, followed by Google, Meta, Microsoft, and other major technology employers. This page ranks all 1,000 top sponsors by certified Labor Condition Application filings from U.S. Department of Labor disclosure data.",
+              text: `In FY2026, Amazon led with nearly 20,000 H-1B filings, followed by Google, Meta, Microsoft, and other major technology employers. This page ranks all ${count} top sponsors by certified Labor Condition Application filings from U.S. Department of Labor disclosure data.`,
             },
           },
           {
@@ -97,7 +102,7 @@ export default async function SponsorsPage() {
             name: "How do I find companies that sponsor H-1B visas?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Use the search filter above to find any of the 1,000 top H-1B sponsors by name. Click any employer for detailed filing counts, approval rates, median salaries, top job titles, and worksite states.",
+              text: `Use the search filter above to find any of the ${count} top H-1B sponsors by name. Click any employer for detailed filing counts, approval rates, median salaries, top job titles, and worksite states.`,
             },
           },
           {
@@ -128,13 +133,13 @@ export default async function SponsorsPage() {
       </nav>
 
       <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-        All 1,000 Top H-1B Visa Sponsors — FY2026 Ranked List
+        All {count} Top H-1B Visa Sponsors — FY2026 Ranked List
       </h1>
       <div className="mt-4 max-w-3xl space-y-3 text-slate-600">
         <p className="text-lg">
           Looking for <strong>companies that sponsor H-1B visas</strong>? This
           is the complete ranked list of the{" "}
-          <strong>top 1,000 H-1B sponsors</strong> by FY2026 certified filings —
+          <strong>top {count} H-1B sponsors</strong> by FY2026 certified filings —
           from Amazon&apos;s ~20,000 filings down to employers with a few
           hundred. Every number comes from the U.S. Department of Labor&apos;s
           public Labor Condition Application (LCA) disclosure data.
@@ -166,7 +171,7 @@ export default async function SponsorsPage() {
             <p className="mt-2 text-sm text-slate-600">
               In FY2026, Amazon led with nearly 20,000 filings, followed by
               Google (~7,400), Meta (~5,200), and Microsoft (~5,100). The full
-              ranking above covers all 1,000 top sponsors.
+              ranking above covers all {count} top sponsors.
             </p>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
