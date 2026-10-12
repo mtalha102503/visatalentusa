@@ -53,11 +53,13 @@ for (;;) {
 }
 console.log(`Got ${rows.length} rows total`);
 
-// Write index (FY2026 top 1000)
+// Write index (FY2026 top employers — capped at 2000, not 1000, so the daily
+// +5 employer loader's new ranks keep getting pages on each rebuild.
+// Deliberately capped: loading all 52k filers would create thin-content pages.)
 const fy2026 = rows
   .filter((r) => r.fiscal_year === 2026)
   .sort((a, b) => b.total_cases - a.total_cases)
-  .slice(0, 1000);
+  .slice(0, 2000);
 const index = fy2026.map((r) => ({
   slug: r.slug,
   name: r.display_name,
