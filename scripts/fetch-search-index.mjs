@@ -11,7 +11,7 @@ if (!url || !key) {
 }
 
 const res = await fetch(
-  `${url}/rest/v1/h1b_employers?select=slug,display_name,total_cases&fiscal_year=eq.2026&order=total_cases.desc&limit=1000`,
+  `${url}/rest/v1/h1b_employers?select=slug,display_name,total_cases&fiscal_year=eq.2026&order=total_cases.desc&limit=2000`,
   { headers: { apikey: key, Authorization: `Bearer ${key}` } }
 );
 if (!res.ok) {
