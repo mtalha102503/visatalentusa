@@ -19,6 +19,11 @@ const tools = [
     label: "H-1B Wage Level Checker",
     desc: "Estimate your DOL wage level (I–IV) from real filings",
   },
+  {
+    href: "/tools/h1b-transfer",
+    label: "H-1B Transfer Guide",
+    desc: "Fees, timeline, eligibility checker & document list",
+  },
 ];
 
 export default function Header() {
