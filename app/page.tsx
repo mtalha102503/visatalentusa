@@ -1,3 +1,4 @@
+// v1.0.1 - cap fix + mobile stats
 import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import { getSiteStats, formatNum, formatUSD, formatPct } from "@/lib/data";
