@@ -70,7 +70,7 @@ export default function SponsorsClient({ sponsors }: { sponsors: IndexEntry[] })
             setQuery(e.target.value);
             setVisible(PAGE_SIZE);
           }}
-          placeholder="Filter 1,000 sponsors — e.g. Amazon, Google…"
+          placeholder={`Filter ${formatNum(sponsors.length)} sponsors — e.g. Amazon, Google…`}
           className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-blue-500 focus:outline-none sm:max-w-md"
           aria-label="Filter sponsors"
         />
