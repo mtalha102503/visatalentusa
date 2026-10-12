@@ -69,21 +69,21 @@ export default async function Home() {
 
       {/* Stats band */}
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-3 gap-4 px-4 py-8 text-center">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-8 text-center sm:grid-cols-3 sm:gap-4">
           <div>
-            <p className="text-3xl font-bold text-blue-800">
+            <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatNum(stats.total_sponsors_fy2026)}
             </p>
             <p className="mt-1 text-sm text-slate-600">Sponsoring employers (FY2026)</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-blue-800">
+            <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatNum(stats.total_cases_fy2026)}
             </p>
             <p className="mt-1 text-sm text-slate-600">H-1B filings analyzed</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-blue-800">
+            <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatUSD(stats.median_wage_fy2026)}
             </p>
             <p className="mt-1 text-sm text-slate-600">National median salary</p>
