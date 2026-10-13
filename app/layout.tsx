@@ -97,6 +97,7 @@ function Footer() {
               <li><Link href="/tools/sponsor-match/software-dev-engineer" className="hover:text-blue-700">Software Dev Engineer</Link></li>
               <li><Link href="/tools/sponsor-match/associate" className="hover:text-blue-700">Associate</Link></li>
               <li><Link href="/tools/sponsor-match/software-development-engineer" className="hover:text-blue-700">Software Dev. Engineer</Link></li>
+              <li><Link href="/tools/sponsor-match/titles" className="font-semibold hover:text-blue-700">Browse all job titles →</Link></li>
             </ul>
           </div>
           <div>
