@@ -201,6 +201,14 @@ export default async function SponsorMatchPage() {
             </Link>
           ))}
         </div>
+        <div className="mt-5 text-center">
+          <Link
+            href="/tools/sponsor-match/titles"
+            className="inline-block rounded-lg bg-blue-700 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-800"
+          >
+            Browse all {sorted.length} job titles A-Z →
+          </Link>
+        </div>
       </section>
 
       {/* How to use */}
