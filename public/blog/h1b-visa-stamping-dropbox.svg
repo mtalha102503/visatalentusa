@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="H-1B visa stamping Dropbox interview waiver eligibility flowchart">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#fbg)" rx="16"/>
+
+  <text x="600" y="56" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#1e3a8a">Dropbox Eligibility Self-Test (2026 Rules)</text>
+  <text x="600" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#64748b">Answer honestly — ALL boxes must be YES to skip the interview</text>
+
+  <g font-family="system-ui, sans-serif">
+    <!-- Q1 -->
+    <rect x="330" y="125" width="540" height="66" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="600" y="151" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Renewing the SAME visa classification?</text>
+    <text x="600" y="175" text-anchor="middle" font-size="15" fill="#64748b">(H-1B → H-1B; a change of status counts as new)</text>
+
+    <!-- Q2 -->
+    <rect x="330" y="215" width="540" height="66" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="600" y="241" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Prior H-1B stamp expired within 48 months?</text>
+    <text x="600" y="265" text-anchor="middle" font-size="15" fill="#64748b">(48-month window — narrowed from earlier policy)</text>
+
+    <!-- Q3 -->
+    <rect x="330" y="305" width="540" height="66" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="600" y="331" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">No prior visa refusal or immigration violation?</text>
+    <text x="600" y="355" text-anchor="middle" font-size="15" fill="#64748b">(Any 221(g) refusal or overstay disqualifies you)</text>
+
+    <!-- Q4 -->
+    <rect x="330" y="395" width="540" height="66" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="600" y="421" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">Applying in your country of nationality/residence?</text>
+    <text x="600" y="445" text-anchor="middle" font-size="15" fill="#64748b">(Third-country Dropbox is not permitted)</text>
+
+    <!-- connectors -->
+    <line x1="600" y1="191" x2="600" y2="215" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="600" y1="281" x2="600" y2="305" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="600" y1="371" x2="600" y2="395" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="600" y1="461" x2="600" y2="490" stroke="#3b82f6" stroke-width="3"/>
+
+    <!-- YES arrows -->
+    <text x="622" y="208" font-size="14" font-weight="800" fill="#16a34a">YES ↓</text>
+    <text x="622" y="298" font-size="14" font-weight="800" fill="#16a34a">YES ↓</text>
+    <text x="622" y="388" font-size="14" font-weight="800" fill="#16a34a">YES ↓</text>
+    <text x="622" y="478" font-size="14" font-weight="800" fill="#16a34a">YES ↓</text>
+
+    <!-- NO arrows (left side) -->
+    <text x="250" y="168" font-size="14" font-weight="800" fill="#dc2626">← NO</text>
+    <text x="250" y="258" font-size="14" font-weight="800" fill="#dc2626">← NO</text>
+    <text x="250" y="348" font-size="14" font-weight="800" fill="#dc2626">← NO</text>
+    <text x="250" y="438" font-size="14" font-weight="800" fill="#dc2626">← NO</text>
+
+    <!-- result: eligible -->
+    <rect x="360" y="490" width="480" height="80" rx="12" fill="#16a34a"/>
+    <text x="600" y="520" text-anchor="middle" font-size="20" font-weight="800" fill="#ffffff">✓ Likely Dropbox-eligible</text>
+    <text x="600" y="546" text-anchor="middle" font-size="15" fill="#dcfce7">Submit documents via VAC — no interview needed</text>
+
+    <!-- result: not eligible -->
+    <rect x="360" y="590" width="480" height="80" rx="12" fill="#dc2626"/>
+    <text x="600" y="620" text-anchor="middle" font-size="20" font-weight="800" fill="#ffffff">✗ In-person interview required</text>
+    <text x="600" y="646" text-anchor="middle" font-size="15" fill="#fee2e2">Book an interview slot at your nearest post</text>
+
+    <text x="600" y="712" text-anchor="middle" font-size="14" fill="#64748b">Any single NO means an interview is required. Rules change — confirm with your attorney and travel.state.gov.</text>
+  </g>
+
+  <text x="600" y="744" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com</text>
+</svg>
