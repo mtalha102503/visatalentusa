@@ -90,6 +90,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-visa-stamping",
+    title: "H-1B Visa Stamping: Complete 2026 Guide — Slots, Dropbox, Interview & 221(g)",
+    excerpt:
+      "Complete H-1B visa stamping guide for 2026: how to find appointment slots in India, Dropbox interview-waiver eligibility self-test, full document checklist, interview questions, 221(g) recovery playbook, timeline planner, and 4 scenario tracks — grounded in official State Department guidance.",
+    datePublished: "2026-10-13T00:00:00+00:00",
+    dateModified: "2026-10-13T00:00:00+00:00",
+    readingMinutes: 20,
+    tags: ["H-1B Visa", "Guides", "Visa Stamping"],
+    faqs: [
+      {
+        question: "How long does H-1B visa stamping take in India?",
+        answer: "From VAC biometrics to passport return, plan for 2–4 weeks in normal season and 4–6 weeks in December–January. A 221(g) can add 1–8+ weeks. Slot-booking wait before you start is separate — in peak season it can take weeks of daily checking to find an interview slot.",
+      },
+      {
+        question: "How do I find H-1B visa stamping slots in India?",
+        answer: "Check ustraveldocs.com/in daily, early morning India time, across all five posts (New Delhi, Mumbai, Chennai, Hyderabad, Kolkata). Book 6–8 weeks before December travel. If you qualify for Dropbox, VAC document-drop slots are far easier to secure than interview slots.",
+      },
+      {
+        question: "Can I get H-1B stamping without an interview in 2026?",
+        answer: "Possibly through the Dropbox interview waiver, but 2026 rules are narrower: you must renew the same classification (H-1B to H-1B), your prior H-1B visa must have expired within 48 months, you must have no prior refusals or violations, and you must apply in your home country.",
+      },
+      {
+        question: "What does a 221(g) mean for H-1B stamping?",
+        answer: "A 221(g) is a temporary refusal pending further review — not a denial. Submit exactly what the officer's slip requests, notify your employer and attorney immediately, and track your case on CEAC. Document-based 221(g)s often resolve in 1–3 weeks; security reviews can take 60+ days.",
+      },
+      {
+        question: "Is it safe to travel to India for H-1B stamping now?",
+        answer: "Stamping remains routine for straightforward cases, but 2026 brings tighter screening: expanded social-media vetting, narrowed interview waivers, and a 1-reschedule limit. It is risky if you have prior refusals, a recent employer change with thin documentation, or a non-refundable return flight days after your interview.",
+      },
+      {
+        question: "How much does H-1B visa stamping cost?",
+        answer: "The MRV application fee is $205 (non-refundable). A reciprocity issuance fee may apply depending on nationality. VAC/courier charges run about $20–30. Your employer pays H-1B petition costs by law — stamping fees are typically yours.",
+      },
+      {
+        question: "Can I do H-1B stamping in Canada or Mexico?",
+        answer: "Third-country applications are discouraged but not prohibited; Canada/Mexico posts accept limited TCN applicants. Only consider this for straightforward renewal cases — if you hit a 221(g) abroad, you will be stuck outside both the U.S. and India while it resolves.",
+      },
+      {
+        question: "Do I need H-1B stamping if I never leave the U.S.?",
+        answer: "No. The visa stamp is only for re-entry. If you remain in the U.S. in valid H-1B status, your I-797 approval is sufficient. You need stamping only when you travel abroad and need to come back.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
