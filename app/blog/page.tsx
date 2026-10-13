@@ -17,6 +17,10 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndex() {
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) =>
+      new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime()
+  );
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
@@ -28,7 +32,7 @@ export default function BlogIndex() {
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {blogPosts.map((post) => (
+        {sortedPosts.map((post) => (
           <article
             key={post.slug}
             className="flex flex-col rounded-lg border border-slate-200 bg-white p-6 transition-shadow hover:shadow-md"
