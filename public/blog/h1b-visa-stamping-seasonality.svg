@@ -9,7 +9,7 @@
   <rect width="1200" height="630" fill="url(#dbg)" rx="16"/>
 
   <text x="600" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">When Do People Search "H-1B Visa Stamping"?</text>
-  <text x="600" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Google Trends interest, US, past 12 months (relative scale 0–100)</text>
+  <text x="600" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Search interest, US, past 12 months (relative scale 0–100)</text>
 
   <!-- chart area -->
   <!-- months: Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep -->
@@ -85,5 +85,5 @@
   <rect x="90" y="545" width="1020" height="55" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
   <text x="600" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#1e3a8a">Demand surges 4x in Dec–Jan (holiday travel home) — book your slot 6–8 weeks before December</text>
 
-  <text x="600" y="622" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Source: Google Trends, US, Oct 2025 – Sep 2026</text>
+  <text x="600" y="622" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Source: Search interest data, US, Oct 2025 – Sep 2026</text>
 </svg>
