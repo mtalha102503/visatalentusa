@@ -591,8 +591,7 @@ export default function H1BVisaStampingContent() {
       <p>
         This guide synthesizes current U.S. State Department guidance, U.S.
         Embassy in India notices, and observed consulate practice as of
-        October 2026. Seasonal demand data comes from Google Trends (U.S.,
-        October 2025–September 2026). Fee and procedural facts were verified
+        October 2026. Fee and procedural facts were verified
         against official sources; where practice varies by post or over time,
         we say so. Immigration policy changes frequently — verify critical
         details with your attorney before traveling.
@@ -620,7 +619,6 @@ export default function H1BVisaStampingContent() {
         <li>U.S. Department of State — Global Visa Wait Times</li>
         <li>U.S. Department of State — Visa Renewals / Interview Waiver guidance</li>
         <li>U.S. Citizenship and Immigration Services — H-1B Specialty Occupations</li>
-        <li>Google Trends — "h1b visa stamping" interest data, U.S., Oct 2025–Sep 2026</li>
       </ul>
 
       <p className="text-sm text-slate-500">
