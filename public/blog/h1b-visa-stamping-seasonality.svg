@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="H-1B visa stamping search demand by month: December is the peak season">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#dbg)" rx="16"/>
+
+  <text x="600" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">When Do People Search "H-1B Visa Stamping"?</text>
+  <text x="600" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Google Trends interest, US, past 12 months (relative scale 0–100)</text>
+
+  <!-- chart area -->
+  <!-- months: Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep -->
+  <!-- values (relative): 55, 70, 100, 95, 45, 67, 32, 24, 40, 35, 38, 26 -->
+  <g font-family="system-ui, sans-serif">
+    <!-- baseline -->
+    <line x1="90" y1="470" x2="1120" y2="470" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Oct -->
+    <rect x="105" y="330" width="62" height="140" rx="6" fill="#93c5fd"/>
+    <text x="136" y="490" text-anchor="middle" font-size="16" fill="#475569">Oct</text>
+    <text x="136" y="315" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">55</text>
+
+    <!-- Nov -->
+    <rect x="182" y="290" width="62" height="180" rx="6" fill="#93c5fd"/>
+    <text x="213" y="490" text-anchor="middle" font-size="16" fill="#475569">Nov</text>
+    <text x="213" y="275" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">70</text>
+
+    <!-- Dec (peak) -->
+    <rect x="259" y="212" width="62" height="258" rx="6" fill="#1d4ed8"/>
+    <text x="290" y="490" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Dec</text>
+    <text x="290" y="197" text-anchor="middle" font-size="16" font-weight="800" fill="#1d4ed8">100</text>
+    <text x="290" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">PEAK</text>
+
+    <!-- Jan -->
+    <rect x="336" y="226" width="62" height="244" rx="6" fill="#2563eb"/>
+    <text x="367" y="490" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Jan</text>
+    <text x="367" y="211" text-anchor="middle" font-size="15" font-weight="700" fill="#1d4ed8">95</text>
+
+    <!-- Feb -->
+    <rect x="413" y="355" width="62" height="115" rx="6" fill="#bfdbfe"/>
+    <text x="444" y="490" text-anchor="middle" font-size="16" fill="#475569">Feb</text>
+    <text x="444" y="340" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">45</text>
+
+    <!-- Mar -->
+    <rect x="490" y="300" width="62" height="170" rx="6" fill="#93c5fd"/>
+    <text x="521" y="490" text-anchor="middle" font-size="16" fill="#475569">Mar</text>
+    <text x="521" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">67</text>
+    <text x="521" y="520" text-anchor="middle" font-size="12" fill="#64748b">lottery season</text>
+
+    <!-- Apr -->
+    <rect x="567" y="388" width="62" height="82" rx="6" fill="#dbeafe"/>
+    <text x="598" y="490" text-anchor="middle" font-size="16" fill="#475569">Apr</text>
+    <text x="598" y="373" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">32</text>
+
+    <!-- May -->
+    <rect x="644" y="410" width="62" height="60" rx="6" fill="#dbeafe"/>
+    <text x="675" y="490" text-anchor="middle" font-size="16" fill="#475569">May</text>
+    <text x="675" y="395" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">24</text>
+
+    <!-- Jun -->
+    <rect x="721" y="368" width="62" height="102" rx="6" fill="#dbeafe"/>
+    <text x="752" y="490" text-anchor="middle" font-size="16" fill="#475569">Jun</text>
+    <text x="752" y="353" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">40</text>
+
+    <!-- Jul -->
+    <rect x="798" y="381" width="62" height="89" rx="6" fill="#dbeafe"/>
+    <text x="829" y="490" text-anchor="middle" font-size="16" fill="#475569">Jul</text>
+    <text x="829" y="366" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">35</text>
+
+    <!-- Aug -->
+    <rect x="875" y="373" width="62" height="97" rx="6" fill="#dbeafe"/>
+    <text x="906" y="490" text-anchor="middle" font-size="16" fill="#475569">Aug</text>
+    <text x="906" y="358" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">38</text>
+
+    <!-- Sep -->
+    <rect x="952" y="404" width="62" height="66" rx="6" fill="#dbeafe"/>
+    <text x="983" y="490" text-anchor="middle" font-size="16" fill="#475569">Sep</text>
+    <text x="983" y="389" text-anchor="middle" font-size="15" font-weight="700" fill="#64748b">26</text>
+  </g>
+
+  <!-- insight box -->
+  <rect x="90" y="545" width="1020" height="55" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#1e3a8a">Demand surges 4x in Dec–Jan (holiday travel home) — book your slot 6–8 weeks before December</text>
+
+  <text x="600" y="622" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Source: Google Trends, US, Oct 2025 – Sep 2026</text>
+</svg>
