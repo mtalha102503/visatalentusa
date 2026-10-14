@@ -134,6 +134,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-extension-process-2026-changes",
+    title: "DHS Proposes Ending H-1B Extension Deference (Oct 2026): What Changes for Your Extension Process",
+    excerpt:
+      "BREAKING: DHS proposed ending deference to prior H-1B approvals on extensions (Federal Register, Oct 14, 2026). Step-by-step guide to what changes in the H-1B extension process, the H-4 EAD final rule, which employers face the most re-scrutiny — backed by real DOL data.",
+    datePublished: "2026-10-14T00:00:00+00:00",
+    dateModified: "2026-10-14T00:00:00+00:00",
+    readingMinutes: 14,
+    tags: ["H-1B Extension", "Policy News", "H-1B Guides"],
+    faqs: [
+      {
+        question: "Has USCIS already ended deference on H-1B extensions?",
+        answer: "No. As of October 14, 2026, DHS has only proposed removing the deference regulation (docket USCIS-2026-0529). The current policy remains in effect until a final rule is published.",
+      },
+      {
+        question: "How does the H-1B extension process work right now?",
+        answer: "Your employer files Form I-129 before your status expires (up to 6 months early). Under current deference policy, if nothing material changed, the officer gives weight to your prior approval — processing is typically faster with fewer RFEs than initial petitions.",
+      },
+      {
+        question: "What is an RFE and why does it matter for H-1B extensions?",
+        answer: "A Request for Evidence asks for more documentation before USCIS decides. DHS projects ~6,044 extra RFEs per year if deference ends, and RFE cases average 76 days vs 12 days without one.",
+      },
+      {
+        question: "When is the comment deadline for the proposed deference rule?",
+        answer: "Approximately November 13, 2026 — about 30 days from the October 14 Federal Register publication (docket USCIS-2026-0529).",
+      },
+      {
+        question: "What happened to H-4 EAD automatic renewals?",
+        answer: "They have ended under a separate final rule effective immediately. H-4 spouses must hold a valid, unexpired EAD to work. DHS estimates 20,000–33,000 EADs could lapse in an 18-month window starting May 2027.",
+      },
+      {
+        question: "Which employers will feel the H-1B extension change most?",
+        answer: "Employers with the largest H-1B workforces — Amazon (~19,900 FY2026 LCA filings), Google, Cognizant, Apple, and EY lead by filing volume. IT services firms faced the heaviest scrutiny during the last no-deference period (2017–2021).",
+      },
+      {
+        question: "Should I file my H-1B extension earlier than planned?",
+        answer: "Filing up to 6 months before expiry is already allowed and prudent — it builds buffer against any slowdown. But don't file a rushed, weaker petition just to beat a rule that isn't final yet. Talk to your immigration attorney.",
+      },
+      {
+        question: "Does the proposal affect my already-filed H-1B extension?",
+        answer: "No. Even if finalized, the rule would apply prospectively from its effective date. Extensions filed under the current rule are governed by the current rule.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
