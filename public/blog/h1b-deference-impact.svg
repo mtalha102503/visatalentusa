@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Projected impact of ending deference on H-1B extensions: 208,429 petitions affected, 6,044 extra RFEs per year, 76 vs 12 days processing">
+  <defs>
+    <linearGradient id="ibg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ibg)" rx="16"/>
+
+  <text x="600" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">If Deference Ends: The Projected Impact</text>
+  <text x="600" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">DHS's own estimates from the proposed rule (docket USCIS-2026-0529)</text>
+
+  <!-- Card 1: 208,429 -->
+  <g>
+    <rect x="70" y="150" width="320" height="200" rx="14" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+    <text x="230" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#1d4ed8">208,429</text>
+    <text x="230" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">petitions per year</text>
+    <text x="230" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">benefited from deference</text>
+    <text x="230" y="314" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">(~30% of all I-129s)</text>
+  </g>
+
+  <!-- Card 2: 6,044 -->
+  <g>
+    <rect x="440" y="150" width="320" height="200" rx="14" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+    <text x="600" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#dc2626">+6,044</text>
+    <text x="600" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">extra RFEs per year</text>
+    <text x="600" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">projected by DHS if</text>
+    <text x="600" y="314" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">deference is removed</text>
+  </g>
+
+  <!-- Card 3: 76 vs 12 -->
+  <g>
+    <rect x="810" y="150" width="320" height="200" rx="14" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+    <text x="970" y="215" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#dc2626">76 <tspan font-size="22" fill="#64748b">days</tspan></text>
+    <text x="970" y="248" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">with RFE</text>
+    <text x="970" y="292" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#16a34a">12 <tspan font-size="22" fill="#64748b">days</tspan></text>
+    <text x="970" y="325" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">without RFE</text>
+  </g>
+
+  <!-- Fraud comparison bar -->
+  <text x="600" y="415" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Worksite fraud / non-compliance rates cited by DHS</text>
+
+  <text x="120" y="470" font-family="system-ui, sans-serif" font-size="17" fill="#475569">FY2022–25 (deference era)</text>
+  <rect x="420" y="452" width="224" height="26" rx="6" fill="#dc2626"/>
+  <text x="660" y="472" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#1e3a8a">22.39%</text>
+
+  <text x="120" y="515" font-family="system-ui, sans-serif" font-size="17" fill="#475569">FY2018–20 (no deference)</text>
+  <rect x="420" y="497" width="168" height="26" rx="6" fill="#3b82f6"/>
+  <text x="604" y="517" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#1e3a8a">16.77%</text>
+
+  <text x="600" y="585" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">DHS cites higher non-compliance during the deference era as justification for the proposal.</text>
+  <text x="600" y="610" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Source: DHS proposed rule, docket USCIS-2026-0529</text>
+</svg>
