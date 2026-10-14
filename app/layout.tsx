@@ -33,7 +33,7 @@ function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="grid gap-8 md:grid-cols-5">
+        <div className="grid gap-8 md:grid-cols-4">
           <div>
             <p className="text-lg font-bold text-blue-800">
               VisaTalent<span className="text-slate-500">USA</span>
@@ -43,6 +43,32 @@ function Footer() {
               sponsor work visas, what they pay, and how the lottery treats
               their filings.
             </p>
+            <div className="mt-4 space-y-1.5 text-sm">
+              <a
+                href="mailto:contact@visatalentusa.com"
+                className="block text-slate-600 hover:text-blue-700"
+              >
+                contact@visatalentusa.com
+              </a>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.instagram.com/visatalentusa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-blue-700 font-medium"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.threads.com/@visatalentusa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-blue-700 font-medium"
+                >
+                  Threads
+                </a>
+              </div>
+            </div>
           </div>
           <div>
             <p className="text-sm font-semibold text-slate-800">Company</p>
@@ -106,39 +132,6 @@ function Footer() {
               Built from the U.S. Department of Labor&apos;s public Labor
               Condition Application (LCA) disclosure data, FY2024–FY2026.
             </p>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-slate-800">Connect</p>
-            <ul className="mt-2 space-y-2 text-sm text-slate-600">
-              <li>
-                <a
-                  href="mailto:contact@visatalentusa.com"
-                  className="hover:text-blue-700"
-                >
-                  contact@visatalentusa.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/visatalentusa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-700"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.threads.com/@visatalentusa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-blue-700"
-                >
-                  Threads
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <div className="mt-8 flex flex-col gap-2 border-t border-slate-200 pt-4 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
