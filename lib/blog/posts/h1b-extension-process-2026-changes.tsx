@@ -222,26 +222,26 @@ export default function H1BExtensionDeferenceContent() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>Amazon</td><td>19,937</td><td>99.9%</td><td>$158,000</td></tr>
-            <tr><td>2</td><td>Google</td><td>7,389</td><td>99.4%</td><td>$193,000</td></tr>
-            <tr><td>3</td><td>Cognizant</td><td>5,799</td><td>99.9%</td><td>$111,030</td></tr>
-            <tr><td>4</td><td>Apple</td><td>5,633</td><td>85.7%</td><td>$171,600</td></tr>
-            <tr><td>5</td><td>EY (Ernst &amp; Young)</td><td>5,403</td><td>94.1%</td><td>$155,468</td></tr>
-            <tr><td>6</td><td>Meta</td><td>5,151</td><td>100.0%</td><td>$214,032</td></tr>
-            <tr><td>7</td><td>Microsoft</td><td>5,107</td><td>100.0%</td><td>$177,000</td></tr>
-            <tr><td>8</td><td>Infosys</td><td>4,610</td><td>99.5%</td><td>$92,581</td></tr>
-            <tr><td>9</td><td>Deloitte</td><td>4,230</td><td>99.4%</td><td>$129,900</td></tr>
-            <tr><td>10</td><td>Tata Consultancy Services</td><td>2,923</td><td>98.6%</td><td>$92,394</td></tr>
-            <tr><td>11</td><td>Tesla</td><td>2,896</td><td>89.0%</td><td>$150,000</td></tr>
-            <tr><td>12</td><td>JPMorgan Chase</td><td>2,751</td><td>99.7%</td><td>$160,000</td></tr>
-            <tr><td>13</td><td>Nvidia</td><td>2,457</td><td>96.9%</td><td>$186,472</td></tr>
-            <tr><td>14</td><td>Fidelity Investments</td><td>2,448</td><td>98.2%</td><td>$128,914</td></tr>
-            <tr><td>15</td><td>Walmart</td><td>2,313</td><td>93.6%</td><td>$145,704</td></tr>
-            <tr><td>16</td><td>Goldman Sachs</td><td>2,024</td><td>99.6%</td><td>$130,000</td></tr>
-            <tr><td>17</td><td>Grandison Management</td><td>1,987</td><td>99.0%</td><td>$73,715</td></tr>
-            <tr><td>18</td><td>Compunnel Software Group</td><td>1,941</td><td>99.9%</td><td>$113,000</td></tr>
-            <tr><td>19</td><td>Wipro</td><td>1,906</td><td>81.9%</td><td>$106,998</td></tr>
-            <tr><td>20</td><td>Intel</td><td>1,751</td><td>99.9%</td><td>$133,432</td></tr>
+            <tr><td>1</td><td><Link href="/sponsors/amazon" className="text-blue-700 underline underline-offset-2">Amazon</Link></td><td>19,937</td><td>99.9%</td><td>$158,000</td></tr>
+            <tr><td>2</td><td><Link href="/sponsors/google" className="text-blue-700 underline underline-offset-2">Google</Link></td><td>7,389</td><td>99.4%</td><td>$193,000</td></tr>
+            <tr><td>3</td><td><Link href="/sponsors/cognizant" className="text-blue-700 underline underline-offset-2">Cognizant</Link></td><td>5,799</td><td>99.9%</td><td>$111,030</td></tr>
+            <tr><td>4</td><td><Link href="/sponsors/apple" className="text-blue-700 underline underline-offset-2">Apple</Link></td><td>5,633</td><td>85.7%</td><td>$171,600</td></tr>
+            <tr><td>5</td><td><Link href="/sponsors/ey-ernst-young" className="text-blue-700 underline underline-offset-2">EY (Ernst &amp; Young)</Link></td><td>5,403</td><td>94.1%</td><td>$155,468</td></tr>
+            <tr><td>6</td><td><Link href="/sponsors/meta-facebook" className="text-blue-700 underline underline-offset-2">Meta</Link></td><td>5,151</td><td>100.0%</td><td>$214,032</td></tr>
+            <tr><td>7</td><td><Link href="/sponsors/microsoft" className="text-blue-700 underline underline-offset-2">Microsoft</Link></td><td>5,107</td><td>100.0%</td><td>$177,000</td></tr>
+            <tr><td>8</td><td><Link href="/sponsors/infosys" className="text-blue-700 underline underline-offset-2">Infosys</Link></td><td>4,610</td><td>99.5%</td><td>$92,581</td></tr>
+            <tr><td>9</td><td><Link href="/sponsors/deloitte" className="text-blue-700 underline underline-offset-2">Deloitte</Link></td><td>4,230</td><td>99.4%</td><td>$129,900</td></tr>
+            <tr><td>10</td><td><Link href="/sponsors/tata-consultancy-services-tcs" className="text-blue-700 underline underline-offset-2">Tata Consultancy Services</Link></td><td>2,923</td><td>98.6%</td><td>$92,394</td></tr>
+            <tr><td>11</td><td><Link href="/sponsors/tesla" className="text-blue-700 underline underline-offset-2">Tesla</Link></td><td>2,896</td><td>89.0%</td><td>$150,000</td></tr>
+            <tr><td>12</td><td><Link href="/sponsors/jpmorgan-chase" className="text-blue-700 underline underline-offset-2">JPMorgan Chase</Link></td><td>2,751</td><td>99.7%</td><td>$160,000</td></tr>
+            <tr><td>13</td><td><Link href="/sponsors/nvidia" className="text-blue-700 underline underline-offset-2">Nvidia</Link></td><td>2,457</td><td>96.9%</td><td>$186,472</td></tr>
+            <tr><td>14</td><td><Link href="/sponsors/fidelity-investments" className="text-blue-700 underline underline-offset-2">Fidelity Investments</Link></td><td>2,448</td><td>98.2%</td><td>$128,914</td></tr>
+            <tr><td>15</td><td><Link href="/sponsors/walmart" className="text-blue-700 underline underline-offset-2">Walmart</Link></td><td>2,313</td><td>93.6%</td><td>$145,704</td></tr>
+            <tr><td>16</td><td><Link href="/sponsors/goldman-sachs" className="text-blue-700 underline underline-offset-2">Goldman Sachs</Link></td><td>2,024</td><td>99.6%</td><td>$130,000</td></tr>
+            <tr><td>17</td><td><Link href="/sponsors/grandison-management" className="text-blue-700 underline underline-offset-2">Grandison Management</Link></td><td>1,987</td><td>99.0%</td><td>$73,715</td></tr>
+            <tr><td>18</td><td><Link href="/sponsors/compunnel-software-group" className="text-blue-700 underline underline-offset-2">Compunnel Software Group</Link></td><td>1,941</td><td>99.9%</td><td>$113,000</td></tr>
+            <tr><td>19</td><td><Link href="/sponsors/wipro" className="text-blue-700 underline underline-offset-2">Wipro</Link></td><td>1,906</td><td>81.9%</td><td>$106,998</td></tr>
+            <tr><td>20</td><td><Link href="/sponsors/intel" className="text-blue-700 underline underline-offset-2">Intel</Link></td><td>1,751</td><td>99.9%</td><td>$133,432</td></tr>
           </tbody>
         </table>
       </div>
