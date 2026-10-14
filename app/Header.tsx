@@ -24,6 +24,11 @@ const tools = [
     label: "H-1B Transfer Guide",
     desc: "Fees, timeline, eligibility checker & document list",
   },
+  {
+    href: "/tools/processing-time",
+    label: "H-1B Processing Time Tracker",
+    desc: "Check USCIS times by service center & petition type",
+  },
 ];
 
 export default function Header() {
