@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Timeline of USCIS deference policy on H-1B extensions: 2004 to 2026">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#dbg)" rx="16"/>
+
+  <text x="600" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">H-1B Extension Deference: 2004–2026</text>
+  <text x="600" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">How USCIS treated prior approvals on I-129 extensions — and what is now proposed</text>
+
+  <!-- timeline line -->
+  <line x1="60" y1="300" x2="1140" y2="300" stroke="#3b82f6" stroke-width="4"/>
+
+  <!-- 2004 -->
+  <g>
+    <circle cx="130" cy="300" r="36" fill="#16a34a"/>
+    <text x="130" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">2004</text>
+    <text x="130" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">Deference Begins</text>
+    <text x="130" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">USCIS defers to prior</text>
+    <text x="130" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">approval on extensions</text>
+  </g>
+
+  <!-- 2017 -->
+  <g>
+    <circle cx="375" cy="300" r="36" fill="#dc2626"/>
+    <text x="375" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">2017</text>
+    <text x="375" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">Rescinded</text>
+    <text x="375" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Every extension gets</text>
+    <text x="375" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">fresh scrutiny — RFEs surge</text>
+  </g>
+
+  <!-- 2021 -->
+  <g>
+    <circle cx="620" cy="300" r="36" fill="#16a34a"/>
+    <text x="620" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">2021</text>
+    <text x="620" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">Reinstated</text>
+    <text x="620" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Deference policy</text>
+    <text x="620" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">brought back</text>
+  </g>
+
+  <!-- 2024 -->
+  <g>
+    <circle cx="865" cy="300" r="36" fill="#1d4ed8"/>
+    <text x="865" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">2024</text>
+    <text x="865" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1e3a8a">Codified</text>
+    <text x="865" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Written into regulation</text>
+    <text x="865" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">8 CFR 214.1(c)(5)</text>
+  </g>
+
+  <!-- 2026 -->
+  <g>
+    <rect x="1020" y="264" width="120" height="72" rx="12" fill="#f59e0b"/>
+    <text x="1080" y="292" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#ffffff">2026</text>
+    <text x="1080" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">PROPOSED</text>
+    <text x="1080" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#92400e">Removal Proposed</text>
+    <text x="1080" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Oct 14, 2026 —</text>
+    <text x="1080" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">comment by ~Nov 13</text>
+  </g>
+
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#475569">Deference = USCIS generally approves an extension when nothing material changed since the last approval.</text>
+  <text x="600" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#475569">Without it, every renewal is re-adjudicated from scratch — more evidence requests, longer waits.</text>
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Source: DHS/USCIS proposed rule, docket USCIS-2026-0529</text>
+</svg>
