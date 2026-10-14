@@ -43,30 +43,33 @@ function Footer() {
               sponsor work visas, what they pay, and how the lottery treats
               their filings.
             </p>
-            <div className="mt-4 space-y-1.5 text-sm">
-              <a
-                href="mailto:contact@visatalentusa.com"
-                className="block text-slate-600 hover:text-blue-700"
-              >
-                contact@visatalentusa.com
-              </a>
-              <div className="flex gap-4">
+            <div className="mt-5">
+              <p className="text-sm font-semibold text-slate-800">Connect</p>
+              <div className="mt-2 space-y-1.5 text-sm">
                 <a
-                  href="https://www.instagram.com/visatalentusa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-600 hover:text-blue-700 font-medium"
+                  href="mailto:contact@visatalentusa.com"
+                  className="block text-slate-600 hover:text-blue-700"
                 >
-                  Instagram
+                  contact@visatalentusa.com
                 </a>
-                <a
-                  href="https://www.threads.com/@visatalentusa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-600 hover:text-blue-700 font-medium"
-                >
-                  Threads
-                </a>
+                <div className="flex gap-4">
+                  <a
+                    href="https://www.instagram.com/visatalentusa/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-600 hover:text-blue-700 font-medium"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.threads.com/@visatalentusa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-600 hover:text-blue-700 font-medium"
+                  >
+                    Threads
+                  </a>
+                </div>
               </div>
             </div>
           </div>
