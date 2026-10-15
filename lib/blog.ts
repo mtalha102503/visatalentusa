@@ -178,6 +178,46 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "perm-processing-time",
+    title: "PERM Processing Time 2026: Complete DOL Timeline Guide — PWD, Recruitment, Audit & Current Queues",
+    excerpt:
+      "How long does PERM take in 2026? DOL averages 336 days for analyst review (Dec 2025 priority dates), PWD at June 2026 filings. Complete stage-by-stage PERM processing time guide with real DOL data, audit timelines, and what to do while you wait.",
+    datePublished: "2026-10-15T00:00:00+00:00",
+    dateModified: "2026-10-15T00:00:00+00:00",
+    readingMinutes: 16,
+    tags: ["PERM", "Green Card", "Guides"],
+    faqs: [
+      {
+        question: "How long is PERM approval taking now?",
+        answer: "As of DOL's October 2026 data, analyst review averages 336 calendar days (about 11 months), and DOL is adjudicating cases with December 2025 priority dates. Adding PWD (4–8 months) and recruitment (2–3 months), plan for roughly 17–22 months end-to-end without an audit.",
+      },
+      {
+        question: "What is the expected timeline for PERM approval in 2026?",
+        answer: "For cases filed in 2026, expect 18–30 months from PWD request to certified ETA-9089 depending on audit selection. DOL's queues improved through mid-2026 but remain deep, with nearly 49,000 PERM prevailing wage requests pending from June–September 2026 filings.",
+      },
+      {
+        question: "Is PERM approval getting faster?",
+        answer: "It improved through mid-2026 from prior peaks, but the trend has plateaued — the 336-day analyst average and large PWD backlog suggest timelines are stabilizing rather than continuing to fall. Seasonal surges each October–April can temporarily lengthen waits.",
+      },
+      {
+        question: "Is there premium processing for PERM?",
+        answer: "No. Unlike USCIS petitions such as the H-1B, DOL offers no premium or expedited processing for PERM labor certifications at any price. Every case moves through the same queues in priority-date order.",
+      },
+      {
+        question: "What happens if my PERM is audited?",
+        answer: "The employer receives an audit letter (usually with a 30-day response deadline) and the case moves to DOL's separate audit review queue, currently also adjudicating December 2025 priority dates. An audit typically adds several months to the overall timeline.",
+      },
+      {
+        question: "How will I know if my PERM is approved?",
+        answer: "DOL issues the certified Form ETA-9089 to the employer or attorney. You can track progress via the DOL FLAG case status search using your A-number case ID, or by comparing your priority date to DOL's monthly currently-adjudicating dates.",
+      },
+      {
+        question: "What is next after PERM approval?",
+        answer: "The employer files Form I-140 with USCIS, attaching the certified ETA-9089 — which must be filed within 180 days of certification. After I-140 approval, the applicant waits for their priority date to become current in the Visa Bulletin, then files Form I-485 or completes consular processing.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
