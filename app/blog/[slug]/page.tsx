@@ -160,6 +160,11 @@ export default async function BlogPostPage({
           </span>
           <span>·</span>
           <span>{post.readingMinutes} min read</span>
+          <span>·</span>
+          {/* Subtle Preferred Sources button in header */}
+          <span className="inline-flex items-center">
+            <div google-add-preferred-source-btn="true" />
+          </span>
         </div>
       </header>
 
