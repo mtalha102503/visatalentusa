@@ -29,6 +29,11 @@ const tools = [
     label: "H-1B Processing Time Tracker",
     desc: "Check USCIS times by service center & petition type",
   },
+  {
+    href: "/tools/lottery-results",
+    label: "H-1B Lottery Results Tracker",
+    desc: "Historical results, selection rates & FY2027 timeline",
+  },
 ];
 
 export default function Header() {
