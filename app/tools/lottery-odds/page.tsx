@@ -229,7 +229,7 @@ export default function LotteryOddsPage() {
           real DOL filing records.
         </p>
         <Link
-          href="/blog/h1b-lottery-2028/"
+          href="/blog/h1b-lottery-2028"
           className="mt-3 inline-block rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-800"
         >
           Read the H-1B Lottery 2028 Guide →
