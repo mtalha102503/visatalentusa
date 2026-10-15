@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#13253f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  
+  <text x="60" y="60" font-family="Arial, sans-serif" font-size="16" fill="#8899aa" letter-spacing="2">VISATALENTUSA.COM</text>
+  <text x="60" y="105" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">PERM Stages: Current DOL Queues</text>
+  <text x="60" y="135" font-family="Arial, sans-serif" font-size="16" fill="#aabbcc">Where each queue stands — October 2026 (DOL FLAG data)</text>
+  
+  <!-- Bars -->
+  <!-- PWD -->
+  <text x="60" y="200" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Prevailing Wage Determination</text>
+  <text x="60" y="225" font-family="Arial, sans-serif" font-size="14" fill="#8899aa">Processing June 2026 requests · ~49K pending (Jun–Sep)</text>
+  <rect x="60" y="240" width="1080" height="36" rx="8" fill="#1e3a5f"/>
+  <rect x="60" y="240" width="380" height="36" rx="8" fill="#1a56db"/>
+  <text x="80" y="264" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">~4 months behind · growing backlog</text>
+  
+  <!-- Analyst Review -->
+  <text x="60" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">ETA-9089 Analyst Review</text>
+  <text x="60" y="345" font-family="Arial, sans-serif" font-size="14" fill="#8899aa">Adjudicating December 2025 priority dates · 336 days average</text>
+  <rect x="60" y="360" width="1080" height="36" rx="8" fill="#1e3a5f"/>
+  <rect x="60" y="360" width="760" height="36" rx="8" fill="#d4a843"/>
+  <text x="80" y="384" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0a1628">336 calendar days avg (~11 months)</text>
+  
+  <!-- Audit Review -->
+  <text x="60" y="440" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Audit Review Queue</text>
+  <text x="60" y="465" font-family="Arial, sans-serif" font-size="14" fill="#8899aa">Also at December 2025 priority dates · no published average (high variance)</text>
+  <rect x="60" y="480" width="1080" height="36" rx="8" fill="#1e3a5f"/>
+  <rect x="60" y="480" width="760" height="36" rx="8" fill="#7c2d12"/>
+  <text x="80" y="504" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Same point as analyst queue · extra doc round-trip</text>
+  
+  <!-- Reconsideration -->
+  <text x="60" y="560" font-family="Arial, sans-serif" font-size="14" fill="#8899aa">Reconsideration requests to Certifying Officer: at May 2026 appeals</text>
+  <text x="60" y="590" font-family="Arial, sans-serif" font-size="14" fill="#8899aa">No premium processing exists for PERM — every case waits in the same queues.</text>
+  <text x="1140" y="590" font-family="Arial, sans-serif" font-size="13" fill="#5a6a7a" text-anchor="end">Source: DOL FLAG, Oct 2026</text>
+</svg>
