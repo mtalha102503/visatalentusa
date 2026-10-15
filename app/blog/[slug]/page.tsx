@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import { getBlogPost, getAllBlogSlugs, blogPosts } from "@/lib/blog";
 
@@ -167,6 +168,23 @@ export default async function BlogPostPage({
         <Content />
       </article>
 
+      {/* Google Preferred Sources button */}
+      <div className="mt-10 rounded-lg border border-slate-200 bg-blue-50/50 p-5 text-center">
+        <p className="text-sm font-semibold text-slate-800">
+          🔔 Get our H-1B guides first on Google
+        </p>
+        <p className="mt-1 text-xs text-slate-600">
+          Add VisaTalentUSA as a preferred source to see our latest guides in your Top Stories.
+        </p>
+        <div className="mt-3 flex justify-center">
+          <div google-add-preferred-source-btn="true" />
+        </div>
+      </div>
+      <Script
+        src="https://news.google.com/swg/js/v1/publisher.js"
+        strategy="lazyOnload"
+      />
+
       {/* Disclaimer */}
       <p className="mt-10 rounded-lg bg-slate-50 p-4 text-xs text-slate-500">
         <strong>Disclaimer:</strong> This guide is for informational purposes
@@ -183,7 +201,7 @@ export default async function BlogPostPage({
             {related.map((r) => (
               <Link
                 key={r.slug}
-                href={`/blog/${r.slug}/`}
+                href={`/blog/${r.slug}`}
                 className="block rounded-lg border border-slate-200 p-4 hover:border-blue-300 hover:bg-blue-50/30"
               >
                 <p className="font-semibold text-slate-900 hover:text-blue-700">
