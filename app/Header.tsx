@@ -34,6 +34,11 @@ const tools = [
     label: "H-1B Lottery Results Tracker",
     desc: "Historical results, selection rates & FY2027 timeline",
   },
+  {
+    href: "/tools/day-1-cpt",
+    label: "Day 1 CPT Guide",
+    desc: "Rules, OPT calculator & 2026 SEVP updates",
+  },
 ];
 
 export default function Header() {
