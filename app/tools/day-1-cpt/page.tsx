@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CPTCalculator from "./CPTCalculator";
+import CPTDecisionQuiz from "./CPTDecisionQuiz";
+import SchoolSafetyChecklist from "./SchoolSafetyChecklist";
 
 export const metadata: Metadata = {
   title: "Day 1 CPT 2026: Complete Guide — Rules, OPT Calculator, Risks & SEVP Updates | VisaTalentUSA",
@@ -146,8 +148,10 @@ export default function Day1CPTPage() {
         </p>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 space-y-8">
         <CPTCalculator />
+        <CPTDecisionQuiz />
+        <SchoolSafetyChecklist />
       </div>
 
       {/* Guide Content */}
