@@ -133,9 +133,11 @@ export default function I140ApprovalRatesPage() {
         <I140ApprovalExplorer />
 
         {/* Guide content - approval rates angle, NOT processing times */}
-        <div className="prose prose-slate mt-12 max-w-none">
-          <h2>Understanding I-140 Approval Rates: What the Data Really Tells You</h2>
-          <p>
+        <div className="mt-12 max-w-none">
+          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+            Understanding I-140 Approval Rates: What the Data Really Tells You
+          </h2>
+          <p className="text-slate-600 leading-relaxed mb-6">
             While most guides focus on <strong>how long</strong> I-140 takes
             (see our <Link href="/blog/i140-processing-time" className="text-blue-600 underline">I-140 processing time guide</Link> for
             timelines), this explorer answers a different question:{" "}
@@ -143,73 +145,109 @@ export default function I140ApprovalRatesPage() {
             varies dramatically by category — from 32% to 97%.
           </p>
 
-          <h3>Why EB-1A Has Only a 32.2% Approval Rate</h3>
-          <p>
-            EB-1A (Extraordinary Ability) is self-petitioned — no employer, no
-            PERM, no job offer required. That freedom comes with the highest
-            evidentiary bar in employment-based immigration. USCIS officers
-            evaluate whether you meet at least 3 of 10 regulatory criteria
-            (major awards, published material, original contributions, etc.)
-            AND whether you are truly at the top of your field. In FY2026 Q3
-            alone, USCIS denied 2,832 EB-1A petitions — more denials than any
-            other subcategory.
-          </p>
-          <p>
-            <strong>Strategy implication:</strong> Do not file EB-1A unless your
-            evidence package is genuinely strong. A denial wastes months and
-            filing fees. Consider EB-2 NIW as an alternative self-petition
-            route with a higher (and improving) approval rate.
-          </p>
+          <div className="bg-white rounded-xl border border-slate-200 p-6 mb-6 shadow-sm">
+            <h3 className="text-xl font-bold text-slate-900 mb-3">
+              🔴 Why EB-1A Has Only a 32.2% Approval Rate
+            </h3>
+            <p className="text-slate-600 leading-relaxed mb-4">
+              EB-1A (Extraordinary Ability) is self-petitioned — no employer, no
+              PERM, no job offer required. That freedom comes with the highest
+              evidentiary bar in employment-based immigration. USCIS officers
+              evaluate whether you meet at least 3 of 10 regulatory criteria
+              (major awards, published material, original contributions, etc.)
+              AND whether you are truly at the top of your field. In FY2026 Q3
+              alone, USCIS denied 2,832 EB-1A petitions — more denials than any
+              other subcategory.
+            </p>
+            <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+              <p className="text-sm text-red-800">
+                <strong>Strategy implication:</strong> Do not file EB-1A unless your
+                evidence package is genuinely strong. A denial wastes months and
+                filing fees. Consider EB-2 NIW as an alternative self-petition
+                route with a higher (and improving) approval rate.
+              </p>
+            </div>
+          </div>
 
-          <h3>EB-2 NIW: The Improving Bet (55.3% and Rising)</h3>
-          <p>
-            The National Interest Waiver approval rate climbed from 42.5% in
-            FY2026 Q1 to 55.3% in Q3 — a significant improvement. This likely
-            reflects USCIS providing clearer adjudication guidance on the
-            three-prong Dhanasar framework. For researchers, entrepreneurs,
-            and professionals whose work has national importance, NIW remains
-            the most accessible self-petition path.
-          </p>
-          <p>
-            <strong>Strategy implication:</strong> If you are deciding between
-            EB-1A and EB-2 NIW, the data favors NIW for most applicants unless
-            your EB-1A credentials are exceptional.
-          </p>
+          <div className="bg-white rounded-xl border border-slate-200 p-6 mb-6 shadow-sm">
+            <h3 className="text-xl font-bold text-slate-900 mb-3">
+              📈 EB-2 NIW: The Improving Bet (55.3% and Rising)
+            </h3>
+            <p className="text-slate-600 leading-relaxed mb-4">
+              The National Interest Waiver approval rate climbed from 42.5% in
+              FY2026 Q1 to 55.3% in Q3 — a significant improvement. This likely
+              reflects USCIS providing clearer adjudication guidance on the
+              three-prong Dhanasar framework. For researchers, entrepreneurs,
+              and professionals whose work has national importance, NIW remains
+              the most accessible self-petition path.
+            </p>
+            <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+              <p className="text-sm text-amber-800">
+                <strong>Strategy implication:</strong> If you are deciding between
+                EB-1A and EB-2 NIW, the data favors NIW for most applicants unless
+                your EB-1A credentials are exceptional.
+              </p>
+            </div>
+          </div>
 
-          <h3>Why Employer-Sponsored Categories Exceed 96%</h3>
-          <p>
-            EB-1C (97.4%), EB-2 PERM (97.4%), and EB-3 (96.2%) dominate approval
-            rates because the hardest vetting already happened: the PERM labor
-            certification process (for EB-2/EB-3) or the multinational executive
-            relationship documentation (for EB-1C). By the time USCIS sees the
-            I-140, DOL or the corporate structure has already validated the
-            core claim.
-          </p>
-          <p>
-            <strong>Strategy implication:</strong> If your employer will sponsor
-            you through PERM, the I-140 stage is very likely to succeed. The
-            real wait is the PERM timeline and the Visa Bulletin queue — not
-            I-140 adjudication risk.
-          </p>
+          <div className="bg-white rounded-xl border border-slate-200 p-6 mb-6 shadow-sm">
+            <h3 className="text-xl font-bold text-slate-900 mb-3">
+              🟢 Why Employer-Sponsored Categories Exceed 96%
+            </h3>
+            <p className="text-slate-600 leading-relaxed mb-4">
+              EB-1C (97.4%), EB-2 PERM (97.4%), and EB-3 (96.2%) dominate approval
+              rates because the hardest vetting already happened: the PERM labor
+              certification process (for EB-2/EB-3) or the multinational executive
+              relationship documentation (for EB-1C). By the time USCIS sees the
+              I-140, DOL or the corporate structure has already validated the
+              core claim.
+            </p>
+            <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+              <p className="text-sm text-green-800">
+                <strong>Strategy implication:</strong> If your employer will sponsor
+                you through PERM, the I-140 stage is very likely to succeed. The
+                real wait is the PERM timeline and the Visa Bulletin queue — not
+                I-140 adjudication risk.
+              </p>
+            </div>
+          </div>
 
-          <h3>How to Use This Data</h3>
-          <ul>
-            <li><strong>Choosing a category:</strong> Compare approval rates before deciding between EB-1A, EB-2 NIW, or employer-sponsored routes.</li>
-            <li><strong>Setting expectations:</strong> A 32% EB-1A rate means most applicants need a backup plan.</li>
-            <li><strong>Timing your filing:</strong> Rising NIW rates suggest now is a relatively favorable window.</li>
-            <li><strong>Evaluating RFE risk:</strong> Low approval rate categories face more Requests for Evidence — budget extra time.</li>
-          </ul>
+          <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-6">
+            <h3 className="text-xl font-bold text-slate-900 mb-4">
+              💡 How to Use This Data
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-lg p-4 border border-slate-200">
+                <p className="font-semibold text-slate-900 mb-1">Choosing a category</p>
+                <p className="text-sm text-slate-600">Compare approval rates before deciding between EB-1A, EB-2 NIW, or employer-sponsored routes.</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-slate-200">
+                <p className="font-semibold text-slate-900 mb-1">Setting expectations</p>
+                <p className="text-sm text-slate-600">A 32% EB-1A rate means most applicants need a backup plan.</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-slate-200">
+                <p className="font-semibold text-slate-900 mb-1">Timing your filing</p>
+                <p className="text-sm text-slate-600">Rising NIW rates suggest now is a relatively favorable window.</p>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-slate-200">
+                <p className="font-semibold text-slate-900 mb-1">Evaluating RFE risk</p>
+                <p className="text-sm text-slate-600">Low approval rate categories face more Requests for Evidence — budget extra time.</p>
+              </div>
+            </div>
+          </div>
 
-          <h3>Data Methodology</h3>
-          <p className="text-sm text-slate-500">
-            Approval rate = approved ÷ (approved + denied). Pending cases are
-            excluded. Data sourced from USCIS Form I-140 quarterly reports
-            (FY2026 Q1–Q3), downloaded from the{" "}
-            <a href="https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
-              USCIS Immigration and Citizenship Data page
-            </a>{" "}
-            and analyzed by VisaTalentUSA. Updated quarterly.
-          </p>
+          <div className="text-sm text-slate-500 bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <p className="font-semibold text-slate-700 mb-1">Data Methodology</p>
+            <p>
+              Approval rate = approved ÷ (approved + denied). Pending cases are
+              excluded. Data sourced from USCIS Form I-140 quarterly reports
+              (FY2026 Q1–Q3), downloaded from the{" "}
+              <a href="https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+                USCIS Immigration and Citizenship Data page
+              </a>{" "}
+              and analyzed by VisaTalentUSA. Updated quarterly.
+            </p>
+          </div>
         </div>
       </div>
     </>
