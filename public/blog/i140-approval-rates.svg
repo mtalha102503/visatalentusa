@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3a5f"/>
+      <stop offset="1" stop-color="#0f2137"/>
+    </linearGradient>
+    <linearGradient id="barHigh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="barMid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="barLow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="16"/>
+  <text x="60" y="70" fill="#ffffff" font-size="38" font-weight="800">I-140 Approval Rates by Category</text>
+  <text x="60" y="105" fill="#93c5fd" font-size="20">USCIS FY2026 Q3 Data — Real Approval Rates from Official Quarterly Reports</text>
+  <rect x="60" y="125" width="120" height="4" fill="#f59e0b" rx="2"/>
+
+  <!-- Approval rate bars (max width 700px = 100%) -->
+  <text x="60" y="175" fill="#e2e8f0" font-size="20" font-weight="700">Approval Rate (FY2026 Q3)</text>
+
+  <text x="60" y="215" fill="#cbd5e1" font-size="17">EB-1C</text>
+  <rect x="200" y="200" width="682" height="24" fill="url(#barHigh)" rx="12"/>
+  <text x="895" y="218" fill="#4ade80" font-size="16" font-weight="700">97.4%</text>
+
+  <text x="60" y="255" fill="#cbd5e1" font-size="17">EB-2 PERM</text>
+  <rect x="200" y="240" width="682" height="24" fill="url(#barHigh)" rx="12"/>
+  <text x="895" y="258" fill="#4ade80" font-size="16" font-weight="700">97.4%</text>
+
+  <text x="60" y="295" fill="#cbd5e1" font-size="17">EB-3</text>
+  <rect x="200" y="280" width="673" height="24" fill="url(#barHigh)" rx="12"/>
+  <text x="886" y="298" fill="#4ade80" font-size="16" font-weight="700">96.2%</text>
+
+  <text x="60" y="335" fill="#cbd5e1" font-size="17">EB-1B</text>
+  <rect x="200" y="320" width="651" height="24" fill="url(#barHigh)" rx="12"/>
+  <text x="864" y="338" fill="#4ade80" font-size="16" font-weight="700">93.0%</text>
+
+  <text x="60" y="375" fill="#cbd5e1" font-size="17">EB-2</text>
+  <rect x="200" y="360" width="577" height="24" fill="url(#barMid)" rx="12"/>
+  <text x="790" y="378" fill="#fbbf24" font-size="16" font-weight="700">82.4%</text>
+
+  <text x="60" y="415" fill="#cbd5e1" font-size="17">EB-2 NIW</text>
+  <rect x="200" y="400" width="387" height="24" fill="url(#barMid)" rx="12"/>
+  <text x="600" y="418" fill="#fbbf24" font-size="16" font-weight="700">55.3%</text>
+
+  <text x="60" y="455" fill="#cbd5e1" font-size="17">EB-1A</text>
+  <rect x="200" y="440" width="225" height="24" fill="url(#barLow)" rx="12"/>
+  <text x="438" y="458" fill="#f87171" font-size="16" font-weight="700">32.2%</text>
+
+  <!-- Insight box -->
+  <rect x="60" y="485" width="1080" height="90" fill="#0c1a2e" rx="12" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="90" y="520" fill="#fbbf24" font-size="20" font-weight="800">Key insight: EB-1A is toughest at 32.2% — employer-sponsored (EB-1C/EB-2/EB-3) exceeds 96%</text>
+  <text x="90" y="550" fill="#cbd5e1" font-size="16">EB-2 NIW improving: 55.3% in Q3, up from 42.5% in Q1 FY2026</text>
+
+  <text x="60" y="610" fill="#64748b" font-size="14">Source: USCIS Form I-140 quarterly data, FY2026 Q3 · Analyzed by visatalentusa.com</text>
+</svg>

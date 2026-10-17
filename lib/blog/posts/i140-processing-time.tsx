@@ -30,6 +30,7 @@ export default function I140ProcessingTimeContent() {
         <p className="font-semibold text-blue-900">I-140 Processing Time: Key Facts (October 2026)</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-blue-900">
           <li><strong>National median (regular):</strong> 3.7 months in FY 2026 — fastest since 2021, down from 7.9 months in FY 2025</li>
+          <li><strong>Approval rates vary wildly:</strong> EB-1A only 32.2%, EB-2 NIW 55.3%, but EB-1C/EB-2 PERM/EB-3 all above 96% (USCIS FY2026 Q3 data)</li>
           <li><strong>Premium processing:</strong> $2,965 fee; 15 business-day guarantee for most categories, 45 business days for EB-1C and EB-2 NIW</li>
           <li><strong>Base filing fee:</strong> $715 for Form I-140 (plus applicable Asylum Program fee)</li>
           <li><strong>By category range:</strong> 4.5–22.5 months standard across EB categories; EB-2 NIW up to 20 months at some centers</li>
@@ -143,6 +144,107 @@ export default function I140ProcessingTimeContent() {
         restarts) means real-world premium timelines often exceed the nominal
         guarantee.
       </p>
+
+      <h2>Real I-140 Approval Rates by Category (USCIS Quarterly Data)</h2>
+      <p>
+        Processing speed is only half the story. Our analysis of USCIS quarterly
+        I-140 petition data (FY 2026 Q3, the latest published) reveals dramatic
+        differences in <strong>approval rates</strong> across EB categories:
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-slate-100">
+              <th className="border border-slate-200 p-3 text-left">EB Category</th>
+              <th className="border border-slate-200 p-3 text-right">Received</th>
+              <th className="border border-slate-200 p-3 text-right">Approved</th>
+              <th className="border border-slate-200 p-3 text-right">Denied</th>
+              <th className="border border-slate-200 p-3 text-right">Approval Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-red-50">
+              <td className="border border-slate-200 p-3 font-medium">EB-1A (Extraordinary Ability)</td>
+              <td className="border border-slate-200 p-3 text-right">6,036</td>
+              <td className="border border-slate-200 p-3 text-right">1,348</td>
+              <td className="border border-slate-200 p-3 text-right">2,832</td>
+              <td className="border border-slate-200 p-3 text-right font-bold text-red-600">32.2%</td>
+            </tr>
+            <tr>
+              <td className="border border-slate-200 p-3 font-medium">EB-2 NIW (National Interest Waiver)</td>
+              <td className="border border-slate-200 p-3 text-right">13,831</td>
+              <td className="border border-slate-200 p-3 text-right">3,835</td>
+              <td className="border border-slate-200 p-3 text-right">3,103</td>
+              <td className="border border-slate-200 p-3 text-right font-bold text-amber-600">55.3%</td>
+            </tr>
+            <tr>
+              <td className="border border-slate-200 p-3 font-medium">EB-1 (Overall)</td>
+              <td className="border border-slate-200 p-3 text-right">10,918</td>
+              <td className="border border-slate-200 p-3 text-right">6,414</td>
+              <td className="border border-slate-200 p-3 text-right">3,034</td>
+              <td className="border border-slate-200 p-3 text-right font-semibold">67.9%</td>
+            </tr>
+            <tr>
+              <td className="border border-slate-200 p-3 font-medium">EB-2 (Overall)</td>
+              <td className="border border-slate-200 p-3 text-right">29,307</td>
+              <td className="border border-slate-200 p-3 text-right">15,989</td>
+              <td className="border border-slate-200 p-3 text-right">3,426</td>
+              <td className="border border-slate-200 p-3 text-right font-semibold">82.4%</td>
+            </tr>
+            <tr>
+              <td className="border border-slate-200 p-3 font-medium">EB-1B (Outstanding Researcher)</td>
+              <td className="border border-slate-200 p-3 text-right">1,328</td>
+              <td className="border border-slate-200 p-3 text-right">1,408</td>
+              <td className="border border-slate-200 p-3 text-right">106</td>
+              <td className="border border-slate-200 p-3 text-right font-semibold text-green-600">93.0%</td>
+            </tr>
+            <tr>
+              <td className="border border-slate-200 p-3 font-medium">EB-3 (Overall)</td>
+              <td className="border border-slate-200 p-3 text-right">22,707</td>
+              <td className="border border-slate-200 p-3 text-right">15,572</td>
+              <td className="border border-slate-200 p-3 text-right">609</td>
+              <td className="border border-slate-200 p-3 text-right font-semibold text-green-600">96.2%</td>
+            </tr>
+            <tr className="bg-green-50">
+              <td className="border border-slate-200 p-3 font-medium">EB-1C (Multinational Executive)</td>
+              <td className="border border-slate-200 p-3 text-right">3,554</td>
+              <td className="border border-slate-200 p-3 text-right">3,658</td>
+              <td className="border border-slate-200 p-3 text-right">96</td>
+              <td className="border border-slate-200 p-3 text-right font-bold text-green-700">97.4%</td>
+            </tr>
+            <tr className="bg-green-50">
+              <td className="border border-slate-200 p-3 font-medium">EB-2 (PERM-based)</td>
+              <td className="border border-slate-200 p-3 text-right">15,476</td>
+              <td className="border border-slate-200 p-3 text-right">12,154</td>
+              <td className="border border-slate-200 p-3 text-right">323</td>
+              <td className="border border-slate-200 p-3 text-right font-bold text-green-700">97.4%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="text-sm text-slate-500">
+        Source: USCIS Form I-140 quarterly data, FY 2026 Q3 (Apr–Jun 2026). Analyzed by VisaTalentUSA from official USCIS publications. Approval rate = approved ÷ (approved + denied).
+      </p>
+
+      <div className="overflow-hidden rounded-lg border border-slate-200 mt-4">
+        <img
+          src="/blog/i140-approval-rates.svg"
+          alt="I-140 approval rates by EB category FY2026 Q3: EB-1C 97.4%, EB-2 PERM 97.4%, EB-3 96.2%, EB-1B 93%, EB-2 82.4%, EB-2 NIW 55.3%, EB-1A 32.2% — USCIS quarterly data"
+          className="h-auto w-full"
+          width={1200}
+          height={630}
+        />
+      </div>
+
+      <div className="rounded-lg border border-purple-200 bg-purple-50 p-5 mt-4">
+        <p className="font-semibold text-purple-900">Key Insights From the Data</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-purple-900">
+          <li><strong>EB-1A is the toughest:</strong> Only 32.2% approval rate — extraordinary ability has the highest evidentiary bar and the most denials (2,832 in one quarter).</li>
+          <li><strong>EB-2 NIW is improving:</strong> 55.3% approval rate in Q3, up from 42.5% in Q1 — the trend is moving in applicants' favor.</li>
+          <li><strong>Employer-sponsored is safest:</strong> EB-1C (97.4%), EB-2 PERM (97.4%), and EB-3 (96.2%) have the highest approval rates — the PERM labor certification does heavy lifting upfront.</li>
+          <li><strong>Volume leader:</strong> EB-2 received 29,307 petitions in Q3 — the largest category by far, driven by both PERM and NIW filings.</li>
+        </ul>
+      </div>
 
       <h2>Premium Processing: Is the $2,965 Worth It?</h2>
       <p>
