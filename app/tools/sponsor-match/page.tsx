@@ -4,7 +4,7 @@ import { getTitles } from "@/lib/data";
 import SponsorMatchSearch from "./SponsorMatchSearch";
 
 export const metadata: Metadata = {
-  title: "H-1B Sponsor Match Finder — Find Companies That Sponsor Your Job Title",
+  title: "H-1B Sponsor Match Finder",
   description:
     "Free H-1B sponsor match tool: enter your job title and instantly see which companies sponsor the most H-1B visas for it, with real salaries and DOL LCA certification rates from 1.5M+ official records.",
   keywords: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/sponsor-match" },
   openGraph: {
-    title: "H-1B Sponsor Match Finder | VisaTalentUSA",
+    title: "H-1B Sponsor Match Finder",
     description:
       "Enter your job title — instantly see the top H-1B sponsoring companies, real salaries, and certification rates. Free tool built on 1.5M+ DOL records.",
     url: "https://visatalentusa.com/tools/sponsor-match",
@@ -77,21 +77,6 @@ export default async function SponsorMatchPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebApplication",
-        name: "H-1B Sponsor Match Finder — Find Companies That Sponsor Your Job Title",
-        description:
-          "Free interactive tool: enter any job title and instantly see which companies sponsor the most H-1B visas for it, with real median salaries and DOL LCA certification rates from 1.5M+ official records.",
-        url: "https://visatalentusa.com/tools/sponsor-match",
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Web",
-        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-        author: {
-          "@type": "Organization",
-          name: "VisaTalentUSA",
-          url: "https://visatalentusa.com/",
-        },
-      },
       {
         "@type": "BreadcrumbList",
         itemListElement: [

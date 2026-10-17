@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact the VisaTalentUSA team — corrections, data questions, and feedback.",
+  alternates: { canonical: "https://visatalentusa.com/contact" },
 };
 
 export default function ContactPage() {

@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "About VisaTalentUSA — the H-1B sponsor intelligence database built from official U.S. Department of Labor disclosure data.",
+  alternates: { canonical: "https://visatalentusa.com/about" },
 };
 
 export default function AboutPage() {

@@ -12,7 +12,7 @@ export interface BlogPostMeta {
 export const blogPosts: BlogPostMeta[] = [
   {
     slug: "h1b-lottery-2028",
-    title: "H-1B Lottery 2028: Odds, Registration Dates & Wage-Weighted Selection Guide",
+    title: "H-1B Lottery 2028: Odds, Dates & Wage-Weighted Guide",
     excerpt:
       "Complete H-1B lottery 2028 guide: wage-weighted selection odds by level (15% to 61%), expected registration dates, fees, and proven strategies to maximize your chances — backed by 2M+ real DOL filing records.",
     datePublished: "2026-10-10T00:00:00+00:00",
@@ -56,7 +56,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "h1b-lottery",
-    title: "H-1B Lottery: Complete Guide to the H-1B Visa Lottery Process, Results & Odds",
+    title: "H-1B Lottery Guide: Process, Results & Odds",
     excerpt:
       "Complete H-1B lottery guide: how the H-1B visa lottery works, registration process, when H-1B lottery results are announced, real selection odds, fees, and proven strategies — backed by 1.5M+ real DOL filing records.",
     datePublished: "2026-10-11T00:00:00+00:00",
@@ -92,7 +92,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "h1b-visa-stamping",
-    title: "H-1B Visa Stamping: Complete 2026 Guide — Slots, Dropbox, Interview & 221(g)",
+    title: "H-1B Visa Stamping 2026: Slots, Dropbox & Interview Guide",
     excerpt:
       "Complete H-1B visa stamping guide for 2026: how to find appointment slots in India, Dropbox interview-waiver eligibility self-test, full document checklist, interview questions, 221(g) recovery playbook, timeline planner, and 4 scenario tracks — grounded in official State Department guidance.",
     datePublished: "2026-10-13T00:00:00+00:00",
@@ -136,7 +136,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "h1b-extension-process-2026-changes",
-    title: "DHS Proposes Ending H-1B Extension Deference (Oct 2026): What Changes for Your Extension Process",
+    title: "H-1B Extension Deference Ending: What Changes (Oct 2026)",
     excerpt:
       "BREAKING: DHS proposed ending deference to prior H-1B approvals on extensions (Federal Register, Oct 14, 2026). Step-by-step guide to what changes in the H-1B extension process, the H-4 EAD final rule, which employers face the most re-scrutiny — backed by real DOL data.",
     datePublished: "2026-10-14T00:00:00+00:00",
@@ -180,7 +180,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "perm-processing-time",
-    title: "PERM Processing Time 2026: Complete DOL Timeline Guide — PWD, Recruitment, Audit & Current Queues",
+    title: "PERM Processing Time 2026: DOL Timeline Guide",
     excerpt:
       "How long does PERM take in 2026? DOL averages 336 days for analyst review (Dec 2025 priority dates), PWD at June 2026 filings. Complete stage-by-stage PERM processing time guide with real DOL data, audit timelines, and what to do while you wait.",
     datePublished: "2026-10-15T00:00:00+00:00",
@@ -220,7 +220,7 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "i140-processing-time",
-    title: "I-140 Processing Time 2026: Complete USCIS Timeline Guide — By Category, Premium Processing & Trends",
+    title: "I-140 Processing Time 2026: USCIS Timeline Guide",
     excerpt:
       "How long does I-140 take in 2026? USCIS median is 3.7 months (fastest since 2021). Complete I-140 processing time guide by EB category, premium processing costs and timelines, historical trends, and what to do while you wait.",
     datePublished: "2026-10-17T00:00:00+00:00",
