@@ -39,6 +39,11 @@ const tools = [
     label: "Day 1 CPT Guide",
     desc: "Rules, OPT calculator & 2026 SEVP updates",
   },
+  {
+    href: "/tools/i140-approval-rates",
+    label: "I-140 Approval Rate Explorer",
+    desc: "Real USCIS approval rates by EB category with trends",
+  },
 ];
 
 export default function Header() {
