@@ -218,6 +218,46 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "i140-processing-time",
+    title: "I-140 Processing Time 2026: Complete USCIS Timeline Guide — By Category, Premium Processing & Trends",
+    excerpt:
+      "How long does I-140 take in 2026? USCIS median is 3.7 months (fastest since 2021). Complete I-140 processing time guide by EB category, premium processing costs and timelines, historical trends, and what to do while you wait.",
+    datePublished: "2026-10-17T00:00:00+00:00",
+    dateModified: "2026-10-17T00:00:00+00:00",
+    readingMinutes: 12,
+    tags: ["I-140", "Green Card", "Guides"],
+    faqs: [
+      {
+        question: "How long is I-140 processing taking in 2026?",
+        answer: "USCIS decided half of all regular I-140 petitions in 3.7 months in FY 2026 (through June 30) — the fastest median since 2021, down from 7.9 months in FY 2025. Individual timelines vary by EB category and service center, ranging from 4.5 to 22.5 months.",
+      },
+      {
+        question: "How much is premium processing for I-140?",
+        answer: "Premium processing for Form I-140 costs $2,965 as of 2026 (Form I-907). It guarantees USCIS action within 15 business days for most categories, or 45 business days for EB-1C and EB-2 NIW. It does not increase approval odds.",
+      },
+      {
+        question: "Which EB category has the fastest I-140 processing?",
+        answer: "EB-1A and EB-1B tend toward the shorter end of the 4.5–22.5 month range at well-performing service centers, since officers evaluate credentials against defined regulatory criteria. EB-2 NIW is more variable (up to 20 months) due to the subjective three-prong Dhanasar assessment.",
+      },
+      {
+        question: "Does premium processing increase I-140 approval chances?",
+        answer: "No. USCIS applies identical legal standards with or without premium processing. It only accelerates the decision timeline. A weak petition gets denied faster, not approved.",
+      },
+      {
+        question: "What is the I-140 processing time for EB-2 NIW?",
+        answer: "EB-2 National Interest Waiver petitions take up to 20 months under standard processing at some service centers. Premium processing is available with a 45 business-day guarantee.",
+      },
+      {
+        question: "What comes before I-140?",
+        answer: "For EB-2 and EB-3 cases, PERM labor certification comes first — typically 18–30 months including prevailing wage determination, recruitment, and DOL analyst review. See our PERM processing time guide for current DOL timelines.",
+      },
+      {
+        question: "What happens after I-140 approval?",
+        answer: "I-140 approval locks in your priority date. You then wait for it to become current in the monthly Visa Bulletin, then file Form I-485 (if in the U.S.) or complete consular processing abroad. For India/China EB-2/EB-3, the Visa Bulletin wait — not I-140 processing — is the real bottleneck.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

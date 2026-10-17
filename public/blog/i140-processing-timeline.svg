@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3a5f"/>
+      <stop offset="1" stop-color="#0f2137"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="16"/>
+  <text x="60" y="70" fill="#ffffff" font-size="38" font-weight="800">I-140 Processing Time 2026</text>
+  <text x="60" y="105" fill="#93c5fd" font-size="20">Regular vs Premium Processing by EB Category — USCIS Data</text>
+  <rect x="60" y="125" width="120" height="4" fill="#f59e0b" rx="2"/>
+
+  <!-- Regular processing bars -->
+  <text x="60" y="175" fill="#e2e8f0" font-size="20" font-weight="700">Regular Processing (standard ranges)</text>
+
+  <text x="60" y="215" fill="#cbd5e1" font-size="17">EB-1A / EB-1B</text>
+  <rect x="260" y="200" width="450" height="24" fill="url(#bar1)" rx="12"/>
+  <text x="725" y="218" fill="#e2e8f0" font-size="16">4.5 – 22.5 mo</text>
+
+  <text x="60" y="255" fill="#cbd5e1" font-size="17">EB-1C</text>
+  <rect x="260" y="240" width="450" height="24" fill="url(#bar1)" rx="12"/>
+  <text x="725" y="258" fill="#e2e8f0" font-size="16">4.5 – 22.5 mo</text>
+
+  <text x="60" y="295" fill="#cbd5e1" font-size="17">EB-2 NIW</text>
+  <rect x="260" y="280" width="400" height="24" fill="url(#bar1)" rx="12"/>
+  <text x="675" y="298" fill="#e2e8f0" font-size="16">Up to 20 mo</text>
+
+  <text x="60" y="335" fill="#cbd5e1" font-size="17">EB-2 / EB-3</text>
+  <rect x="260" y="320" width="450" height="24" fill="url(#bar1)" rx="12"/>
+  <text x="725" y="338" fill="#e2e8f0" font-size="16">Up to 22.5 mo</text>
+
+  <!-- Median highlight -->
+  <rect x="60" y="370" width="1080" height="90" fill="#0c1a2e" rx="12" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="90" y="405" fill="#fbbf24" font-size="22" font-weight="800">FY 2026 national median: 3.7 months</text>
+  <text x="90" y="435" fill="#cbd5e1" font-size="17">Fastest regular I-140 processing since 2021 — down from 7.9 months in FY 2025</text>
+
+  <!-- Premium -->
+  <text x="60" y="505" fill="#e2e8f0" font-size="20" font-weight="700">Premium Processing ($2,965)</text>
+  <rect x="60" y="520" width="300" height="24" fill="url(#bar2)" rx="12"/>
+  <text x="375" y="538" fill="#e2e8f0" font-size="16">15 business days — most categories</text>
+  <rect x="60" y="556" width="300" height="24" fill="url(#bar2)" rx="12"/>
+  <text x="375" y="574" fill="#e2e8f0" font-size="16">45 business days — EB-1C &amp; EB-2 NIW</text>
+
+  <text x="60" y="610" fill="#64748b" font-size="14">Source: USCIS processing times &amp; quarterly petition data, FY2021–2026 · visatalentusa.com</text>
+</svg>
