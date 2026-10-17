@@ -185,8 +185,10 @@ export default function I140ProcessingTimeContent() {
 
       <h2>How to Check Your I-140 Status</h2>
       <ol className="list-decimal space-y-2 pl-6">
-        <li><strong>USCIS Case Status Online:</strong> Enter your receipt number (three letters + ten digits, e.g., LIN2490123456) at egov.uscis.gov.</li>
-        <li><strong>USCIS Processing Times tool:</strong> Select Form I-140, your category, and service center for the current estimated range.</li>
+        <li><strong>USCIS Case Status Online:</strong> Enter your receipt number (three letters + ten digits, e.g., LIN2490123456) at{" "}
+          <a href="https://egov.uscis.gov/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">egov.uscis.gov</a>.</li>
+        <li><strong>USCIS Processing Times tool:</strong> Select Form I-140, your category, and service center for the current estimated range at{" "}
+          <a href="https://egov.uscis.gov/processing-times/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">egov.uscis.gov/processing-times</a>.</li>
         <li><strong>Ask your attorney/employer:</strong> They receive all notices. Beneficiaries often cannot see the full picture alone.</li>
         <li><strong>e-Request / Service Request:</strong> If your case is outside normal processing times, file an online service request.</li>
       </ol>
@@ -217,10 +219,18 @@ export default function I140ProcessingTimeContent() {
         </p>
       </div>
 
+      <h2>Official Sources</h2>
+      <ul className="list-disc space-y-1 pl-6 text-sm">
+        <li><a href="https://egov.uscis.gov/processing-times/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">USCIS Processing Times</a> — official current estimates by form, category, and service center</li>
+        <li><a href="https://www.uscis.gov/i-140" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">USCIS Form I-140</a> — official form page, instructions, and filing guidance</li>
+        <li><a href="https://www.uscis.gov/i-907" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">USCIS Form I-907</a> — official premium processing request, fees, and eligible categories</li>
+        <li><a href="https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">USCIS Immigration Data &amp; Statistics</a> — quarterly petition data by form type</li>
+        <li><a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Visa Bulletin (Department of State)</a> — monthly priority-date movement</li>
+      </ul>
+
       <p className="text-xs text-slate-400 mt-8">
-        Sources: USCIS processing times data and quarterly I-140 petition data
-        (FY 2021–2026), USCIS Form I-907 premium processing guidance. Processing
-        times are medians and ranges — individual cases vary. This guide is for
+        Processing times are medians and ranges from USCIS-published data
+        (FY 2021–2026) — individual cases vary. This guide is for
         informational purposes only and does not constitute legal advice. Consult
         a licensed immigration attorney for your specific situation.
       </p>
