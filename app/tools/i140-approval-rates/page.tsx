@@ -3,7 +3,7 @@ import Link from "next/link";
 import I140ApprovalExplorer from "./I140ApprovalExplorer";
 
 export const metadata: Metadata = {
-  title: "I-140 Approval Rates 2026: Explorer by EB Category with Real USCIS Data | VisaTalentUSA",
+  title: "I-140 Approval Rates 2026 by EB Category",
   description:
     "Explore real I-140 approval rates by EB category from USCIS quarterly data. EB-1A: 32.2%, EB-2 NIW: 55.3%, EB-1C: 97.4%. Interactive charts, trends, and strategy guide.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/i140-approval-rates" },
   openGraph: {
-    title: "I-140 Approval Rate Explorer | VisaTalentUSA",
+    title: "I-140 Approval Rate Explorer",
     description:
       "Real USCIS data: I-140 approval rates by EB category. See which categories get approved and which get denied.",
     url: "https://visatalentusa.com/tools/i140-approval-rates",

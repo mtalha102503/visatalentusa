@@ -4,7 +4,7 @@ import { getTitles } from "@/lib/data";
 import WageLevelChecker from "./WageLevelChecker";
 
 export const metadata: Metadata = {
-  title: "H-1B Wage Level Checker — Find Your DOL Wage Level (I–IV)",
+  title: "H-1B Wage Level Checker",
   description:
     "Free H-1B wage level checker: enter your job title and salary to estimate your DOL wage level (I–IV) from 1.5M+ real LCA filing records. See what your level means for wage-weighted lottery odds.",
   keywords: [
@@ -79,7 +79,7 @@ export default async function WageLevelPage() {
     "@graph": [
       {
         "@type": "WebApplication",
-        name: "H-1B Wage Level Checker — Find Your DOL Wage Level (I–IV)",
+        name: "H-1B Wage Level Checker",
         description:
           "Free interactive tool: enter your job title and salary to estimate your H-1B wage level (I–IV) from 1.5M+ real DOL LCA filing records, with a visual gauge, what-if slider, and wage-weighted lottery implications.",
         url: "https://visatalentusa.com/tools/wage-level",

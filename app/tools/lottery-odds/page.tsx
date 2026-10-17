@@ -3,7 +3,7 @@ import Link from "next/link";
 import OddsCalculator from "./OddsCalculator";
 
 export const metadata: Metadata = {
-  title: "H-1B Lottery Odds Calculator 2028 — Estimate Your Selection Chances",
+  title: "H-1B Lottery Odds Calculator 2028",
   description:
     "Free H-1B lottery odds calculator: enter your salary to estimate your wage level and selection odds (15%–61%) under the wage-weighted system. Includes master's cap boost and negotiation tips.",
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/lottery-odds" },
   openGraph: {
-    title: "H-1B Lottery Odds Calculator 2028 | VisaTalentUSA",
+    title: "H-1B Lottery Odds Calculator 2028",
     description:
       "Enter your salary, get your estimated wage level and H-1B lottery odds. Free interactive tool with DHS projections.",
     url: "https://visatalentusa.com/tools/lottery-odds",
@@ -40,7 +40,7 @@ export default function LotteryOddsPage() {
     "@graph": [
       {
         "@type": "WebApplication",
-        name: "H-1B Lottery Odds Calculator 2028 — Estimate Your Selection Chances",
+        name: "H-1B Lottery Odds Calculator 2028",
         description:
           "Free interactive calculator: enter your salary to estimate your OEWS wage level and H-1B lottery selection odds under the wage-weighted selection system (DHS December 2025 final rule).",
         url: "https://visatalentusa.com/tools/lottery-odds",

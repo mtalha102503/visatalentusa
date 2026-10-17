@@ -3,7 +3,7 @@ import Link from "next/link";
 import LotteryResultsHub from "./LotteryResultsHub";
 
 export const metadata: Metadata = {
-  title: "H-1B Lottery Results 2026–2027: Tracker, Historical Data & Selection Rates | VisaTalentUSA",
+  title: "H-1B Lottery Results Tracker 2026-2027",
   description:
     "Track H-1B lottery results: FY2021–2026 historical data with real USCIS registration numbers and selection rates (24.8%–46.2%). FY2027 timeline, what to do if selected or not selected, and FAQs.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/lottery-results" },
   openGraph: {
-    title: "H-1B Lottery Results Tracker | VisaTalentUSA",
+    title: "H-1B Lottery Results Tracker",
     description:
       "Real USCIS data: H-1B lottery results FY2021–2026, selection rates, FY2027 timeline, and what to do next.",
     url: "https://visatalentusa.com/tools/lottery-results",

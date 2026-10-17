@@ -4,7 +4,7 @@ import H1BTransferTool from "./H1BTransferTool";
 
 export const metadata: Metadata = {
   title:
-    "H-1B Transfer Guide 2026 — Fees, Timeline & Eligibility Checker | VisaTalentUSA",
+    "H-1B Transfer Guide 2026: Fees & Timeline Checker",
   description:
     "Free H-1B transfer tool: calculate petition fees, estimate your transfer timeline, check eligibility, and track your document checklist. Everything about changing H-1B employers in one place.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/h1b-transfer" },
   openGraph: {
-    title: "H-1B Transfer Guide 2026 — Fees, Timeline & Eligibility | VisaTalentUSA",
+    title: "H-1B Transfer Guide 2026: Fees & Timeline",
     description:
       "Calculate H-1B transfer fees, estimate timelines, check eligibility, and track documents. Free interactive tool.",
     url: "https://visatalentusa.com/tools/h1b-transfer",

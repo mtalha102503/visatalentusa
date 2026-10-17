@@ -5,7 +5,7 @@ import CPTDecisionQuiz from "./CPTDecisionQuiz";
 import SchoolSafetyChecklist from "./SchoolSafetyChecklist";
 
 export const metadata: Metadata = {
-  title: "Day 1 CPT 2026: Complete Guide — Rules, OPT Calculator, Risks & SEVP Updates | VisaTalentUSA",
+  title: "Day 1 CPT 2026 Guide: Rules & OPT Calculator",
   description:
     "Day 1 CPT explained: what it is, who qualifies, OPT eligibility calculator (12-month rule), August 2026 SEVP crackdown, risks, and FAQs. Independent, data-driven guide for F-1 students.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/day-1-cpt" },
   openGraph: {
-    title: "Day 1 CPT 2026: Rules, OPT Calculator & Risks | VisaTalentUSA",
+    title: "Day 1 CPT 2026: Rules, OPT Calculator & Risks",
     description:
       "Independent Day 1 CPT guide: OPT eligibility calculator, SEVP August 2026 updates, risks, and FAQs.",
     url: "https://visatalentusa.com/tools/day-1-cpt",
