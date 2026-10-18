@@ -331,6 +331,87 @@ export default function PriorityDateTrackerPage() {
           </div>
         </div>
 
+        {/* Related resources — internal linking */}
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-900">
+            Keep exploring your green card journey
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Priority dates are one piece of the puzzle — these tools and guides
+            cover the rest.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <Link
+              href="/tools/i140-approval-rates"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                I-140 Approval Rate Explorer →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                Real USCIS approval rates by EB category — see your odds before
+                you file.
+              </p>
+            </Link>
+            <Link
+              href="/blog/i140-processing-time"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                I-140 Processing Time Guide →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                How long the I-140 step takes, plus premium processing options.
+              </p>
+            </Link>
+            <Link
+              href="/blog/perm-processing-time"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                PERM Processing Time Guide →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                PERM is usually step one — and it sets your priority date.
+              </p>
+            </Link>
+            <Link
+              href="/tools/h1b-transfer"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                H-1B Transfer Guide →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                Changing jobs while waiting? AC21 portability rules explained.
+              </p>
+            </Link>
+            <Link
+              href="/tools/sponsor-match"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                H-1B Sponsor Match Finder →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                Find employers with a real history of H-1B sponsorship.
+              </p>
+            </Link>
+            <Link
+              href="/tools/lottery-results"
+              className="rounded-xl border border-slate-200 p-4 transition hover:border-indigo-300 hover:shadow-sm"
+            >
+              <p className="font-bold text-indigo-700">
+                H-1B Lottery Results Tracker →
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                Selection rates and timelines — where the H-1B journey often
+                begins.
+              </p>
+            </Link>
+          </div>
+        </div>
+
         <p className="text-xs text-slate-500">
           Data: U.S. Department of State Visa Bulletins, April–October 2026.
           Wait estimates are rough projections based on recent cutoff movement

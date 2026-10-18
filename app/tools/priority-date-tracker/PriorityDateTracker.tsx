@@ -181,10 +181,29 @@ export default function PriorityDateTracker() {
                     day: "numeric",
                     year: "numeric",
                   })}
-                  ) is on or before it. A visa number is available for you —
-                  talk to your immigration attorney about filing I-485
-                  (adjustment of status) or consular processing now.
+                  ) is on or before it. A visa number is available for you.
                 </p>
+                <div className="mt-3 rounded-lg bg-white/70 p-3">
+                  <p className="text-sm font-bold text-slate-800">
+                    What to do now:
+                  </p>
+                  <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-slate-700">
+                    <li>
+                      Talk to your immigration attorney <strong>immediately</strong>{" "}
+                      about filing Form I-485 (adjustment of status) or starting
+                      consular processing — dates can retrogress without warning.
+                    </li>
+                    <li>
+                      Get your medical exam (Form I-693) and civil documents
+                      ready so nothing delays your filing.
+                    </li>
+                    <li>
+                      If you are on H-1B, you no longer need AC21 extensions tied
+                      to a pending green card — but keep valid status until the
+                      green card is approved.
+                    </li>
+                  </ul>
+                </div>
               </div>
             )}
             {result.status === "unavailable" && (
@@ -262,6 +281,29 @@ export default function PriorityDateTracker() {
                     far.
                   </p>
                 )}
+                <div className="mt-4 rounded-lg bg-white/70 p-3">
+                  <p className="text-sm font-bold text-slate-800">
+                    What you can do while waiting:
+                  </p>
+                  <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-slate-700">
+                    <li>
+                      <strong>Protect your status.</strong> Once your PERM or
+                      I-140 has been pending 365+ days, you can extend H-1B
+                      beyond the 6-year limit under AC21 — even with years of
+                      wait left.
+                    </li>
+                    <li>
+                      <strong>Prepare early.</strong> Gather birth/marriage
+                      certificates, police clearances, and medical exam paperwork
+                      now so you can file the moment your date turns current.
+                    </li>
+                    <li>
+                      <strong>Watch every bulletin.</strong> Cutoffs move
+                      monthly and can retrogress — check back here after each
+                      new Visa Bulletin (published mid-month).
+                    </li>
+                  </ul>
+                </div>
               </div>
             )}
           </div>
