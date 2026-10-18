@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   BULLETIN,
   CATEGORIES,
@@ -49,18 +49,21 @@ function Pill<T extends string>({
   );
 }
 
-function todayISO(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(
-    d.getDate()
-  ).padStart(2, "0")}`;
-}
-
 export default function PriorityDateTracker() {
   const [category, setCategory] = useState<Category>("EB-2");
   const [country, setCountry] = useState<Country>("India");
   const [pdInput, setPdInput] = useState("");
   const [checked, setChecked] = useState(false);
+  // Set after mount so prerender never reads the current time.
+  const [maxDate, setMaxDate] = useState("");
+  useEffect(() => {
+    const d = new Date();
+    setMaxDate(
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(
+        d.getDate()
+      ).padStart(2, "0")}`
+    );
+  }, []);
 
   const result = useMemo(() => {
     if (!checked || !pdInput) return null;
@@ -142,7 +145,7 @@ export default function PriorityDateTracker() {
             <input
               id="pd"
               type="date"
-              max={todayISO()}
+              max={maxDate || undefined}
               value={pdInput}
               onChange={(e) => { setPdInput(e.target.value); setChecked(false); }}
               className="w-full max-w-xs rounded-lg border border-slate-300 px-4 py-2.5 text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
