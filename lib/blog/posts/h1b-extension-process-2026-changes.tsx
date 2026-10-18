@@ -22,7 +22,7 @@ export default function H1BExtensionDeferenceContent() {
           <li><strong>What:</strong> DHS proposed rule removing 8 CFR 214.1(c)(5) — the deference provision for I-129 extensions</li>
           <li><strong>Docket:</strong> USCIS-2026-0529 — published in the Federal Register on October 14, 2026</li>
           <li><strong>Status:</strong> PROPOSAL ONLY — current deference policy remains in effect until a final rule</li>
-          <li><strong>Comment deadline:</strong> ~November 13, 2026 (~30-day window)</li>
+          <li><strong>Comment deadline:</strong> November 13, 2026 (30-day window, per the Federal Register docket)</li>
           <li><strong>DHS estimates:</strong> ~208,429 petitions/year benefited from deference; +6,044 RFEs/year projected; RFE cases average 76 days vs 12 days without</li>
           <li><strong>Separate final rule (effective now):</strong> automatic H-4 EAD renewals ended — 20,000–33,000 EADs could lapse in an 18-month window starting May 2027</li>
         </ul>
@@ -59,7 +59,7 @@ export default function H1BExtensionDeferenceContent() {
       <p>
         <strong>This is a proposal, not a final rule.</strong> The current
         deference policy remains fully in effect. DHS is required to accept
-        public comments for roughly 30 days (deadline around November 13, 2026),
+        public comments for 30 days (deadline November 13, 2026, per the Federal Register docket),
         review them, and then decide whether to issue a final rule — which could
         take months and could look different from the proposal. Do not change
         your extension strategy today based on a rule that does not yet exist.
@@ -285,7 +285,7 @@ export default function H1BExtensionDeferenceContent() {
       <ul>
         <li><strong>Audit your upcoming renewal pipeline:</strong> how many extensions in the next 12 months, and which roles are hardest to document?</li>
         <li><strong>Budget for higher legal costs</strong> — thicker filings mean more attorney hours per extension.</li>
-        <li><strong>Consider filing a comment</strong> on docket USCIS-2026-0529 before ~November 13, 2026 — especially if you can quantify business impact.</li>
+        <li><strong>Consider filing a comment</strong> on docket USCIS-2026-0529 before November 13, 2026 — especially if you can quantify business impact.</li>
         <li><strong>Brief hiring managers</strong> that start dates for extensions may slip if RFEs rise.</li>
       </ul>
       <h3>If you are an H-4 EAD holder (urgent — this one is final)</h3>
@@ -302,7 +302,7 @@ export default function H1BExtensionDeferenceContent() {
       </p>
       <ol>
         <li><strong>October 14, 2026 (today):</strong> proposed rule published in the Federal Register; comment period opens.</li>
-        <li><strong>~November 13, 2026:</strong> comment period closes. DHS must read and respond to substantive comments.</li>
+        <li><strong>November 13, 2026:</strong> comment period closes. DHS must read and respond to substantive comments.</li>
         <li><strong>Late 2026 – 2027:</strong> DHS drafts a final rule. This routinely takes many months; controversial rules can take over a year.</li>
         <li><strong>Final rule published:</strong> includes an effective date, usually 30–60 days after publication. Only then does deference actually end.</li>
         <li><strong>Possible litigation:</strong> major immigration rules are frequently challenged in federal court, which can delay or block implementation.</li>
@@ -342,7 +342,7 @@ export default function H1BExtensionDeferenceContent() {
 
       <h3>When is the comment deadline for the proposed rule?</h3>
       <p>
-        Approximately November 13, 2026 — about 30 days from the October 14
+        November 13, 2026 — 30 days from the October 14
         Federal Register publication (docket USCIS-2026-0529). Anyone can submit
         a comment, and DHS must consider substantive ones before finalizing.
       </p>

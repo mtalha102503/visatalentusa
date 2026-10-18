@@ -158,7 +158,7 @@ export const blogPosts: BlogPostMeta[] = [
       },
       {
         question: "When is the comment deadline for the proposed deference rule?",
-        answer: "Approximately November 13, 2026 — about 30 days from the October 14 Federal Register publication (docket USCIS-2026-0529).",
+        answer: "November 13, 2026 — 30 days from the October 14 Federal Register publication (docket USCIS-2026-0529).",
       },
       {
         question: "What happened to H-4 EAD automatic renewals?",
