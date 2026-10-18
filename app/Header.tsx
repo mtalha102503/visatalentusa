@@ -44,6 +44,11 @@ const tools = [
     label: "I-140 Approval Rate Explorer",
     desc: "Real USCIS approval rates by EB category with trends",
   },
+  {
+    href: "/tools/priority-date-tracker",
+    label: "Priority Date Tracker",
+    desc: "Is your EB-2 date current? Wait estimator & bulletin history",
+  },
 ];
 
 export default function Header() {
