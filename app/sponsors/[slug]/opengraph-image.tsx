@@ -1,23 +1,10 @@
 import { ImageResponse } from "next/og";
+import { getSponsor } from "@/lib/data";
 
+export const runtime = "nodejs";
 export const alt = "H-1B Visa Sponsorship Data";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-async function getSponsorData(slug: string) {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !key) return null;
-
-  // Find the employer by slug via the index
-  const res = await fetch(
-    `${url}/rest/v1/h1b_employers?slug=eq.${slug}&fiscal_year=eq.2026&select=display_name,total_cases,approval_rate,median_wage_annual`,
-    { headers: { apikey: key, Authorization: `Bearer ${key}` } }
-  );
-  if (!res.ok) return null;
-  const rows = await res.json();
-  return rows[0] ?? null;
-}
 
 export default async function Image({
   params,
@@ -25,15 +12,16 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const s = await getSponsorData(slug);
+  const s = await getSponsor(slug);
+  const y = s?.years?.["2026"];
 
   const name = s?.display_name ?? "H-1B Sponsor";
-  const filings = s?.total_cases?.toLocaleString() ?? "—";
+  const filings = y?.total_cases?.toLocaleString() ?? "—";
   const approval =
-    s?.approval_rate != null ? `${(s.approval_rate * 100).toFixed(1)}%` : "—";
+    y?.approval_rate != null ? `${(y.approval_rate * 100).toFixed(1)}%` : "—";
   const salary =
-    s?.median_wage_annual != null
-      ? `$${Math.round(s.median_wage_annual).toLocaleString()}`
+    y?.median_wage_annual != null
+      ? `$${Math.round(y.median_wage_annual).toLocaleString()}`
       : "—";
 
   return new ImageResponse(
