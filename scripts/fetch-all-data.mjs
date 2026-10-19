@@ -69,6 +69,11 @@ const index = fy2026.map((r) => ({
 }));
 fs.writeFileSync(path.join(OUT_DIR, "index.json"), JSON.stringify(index));
 console.log(`Wrote index.json (${index.length} entries)`);
+// Also copy to public/data for OG image routes (bundled at build time, no fs at request time)
+const PUBLIC_DATA_DIR = path.join(ROOT, "public", "data");
+fs.mkdirSync(PUBLIC_DATA_DIR, { recursive: true });
+fs.writeFileSync(path.join(PUBLIC_DATA_DIR, "index.json"), JSON.stringify(index));
+console.log(`Copied index.json to public/data/`);
 
 // Group by slug and write individual sponsor files
 const bySlug = {};
