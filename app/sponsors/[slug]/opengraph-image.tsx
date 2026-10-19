@@ -1,10 +1,17 @@
 import { ImageResponse } from "next/og";
-import { getSponsor } from "@/lib/data";
+import indexData from "@/public/data/index.json";
 
-export const runtime = "nodejs";
 export const alt = "H-1B Visa Sponsorship Data";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+interface IndexEntry {
+  slug: string;
+  name: string;
+  cases: number;
+  approval_rate: number | null;
+  median_wage: number | null;
+}
 
 export default async function Image({
   params,
@@ -12,16 +19,17 @@ export default async function Image({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const s = await getSponsor(slug);
-  const y = s?.years?.["2026"];
+  // index.json is bundled at build time — no fs, no network, works in edge runtime.
+  const entries = indexData as IndexEntry[];
+  const e = entries.find((x) => x.slug === slug);
 
-  const name = s?.display_name ?? "H-1B Sponsor";
-  const filings = y?.total_cases?.toLocaleString() ?? "—";
+  const name = e?.name ?? "H-1B Sponsor";
+  const filings = e?.cases?.toLocaleString() ?? "—";
   const approval =
-    y?.approval_rate != null ? `${(y.approval_rate * 100).toFixed(1)}%` : "—";
+    e?.approval_rate != null ? `${(e.approval_rate * 100).toFixed(1)}%` : "—";
   const salary =
-    y?.median_wage_annual != null
-      ? `$${Math.round(y.median_wage_annual).toLocaleString()}`
+    e?.median_wage != null
+      ? `$${Math.round(e.median_wage).toLocaleString()}`
       : "—";
 
   return new ImageResponse(
