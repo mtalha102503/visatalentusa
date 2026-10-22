@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The three kinds of USCIS deadlines under Policy Alert PA-2026-15: deadlines stated in days still roll to the next business day for paper filings, date-based eligibility cutoffs no longer roll, electronic filings are received at submission">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#dbg)" rx="16"/>
+
+  <text x="600" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#1e3a8a">USCIS Deadlines from Oct 23, 2026: What Rolls, What Doesn’t</text>
+  <text x="600" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Policy Alert PA-2026-15 — the “definition of day” now applies only to deadlines stated in days</text>
+
+  <!-- Card 1: stated in days -->
+  <g>
+    <rect x="40" y="140" width="340" height="400" rx="14" fill="#ffffff" stroke="#16a34a" stroke-width="3"/>
+    <text x="64" y="192" font-family="system-ui, sans-serif" font-size="21" font-weight="800" fill="#16a34a">1 · STATED IN DAYS</text>
+    <text x="64" y="232" font-family="system-ui, sans-serif" font-size="16" fill="#475569">RFE response windows</text>
+    <text x="64" y="258" font-family="system-ui, sans-serif" font-size="16" fill="#475569">NOID responses (max 30 days)</text>
+    <text x="64" y="284" font-family="system-ui, sans-serif" font-size="16" fill="#475569">I-290B appeals — 30 or 33 days</text>
+    <line x1="64" y1="312" x2="356" y2="312" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="64" y="366" font-family="system-ui, sans-serif" font-size="30" font-weight="800" fill="#16a34a">✓ ROLLS</text>
+    <text x="64" y="402" font-family="system-ui, sans-serif" font-size="16" fill="#334155">If the last day is a weekend or</text>
+    <text x="64" y="428" font-family="system-ui, sans-serif" font-size="16" fill="#334155">federal holiday, a paper filing</text>
+    <text x="64" y="454" font-family="system-ui, sans-serif" font-size="16" fill="#334155">received by the end of the next</text>
+    <text x="64" y="480" font-family="system-ui, sans-serif" font-size="16" fill="#334155">business day is timely.</text>
+    <rect x="64" y="496" width="118" height="28" rx="14" fill="#f0fdf4"/>
+    <text x="123" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#16a34a">UNCHANGED</text>
+  </g>
+
+  <!-- Card 2: tied to a date -->
+  <g>
+    <rect x="430" y="140" width="340" height="400" rx="14" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+    <text x="454" y="192" font-family="system-ui, sans-serif" font-size="21" font-weight="800" fill="#dc2626">2 · TIED TO A DATE</text>
+    <text x="454" y="232" font-family="system-ui, sans-serif" font-size="16" fill="#475569">H-1B extension before I-94 expiry</text>
+    <text x="454" y="258" font-family="system-ui, sans-serif" font-size="16" fill="#475569">Filing before a 21st birthday</text>
+    <text x="454" y="284" font-family="system-ui, sans-serif" font-size="16" fill="#475569">(SIJ and age-based cutoffs)</text>
+    <line x1="454" y1="312" x2="746" y2="312" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="454" y="366" font-family="system-ui, sans-serif" font-size="30" font-weight="800" fill="#dc2626">✕ NO CUSHION</text>
+    <text x="454" y="402" font-family="system-ui, sans-serif" font-size="16" fill="#334155">The date does not move. USCIS</text>
+    <text x="454" y="428" font-family="system-ui, sans-serif" font-size="16" fill="#334155">must receive the filing by the</text>
+    <text x="454" y="454" font-family="system-ui, sans-serif" font-size="16" fill="#334155">last business day BEFORE it.</text>
+    <rect x="454" y="496" width="196" height="28" rx="14" fill="#fef2f2"/>
+    <text x="552" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#dc2626">CHANGED — OCT 23, 2026</text>
+  </g>
+
+  <!-- Card 3: electronic filing -->
+  <g>
+    <rect x="820" y="140" width="340" height="400" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+    <text x="844" y="192" font-family="system-ui, sans-serif" font-size="21" font-weight="800" fill="#2563eb">3 · ELECTRONIC FILING</text>
+    <text x="844" y="232" font-family="system-ui, sans-serif" font-size="16" fill="#475569">Forms filed in a USCIS</text>
+    <text x="844" y="258" font-family="system-ui, sans-serif" font-size="16" fill="#475569">online account — received</text>
+    <text x="844" y="284" font-family="system-ui, sans-serif" font-size="16" fill="#475569">the moment you submit</text>
+    <line x1="844" y1="312" x2="1136" y2="312" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="844" y="366" font-family="system-ui, sans-serif" font-size="30" font-weight="800" fill="#2563eb">NO EXTENSION</text>
+    <text x="844" y="402" font-family="system-ui, sans-serif" font-size="16" fill="#334155">Weekend or holiday makes no</text>
+    <text x="844" y="428" font-family="system-ui, sans-serif" font-size="16" fill="#334155">difference. The submission</text>
+    <text x="844" y="454" font-family="system-ui, sans-serif" font-size="16" fill="#334155">timestamp is the filing date.</text>
+    <rect x="844" y="496" width="118" height="28" rx="14" fill="#eff6ff"/>
+    <text x="903" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2563eb">UNCHANGED</text>
+  </g>
+
+  <text x="600" y="592" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#64748b">Source: USCIS Policy Alert PA-2026-15 (effective October 23, 2026) · visatalentusa.com</text>
+</svg>

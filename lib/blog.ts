@@ -258,6 +258,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "uscis-filing-deadline-rule-2026",
+    title: "USCIS Filing Deadline Rule Changes Oct 23, 2026",
+    excerpt:
+      "USCIS Policy Alert PA-2026-15 takes effect October 23, 2026: the weekend next-business-day cushion survives for day-counted paper deadlines (RFE/NOID responses, I-290B appeals) but ends for date-based cutoffs — H-1B extensions due by an I-94 expiry and filings due before a 21st birthday. Full guide with worked examples.",
+    datePublished: "2026-10-22T00:00:00+00:00",
+    dateModified: "2026-10-22T00:00:00+00:00",
+    readingMinutes: 13,
+    tags: ["Policy News", "USCIS", "Guides"],
+    faqs: [
+      {
+        question: "What is USCIS Policy Alert PA-2026-15?",
+        answer: "PA-2026-15, issued September 23, 2026, updates the USCIS Policy Manual (Volume 1, Part B, Chapter 6, Section E) to clarify how the regulatory definition of 'day' in 8 CFR 1.2 applies to filing deadlines. It takes effect October 23, 2026, for paper filings USCIS receives on or after that date.",
+      },
+      {
+        question: "What actually changed on October 23, 2026?",
+        answer: "The next-business-day extension no longer applies to deadlines tied to a substantive eligibility date — such as filing before a 21st birthday or filing an H-1B extension of stay before an I-94 expiry date. It still applies to deadlines stated in days (RFE/NOID responses, I-290B appeal and motion periods) for paper filings.",
+      },
+      {
+        question: "My H-1B I-94 expires on a Saturday. When must my extension be filed?",
+        answer: "USCIS must receive the extension before your current stay expires — for a paper filing, in practice by Friday, the last business day before the Saturday expiry. A package received on Monday is late under PA-2026-15, and USCIS generally will not approve an extension of stay filed after the prior status expired, apart from a narrow extraordinary-circumstances exception.",
+      },
+      {
+        question: "Do RFE and NOID deadlines still extend past weekends?",
+        answer: "Yes — for paper responses. If the last day of the response period stated in your notice falls on a Saturday, Sunday, or federal holiday, a paper response received by the end of the next business day is timely. NOID responses are capped at a maximum of 30 days by regulation, and the exact period printed in your notice always controls.",
+      },
+      {
+        question: "Does the rule apply to online filings?",
+        answer: "No. USCIS treats an electronic filing as received at the moment it is submitted, so online filings never receive a weekend or holiday extension — under the old guidance or the new one.",
+      },
+      {
+        question: "Does PA-2026-15 apply to filings USCIS received before October 23, 2026?",
+        answer: "No. It applies to paper filings received on or after October 23, 2026. Filings received earlier are governed by the prior 2023 guidance, which did extend the weekend rule to birthday- and period-based deadlines.",
+      },
+      {
+        question: "What if a filing is due before my child turns 21 and the birthday is on a weekend?",
+        answer: "The filing must be received before the birthday — by the preceding business day at the latest. Eligibility cutoffs do not move for weekends or holidays under the new guidance. This is the reverse of the 2023–2026 rule, so double-check any older advice you received.",
+      },
+      {
+        question: "Is PA-2026-15 a new law or regulation?",
+        answer: "No. It is agency guidance interpreting the existing regulation at 8 CFR 1.2. It reverses USCIS's March 2023 guidance and returns to the pre-2023 reading of the definition of 'day,' citing the Supreme Court's 2025 decision in Monsalvo Velasquez v. Bondi.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
