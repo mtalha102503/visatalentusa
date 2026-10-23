@@ -32,6 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const p of blogPosts) {
     add(cleanUrl(`/blog/${p.slug}`), new Date(p.dateModified), "monthly", 0.8);
   }
+  add(cleanUrl("/author/muhammad-talha"), now, "monthly", 0.5);
   add(cleanUrl("/sponsors"), now, "weekly", 0.9);
   add(cleanUrl("/tools/lottery-odds"), now, "monthly", 0.8);
   add(cleanUrl("/tools/sponsor-match"), now, "weekly", 0.85);

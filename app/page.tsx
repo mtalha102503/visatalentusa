@@ -27,6 +27,16 @@ export default async function Home() {
         url: "https://visatalentusa.com/",
         description:
           "The H-1B sponsor intelligence database: which U.S. companies sponsor work visas, what they pay, and how the lottery treats their filings.",
+        logo: "https://visatalentusa.com/opengraph-image",
+        founder: {
+          "@type": "Person",
+          name: "Muhammad Talha",
+          url: "https://visatalentusa.com/author/muhammad-talha",
+        },
+        sameAs: [
+          "https://www.instagram.com/visatalentusa/",
+          "https://www.threads.net/@visatalentusa",
+        ],
       },
     ],
   };

@@ -311,3 +311,29 @@ export function getBlogPost(slug: string): BlogPostMeta | undefined {
 export function getAllBlogSlugs(): string[] {
   return blogPosts.map((p) => p.slug);
 }
+
+export interface AuthorInfo {
+  name: string;
+  slug: string;
+  role: string;
+  image: string;
+  path: string;
+  bioShort: string;
+  bioLong: string[];
+  sameAs: string[];
+}
+
+export const AUTHOR: AuthorInfo = {
+  name: "Muhammad Talha",
+  slug: "muhammad-talha",
+  role: "Founder, HireSkys",
+  image: "/author/muhammad-talha.jpg",
+  path: "/author/muhammad-talha",
+  bioShort:
+    "Founder of HireSkys. Muhammad Talha built VisaTalentUSA on official U.S. Department of Labor H-1B disclosure data — so international professionals can find real visa sponsors, real salaries, and honest lottery odds instead of rumors.",
+  bioLong: [
+    "Muhammad Talha is the founder of HireSkys, the remote-jobs platform behind VisaTalentUSA. He built VisaTalentUSA to turn the U.S. Department of Labor's public H-1B disclosure files — millions of Labor Condition Application records — into a searchable database anyone can use.",
+    "His work focuses on the data behind U.S. work visas: which employers actually sponsor H-1B workers, what they pay, how wage levels affect the lottery, and how policy changes — the wage-weighted selection rule, the $100,000 fee — show up in real filing behavior. Every guide on this site is written from that filing data and checked against official USCIS and Department of Labor sources.",
+  ],
+  sameAs: ["https://www.hireskys.com"],
+};

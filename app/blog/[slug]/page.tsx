@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { getBlogPost, getAllBlogSlugs, blogPosts } from "@/lib/blog";
+import { getBlogPost, getAllBlogSlugs, blogPosts, AUTHOR } from "@/lib/blog";
 
 const BASE = "https://visatalentusa.com";
 
@@ -60,15 +60,21 @@ export default async function BlogPostPage({
         datePublished: post.datePublished,
         dateModified: post.dateModified,
         author: {
-          "@type": "Organization",
-          name: "VisaTalentUSA",
-          url: `${BASE}/`,
+          "@type": "Person",
+          name: AUTHOR.name,
+          url: `${BASE}${AUTHOR.path}`,
+          image: `${BASE}${AUTHOR.image}`,
         },
         publisher: {
           "@type": "Organization",
           name: "VisaTalentUSA",
           url: `${BASE}/`,
+          logo: {
+            "@type": "ImageObject",
+            url: `${BASE}/opengraph-image`,
+          },
         },
+        image: `${BASE}/blog/${post.slug}/opengraph-image`,
         mainEntityOfPage: url,
       },
       {
@@ -149,7 +155,22 @@ export default async function BlogPostPage({
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
           {post.title}
         </h1>
-        <div className="mt-4 flex items-center gap-4 text-sm text-slate-500">
+        <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-slate-500">
+          <Link
+            href={AUTHOR.path}
+            className="flex items-center gap-2 font-medium text-slate-700 hover:text-blue-700"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={AUTHOR.image}
+              alt={AUTHOR.name}
+              width={28}
+              height={28}
+              className="h-7 w-7 rounded-full object-cover"
+            />
+            By {AUTHOR.name}
+          </Link>
+          <span>·</span>
           <span>
             Published{" "}
             {new Date(post.datePublished).toLocaleDateString("en-US", {
@@ -172,6 +193,39 @@ export default async function BlogPostPage({
       <article className="prose-h2 mt-8 space-y-5 text-slate-700 [&_h2]:pt-6 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-slate-900 [&_h3]:pt-4 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-slate-900 [&_p.lead]:text-lg [&_p.lead]:text-slate-600 [&_table]:w-full [&_table]:border-collapse [&_table]:text-sm [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_td]:border [&_td]:border-slate-200 [&_td]:px-3 [&_td]:py-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1">
         <Content />
       </article>
+
+      {/* Author box */}
+      <section className="mt-10 flex gap-4 rounded-xl border border-slate-200 bg-slate-50 p-5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={AUTHOR.image}
+          alt={AUTHOR.name}
+          width={64}
+          height={64}
+          className="h-16 w-16 shrink-0 rounded-full object-cover"
+        />
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+            Written by
+          </p>
+          <Link
+            href={AUTHOR.path}
+            className="mt-0.5 block font-bold text-slate-900 hover:text-blue-700"
+          >
+            {AUTHOR.name}
+          </Link>
+          <p className="text-sm font-medium text-blue-700">{AUTHOR.role}</p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
+            {AUTHOR.bioShort}
+          </p>
+          <Link
+            href={AUTHOR.path}
+            className="mt-2 inline-block text-sm font-semibold text-blue-700 hover:underline"
+          >
+            More from {AUTHOR.name} →
+          </Link>
+        </div>
+      </section>
 
       {/* Google Preferred Sources button */}
       <div className="mt-10 rounded-lg border border-slate-200 bg-blue-50/50 p-5 text-center">
