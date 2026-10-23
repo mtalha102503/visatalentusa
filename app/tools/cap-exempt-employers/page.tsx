@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://visatalentusa.com/tools/cap-exempt-employers",
   },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Cap-Exempt Employers List & Finder",
     description:
       "Universities, hospitals and research nonprofits that skip the H-1B lottery — searchable by job title, with real salaries from official DOL records. Free.",

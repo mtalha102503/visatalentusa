@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/lottery-results" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Lottery Results Tracker",
     description:
       "Real USCIS data: H-1B lottery results FY2021–2026, selection rates, FY2027 timeline, and what to do next.",

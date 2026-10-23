@@ -29,6 +29,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: url },
     openGraph: {
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
       title,
       description,
       url,

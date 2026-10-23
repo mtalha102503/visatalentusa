@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/lottery-odds" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Lottery Odds Calculator 2028",
     description:
       "Enter your salary, get your estimated wage level and H-1B lottery odds. Free interactive tool with DHS projections.",

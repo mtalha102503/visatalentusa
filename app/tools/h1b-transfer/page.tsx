@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/h1b-transfer" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Transfer Guide 2026: Fees & Timeline",
     description:
       "Calculate H-1B transfer fees, estimate timelines, check eligibility, and track documents. Free interactive tool.",

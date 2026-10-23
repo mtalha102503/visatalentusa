@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/sponsor-match/titles" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "Browse All H-1B Job Titles A-Z | VisaTalentUSA",
     description:
       "The complete A-Z directory of 500 H-1B job titles with real filing counts, median salaries, and sponsor data from official DOL records.",
@@ -39,6 +40,10 @@ function letterOf(title: string): string {
 }
 
 export default async function TitlesHubPage() {
+  // NOTE 2026-10-13: this comment forces a fresh prerender of the hub page.
+  // The 2026-10-13 14:19 UTC build reused a stale prerender (only 457 of 500
+  // titles listed, 12 letter groups missing) even though titles.json has all
+  // 500 — touching this file busts the Next.js build cache for this route.
   const titles = await getTitles();
   const sorted = [...titles].sort((a, b) => b.total_cases - a.total_cases);
 

@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/wage-level" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Wage Level Checker | VisaTalentUSA",
     description:
       "Estimate your H-1B wage level (I–IV) from real DOL filing data. See lottery implications, what-if salary scenarios, and official vs estimated levels.",

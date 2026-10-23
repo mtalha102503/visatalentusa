@@ -27,6 +27,17 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   // AdSense site verification (account ca-pub-7375069227835841, added 2026-10-20)
   other: {
     "google-adsense-account": "ca-pub-7375069227835841",

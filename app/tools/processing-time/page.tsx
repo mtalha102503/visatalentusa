@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/processing-time" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Processing Time Tracker 2026",
     description:
       "Check current H-1B processing times by USCIS service center. Compare regular vs premium processing with interactive timelines.",

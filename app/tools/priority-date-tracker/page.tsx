@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/priority-date-tracker" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "EB-2 Priority Date Tracker 2026",
     description:
       "Is your priority date current? Check against real Visa Bulletin data, see cutoff history, and estimate your green card wait.",

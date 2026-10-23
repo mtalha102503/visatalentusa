@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/day-1-cpt" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "Day 1 CPT 2026: Rules, OPT Calculator & Risks",
     description:
       "Independent Day 1 CPT guide: OPT eligibility calculator, SEVP August 2026 updates, risks, and FAQs.",

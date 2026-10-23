@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/sponsor-match" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Sponsor Match Finder",
     description:
       "Enter your job title — instantly see the top H-1B sponsoring companies, real salaries, and certification rates. Free tool built on 1.5M+ DOL records.",

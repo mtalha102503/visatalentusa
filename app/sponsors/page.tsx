@@ -18,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     alternates: { canonical: "https://visatalentusa.com/sponsors" },
     openGraph: {
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
       title: `List of Top ${count} H-1B Sponsoring Companies (2026) | VisaTalentUSA`,
       description: `The ranked list of ${count} top H-1B sponsoring companies. Search, sort by certification rate or salary — real DOL data.`,
       url: "https://visatalentusa.com/sponsors",

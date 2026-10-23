@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "In-depth guides on the H-1B lottery, salaries, sponsorship, and visa strategy — backed by real U.S. Department of Labor filing data.",
   alternates: { canonical: "https://visatalentusa.com/blog" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "H-1B Visa Guides & Analysis | VisaTalentUSA",
     description:
       "In-depth guides on the H-1B lottery, salaries, sponsorship, and visa strategy — backed by real filing data.",

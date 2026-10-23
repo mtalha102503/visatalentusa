@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://visatalentusa.com/tools/i140-approval-rates" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
     title: "I-140 Approval Rate Explorer",
     description:
       "Real USCIS data: I-140 approval rates by EB category. See which categories get approved and which get denied.",
