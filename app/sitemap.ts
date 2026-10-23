@@ -43,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add(cleanUrl("/tools/day-1-cpt"), now, "weekly", 0.85);
   add(cleanUrl("/tools/i140-approval-rates"), now, "weekly", 0.85);
   add(cleanUrl("/tools/priority-date-tracker"), now, "weekly", 0.85);
+  add(cleanUrl("/tools/cap-exempt-employers"), now, "weekly", 0.85);
   const titles = await getTitles();
   for (const t of titles) {
     if (!t.slug || typeof t.slug !== "string") continue;

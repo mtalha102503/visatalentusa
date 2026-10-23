@@ -93,6 +93,28 @@ export async function getTitles(): Promise<TitleEntry[]> {
   }
 }
 
+export interface CapExemptEmployer {
+  slug: string;
+  name: string;
+  total_cases: number;
+  certified_cases: number;
+  cert_rate: number | null;
+  median_wage: number | null;
+  avg_wage: number | null;
+  latest_year: number;
+  years_active: number[];
+  top_titles: TitleStat[];
+  top_states: StateStat[];
+}
+
+export async function getCapExemptEmployers(): Promise<CapExemptEmployer[]> {
+  try {
+    return readJson<CapExemptEmployer[]>("cap-exempt.json");
+  } catch {
+    return [];
+  }
+}
+
 // Formatting helpers live in the client-safe "./format" module.
 // Re-exported here so existing "@/lib/data" imports keep working.
 export { formatNum, formatUSD, formatPct } from "./format";

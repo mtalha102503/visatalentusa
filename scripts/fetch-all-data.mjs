@@ -136,6 +136,64 @@ const stats = {
 fs.writeFileSync(path.join(OUT_DIR, "stats.json"), JSON.stringify(stats));
 console.log("Wrote stats.json");
 
+// Write cap-exempt employers slice (FY2024–FY2026 aggregated) for the
+// Cap-Exempt Employers Finder tool. An employer qualifies if ANY of its
+// FY2024–26 rows is flagged is_cap_exempt_candidate.
+const capGroups = {};
+for (const r of rows) {
+  if (!r.is_cap_exempt_candidate) continue;
+  if (!capGroups[r.slug]) capGroups[r.slug] = [];
+  capGroups[r.slug].push(r);
+}
+const capExempt = Object.values(capGroups)
+  .map((slugRows) => {
+    const byYearDesc = [...slugRows].sort((a, b) => b.fiscal_year - a.fiscal_year);
+    const latest = byYearDesc[0];
+    const totalCases = slugRows.reduce((a, r) => a + (r.total_cases || 0), 0);
+    const certifiedCases = slugRows.reduce((a, r) => a + (r.certified_cases || 0), 0);
+    const titleMap = {};
+    for (const r of slugRows) {
+      for (const t of parseJson(r.top_titles, [])) {
+        const cur =
+          titleMap[t.title] ??
+          (titleMap[t.title] = { title: t.title, cases: 0, avg_wage: null, _yr: 0 });
+        cur.cases += t.cases || 0;
+        if (t.avg_wage != null && r.fiscal_year >= cur._yr) {
+          cur.avg_wage = t.avg_wage;
+          cur._yr = r.fiscal_year;
+        }
+      }
+    }
+    const stateMap = {};
+    for (const r of slugRows) {
+      for (const s of parseJson(r.top_states, [])) {
+        stateMap[s.state] = (stateMap[s.state] || 0) + (s.cases || 0);
+      }
+    }
+    return {
+      slug: latest.slug,
+      name: latest.display_name,
+      total_cases: totalCases,
+      certified_cases: certifiedCases,
+      cert_rate: totalCases > 0 ? certifiedCases / totalCases : null,
+      median_wage: latest.median_wage_annual ?? null,
+      avg_wage: latest.avg_wage_annual ?? null,
+      latest_year: latest.fiscal_year,
+      years_active: [...new Set(slugRows.map((r) => r.fiscal_year))].sort((a, b) => a - b),
+      top_titles: Object.values(titleMap)
+        .map(({ title, cases, avg_wage }) => ({ title, cases, avg_wage }))
+        .sort((a, b) => b.cases - a.cases)
+        .slice(0, 8),
+      top_states: Object.entries(stateMap)
+        .map(([state, cases]) => ({ state, cases }))
+        .sort((a, b) => b.cases - a.cases)
+        .slice(0, 6),
+    };
+  })
+  .sort((a, b) => b.total_cases - a.total_cases);
+fs.writeFileSync(path.join(OUT_DIR, "cap-exempt.json"), JSON.stringify(capExempt));
+console.log(`Wrote cap-exempt.json (${capExempt.length} employers)`);
+
 // Fetch title data (top 500 by FY2026 cases for sponsor-match tool)
 console.log("Fetching title data...");
 let titleRows = [];
