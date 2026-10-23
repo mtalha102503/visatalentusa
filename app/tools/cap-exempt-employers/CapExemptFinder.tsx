@@ -42,7 +42,13 @@ export default function CapExemptFinder({
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     const list = employers.filter((e) => {
-      if (q && !e.name.toLowerCase().includes(q)) return false;
+      if (q) {
+        const nameHit = e.name.toLowerCase().includes(q);
+        const titleHit = e.top_titles.some((t) =>
+          t.title.toLowerCase().includes(q)
+        );
+        if (!nameHit && !titleHit) return false;
+      }
       if (title && !e.top_titles.some((t) => t.title === title)) return false;
       if (state && !e.top_states.some((s) => s.state === state)) return false;
       return true;
@@ -83,7 +89,7 @@ export default function CapExemptFinder({
         htmlFor="cap-exempt-search"
         className="text-sm font-semibold text-slate-700"
       >
-        Search cap-exempt employers
+        Search by employer name or job title
       </label>
       <input
         id="cap-exempt-search"
@@ -93,7 +99,7 @@ export default function CapExemptFinder({
           setQuery(e.target.value);
           setShown(PAGE);
         }}
-        placeholder="e.g. Stanford, Mayo Clinic, University of Michigan…"
+        placeholder="e.g. Stanford, Software Engineer, Registered Nurse…"
         autoComplete="off"
         className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
       />
