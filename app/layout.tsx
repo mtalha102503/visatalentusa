@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // AdSense site verification (account ca-pub-7375069227835841, added 2026-10-20)
+  other: {
+    "google-adsense-account": "ca-pub-7375069227835841",
+  },
 };
 
 function Footer() {
@@ -189,6 +193,11 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "yw61le22k3");
           `}
         </Script>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7375069227835841"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <RouteProgress />
         <Header />
         <main className="flex-1">{children}</main>
