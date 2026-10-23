@@ -327,7 +327,7 @@ export const AUTHOR: AuthorInfo = {
   name: "Muhammad Talha",
   slug: "muhammad-talha",
   role: "Founder, HireSkys",
-  image: "/author/muhammad-talha.jpg",
+  image: "/muhammad-talha.jpg",
   path: "/author/muhammad-talha",
   bioShort:
     "Founder of HireSkys. Muhammad Talha built VisaTalentUSA on official U.S. Department of Labor H-1B disclosure data — so international professionals can find real visa sponsors, real salaries, and honest lottery odds instead of rumors.",

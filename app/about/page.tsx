@@ -47,7 +47,7 @@ export default function AboutPage() {
         <div className="flex gap-4 rounded-xl border border-slate-200 bg-slate-50 p-5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/author/muhammad-talha.jpg"
+            src="/muhammad-talha.jpg"
             alt="Muhammad Talha"
             width={72}
             height={72}
