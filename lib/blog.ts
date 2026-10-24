@@ -302,6 +302,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "november-2026-visa-bulletin",
+    title: "November 2026 Visa Bulletin: India EB-2 Stuck at 2013, Rest of World Reaches 2025",
+    excerpt:
+      "November 2026 Visa Bulletin explained step by step: India EB-2 frozen at November 1, 2013 for a second month while the rest of the world advanced to April 1, 2025; India EB-3 moved to January 22, 2014; USCIS will use the Dates for Filing chart; plus the premium processing rule now under White House review.",
+    datePublished: "2026-10-24T00:00:00+00:00",
+    dateModified: "2026-10-24T00:00:00+00:00",
+    readingMinutes: 12,
+    tags: ["Visa Bulletin", "Green Card", "EB-2", "Priority Dates"],
+    faqs: [
+      {
+        question: "What is India EB-2's final action date in the November 2026 Visa Bulletin?",
+        answer: "November 1, 2013 — unchanged from October 2026, the second straight month with no movement. Only EB-2 India applicants with a priority date earlier than November 1, 2013 can have their green card approved.",
+      },
+      {
+        question: "When will the EB-2 India date move forward?",
+        answer: "No official source publishes a schedule. The date moves only as old cases clear the queue within India's 7% per-country cap. Watch the December 2026 bulletin (expected mid-November) for the next data point — any site claiming a specific future date is guessing.",
+      },
+      {
+        question: "What is the difference between Final Action Dates and Dates for Filing?",
+        answer: "Final Action Dates control when a green card can actually be approved and a visa number assigned. Dates for Filing control when you may submit your I-485 adjustment-of-status application early — but only in months when USCIS says that chart may be used. In November 2026, USCIS directed employment-based applicants to use the Dates for Filing chart.",
+      },
+      {
+        question: "Which chart do I use to file my I-485 in November 2026?",
+        answer: "The Dates for Filing chart. For example, an EB-2 India applicant with a priority date before January 15, 2015 can file their I-485 in November — even though approval still requires the Final Action Date (November 1, 2013) to pass their priority date.",
+      },
+      {
+        question: "My EB-2 India priority date is December 2014. What can I do in November 2026?",
+        answer: "You can file your I-485, because December 2014 is earlier than the Dates for Filing cutoff of January 15, 2015. Filing can unlock an Employment Authorization Document (EAD) and advance parole while you wait. Your green card cannot be approved until the Final Action Date passes December 2014.",
+      },
+      {
+        question: "Does the Visa Bulletin affect the H-1B lottery?",
+        answer: "No. The Visa Bulletin governs immigrant visas (green cards). The H-1B lottery is a separate USCIS process for temporary work status. The bulletin matters once you are in the green card queue, not for lottery selection.",
+      },
+      {
+        question: "Will the premium processing rule change deadlines now?",
+        answer: "No. The proposed rule 'Amending the Premium Processing Timeframe' (RIN 1615-AD25) is only under OIRA review since October 13, 2026. Its text is not public and its direction is unknown. Current 15/30/45-business-day clocks stand until a final rule takes effect, which is months away at the earliest.",
+      },
+      {
+        question: "When will the December 2026 Visa Bulletin come out?",
+        answer: "Visa Bulletins are typically released in the second week of the month for the following month, so expect the December 2026 bulletin in mid-November 2026. We will update this guide and the Priority Date Tracker when it lands.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

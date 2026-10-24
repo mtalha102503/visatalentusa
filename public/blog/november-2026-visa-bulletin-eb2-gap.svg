@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="EB-2 Final Action Dates in the November 2026 Visa Bulletin: India November 1 2013, China October 1 2021, rest of the world April 1 2025">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="70" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#071228">EB-2 Final Action Dates — November 2026</text>
+  <text x="60" y="112" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#475569">How far behind the bulletin month each cutoff sits</text>
+
+  <!-- India -->
+  <text x="60" y="185" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#071228">India</text>
+  <text x="60" y="215" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#475569">November 1, 2013 — no change, 2nd month</text>
+  <rect x="60" y="230" width="880" height="46" rx="8" fill="#b91c1c"/>
+  <text x="960" y="262" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#b91c1c">~13 years</text>
+
+  <!-- China -->
+  <text x="60" y="330" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#071228">China (mainland-born)</text>
+  <text x="60" y="360" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#475569">October 1, 2021 — no change</text>
+  <rect x="60" y="375" width="335" height="46" rx="8" fill="#f59e0b"/>
+  <text x="415" y="407" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#92400e">~5 years</text>
+
+  <!-- Rest of world -->
+  <text x="60" y="475" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#071228">Rest of the world</text>
+  <text x="60" y="505" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#475569">April 1, 2025 — advanced 3 months</text>
+  <rect x="60" y="520" width="105" height="46" rx="8" fill="#2f6df6"/>
+  <text x="185" y="552" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#1d4ed8">~1.5 years</text>
+
+  <text x="60" y="610" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#64748b">Source: U.S. Department of State, Visa Bulletin for November 2026. Bar lengths are proportional to the gap in years.</text>
+</svg>

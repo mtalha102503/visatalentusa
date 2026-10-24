@@ -1,13 +1,12 @@
 // Real U.S. Department of State Visa Bulletin data, copied exactly as published
-// on travel.state.gov. Last updated: October 2026 bulletin (Number 19, Volume XI).
-// The November 2026 bulletin was not yet published as of 2026-10-18 ("Coming Soon").
+// on travel.state.gov. Last updated: November 2026 bulletin (Number 20, Volume XI).
 // Format: dd-mmm-yy. "C" = Current, "U" = Unavailable.
 // DO NOT edit these values by hand — update only from a newly published bulletin.
 
 export const BULLETIN = {
-  month: "October 2026",
-  number: "Number 19, Volume XI",
-  url: "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2027/visa-bulletin-for-october-2026.html",
+  month: "November 2026",
+  number: "Number 20, Volume XI",
+  url: "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2027/visa-bulletin-for-november-2026.html",
   archiveUrl: "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
 };
 
@@ -25,18 +24,18 @@ export const COUNTRY_LABELS: Record<Country, string> = {
   Philippines: "Philippines",
 };
 
-// Final Action Dates — October 2026 bulletin, employment-based
+// Final Action Dates — November 2026 bulletin, employment-based
 export const FINAL_ACTION: Record<Category, Record<Country, string>> = {
-  "EB-1": { ROW: "C", China: "01JUL23", India: "01FEB23", Mexico: "C", Philippines: "C" },
-  "EB-2": { ROW: "01JAN25", China: "01OCT21", India: "01NOV13", Mexico: "01JAN25", Philippines: "01JAN25" },
-  "EB-3": { ROW: "15MAY24", China: "08JAN22", India: "01JAN14", Mexico: "15MAY24", Philippines: "15AUG23" },
+  "EB-1": { ROW: "C", China: "01AUG23", India: "01FEB23", Mexico: "C", Philippines: "C" },
+  "EB-2": { ROW: "01APR25", China: "01OCT21", India: "01NOV13", Mexico: "01APR25", Philippines: "01APR25" },
+  "EB-3": { ROW: "15JUN24", China: "22JAN22", India: "22JAN14", Mexico: "15JUN24", Philippines: "15AUG23" },
 };
 
-// Dates for Filing — October 2026 bulletin, employment-based
+// Dates for Filing — November 2026 bulletin, employment-based
 export const DATES_FOR_FILING: Record<Category, Record<Country, string>> = {
   "EB-1": { ROW: "C", China: "01JUL24", India: "01JUL24", Mexico: "C", Philippines: "C" },
   "EB-2": { ROW: "15MAR26", China: "01JAN23", India: "15JAN15", Mexico: "15MAR26", Philippines: "15MAR26" },
-  "EB-3": { ROW: "01AUG24", China: "01APR24", India: "15JAN15", Mexico: "01AUG24", Philippines: "01AUG24" },
+  "EB-3": { ROW: "01AUG24", China: "01APR24", India: "15JAN15", Mexico: "01AUG24", Philippines: "01JAN24" },
 };
 
 export interface HistoryRow {
@@ -46,7 +45,7 @@ export interface HistoryRow {
   ROW: string;
 }
 
-// EB-2 Final Action Dates history, Apr–Oct 2026 (from monthly bulletins)
+// EB-2 Final Action Dates history, Apr–Nov 2026 (from monthly bulletins)
 export const EB2_HISTORY: HistoryRow[] = [
   { month: "Apr 2026", India: "15JUL14", China: "01SEP21", ROW: "C" },
   { month: "May 2026", India: "15JUL14", China: "01SEP21", ROW: "C" },
@@ -55,14 +54,15 @@ export const EB2_HISTORY: HistoryRow[] = [
   { month: "Aug 2026", India: "U", China: "01SEP21", ROW: "C" },
   { month: "Sep 2026", India: "U", China: "01SEP21", ROW: "C" },
   { month: "Oct 2026", India: "01NOV13", China: "01OCT21", ROW: "01JAN25" },
+  { month: "Nov 2026", India: "01NOV13", China: "01OCT21", ROW: "01APR25" },
 ];
 
 // Recent pace of cutoff advancement, derived from the history above.
-// EB-2 India: 01SEP13 (Jun 2026) -> 01NOV13 (Oct 2026) = 61 days over 4 months.
+// EB-2 India: 01SEP13 (Jun 2026) -> 01NOV13 (Nov 2026) = 61 days over 5 months.
 // EB-2 China: 01SEP21 (Sep 2026) -> 01OCT21 (Oct 2026) = 30 days over 1 month.
-// ROW has no pace: it was Current until Sep 2026, then set to 01JAN25.
+// ROW has no pace number: it was Current until Sep 2026, then 01JAN25 (Oct), then 01APR25 (Nov).
 export const RECENT_PACE_DAYS_PER_MONTH: Record<string, number | null> = {
-  India: 15,
+  India: 12,
   China: 30,
   ROW: null,
 };

@@ -434,7 +434,7 @@ function MovementChart() {
         viewBox={`0 0 ${W} ${H}`}
         className="min-w-[560px]"
         role="img"
-        aria-label="EB-2 final action date movement chart, April to October 2026"
+        aria-label="EB-2 final action date movement chart, April to November 2026"
       >
         {yTicks.map((yr) => (
           <g key={yr}>

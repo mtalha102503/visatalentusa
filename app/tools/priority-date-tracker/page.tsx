@@ -6,7 +6,7 @@ import { BULLETIN } from "./bulletinData";
 export const metadata: Metadata = {
   title: "EB-2 Priority Date Tracker 2026: Wait Time Estimator",
   description:
-    "Check if your EB-2 priority date is current with real October 2026 Visa Bulletin data. Free wait-time estimator for India, China & ROW, cutoff history charts, and a complete guide.",
+    "Check if your EB-2 priority date is current with real November 2026 Visa Bulletin data. Free wait-time estimator for India, China & ROW, cutoff history charts, and a complete guide.",
   keywords: [
     "eb2 priority date",
     "eb-2 priority date",
@@ -47,11 +47,11 @@ const FAQS = [
   },
   {
     q: "What is the current EB-2 priority date for India?",
-    a: "In the October 2026 Visa Bulletin, the EB-2 Final Action Date for India is November 1, 2013 (01NOV13). Only applicants with a priority date on or before that date can move forward. India was marked 'Unavailable' (U) from July through September 2026 before dates resumed with the new fiscal year.",
+    a: "In the November 2026 Visa Bulletin, the EB-2 Final Action Date for India is still November 1, 2013 (01NOV13), unchanged for a second month. Only applicants with a priority date on or before that date can move forward. India was marked 'Unavailable' (U) from July through September 2026 before dates resumed with the new fiscal year.",
   },
   {
     q: "What is the current EB-2 priority date for China?",
-    a: "In the October 2026 Visa Bulletin, the EB-2 Final Action Date for mainland China-born applicants is October 1, 2021 (01OCT21), up one month from September 2026.",
+    a: "In the November 2026 Visa Bulletin, the EB-2 Final Action Date for mainland China-born applicants is October 1, 2021 (01OCT21), unchanged from October 2026.",
   },
   {
     q: "What is the difference between Final Action Dates and Dates for Filing?",
@@ -414,10 +414,10 @@ export default function PriorityDateTrackerPage() {
         </div>
 
         <p className="text-xs text-slate-500">
-          Data: U.S. Department of State Visa Bulletins, April–October 2026.
+          Data: U.S. Department of State Visa Bulletins, April–November 2026.
           Wait estimates are rough projections based on recent cutoff movement
           and are not guarantees. This page is for informational purposes only
-          and is not legal advice. Last updated: October 2026.
+          and is not legal advice. Last updated: November 2026.
         </p>
       </div>
     </main>
