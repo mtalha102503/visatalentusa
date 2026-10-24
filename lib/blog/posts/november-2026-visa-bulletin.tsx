@@ -465,6 +465,74 @@ export default function November2026VisaBulletinContent() {
         Longer explanations are in the sections above.
       </p>
 
+      <h3>What is India EB-2&apos;s final action date in the November 2026 Visa Bulletin?</h3>
+      <p>
+        November 1, 2013 — unchanged from October 2026, the second straight
+        month with no movement. Only EB-2 India applicants with a priority
+        date earlier than November 1, 2013 can have their green card
+        approved.
+      </p>
+
+      <h3>When will the EB-2 India date move forward?</h3>
+      <p>
+        No official source publishes a schedule. The date moves only as old
+        cases clear the queue within India&apos;s 7% per-country cap. Watch
+        the December 2026 bulletin (expected mid-November) for the next data
+        point — any site claiming a specific future date is guessing.
+      </p>
+
+      <h3>What is the difference between Final Action Dates and Dates for Filing?</h3>
+      <p>
+        Final Action Dates control when a green card can actually be approved
+        and a visa number assigned. Dates for Filing control when you may
+        submit your I-485 adjustment-of-status application early — but only
+        in months when USCIS says that chart may be used. In November 2026,
+        USCIS directed employment-based applicants to use the Dates for
+        Filing chart.
+      </p>
+
+      <h3>Which chart do I use to file my I-485 in November 2026?</h3>
+      <p>
+        The Dates for Filing chart. For example, an EB-2 India applicant with
+        a priority date before January 15, 2015 can file their I-485 in
+        November — even though approval still requires the Final Action Date
+        (November 1, 2013) to pass their priority date.
+      </p>
+
+      <h3>My EB-2 India priority date is December 2014. What can I do in November 2026?</h3>
+      <p>
+        You can file your I-485, because December 2014 is earlier than the
+        Dates for Filing cutoff of January 15, 2015. Filing can unlock an
+        Employment Authorization Document (EAD) and advance parole while you
+        wait. Your green card cannot be approved until the Final Action Date
+        passes December 2014.
+      </p>
+
+      <h3>Does the Visa Bulletin affect the H-1B lottery?</h3>
+      <p>
+        No. The Visa Bulletin governs immigrant visas (green cards). The
+        H-1B lottery is a separate USCIS process for temporary work status.
+        The bulletin matters once you are in the green card queue, not for
+        lottery selection.
+      </p>
+
+      <h3>Will the premium processing rule change deadlines now?</h3>
+      <p>
+        No. The proposed rule &quot;Amending the Premium Processing
+        Timeframe&quot; (RIN 1615-AD25) is only under OIRA review since
+        October 13, 2026. Its text is not public and its direction is
+        unknown. Current 15/30/45-business-day clocks stand until a final
+        rule takes effect, which is months away at the earliest.
+      </p>
+
+      <h3>When will the December 2026 Visa Bulletin come out?</h3>
+      <p>
+        Visa Bulletins are typically released in the second week of the month
+        for the following month, so expect the December 2026 bulletin in
+        mid-November 2026. We will update this guide and the Priority Date
+        Tracker when it lands.
+      </p>
+
       <h2>Methodology &amp; Sources</h2>
       <p>
         Every date in this article was taken from the U.S. Department of
