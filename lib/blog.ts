@@ -346,6 +346,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-100k-fee-status",
+    title: "H-1B 100K Fee Status: Is the $100,000 Fee Active Now?",
+    excerpt:
+      "Live status of the $100,000 H-1B fee: blocked by two federal courts and not being collected as of October 25, 2026 — full timeline from Proclamation 10973 through the October 9 Ninth Circuit appeal, plus the separate $103,265 DHS proposal explained.",
+    datePublished: "2026-10-25T00:00:00+00:00",
+    dateModified: "2026-10-25T00:00:00+00:00",
+    readingMinutes: 14,
+    tags: ["H-1B Fee", "H-1B News", "Court Rulings"],
+    faqs: [
+      {
+        question: "Is the $100,000 H-1B fee active now?",
+        answer: "No. As of October 25, 2026, two federal court orders block its enforcement — the June 8, 2026 Massachusetts vacatur and the September 30, 2026 California injunction — and USCIS is not collecting the payment. The government's October 9, 2026 appeal to the Ninth Circuit does not change that, because an appeal alone does not lift an injunction.",
+      },
+      {
+        question: "Who would have to pay the $100,000 fee if it came back?",
+        answer: "Under the USCIS guidance of October 20, 2025: employers filing new H-1B petitions for beneficiaries outside the United States without a valid H-1B visa; petitions requesting consular, port-of-entry, or pre-flight notification; and change-of-status, amendment, or extension petitions where USCIS denies the requested benefit and approves the case for consular processing instead.",
+      },
+      {
+        question: "Does the fee apply to renewals, extensions, or F-1 to H-1B change of status?",
+        answer: "No — not under the USCIS guidance. Approved change of status, amendment, extension, or change of employer for someone inside the United States was outside the fee's scope, and that includes the usual F-1 (OPT) to H-1B change of status. The fee only attached if the requested benefit was denied and the case went to consular processing.",
+      },
+      {
+        question: "What is the $103,265 H-1B fee? Is it the same thing?",
+        answer: "No. It is a separate DHS proposal published in the Federal Register on August 25, 2026 (Docket USCIS-2026-0298) that would charge $103,265 on every cap-subject H-1B petition, on top of existing fees. It is not in effect, its comment period closed September 24, 2026, and no final rule has been issued. It also explicitly excludes cap-exempt employers, which the proclamation payment never did.",
+      },
+      {
+        question: "Can the $100,000 fee come back?",
+        answer: "Yes. If an appeals court grants a stay of either blocking order, or if the government wins on the merits, collection can resume — and USCIS has said DHS still intends to collect the payment if the orders are lifted. That is why this page says BLOCKED rather than cancelled, and why employers should keep it as a contingent cost.",
+      },
+      {
+        question: "Did the September 2026 extension bring the fee back?",
+        answer: "No. Proclamation 11069 (September 18, 2026) extended the restriction on paper through September 21, 2027, but the September 30, 2026 California order expressly covers implementation under both the original proclamation and the extension. The extension changed the paper expiry date, not the enforcement reality.",
+      },
+      {
+        question: "How many employers actually paid the $100,000?",
+        answer: "Over 700 petitions, according to Proclamation 11069 itself, which states the payment had been made for over 700 petitions since the original proclamation took effect on September 21, 2025.",
+      },
+      {
+        question: "What should employers do right now?",
+        answer: "Do not pay the $100,000 today, but do not treat it as gone either: keep it as a contingent cost, confirm any covered filing with immigration counsel, watch stay decisions (the fastest way it returns), and keep the separate $103,265 proposal in its own budget line.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

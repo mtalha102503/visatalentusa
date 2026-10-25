@@ -461,6 +461,23 @@ export default async function CapExemptEmployersPage() {
           </Link>
         </div>
       </div>
+      <div className="mt-4 rounded-lg border border-green-200 bg-green-50 p-5">
+        <p className="font-semibold text-green-900">
+          $100,000 H-1B fee: currently blocked, not being collected
+        </p>
+        <p className="mt-1 text-sm text-green-800">
+          Two federal courts have blocked enforcement of the $100,000
+          payment while litigation continues — and a separate $103,265 DHS
+          proposal is not in effect. See the live status, the full court
+          timeline, and what could change it.
+        </p>
+        <Link
+          href="/blog/h1b-100k-fee-status"
+          className="mt-3 inline-block rounded-lg bg-green-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-green-800"
+        >
+          Check the H-1B 100K Fee Status →
+        </Link>
+      </div>
     </div>
   );
 }
