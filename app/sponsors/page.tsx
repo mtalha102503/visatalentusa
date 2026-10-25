@@ -58,8 +58,8 @@ export default async function SponsorsPage() {
       a: `Use the search filter above to find any of the ${count} top H-1B sponsors on this list by name. Click any employer for detailed filing counts, certification rates, median salaries, top job titles, and worksite states.`,
     },
     {
-      q: "What does the approval rate mean on this list?",
-      a: "The approval rate shown is the Department of Labor LCA certification rate — the share of Labor Condition Applications certified versus denied. It is not the USCIS H-1B petition approval rate, which is a separate process.",
+      q: "What does the DOL certified % mean on this list?",
+      a: "The DOL certified % shown is the Department of Labor LCA certification rate — the share of Labor Condition Applications certified versus denied. It is not the USCIS H-1B petition approval rate, which is a separate process.",
     },
     {
       q: "Is this a complete list of all H-1B sponsors?",
@@ -157,7 +157,7 @@ export default async function SponsorsPage() {
         <p>
           Use the filter to find any employer by name, or tap a column header
           to sort by <strong>filings</strong>,{" "}
-          <strong>LCA approval rate</strong>, or{" "}
+          <strong>DOL certified %</strong>, or{" "}
           <strong>median salary</strong>. Click any company for its full
           sponsorship profile: top job titles, worksite states, wage-level mix,
           and year-over-year trends.
