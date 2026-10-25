@@ -198,7 +198,7 @@ export default function H1BExtensionDeferenceContent() {
         Which employers' workforces face the most re-scrutiny if every renewal
         is re-adjudicated? The answer tracks filing volume: employers with the
         largest H-1B populations have the most extensions cycling through the
-        system. Below are the <strong>top 20 H-1B sponsors by FY2026 Labor
+        system. Below are the <strong>top 20 H-1B sponsors by FY2026 (through Q3) Labor
         Condition Application filing volume</strong> — real U.S. Department of
         Labor disclosure data.
       </p>
@@ -216,37 +216,37 @@ export default function H1BExtensionDeferenceContent() {
             <tr>
               <th>#</th>
               <th>Employer</th>
-              <th>FY2026 LCA filings</th>
+              <th>FY2026 (through Q3) LCA filings</th>
               <th>LCA certification rate</th>
               <th>Median salary</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td><Link href="/sponsors/amazon" className="text-blue-700 underline underline-offset-2">Amazon</Link></td><td>19,937</td><td>99.9%</td><td>$158,000</td></tr>
+            <tr><td>1</td><td><Link href="/sponsors/amazon" className="text-blue-700 underline underline-offset-2">Amazon</Link></td><td>19,937</td><td>100.0%</td><td>$158,000</td></tr>
             <tr><td>2</td><td><Link href="/sponsors/google" className="text-blue-700 underline underline-offset-2">Google</Link></td><td>7,389</td><td>99.4%</td><td>$193,000</td></tr>
             <tr><td>3</td><td><Link href="/sponsors/cognizant" className="text-blue-700 underline underline-offset-2">Cognizant</Link></td><td>5,799</td><td>99.9%</td><td>$111,030</td></tr>
-            <tr><td>4</td><td><Link href="/sponsors/apple" className="text-blue-700 underline underline-offset-2">Apple</Link></td><td>5,633</td><td>85.7%</td><td>$171,600</td></tr>
-            <tr><td>5</td><td><Link href="/sponsors/ey-ernst-young" className="text-blue-700 underline underline-offset-2">EY (Ernst &amp; Young)</Link></td><td>5,403</td><td>94.1%</td><td>$155,468</td></tr>
+            <tr><td>4</td><td><Link href="/sponsors/apple" className="text-blue-700 underline underline-offset-2">Apple</Link></td><td>5,633</td><td>99.8%</td><td>$171,600</td></tr>
+            <tr><td>5</td><td><Link href="/sponsors/ey-ernst-young" className="text-blue-700 underline underline-offset-2">EY (Ernst &amp; Young)</Link></td><td>5,403</td><td>97.9%</td><td>$155,468</td></tr>
             <tr><td>6</td><td><Link href="/sponsors/meta-facebook" className="text-blue-700 underline underline-offset-2">Meta</Link></td><td>5,151</td><td>100.0%</td><td>$214,032</td></tr>
             <tr><td>7</td><td><Link href="/sponsors/microsoft" className="text-blue-700 underline underline-offset-2">Microsoft</Link></td><td>5,107</td><td>100.0%</td><td>$177,000</td></tr>
-            <tr><td>8</td><td><Link href="/sponsors/infosys" className="text-blue-700 underline underline-offset-2">Infosys</Link></td><td>4,610</td><td>99.5%</td><td>$92,581</td></tr>
-            <tr><td>9</td><td><Link href="/sponsors/deloitte" className="text-blue-700 underline underline-offset-2">Deloitte</Link></td><td>4,230</td><td>99.4%</td><td>$129,900</td></tr>
-            <tr><td>10</td><td><Link href="/sponsors/tata-consultancy-services-tcs" className="text-blue-700 underline underline-offset-2">Tata Consultancy Services</Link></td><td>2,923</td><td>98.6%</td><td>$92,394</td></tr>
-            <tr><td>11</td><td><Link href="/sponsors/tesla" className="text-blue-700 underline underline-offset-2">Tesla</Link></td><td>2,896</td><td>89.0%</td><td>$150,000</td></tr>
-            <tr><td>12</td><td><Link href="/sponsors/jpmorgan-chase" className="text-blue-700 underline underline-offset-2">JPMorgan Chase</Link></td><td>2,751</td><td>99.7%</td><td>$160,000</td></tr>
-            <tr><td>13</td><td><Link href="/sponsors/nvidia" className="text-blue-700 underline underline-offset-2">Nvidia</Link></td><td>2,457</td><td>96.9%</td><td>$186,472</td></tr>
-            <tr><td>14</td><td><Link href="/sponsors/fidelity-investments" className="text-blue-700 underline underline-offset-2">Fidelity Investments</Link></td><td>2,448</td><td>98.2%</td><td>$128,914</td></tr>
-            <tr><td>15</td><td><Link href="/sponsors/walmart" className="text-blue-700 underline underline-offset-2">Walmart</Link></td><td>2,313</td><td>93.6%</td><td>$145,704</td></tr>
+            <tr><td>8</td><td><Link href="/sponsors/infosys" className="text-blue-700 underline underline-offset-2">Infosys</Link></td><td>4,610</td><td>99.6%</td><td>$92,581</td></tr>
+            <tr><td>9</td><td><Link href="/sponsors/deloitte" className="text-blue-700 underline underline-offset-2">Deloitte</Link></td><td>4,230</td><td>99.6%</td><td>$129,900</td></tr>
+            <tr><td>10</td><td><Link href="/sponsors/tata-consultancy-services-tcs" className="text-blue-700 underline underline-offset-2">Tata Consultancy Services</Link></td><td>2,923</td><td>98.9%</td><td>$92,394</td></tr>
+            <tr><td>11</td><td><Link href="/sponsors/tesla" className="text-blue-700 underline underline-offset-2">Tesla</Link></td><td>2,896</td><td>97.5%</td><td>$150,000</td></tr>
+            <tr><td>12</td><td><Link href="/sponsors/jpmorgan-chase" className="text-blue-700 underline underline-offset-2">JPMorgan Chase</Link></td><td>2,751</td><td>99.8%</td><td>$160,000</td></tr>
+            <tr><td>13</td><td><Link href="/sponsors/nvidia" className="text-blue-700 underline underline-offset-2">Nvidia</Link></td><td>2,457</td><td>98.7%</td><td>$186,472</td></tr>
+            <tr><td>14</td><td><Link href="/sponsors/fidelity-investments" className="text-blue-700 underline underline-offset-2">Fidelity Investments</Link></td><td>2,448</td><td>98.9%</td><td>$128,914</td></tr>
+            <tr><td>15</td><td><Link href="/sponsors/walmart" className="text-blue-700 underline underline-offset-2">Walmart</Link></td><td>2,313</td><td>97.1%</td><td>$145,704</td></tr>
             <tr><td>16</td><td><Link href="/sponsors/goldman-sachs" className="text-blue-700 underline underline-offset-2">Goldman Sachs</Link></td><td>2,024</td><td>99.6%</td><td>$130,000</td></tr>
-            <tr><td>17</td><td><Link href="/sponsors/grandison-management" className="text-blue-700 underline underline-offset-2">Grandison Management</Link></td><td>1,987</td><td>99.0%</td><td>$73,715</td></tr>
-            <tr><td>18</td><td><Link href="/sponsors/compunnel-software-group" className="text-blue-700 underline underline-offset-2">Compunnel Software Group</Link></td><td>1,941</td><td>99.9%</td><td>$113,000</td></tr>
-            <tr><td>19</td><td><Link href="/sponsors/wipro" className="text-blue-700 underline underline-offset-2">Wipro</Link></td><td>1,906</td><td>81.9%</td><td>$106,998</td></tr>
+            <tr><td>17</td><td><Link href="/sponsors/grandison-management" className="text-blue-700 underline underline-offset-2">Grandison Management</Link></td><td>1,987</td><td>99.6%</td><td>$73,715</td></tr>
+            <tr><td>18</td><td><Link href="/sponsors/compunnel-software-group" className="text-blue-700 underline underline-offset-2">Compunnel Software Group</Link></td><td>1,941</td><td>100.0%</td><td>$113,000</td></tr>
+            <tr><td>19</td><td><Link href="/sponsors/wipro" className="text-blue-700 underline underline-offset-2">Wipro</Link></td><td>1,906</td><td>96.6%</td><td>$106,998</td></tr>
             <tr><td>20</td><td><Link href="/sponsors/intel" className="text-blue-700 underline underline-offset-2">Intel</Link></td><td>1,751</td><td>99.9%</td><td>$133,432</td></tr>
           </tbody>
         </table>
       </div>
       <p className="text-sm text-slate-500">
-        Source: U.S. Department of Labor LCA disclosure data, FY2026, via
+        Source: U.S. Department of Labor LCA disclosure data, FY2026 (through Q3), via
         VisaTalentUSA. Figures are total LCA filings (new + extensions + amendments
         combined — the data does not break these out). Explore any employer in
         detail on our{" "}
@@ -260,8 +260,7 @@ export default function H1BExtensionDeferenceContent() {
         (Cognizant, Infosys, TCS, Wipro) run high-volume, lower-median-salary
         H-1B programs — exactly the profile that drew extra scrutiny during the
         2017–2021 no-deference period. Second, several large sponsors already
-        show <strong>below-average LCA certification rates</strong> (Apple 85.7%,
-        Tesla 89.0%, Wipro 81.9%, Walmart 93.6%) — workers at these employers
+        show <strong>below-average LCA certification rates</strong> (Wipro 96.6%, Walmart 97.1%, Tesla 97.5%) — workers at these employers
         should be especially prepared for a tougher extension environment.
       </p>
       <p>
@@ -365,7 +364,7 @@ export default function H1BExtensionDeferenceContent() {
       <h3>Which employers will feel this most?</h3>
       <p>
         Employers with the largest H-1B workforces will see the most extensions
-        re-scrutinized — led by Amazon (~19,900 FY2026 LCA filings), Google,
+        re-scrutinized — led by Amazon (~19,900 FY2026 (through Q3) LCA filings), Google,
         Cognizant, Apple, and EY. IT services firms with high-volume programs
         faced the heaviest scrutiny during the last no-deference period
         (2017–2021).
@@ -385,7 +384,7 @@ export default function H1BExtensionDeferenceContent() {
         Register on October 14, 2026 (docket USCIS-2026-0529), including DHS's
         own statistical estimates cited in the proposal. Employer filing data is
         from U.S. Department of Labor Labor Condition Application disclosure
-        files for FY2026, which record total LCA filings and do not distinguish
+        files for FY2026 (through Q3), which record total LCA filings and do not distinguish
         new petitions from extensions — employer rankings reflect total filing
         volume. Policy history (2004–2024) reflects published USCIS guidance and
         rulemaking. Immigration policy changes frequently — verify critical
@@ -396,7 +395,7 @@ export default function H1BExtensionDeferenceContent() {
       <ul>
         <li>U.S. Department of Homeland Security — Proposed rule, docket USCIS-2026-0529, Federal Register, October 14, 2026</li>
         <li>U.S. Citizenship and Immigration Services — I-129 petition guidance (uscis.gov)</li>
-        <li>U.S. Department of Labor — LCA disclosure data, FY2026 (flag.dol.gov)</li>
+        <li>U.S. Department of Labor — LCA disclosure data, FY2026 through Q3 (flag.dol.gov)</li>
       </ul>
 
       <p className="text-sm text-slate-500">

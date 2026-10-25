@@ -7,6 +7,16 @@ const BASE = "https://visatalentusa.com";
 // No trailing slashes anywhere — matches Next.js default (trailingSlash: false).
 // A trailing slash on these routes returns 308, so the sitemap must use the
 // canonical non-slash form.
+// Job-title pages that are code artifacts or meaningless generics — noindex
+// in the title template, and excluded here. Must mirror isJunkTitle in the
+// title page.
+const JUNK_TITLES = new Set([
+  "ii", "ui", "ar", "avp", "systems", "software", "leader", "staff", "tiktok-shop",
+]);
+function isJunkTitle(slug: string): boolean {
+  return JUNK_TITLES.has(slug) || /-jc\d+/.test(slug);
+}
+
 function cleanUrl(path: string): string {
   const noSlash = path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
   return `${BASE}${encodeURI(noSlash)}`;
@@ -14,9 +24,12 @@ function cleanUrl(path: string): string {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const index = await getSearchIndex();
-  // Use the real build date so lastmod reflects when the data was generated,
-  // not a hardcoded stale date.
+  // lastmod is per section: pages carry their own publish date in metadata
+  // (sponsors 2026-10-09, titles 2026-10-11); genuinely dynamic pages use the
+  // build date.
   const now = new Date();
+  const SPONSOR_DATE = new Date("2026-10-09T00:00:00+00:00");
+  const TITLE_DATE = new Date("2026-10-11T00:00:00+00:00");
 
   const seen = new Set<string>();
   const entries: MetadataRoute.Sitemap = [];
@@ -50,7 +63,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (!t.slug || typeof t.slug !== "string") continue;
     const slug = t.slug.trim().toLowerCase();
     if (!slug || !/^[a-z0-9-]+$/.test(slug)) continue;
-    add(cleanUrl(`/tools/sponsor-match/${slug}`), now, "monthly", 0.7);
+    if (isJunkTitle(slug)) continue;
+    add(cleanUrl(`/tools/sponsor-match/${slug}`), TITLE_DATE, "monthly", 0.7);
   }
   add(cleanUrl("/about"), now, "monthly", 0.5);
   add(cleanUrl("/contact"), now, "yearly", 0.3);
@@ -61,7 +75,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (!e.slug || typeof e.slug !== "string") continue;
     const slug = e.slug.trim().toLowerCase();
     if (!slug || !/^[a-z0-9-]+$/.test(slug)) continue;
-    add(cleanUrl(`/sponsors/${slug}`), now, "monthly", 0.7);
+    add(cleanUrl(`/sponsors/${slug}`), SPONSOR_DATE, "monthly", 0.7);
   }
 
   return entries;

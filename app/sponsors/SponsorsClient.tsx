@@ -97,7 +97,7 @@ export default function SponsorsClient({ sponsors }: { sponsors: IndexEntry[] })
                 </button>
               </th>
               {th("Filings", "cases")}
-              {th("Approval", "approval_rate")}
+              {th("DOL certified %", "approval_rate")}
               {th("Median salary", "median_wage")}
             </tr>
           </thead>

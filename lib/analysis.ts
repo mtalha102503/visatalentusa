@@ -1,8 +1,7 @@
 import type { Sponsor, YearData } from "./data";
 import { formatNum, formatUSD, formatPct } from "./data";
 
-/** National H-1B median offered salary, FY2026 (computed from DOL LCA data). */
-export const NATIONAL_MEDIAN = 126403;
+/** National median comes from site stats (stats.json) — passed in by the caller, never hardcoded. */
 
 /** Lottery entries per wage level under the 2026 wage-weighted selection rule. */
 const LEVEL_ENTRIES: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4 };
@@ -34,9 +33,9 @@ export function seniorShare(mix: Record<string, number>): number | null {
 
 function trendWord(yoy: number | null): string {
   if (yoy == null) return "";
-  if (yoy > 0.005) return `up ${(yoy * 100).toFixed(1)}% from last year`;
-  if (yoy < -0.005) return `down ${(Math.abs(yoy) * 100).toFixed(1)}% from last year`;
-  return "roughly flat versus last year";
+  if (yoy > 0.005) return `up ${(yoy * 100).toFixed(1)}% from the same period last year`;
+  if (yoy < -0.005) return `down ${(Math.abs(yoy) * 100).toFixed(1)}% from the same period last year`;
+  return "roughly flat versus the same period last year";
 }
 
 /**
@@ -48,14 +47,15 @@ export function composeIntro(
   s: Sponsor,
   y: YearData,
   rank: number,
-  totalSponsors: number
+  totalSponsors: number,
+  nationalMedian: number | null
 ): string[] {
   const name = s.display_name;
   const paras: string[] = [];
 
   const tw = trendWord(y.yoy_change_pct);
   paras.push(
-    `${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in fiscal year 2026, ` +
+    `${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in fiscal year 2026 (through Q3), ` +
       `ranking #${rank} out of ${formatNum(totalSponsors)} sponsoring employers in our database` +
       (tw ? ` — ${tw}` : "") +
       `.`
@@ -64,9 +64,11 @@ export function composeIntro(
   const salaryBit =
     y.median_wage_annual != null
       ? `with a median offered salary of ${formatUSD(y.median_wage_annual)}` +
-        (y.median_wage_annual >= NATIONAL_MEDIAN
-          ? `, ${formatPct(y.median_wage_annual / NATIONAL_MEDIAN - 1, 0)} above the national H-1B median of ${formatUSD(NATIONAL_MEDIAN)}`
-          : `, below the national H-1B median of ${formatUSD(NATIONAL_MEDIAN)}`)
+        (nationalMedian != null
+          ? y.median_wage_annual >= nationalMedian
+            ? `, ${formatPct(y.median_wage_annual / nationalMedian - 1, 0)} above the national H-1B median of ${formatUSD(nationalMedian)}`
+            : `, below the national H-1B median of ${formatUSD(nationalMedian)}`
+          : ``)
       : `with salary data reported on each filing`;
   paras.push(
     `Of those filings, ${formatPct(y.approval_rate)} were certified by the Department of Labor, ` +
@@ -97,7 +99,7 @@ export function composeIntro(
         ? ` Its heaviest H-1B hiring was in ${states.map((x) => `${x.state} (${formatNum(x.cases)})`).join(", ")}.`
         : "";
     paras.push(
-      `${name}'s most-sponsored roles in FY2026 were ${titleBit}.${stateBit}`
+      `${name}'s most-sponsored roles in FY2026 (through Q3) were ${titleBit}.${stateBit}`
     );
   }
 
@@ -122,17 +124,17 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
   const faqs: Faq[] = [
     {
       q: `Does ${name} sponsor H-1B visas?`,
-      a: `Yes. ${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in FY2026, ranking #${rank} nationally. A labor condition application (LCA) is the required first step before an H-1B petition, so this filing volume is a strong signal of active sponsorship.`,
+      a: `Yes. ${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in FY2026 (through Q3), ranking #${rank} nationally. A labor condition application (LCA) is the required first step before an H-1B petition, so this filing volume is a strong signal of active sponsorship.`,
     },
     {
-      q: `What is ${name}'s H-1B approval rate?`,
-      a: `${formatPct(y.approval_rate)} of ${name}'s FY2026 H-1B filings were certified by the Department of Labor${y.denied_cases ? `, with ${formatNum(y.denied_cases)} denied` : ""}. Note that LCA certification is distinct from USCIS petition approval, but a high certification rate indicates clean, compliant filings.`,
+      q: `What is ${name}'s H-1B certification rate?`,
+      a: `${formatPct(y.approval_rate)} of ${name}'s FY2026 (through Q3) H-1B filings were certified by the Department of Labor${y.denied_cases ? `, with ${formatNum(y.denied_cases)} denied` : ""}. Note that LCA certification is distinct from USCIS petition approval: a certified LCA means the Department of Labor accepted the filing, not that a petition will be approved.`,
     },
     {
       q: `How much does ${name} pay H-1B workers?`,
       a:
         y.median_wage_annual != null
-          ? `${name}'s median offered salary for H-1B roles in FY2026 was ${formatUSD(y.median_wage_annual)}${y.avg_wage_annual != null ? ` (average ${formatUSD(y.avg_wage_annual)})` : ""}. Individual offers vary by role, level, and worksite — the tables above break it down by job title.`
+          ? `${name}'s median offered salary for H-1B roles in FY2026 (through Q3) was ${formatUSD(y.median_wage_annual)}${y.avg_wage_annual != null ? ` (average ${formatUSD(y.avg_wage_annual)})` : ""}. Individual offers vary by role, level, and worksite — the tables above break it down by job title.`
           : `Salary figures are reported on each individual filing — see the job-title breakdown above for ${name}'s pay by role.`,
     },
   ];
@@ -141,7 +143,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
   if (top) {
     faqs.push({
       q: `Which jobs does ${name} sponsor most on H-1B?`,
-      a: `${top.title} leads with ${formatNum(top.cases)} filings in FY2026${top.avg_wage ? ` at an average offered salary of ${formatUSD(top.avg_wage)}` : ""}. Other frequently sponsored roles are listed in the table above.`,
+      a: `${top.title} leads with ${formatNum(top.cases)} filings in FY2026 (through Q3)${top.avg_wage ? ` at an average offered salary of ${formatUSD(top.avg_wage)}` : ""}. Other frequently sponsored roles are listed in the table above.`,
     });
   }
 
@@ -150,7 +152,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
     const statesArr = Array.isArray(y.top_states) ? y.top_states : [];
     faqs.push({
       q: `Where does ${name} hire H-1B workers?`,
-      a: `${st.state} is ${name}'s top H-1B worksite state with ${formatNum(st.cases)} filings in FY2026, followed by ${statesArr
+      a: `${st.state} is ${name}'s top H-1B worksite state with ${formatNum(st.cases)} filings in FY2026 (through Q3), followed by ${statesArr
         .slice(1, 3)
         .map((x) => `${x.state} (${formatNum(x.cases)})`)
         .join(" and ")}. Worksite reflects where the job is performed, which may differ from headquarters.`,
@@ -161,7 +163,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
   if (avgEntries != null) {
     faqs.push({
       q: `What are the H-1B lottery odds at ${name}?`,
-      a: `No employer can guarantee lottery selection, but wage levels matter: under the 2026 wage-weighted system, Level I filings get 1 entry while Level IV get 4. Based on ${name}'s FY2026 wage mix, its candidates averaged ${avgEntries.toFixed(1)} entries per filing. Higher-wage offers at the same employer carry better odds.`,
+      a: `No employer can guarantee lottery selection, but wage levels matter: under the 2026 wage-weighted system, Level I filings get 1 entry while Level IV get 4. Based on ${name}'s FY2026 (through Q3) wage mix, its candidates averaged ${avgEntries.toFixed(1)} entries per filing. Higher-wage offers at the same employer carry better odds.`,
     });
   }
 

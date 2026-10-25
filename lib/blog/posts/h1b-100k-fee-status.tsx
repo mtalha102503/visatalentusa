@@ -290,8 +290,7 @@ export default function H1B100KFeeStatusContent() {
               </td>
               <td className="border border-slate-200 px-3 py-2">
                 The appeal alone lifts nothing — only a granted stay
-                would. No stay had been reported as of mid-October
-                reporting. The fee is now before three appeals courts at
+                would. No stay had been reported as of October 25, 2026. The fee is now before three appeals courts at
                 once.
               </td>
             </tr>
@@ -536,7 +535,7 @@ export default function H1B100KFeeStatusContent() {
         <li>
           <strong>Ninth Circuit stay decision</strong> on the September
           30 California order — requested October 9, 2026, with no stay
-          reported as of mid-October reporting. A granted stay is the
+          reported as of October 25, 2026. A granted stay is the
           fastest way collection resumes, faster than any final ruling.
         </li>
         <li>
@@ -741,7 +740,7 @@ export default function H1B100KFeeStatusContent() {
           1:25-cv-03675 (D.D.C., December 23, 2025 — fee upheld, on
           appeal); First Circuit No. 26-1699 (stay denied July 24, 2026);
           Ninth Circuit appeal filed October 9, 2026 (stay requested, none
-          reported as of mid-October reporting)
+          reported as of October 25, 2026)
         </li>
         <li>
           <Link href="/tools/cap-exempt-employers" className="underline text-blue-600">

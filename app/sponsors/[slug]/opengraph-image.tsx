@@ -59,7 +59,7 @@ export default async function Image({
             <div style={{ fontSize: 48, fontWeight: "bold" }}>{filings}</div>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 24, opacity: 0.7 }}>Approval rate</div>
+            <div style={{ fontSize: 24, opacity: 0.7 }}>DOL certified %</div>
             <div style={{ fontSize: 48, fontWeight: "bold" }}>{approval}</div>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>

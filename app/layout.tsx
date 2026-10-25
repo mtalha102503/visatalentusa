@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | VisaTalentUSA",
   },
   description:
-    "Search 1,000 top U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor disclosure data.",
+    "Search 1,000+ top U.S. employers that sponsor H-1B visas. Salaries, LCA certification rates, and lottery odds from official Department of Labor disclosure data.",
   metadataBase: new URL("https://visatalentusa.com"),
   alternates: {
     canonical: "https://visatalentusa.com/",
@@ -156,7 +156,7 @@ function Footer() {
             <p className="text-sm font-semibold text-slate-800">Data</p>
             <p className="mt-2 text-sm text-slate-600">
               Built from the U.S. Department of Labor&apos;s public Labor
-              Condition Application (LCA) disclosure data, FY2024–FY2026.
+              Condition Application (LCA) disclosure data, FY2024–FY2026 (FY2026 through Q3).
             </p>
           </div>
         </div>
@@ -175,7 +175,7 @@ function Footer() {
             >
               HireSkys
             </a>{" "}
-            company — the #1 remote job marketplace
+            company
           </p>
         </div>
       </div>

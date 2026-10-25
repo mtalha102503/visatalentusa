@@ -6,6 +6,15 @@ import { formatNum, formatUSD } from "@/lib/format";
 
 const BASE = "https://visatalentusa.com";
 
+// Job-title pages that are code artifacts or meaningless generics — served
+// with noindex (see generateMetadata) and kept out of the sitemap.
+const JUNK_TITLES = new Set([
+  "ii", "ui", "ar", "avp", "systems", "software", "leader", "staff", "tiktok-shop",
+]);
+function isJunkTitle(slug: string): boolean {
+  return JUNK_TITLES.has(slug) || /-jc\d+/.test(slug);
+}
+
 export async function generateStaticParams() {
   const titles = await getTitles();
   return titles.map((t) => ({ slug: t.slug }));
@@ -23,10 +32,11 @@ export async function generateMetadata({
   const rank = titles.findIndex((x) => x.slug === slug) + 1;
   const url = `${BASE}/tools/sponsor-match/${t.slug}`;
   const title = `${t.title} H-1B Sponsors — Top Companies, Salaries & Filing Data`;
-  const description = `Which companies sponsor H-1B visas for ${t.title}s? Ranked #${rank} of 500 titles with ${formatNum(t.total_cases)} FY2026 filings, median salary ${t.median_wage != null ? formatUSD(t.median_wage) : "n/a"}, and the top sponsoring employers — from 1.5M+ real DOL records.`;
+  const description = `Which companies sponsor H-1B visas for the ${t.title} title? Ranked #${rank} of 500 titles with ${formatNum(t.total_cases)} FY2026 (through Q3) filings, median salary ${t.median_wage != null ? formatUSD(t.median_wage) : "n/a"}, and the top sponsoring employers — from 1.5M+ real DOL records.`;
   return {
     title,
     description,
+    ...(isJunkTitle(slug) ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: url },
     openGraph: {
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "VisaTalentUSA — H-1B Sponsor Database" }],
@@ -43,7 +53,7 @@ export async function generateMetadata({
 // ---------------------------------------------------------------------------
 // Data-driven content builders — every title page gets unique copy generated
 // from its own DOL numbers. No invented facts; all claims derive from the
-// TitleEntry fields (FY2026 filings, wages, top employers) plus site-wide
+// TitleEntry fields (FY2026 (through Q3) filings, wages, top employers) plus site-wide
 // aggregates (national median salary, average certification rate across titles).
 // ---------------------------------------------------------------------------
 
@@ -91,21 +101,21 @@ function buildIntro(t: TitleEntry, ctx: TitleContext): string[] {
   // Sentence 1: volume + rank (wording varies by rank tier)
   if (ctx.rank <= 10) {
     s.push(
-      `${name} is one of America's most-sponsored H-1B job titles — #${ctx.rank} of 500 tracked — with ${formatNum(t.total_cases)} FY2026 Labor Condition Applications.`
+      `${name} is one of America's most-sponsored H-1B job titles — #${ctx.rank} of 500 tracked — with ${formatNum(t.total_cases)} FY2026 (through Q3) Labor Condition Applications.`
     );
   } else if (ctx.rank <= 100) {
     s.push(
-      `${name} ranks #${ctx.rank} of 500 H-1B job titles by FY2026 filing volume, with ${formatNum(t.total_cases)} applications.`
+      `${name} ranks #${ctx.rank} of 500 H-1B job titles by FY2026 (through Q3) filing volume, with ${formatNum(t.total_cases)} applications.`
     );
   } else {
     s.push(
-      `${formatNum(t.total_cases)} H-1B applications named the ${name} title in FY2026, placing it #${ctx.rank} of the 500 titles tracked.`
+      `${formatNum(t.total_cases)} H-1B applications named the ${name} title in FY2026 (through Q3), placing it #${ctx.rank} of the 500 titles tracked.`
     );
   }
 
   // Sentence 2: salary position vs national median (+ skew when pronounced)
   if (t.median_wage == null) {
-    s.push(`Salary data was not disclosed for this title in the FY2026 filings.`);
+    s.push(`Salary data was not disclosed for this title in the FY2026 (through Q3) filings.`);
   } else {
     const diff = ((t.median_wage - ctx.nationalMedian) / ctx.nationalMedian) * 100;
     const m = formatUSD(t.median_wage);
@@ -172,7 +182,7 @@ function buildInsights(t: TitleEntry, ctx: TitleContext): { label: string; text:
   } else {
     out.push({
       label: "Salary position",
-      text: `No median salary was disclosed for ${name} in FY2026 filings.`,
+      text: `No median salary was disclosed for ${name} in FY2026 (through Q3) filings.`,
     });
   }
 
@@ -233,23 +243,23 @@ function buildFaqs(t: TitleEntry, ctx: TitleContext): { q: string; a: string }[]
       diff >= 0
         ? `${pct(diff)} above the national H-1B median of ${formatUSD(ctx.nationalMedian)}`
         : `${pct(diff)} below the national H-1B median of ${formatUSD(ctx.nationalMedian)}`;
-    salaryA = `The median offered annual salary was ${formatUSD(t.median_wage)} across ${formatNum(t.total_cases)} FY2026 DOL filings — ${pos}. Use it as a benchmark when evaluating offers.`;
+    salaryA = `The median offered annual salary was ${formatUSD(t.median_wage)} across ${formatNum(t.total_cases)} FY2026 (through Q3) DOL filings — ${pos}. Use it as a benchmark when evaluating offers.`;
   } else {
-    salaryA = `Median salary data was not available for ${name} in FY2026.`;
+    salaryA = `Median salary data was not available for ${name} in FY2026 (through Q3).`;
   }
 
   const certA =
     ctx.rate != null
-      ? `${formatNum(t.total_cases)} Labor Condition Applications in FY2026, with a DOL LCA certification rate of ${ctx.rate.toFixed(1)}% — ${ctx.rate >= ctx.avgRate ? "at or above" : "below"} the ${ctx.avgRate.toFixed(1)}% average across tracked titles. Remember: DOL certification covers the LCA paperwork — it is not a USCIS petition approval rate.`
-      : `${formatNum(t.total_cases)} Labor Condition Applications in FY2026. Remember: DOL certification covers the LCA paperwork — it is not a USCIS petition approval rate.`;
+      ? `${formatNum(t.total_cases)} Labor Condition Applications in FY2026 (through Q3), with a DOL LCA certification rate of ${ctx.rate.toFixed(1)}% — ${ctx.rate >= ctx.avgRate ? "at or above" : "below"} the ${ctx.avgRate.toFixed(1)}% average across tracked titles. Remember: DOL certification covers the LCA paperwork — it is not a USCIS petition approval rate.`
+      : `${formatNum(t.total_cases)} Labor Condition Applications in FY2026 (through Q3). Remember: DOL certification covers the LCA paperwork — it is not a USCIS petition approval rate.`;
 
   return [
     {
-      q: `Which companies sponsor H-1B visas for ${name}s?`,
-      a: `The top sponsors in FY2026 include ${top3Names} — ranked by official DOL filing counts in the table above. ${concNote}`.trim(),
+      q: `Which companies sponsor H-1B visas for the ${name} title?`,
+      a: `The top sponsors in FY2026 (through Q3) include ${top3Names} — ranked by official DOL filing counts in the table above. ${concNote}`.trim(),
     },
     {
-      q: `What is the median H-1B salary for ${name}s?`,
+      q: `What is the median H-1B salary for the ${name} title?`,
       a: salaryA,
     },
     {
@@ -259,7 +269,7 @@ function buildFaqs(t: TitleEntry, ctx: TitleContext): { q: string; a: string }[]
   ];
 }
 
-/** 4 nearest-neighbor titles by FY2026 filing volume (similar-scale roles). */
+/** 4 nearest-neighbor titles by FY2026 (through Q3) filing volume (similar-scale roles). */
 function relatedTitles(t: TitleEntry, titles: TitleEntry[]): TitleEntry[] {
   const sorted = [...titles].sort((a, b) => b.total_cases - a.total_cases);
   const i = sorted.findIndex((x) => x.slug === t.slug);
@@ -305,7 +315,7 @@ export default async function TitleReportPage({
       {
         "@type": "Article",
         headline: `${t.title} H-1B Sponsors — Top Companies, Salaries & Filing Data`,
-        description: `Which companies sponsor H-1B visas for ${t.title}s? Ranked #${ctx.rank} of 500 titles with ${formatNum(t.total_cases)} FY2026 filings, median salary ${t.median_wage != null ? formatUSD(t.median_wage) : "n/a"}, and the top sponsoring employers from official DOL LCA disclosure data.`,
+        description: `Which companies sponsor H-1B visas for the ${t.title} title? Ranked #${ctx.rank} of 500 titles with ${formatNum(t.total_cases)} FY2026 (through Q3) filings, median salary ${t.median_wage != null ? formatUSD(t.median_wage) : "n/a"}, and the top sponsoring employers from official DOL LCA disclosure data.`,
         url,
         datePublished: "2026-10-11T00:00:00+00:00",
         dateModified: "2026-10-11T00:00:00+00:00",
@@ -378,7 +388,7 @@ export default async function TitleReportPage({
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="rounded-lg bg-blue-50 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
-            FY2026 filings
+            FY2026 (through Q3) filings
           </p>
           <p className="mt-1 text-2xl font-bold text-blue-900">
             {formatNum(t.total_cases)}
@@ -479,7 +489,7 @@ export default async function TitleReportPage({
         Related Job Titles
       </h2>
       <p className="mt-2 text-sm text-slate-600">
-        Similar-scale H-1B titles by FY2026 filing volume:
+        Similar-scale H-1B titles by FY2026 (through Q3) filing volume:
       </p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {related.map((r) => (
@@ -490,7 +500,7 @@ export default async function TitleReportPage({
           >
             <p className="font-semibold text-blue-700">{r.title}</p>
             <p className="mt-1 text-xs text-slate-500">
-              {formatNum(r.total_cases)} FY2026 filings
+              {formatNum(r.total_cases)} FY2026 (through Q3) filings
               {r.median_wage != null ? ` · ${formatUSD(r.median_wage)} median` : ""}
             </p>
           </Link>

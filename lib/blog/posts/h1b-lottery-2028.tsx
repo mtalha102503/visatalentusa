@@ -10,7 +10,7 @@ export default function H1BLottery2028Content() {
         lottery entries, Level I gets just 1</strong>. This guide breaks down
         the H-1B lottery 2028 odds by wage level, expected registration dates,
         fees, and the strategies that actually move the needle — all grounded
-        in our analysis of 2M+ real Department of Labor filing records.
+        in our analysis of 1.5M+ real Department of Labor filing records.
       </p>
 
       <div className="overflow-hidden rounded-lg border border-slate-200">
@@ -39,7 +39,7 @@ export default function H1BLottery2028Content() {
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
         <p className="text-sm text-slate-600">
           <strong className="text-slate-800">About this guide&apos;s data:</strong> VisaTalentUSA
-          analyzed 2,038,000+ Labor Condition Application (LCA) records from the U.S.
+          analyzed 1,532,089 H-1B Labor Condition Application (LCA) records from the U.S.
           Department of Labor&apos;s public disclosure data (FY2024–FY2026) to compute
           real wage-level distributions. Unlike other H-1B lottery odds calculators that
           use assumed inputs, every statistic here comes from actual filings.{" "}
@@ -306,7 +306,7 @@ export default function H1BLottery2028Content() {
         effective odds differ sharply from a world where filings spread evenly.
       </p>
       <p>
-        Our analysis of 2M+ LCA records (FY2024–FY2026) reveals the empirical
+        Our analysis of 1.5M+ LCA records (FY2024–FY2026) reveals the empirical
         wage-level distribution of real H-1B filings. Three findings stand out:
       </p>
       <ul>
@@ -515,7 +515,7 @@ export default function H1BLottery2028Content() {
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
         <p className="font-semibold text-slate-800">How we computed this guide&apos;s statistics</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-600">
-          <li><strong>Dataset:</strong> 2,038,000+ Labor Condition Application records, U.S. Department of Labor public disclosure files, FY2024–FY2026</li>
+          <li><strong>Dataset:</strong> 1,532,089 H-1B Labor Condition Application records, U.S. Department of Labor public disclosure files, FY2024–FY2026 (FY2026 through Q3)</li>
           <li><strong>Wage-level mapping:</strong> offered wages matched to OEWS prevailing-wage levels by SOC code and worksite area</li>
           <li><strong>DHS projections:</strong> published with the December 2025 final rule (90 FR); actual FY2027 results pending USCIS release</li>
           <li><strong>Fee figures:</strong> USCIS fee schedule as of 2026; $100K fee status per federal court order, N.D. Cal., Sep 30, 2026</li>

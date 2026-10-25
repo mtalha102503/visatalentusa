@@ -14,7 +14,7 @@ export default async function Home() {
         name: "VisaTalentUSA",
         url: "https://visatalentusa.com/",
         description:
-          "Search U.S. employers that sponsor H-1B visas. Salaries, approval rates, and lottery odds from official Department of Labor data.",
+          "Search U.S. employers that sponsor H-1B visas. Salaries, certification rates, and lottery odds from official Department of Labor data.",
         potentialAction: {
           "@type": "SearchAction",
           target: "https://visatalentusa.com/?q={search_term_string}",
@@ -57,7 +57,7 @@ export default async function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             Search {formatNum(stats.total_sponsors_fy2026)} employers,{" "}
             {formatNum(stats.total_cases_fy2026)} filings, real salaries and
-            approval rates — from official Department of Labor data.
+            certification rates — from official Department of Labor data.
           </p>
           <div className="mt-8">
             <SearchBox />
@@ -86,7 +86,7 @@ export default async function Home() {
             <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatNum(stats.total_sponsors_fy2026)}
             </p>
-            <p className="mt-1 text-sm text-slate-600">Sponsoring employers (FY2026)</p>
+            <p className="mt-1 text-sm text-slate-600">Sponsoring employers (FY2026, through Q3)</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
@@ -106,11 +106,11 @@ export default async function Home() {
       {/* Top sponsors */}
       <section id="top-sponsors" className="mx-auto max-w-6xl px-4 py-12">
         <h2 className="text-2xl font-bold text-slate-900">
-          Top 50 H-1B Sponsors — FY2026
+          Top 50 H-1B Sponsors — FY2026 (through Q3)
         </h2>
         <p className="mt-2 text-slate-600">
           Ranked by certified labor condition applications. Click any employer
-          for salaries, approval rates, top roles, and lottery odds.
+          for salaries, certification rates, top roles, and lottery odds.
         </p>
         <div className="mt-6 overflow-x-auto rounded-lg border border-slate-200">
           <table className="w-full text-left text-sm">
@@ -119,7 +119,7 @@ export default async function Home() {
                 <th className="px-4 py-3 font-semibold">#</th>
                 <th className="px-4 py-3 font-semibold">Employer</th>
                 <th className="px-4 py-3 font-semibold text-right">Filings</th>
-                <th className="px-4 py-3 font-semibold text-right">Approval</th>
+                <th className="px-4 py-3 font-semibold text-right">DOL certified %</th>
                 <th className="px-4 py-3 font-semibold text-right">
                   Median salary
                 </th>
@@ -244,7 +244,7 @@ export default async function Home() {
           </div>
         </div>
         <p className="mt-8 text-xs text-slate-500">
-          Data vintage: FY2024–FY2026 disclosure files, updated quarterly.
+          Data vintage: FY2024–FY2026 (through Q3) disclosure files, updated quarterly. FY2026 data covers decisions through June 30, 2026.
           LCA data reflects applications filed with the Department of Labor,
           not USCIS petition outcomes.
         </p>

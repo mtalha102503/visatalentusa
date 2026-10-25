@@ -14,7 +14,6 @@ import {
   composeFaqs,
   avgLotteryEntries,
   seniorShare,
-  NATIONAL_MEDIAN,
 } from "@/lib/analysis";
 
 export async function generateStaticParams() {
@@ -32,7 +31,7 @@ export async function generateMetadata({
   if (!s) return {};
   const y = s.years["2026"];
   const title = `${s.display_name} H-1B Sponsorship 2026`;
-  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} approval rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} LCA certification rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
   const url = `https://visatalentusa.com/sponsors/${slug}`;
   return {
     title,
@@ -90,7 +89,7 @@ export default async function SponsorPage({
   const stats = await getSiteStats();
   const rank = index.findIndex((e) => e.slug === slug) + 1;
 
-  const intro = composeIntro(s, y, rank, stats.total_sponsors_fy2026);
+  const intro = composeIntro(s, y, rank, stats.total_sponsors_fy2026, stats.median_wage_fy2026);
   const faqs = composeFaqs(s, y, rank);
   const avgEntries = avgLotteryEntries(y.wage_level_mix);
   const senior = seniorShare(y.wage_level_mix);
@@ -119,7 +118,7 @@ export default async function SponsorPage({
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
 
   const pageUrl = `https://visatalentusa.com/sponsors/${slug}/`;
-  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% approval rate.`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% LCA certification rate.`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -190,19 +189,19 @@ export default async function SponsorPage({
       {/* Stat cards */}
       <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
         <StatCard
-          label="FY2026 filings"
+          label="FY2026 (through Q3) filings"
           value={formatNum(y.total_cases)}
           sub={`Rank #${rank} nationally`}
         />
         <StatCard
-          label="Approval rate"
+          label="DOL certified %"
           value={formatPct(y.approval_rate)}
           sub={`${formatNum(y.certified_cases)} certified`}
         />
         <StatCard
           label="Median salary"
           value={formatUSD(y.median_wage_annual)}
-          sub={`National median ${formatUSD(NATIONAL_MEDIAN)}`}
+          sub={stats.median_wage_fy2026 != null ? `National median ${formatUSD(stats.median_wage_fy2026)}` : "National median —"}
         />
         <StatCard
           label="Avg. lottery entries"
@@ -220,7 +219,7 @@ export default async function SponsorPage({
           <p className="mt-2 text-sm text-slate-700">
             Under the 2026 wage-weighted lottery, Level I filings receive 1
             entry, Level II get 2, Level III get 3, and Level IV get 4.{" "}
-            {formatPct(senior, 0)} of {s.display_name}&apos;s FY2026 filings
+            {formatPct(senior, 0)} of {s.display_name}&apos;s FY2026 (through Q3) filings
             were Level III or above, giving its candidates an average of{" "}
             {avgEntries.toFixed(1)} entries per filing.
           </p>
@@ -305,19 +304,17 @@ export default async function SponsorPage({
             Year-over-year trend
           </h2>
           <p className="mt-2 text-sm text-slate-700">
-            {s.display_name} filed {formatNum(prev.total_cases)} H-1B
-            applications in FY2025 versus {formatNum(y.total_cases)} in
-            FY2026
+            {s.display_name} filings
             {y.yoy_change_pct != null &&
               (y.yoy_change_pct >= 0 ? (
                 <span>
                   {" "}— an increase of{" "}
-                  {(y.yoy_change_pct * 100).toFixed(1)}%.
+                  {(y.yoy_change_pct * 100).toFixed(1)}% versus the same period last year.
                 </span>
               ) : (
                 <span>
                   {" "}— a decrease of{" "}
-                  {(Math.abs(y.yoy_change_pct) * 100).toFixed(1)}%.
+                  {(Math.abs(y.yoy_change_pct) * 100).toFixed(1)}% versus the same period last year.
                 </span>
               ))}
           </p>
@@ -359,7 +356,7 @@ export default async function SponsorPage({
       <p className="mt-10 border-t border-slate-200 pt-4 text-xs text-slate-500">
         Data source: U.S. Department of Labor, Office of Foreign Labor
         Certification — Labor Condition Application disclosure data,
-        FY2024–FY2026. An LCA is filed by the employer before an H-1B
+        FY2024–FY2026 (through Q3). An LCA is filed by the employer before an H-1B
         petition; disclosure data does not indicate USCIS petition outcomes.
         Last updated: October 2026.
       </p>
