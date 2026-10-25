@@ -84,6 +84,14 @@ function Footer() {
                   >
                     Threads
                   </a>
+                  <a
+                    href="https://www.youtube.com/@VisaTalentUSA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-600 hover:text-blue-700 font-medium"
+                  >
+                    YouTube
+                  </a>
                 </div>
               </div>
             </div>

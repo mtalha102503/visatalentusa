@@ -36,6 +36,7 @@ export default async function Home() {
         sameAs: [
           "https://www.instagram.com/visatalentusa/",
           "https://www.threads.net/@visatalentusa",
+          "https://www.youtube.com/@VisaTalentUSA",
         ],
       },
     ],
