@@ -434,6 +434,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-salary-database",
+    title: "H-1B Salary Database Guide 2026: How to Search, Read & Compare Real LCA Salaries",
+    excerpt:
+      "How to read any H-1B salary database properly: what an LCA wage really is, what wage levels I–IV mean, step-by-step searches by company, job title and state, and how to compare two offers — all from real DOL LCA records, with worked examples from Amazon and Software Engineer.",
+    datePublished: "2026-10-28T00:00:00+00:00",
+    dateModified: "2026-10-28T00:00:00+00:00",
+    readingMinutes: 14,
+    tags: ["H-1B Salary Database", "H-1B Salaries", "Guides"],
+    faqs: [
+      {
+        question: "Is the salary data in H-1B databases real?",
+        answer: "Yes, when the database cites the Department of Labor. Every figure in this guide comes from DOL Labor Condition Application disclosure data — 1,532,089 H-1B records across FY2024–FY2026. If a salary site cannot name its source, treat its numbers as marketing, not data.",
+      },
+      {
+        question: "What is the difference between LCA wage and actual salary?",
+        answer: "The LCA wage is the offered wage attested on the Labor Condition Application at filing time — at least the prevailing wage and at least the actual wage paid to similarly employed workers. Actual salary can be higher because bonuses, equity, raises after filing, and role changes are not in the LCA record. Use the database median as a market benchmark, not a prediction of your payslip.",
+      },
+      {
+        question: "What do wage levels I–IV mean?",
+        answer: "Prevailing-wage levels set by the job's requirements: Level I is entry-level work, Level II is qualified work, Level III is experienced work, and Level IV is fully competent, expert-level work. Higher levels carry higher prevailing wages and, under the wage-weighted lottery rule, more selection entries. Compare salaries within the same level when you can.",
+      },
+      {
+        question: "How do I find salaries for my job title?",
+        answer: "Use the Sponsor Match Finder: type your title and read the snapshot — total FY2026 (through Q3) filings, median offered salary, and LCA certification rate — plus the ranked list of top sponsoring employers for that exact title. For Software Engineer, that snapshot is 40,003 filings and a $151,000 median.",
+      },
+      {
+        question: "How do I find salaries at a specific company?",
+        answer: "Open the company's sponsor profile from the Top 1,000 sponsor list. Amazon's profile, for example, shows 19,937 FY2026 (through Q3) filings, a $158,000 median offered salary, a 99.98% LCA certification rate, and breakdowns by top titles and worksite states.",
+      },
+      {
+        question: "Can I compare two job offers with this data?",
+        answer: "Yes, if you compare the same metric in the same year: employer medians against employer medians, or title medians against title medians, all FY2026 (through Q3). An offer above the matching median is strong; an offer well below it is a citable negotiation point. Never compare a title median with an employer median, or a through-Q3 figure with a full-year figure.",
+      },
+      {
+        question: "Is the median salary a guaranteed salary?",
+        answer: "No. The median is the middle offered wage across filings for that employer or title — half the filings are above it, half below. Your own offer depends on your wage level, worksite, experience, and negotiation. Treat the median as the market level, not as a promise.",
+      },
+      {
+        question: "What does the DOL LCA certification rate mean?",
+        answer: "Certified LCA cases divided by filed cases, where certified includes both Certified and Certified - Withdrawn. It measures DOL paperwork certification — a compliance-quality signal. It is not the USCIS H-1B petition approval rate, and a high rate does not guarantee any individual petition will be approved.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
