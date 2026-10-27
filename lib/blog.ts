@@ -390,6 +390,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h4-ead-guide",
+    title: "H-4 EAD Guide 2026: Who Qualifies, How to Apply, Fee & Renewal Rules",
+    excerpt:
+      "Complete H-4 EAD guide for H-1B spouses: the two eligibility paths (approved I-140 or AC21 extension), step-by-step Form I-765 application, the $520 paper fee, honest processing times, and renewal now that automatic extensions are gone — sourced to USCIS.",
+    datePublished: "2026-10-27T00:00:00+00:00",
+    dateModified: "2026-10-27T00:00:00+00:00",
+    readingMinutes: 16,
+    tags: ["H-4 EAD", "H-1B Spouses", "Guides"],
+    faqs: [
+      {
+        question: "What is an H-4 EAD?",
+        answer: "A work permit (Form I-766 card) for certain H-4 spouses of H-1B workers. H-4 status alone does not authorize work, and H-4 children are never eligible. It allows unrestricted work — any employer, multiple jobs, or self-employment.",
+      },
+      {
+        question: "Who qualifies for an H-4 EAD?",
+        answer: "H-4 spouses whose H-1B spouse is the principal beneficiary of an approved Form I-140, or has been granted H-1B status beyond six years under AC21 sections 106(a) and (b). A pending I-140 alone does not qualify, and priority-date currency does not matter for the approved-I-140 path.",
+      },
+      {
+        question: "How much does the H-4 EAD cost?",
+        answer: "$520 for a paper Form I-765 filing. As of October 2026, category (c)(26) is not accepted online, so the $470 online price does not apply to H-4 EAD. The $410 figure still seen online is the pre-April-2024 fee — confirm the current fee on the USCIS G-1055 fee schedule before filing.",
+      },
+      {
+        question: "How long does H-4 EAD processing take?",
+        answer: "It varies sharply by filing type: USCIS figures reported in October 2026 put category (c)(26) at about 6.5 months when filed with an H-4 extension and about 17.5 months for a standalone I-765. Check the live USCIS processing-times tool for your category and center.",
+      },
+      {
+        question: "Can I keep working while my H-4 EAD renewal is pending?",
+        answer: "Not for renewals filed on or after October 30, 2025. A DHS final rule (October 14, 2026, 91 FR 65306) permanently ended the automatic extension for those renewals — work authorization ends the day after the card expires and resumes only when the new card is approved. Renewals filed before October 30, 2025 keep up to 540 days.",
+      },
+      {
+        question: "Is premium processing available for the H-4 EAD?",
+        answer: "No. USCIS does not offer premium processing for Form I-765 in category (c)(26), and premium processing on the H-1B petition does not cover the H-4 extension or the EAD.",
+      },
+      {
+        question: "Can H-4 children get an EAD?",
+        answer: "No. Only H-4 spouses are eligible under category (c)(26); H-4 children can never receive work authorization through this category.",
+      },
+      {
+        question: "Is the H-4 EAD program ending?",
+        answer: "No. The rule at 8 CFR 274a.12(c)(26) remains in effect, and the Supreme Court declined review of the challenge to it on October 14, 2025. What ended is the automatic renewal extension, not the program. A separate proposal to eliminate the 60-day grace period is pending and does not rescind the H-4 EAD.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
