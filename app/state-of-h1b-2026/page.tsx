@@ -40,16 +40,20 @@ function ChartBars({
   max: number;
   ariaLabel: string;
 }) {
+  // Bar scale leaves room for the value label inside the viewBox, and the
+  // height grows with the row count — previously a fixed 640x190 box clipped
+  // the longest labels (e.g. "459,263", "−30.6%") and the 4th/5th rows.
+  const height = 56 + (rows.length - 1) * 58;
   return (
     <svg
-      viewBox="0 0 640 190"
+      viewBox={`0 0 720 ${height}`}
       role="img"
       aria-label={ariaLabel}
       className="w-full"
     >
       {rows.map((r, i) => {
         const y = 15 + i * 58;
-        const w = Math.max(8, (r.value / max) * 430);
+        const w = Math.max(8, (r.value / max) * 340);
         return (
           <g key={r.label}>
             <text x="0" y={y + 16} fontSize="15" fill="#334155">
