@@ -161,6 +161,33 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* State of H-1B 2026 report — featured data report */}
+      <section className="mx-auto max-w-6xl px-4 pb-12">
+        <Link
+          href="/state-of-h1b-2026"
+          className="block rounded-xl border border-blue-200 bg-blue-50 p-6 hover:border-blue-300 md:p-8"
+        >
+          <p className="text-sm font-semibold tracking-wide text-blue-700">
+            DATA REPORT · FY2026 (THROUGH Q3)
+          </p>
+          <h2 className="mt-2 text-2xl font-bold leading-tight text-slate-900">
+            State of H-1B 2026: Filings Fell 7%, Pay Rose, and Consulting
+            Pulled Back
+          </h2>
+          <p className="mt-2 text-slate-600">
+            U.S. employers filed 426,952 H-1B Labor Condition Applications
+            in FY2026 through Q3 — down 7.0% on the same period last year.
+            The decline is a consulting story: the big IT services firms
+            pulled back 30.6%, Big Tech stayed flat, and the median offered
+            wage still rose to $125,000. Built from real U.S. Department of
+            Labor disclosure data.
+          </p>
+          <p className="mt-4 text-sm font-semibold text-blue-700">
+            Read the full report →
+          </p>
+        </Link>
+      </section>
+
       {/* Why section */}
       <section className="bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-12">

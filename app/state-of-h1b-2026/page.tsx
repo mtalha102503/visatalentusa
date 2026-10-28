@@ -14,7 +14,11 @@ const jsonLd = {
   headline:
     "State of H-1B 2026: Filings Fell 7%, Pay Rose, and Consulting Pulled Back",
   datePublished: "2026-10-28",
-  author: { "@type": "Person", name: "Muhammad Talha" },
+  author: {
+    "@type": "Person",
+    name: "Muhammad Talha",
+    url: "https://visatalentusa.com/author/muhammad-talha",
+  },
   publisher: {
     "@type": "Organization",
     name: "VisaTalentUSA",
@@ -81,8 +85,15 @@ export default function StateOfH1B2026Page() {
         Back
       </h1>
       <p className="mt-3 text-sm text-slate-500">
-        By Muhammad Talha · Founder, HireSkys · October 2026 · Data: U.S.
-        Department of Labor LCA disclosure, FY2024–FY2026
+        By{" "}
+        <Link
+          href="/author/muhammad-talha"
+          className="font-medium text-slate-700 underline underline-offset-2 hover:text-blue-700"
+        >
+          Muhammad Talha
+        </Link>{" "}
+        · Founder, HireSkys · October 2026 · Data: U.S. Department of
+        Labor LCA disclosure, FY2024–FY2026
       </p>
       <script
         type="application/ld+json"

@@ -54,6 +54,11 @@ const tools = [
     label: "Priority Date Tracker",
     desc: "Is your EB-2 date current? Wait estimator & bulletin history",
   },
+  {
+    href: "/state-of-h1b-2026",
+    label: "State of H-1B 2026 — Data Report",
+    desc: "426,952 FY2026 filings: consulting pullback, flat Big Tech, rising pay",
+  },
 ];
 
 export default function Header() {
