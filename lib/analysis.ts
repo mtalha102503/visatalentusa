@@ -66,12 +66,12 @@ export function composeIntro(
       ? `with a median offered salary of ${formatUSD(y.median_wage_annual)}` +
         (nationalMedian != null
           ? y.median_wage_annual >= nationalMedian
-            ? `, ${formatPct(y.median_wage_annual / nationalMedian - 1, 0)} above the national H-1B median of ${formatUSD(nationalMedian)}`
-            : `, below the national H-1B median of ${formatUSD(nationalMedian)}`
+            ? `, ${formatPct(y.median_wage_annual / nationalMedian - 1, 0)} above the median across listed employers of ${formatUSD(nationalMedian)}`
+            : `, below the median across listed employers of ${formatUSD(nationalMedian)}`
           : ``)
       : `with salary data reported on each filing`;
   paras.push(
-    `Of those filings, ${formatPct(y.approval_rate)} were certified by the Department of Labor, ` +
+    `Of those filings, ${formatPct(y.approval_rate, 2)} were certified by the Department of Labor, ` +
       salaryBit +
       `.`
   );
@@ -80,8 +80,8 @@ export function composeIntro(
   const senior = seniorShare(y.wage_level_mix);
   if (avgEntries != null && senior != null) {
     paras.push(
-      `${formatPct(senior, 0)} of ${name}'s filings were at prevailing-wage Level III or above. ` +
-        `Under the 2026 wage-weighted lottery, that translates to an average of ${avgEntries.toFixed(1)} lottery entries per candidate — ` +
+      `${formatPct(senior, 0)} of ${name}'s filings with a reported wage level were at prevailing-wage Level III or above. ` +
+        `Under the 2026 wage-weighted lottery, that translates to an estimated average of ${avgEntries.toFixed(1)} lottery entries per candidate — ` +
         (avgEntries >= 2
           ? `meaning its candidates get meaningfully better odds than the typical Level I–II filing.`
           : `roughly in line with the broader market.`)
@@ -128,7 +128,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
     },
     {
       q: `What is ${name}'s H-1B certification rate?`,
-      a: `${formatPct(y.approval_rate)} of ${name}'s FY2026 (through Q3) H-1B filings were certified by the Department of Labor${y.denied_cases ? `, with ${formatNum(y.denied_cases)} denied` : ""}. Note that LCA certification is distinct from USCIS petition approval: a certified LCA means the Department of Labor accepted the filing, not that a petition will be approved.`,
+      a: `${formatPct(y.approval_rate, 2)} of ${name}'s FY2026 (through Q3) H-1B filings were certified by the Department of Labor${y.denied_cases ? `, with ${formatNum(y.denied_cases)} denied` : ""}. Note that LCA certification is distinct from USCIS petition approval: a certified LCA means the Department of Labor accepted the filing, not that a petition will be approved.`,
     },
     {
       q: `How much does ${name} pay H-1B workers?`,
@@ -163,7 +163,7 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
   if (avgEntries != null) {
     faqs.push({
       q: `What are the H-1B lottery odds at ${name}?`,
-      a: `No employer can guarantee lottery selection, but wage levels matter: under the 2026 wage-weighted system, Level I filings get 1 entry while Level IV get 4. Based on ${name}'s FY2026 (through Q3) wage mix, its candidates averaged ${avgEntries.toFixed(1)} entries per filing. Higher-wage offers at the same employer carry better odds.`,
+      a: `No employer can guarantee lottery selection, but wage levels matter: under the 2026 wage-weighted system, Level I filings get 1 entry while Level IV get 4. Based on ${name}'s FY2026 (through Q3) wage mix, its candidates averaged an estimated ${avgEntries.toFixed(1)} entries per filing. Higher-wage offers at the same employer carry better odds.`,
     });
   }
 

@@ -86,22 +86,25 @@ export default async function Home() {
             <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatNum(stats.total_sponsors_fy2026)}
             </p>
-            <p className="mt-1 text-sm text-slate-600">Sponsoring employers (FY2026, through Q3)</p>
+            <p className="mt-1 text-sm text-slate-600">Top sponsoring employers in our database (FY2026, through Q3)</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatNum(stats.total_cases_fy2026)}
             </p>
-            <p className="mt-1 text-sm text-slate-600">H-1B filings analyzed</p>
+            <p className="mt-1 text-sm text-slate-600">H-1B filings analyzed (listed employers)</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-blue-800 sm:text-3xl">
               {formatUSD(stats.median_wage_fy2026)}
             </p>
-            <p className="mt-1 text-sm text-slate-600">National median salary</p>
+            <p className="mt-1 text-sm text-slate-600">Median salary (listed employers)</p>
           </div>
         </div>
       </section>
+      <p className="mx-auto max-w-6xl px-4 pb-2 text-center text-sm text-slate-500">
+        Coverage: the database lists the employers with the most FY2026 filings. The full FY2026 market is 426,952 filings — see the State of H-1B 2026 report.
+      </p>
 
       {/* Top sponsors */}
       <section id="top-sponsors" className="mx-auto max-w-6xl px-4 py-12">
@@ -179,7 +182,7 @@ export default async function Home() {
             in FY2026 through Q3 — down 7.0% on the same period last year.
             The decline is a consulting story: the big IT services firms
             pulled back 30.6%, Big Tech stayed flat, and the median offered
-            wage still rose to $125,000. Built from real U.S. Department of
+            wage across all filings still rose to $125,000. Built from real U.S. Department of
             Labor disclosure data.
           </p>
           <p className="mt-4 text-sm font-semibold text-blue-700">

@@ -121,13 +121,13 @@ function buildIntro(t: TitleEntry, ctx: TitleContext): string[] {
     const m = formatUSD(t.median_wage);
     const nm = formatUSD(ctx.nationalMedian);
     if (diff >= 15) {
-      s.push(`The median offered salary of ${m} is well above the national H-1B median of ${nm}.`);
+      s.push(`The median offered salary of ${m} is well above the median across listed employers of ${nm}.`);
     } else if (diff >= 0) {
-      s.push(`The median offered salary of ${m} sits above the national H-1B median of ${nm}.`);
+      s.push(`The median offered salary of ${m} sits above the median across listed employers of ${nm}.`);
     } else if (diff >= -15) {
-      s.push(`The median offered salary of ${m} lands just below the national H-1B median of ${nm}.`);
+      s.push(`The median offered salary of ${m} lands just below the median across listed employers of ${nm}.`);
     } else {
-      s.push(`The median offered salary of ${m} is below the national H-1B median of ${nm}.`);
+      s.push(`The median offered salary of ${m} is below the median across listed employers of ${nm}.`);
     }
     if (t.avg_wage != null && t.median_wage > 0) {
       const skew = ((t.avg_wage - t.median_wage) / t.median_wage) * 100;
@@ -177,7 +177,7 @@ function buildInsights(t: TitleEntry, ctx: TitleContext): { label: string; text:
     const diff = ((t.median_wage - ctx.nationalMedian) / ctx.nationalMedian) * 100;
     out.push({
       label: "Salary position",
-      text: `Median offered pay of ${formatUSD(t.median_wage)} is ${pct(diff)} vs the national H-1B median of ${formatUSD(ctx.nationalMedian)}.`,
+      text: `Median offered pay of ${formatUSD(t.median_wage)} is ${pct(diff)} vs the median across listed employers of ${formatUSD(ctx.nationalMedian)}.`,
     });
   } else {
     out.push({
@@ -241,8 +241,8 @@ function buildFaqs(t: TitleEntry, ctx: TitleContext): { q: string; a: string }[]
     const diff = ((t.median_wage - ctx.nationalMedian) / ctx.nationalMedian) * 100;
     const pos =
       diff >= 0
-        ? `${pct(diff)} above the national H-1B median of ${formatUSD(ctx.nationalMedian)}`
-        : `${pct(diff)} below the national H-1B median of ${formatUSD(ctx.nationalMedian)}`;
+        ? `${pct(diff)} above the median across listed employers of ${formatUSD(ctx.nationalMedian)}`
+        : `${pct(diff)} below the median across listed employers of ${formatUSD(ctx.nationalMedian)}`;
     salaryA = `The median offered annual salary was ${formatUSD(t.median_wage)} across ${formatNum(t.total_cases)} FY2026 (through Q3) DOL filings — ${pos}. Use it as a benchmark when evaluating offers.`;
   } else {
     salaryA = `Median salary data was not available for ${name} in FY2026 (through Q3).`;

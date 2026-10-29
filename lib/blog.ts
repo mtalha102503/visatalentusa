@@ -14,7 +14,7 @@ export const blogPosts: BlogPostMeta[] = [
     slug: "h1b-lottery-2028",
     title: "H-1B Lottery 2028: Odds, Dates & Wage-Weighted Guide",
     excerpt:
-      "Complete H-1B lottery 2028 guide: wage-weighted selection odds by level (15% to 61%), expected registration dates, fees, and proven strategies to maximize your chances — backed by 2M+ real DOL filing records.",
+      "Complete H-1B lottery 2028 guide: wage-weighted selection odds by level (15% to 61%), expected registration dates, fees, and proven strategies to maximize your chances — backed by 1.5M+ real DOL filing records.",
     datePublished: "2026-10-10T00:00:00+00:00",
     dateModified: "2026-10-10T00:00:00+00:00",
     readingMinutes: 18,

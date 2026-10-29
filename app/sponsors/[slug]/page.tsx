@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!s) return {};
   const y = s.years["2026"];
   const title = `${s.display_name} H-1B Sponsorship 2026`;
-  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) + "%" : "—"} LCA certification rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(2) + "%" : "—"} LCA certification rate and ${y.median_wage_annual != null ? "$" + Math.round(y.median_wage_annual).toLocaleString() : "—"} median salary. See top roles, worksite states, and lottery odds.`;
   const url = `https://visatalentusa.com/sponsors/${slug}`;
   return {
     title,
@@ -118,7 +118,7 @@ export default async function SponsorPage({
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
 
   const pageUrl = `https://visatalentusa.com/sponsors/${slug}/`;
-  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(1) : "—"}% LCA certification rate.`;
+  const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(2) : "—"}% LCA certification rate.`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -195,18 +195,18 @@ export default async function SponsorPage({
         />
         <StatCard
           label="DOL certified %"
-          value={formatPct(y.approval_rate)}
+          value={formatPct(y.approval_rate, 2)}
           sub={`${formatNum(y.certified_cases)} certified`}
         />
         <StatCard
           label="Median salary"
           value={formatUSD(y.median_wage_annual)}
-          sub={stats.median_wage_fy2026 != null ? `National median ${formatUSD(stats.median_wage_fy2026)}` : "National median —"}
+          sub={stats.median_wage_fy2026 != null ? `Listed-employer median ${formatUSD(stats.median_wage_fy2026)}` : "National median —"}
         />
         <StatCard
-          label="Avg. lottery entries"
+          label="Est. avg. lottery entries"
           value={avgEntries != null ? avgEntries.toFixed(1) + "×" : "—"}
-          sub="Wage-weighted system"
+          sub="Wage-weighted system · estimated from LCA wage mix"
         />
       </div>
 
@@ -219,8 +219,8 @@ export default async function SponsorPage({
           <p className="mt-2 text-sm text-slate-700">
             Under the 2026 wage-weighted lottery, Level I filings receive 1
             entry, Level II get 2, Level III get 3, and Level IV get 4.{" "}
-            {formatPct(senior, 0)} of {s.display_name}&apos;s FY2026 (through Q3) filings
-            were Level III or above, giving its candidates an average of{" "}
+            {formatPct(senior, 0)} of {s.display_name}&apos;s FY2026 (through Q3) filings with a reported wage level
+            were Level III or above, giving its candidates an estimated average of{" "}
             {avgEntries.toFixed(1)} entries per filing.
           </p>
           <div className="mt-4 space-y-2">

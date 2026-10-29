@@ -222,15 +222,14 @@ export default function StateOfH1B2026Page() {
         2. Sponsor trajectories: cliffs, and quiet climbers
       </h2>
       <p className="mt-4 leading-relaxed text-slate-700">
-        Three years of full-year totals show who fell off a cliff and who
-        climbed quietly. TCS has collapsed two years running: 9,700 →
-        7,881 → 2,923, down 70% from FY2024. Cognizant halved in a single
-        year (11,164 → 5,799). EY and Microsoft fell from ~10,000 and
-        ~9,200 to ~5,400 and ~5,100. On the other side, Nvidia nearly
-        doubled in two years (1,355 → 2,457), Tesla grew every year
-        (2,125 → 2,896), Amazon stayed near its peak, and Apple held most
-        of its big FY2025 jump. Intel, rarely mentioned, halved in two
-        years (3,766 → 1,751).
+        Same-period comparisons — FY2026 through Q3 against the same
+        months of FY2025 — show who fell off a cliff and who climbed
+        quietly. TCS fell 55.5% and Cognizant 32.9%; EY fell 38.4% and
+        Microsoft 30.4%. On the other side, Nvidia climbed 74.3% and
+        Tesla 25.4% on the same basis, Amazon rose 5.1% and Apple
+        17.6%. The table below still shows full-year FY2024 and FY2025
+        totals for context, but the FY2026 column is through Q3 only —
+        compare it with the Same-period column, not with the full years.
       </p>
       <div className="mt-6 overflow-x-auto">
         <table className="w-full border-collapse text-sm">
@@ -486,10 +485,10 @@ export default function StateOfH1B2026Page() {
       </p>
 
       <h2 className="mt-12 text-2xl font-bold text-slate-900">
-        8. What happened next confirms the direction
+        8. The wider picture confirms the direction
       </h2>
       <p className="mt-4 leading-relaxed text-slate-700">
-        The LCA window ends June 30, 2026. Everything after it points the
+        Running alongside the LCA window, the USCIS side pointed the
         same way — harder. USCIS received 343,981 eligible FY2026 cap
         registrations, down 26.9% from 470,342 in FY2025, and selected
         118,660 beneficiaries (35.3%, up from 29% and 24.8% the two years
@@ -519,17 +518,18 @@ export default function StateOfH1B2026Page() {
         tracks this as the single source of truth.
       </p>
       <p className="mt-4 leading-relaxed text-slate-700">
-        Then came the acceleration. A Congressional Research Service
+        After the window closed, the direction accelerated. A Congressional Research Service
         report (“H-1B Executive Actions in 2026,” October 14, 2026)
         shows FY2027 lottery registrations collapsing at the same
         firms: Cognizant <strong>zero</strong> (from 3,752), Infosys 759
-        (from 8,886, −91%), TCS 284 (from 5,955, −95%). A Federal
-        Register publication (September 23, 2026) puts the largest
+        (from 8,886, −91%), TCS 284 (from 5,955, −95%). Proclamation 11069, published in the Federal
+        Register on September 23, 2026, puts the largest
         staffing firms&apos; combined registrations down about 92%
         (24,946 → 2,055). And on October 8, 2026, the Department of
         Labor suspended PERM processing for TCS, Infosys, Wipro,
-        HCLTech, Cognizant, Capgemini, Microsoft and Adobe amid fraud
-        and compliance investigations.
+        HCLTech, Cognizant and Capgemini, and for Microsoft and Adobe
+        due to multiple active federal investigations, according to
+        Labor Secretary Sonderling&apos;s announcement.
       </p>
       <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5">
         <p className="font-bold text-slate-900">
@@ -587,6 +587,12 @@ export default function StateOfH1B2026Page() {
           are those absent from the FY2025 same-period window.
         </p>
         <p>
+          Naming: on this site, “2026 lottery” means the wage-weighted
+          lottery held in 2026 for the FY2027 cap; “FY2027 lottery” is
+          the same event. “Lottery 2028” guides cover the FY2028 cap
+          season, expected to open in March 2027.
+        </p>
+        <p>
           This report is an independent analysis. VisaTalentUSA is not
           affiliated with the Department of Labor, USCIS, or any
           employer listed. Nothing here is legal advice.
@@ -615,13 +621,22 @@ export default function StateOfH1B2026Page() {
           reported by The Economic Times:{" "}
           <a href="https://economictimes.indiatimes.com/nri/latest-updates/infosys-tcs-and-cognizant-cut-h-1b-lottery-registrations-as-trump-tightens-us-visa-rules/articleshow/135045136.cms" className="underline text-blue-600">
             Infosys, TCS and Cognizant cut H-1B lottery registrations
-          </a>
+          </a>{" "}(full report text via EveryCRSReport:{" "}<a href="https://www.everycrsreport.com/reports/IN12747.html" className="underline text-blue-600">IN12747 — H-1B Executive Actions in 2026</a>)
         </li>
         <li>
           National Foundation for American Policy analysis of the
           $100,000 fee&apos;s effect, as reported by Financial Express:{" "}
           <a href="https://www.financialexpress.com/immigration/does-the-math-behind-the-proposed-103265-h-1b-fee-actually-add-up/4348930/" className="underline text-blue-600">
             Does the math behind the proposed $103,265 H-1B fee add up?
+          </a>
+        </li>
+        <li>
+          Presidential Proclamation 11069 (dated September 18, 2026,
+          published in the Federal Register on September 23, 2026),
+          combined H-1B registrations of the largest IT staffing and
+          outsourcing firms:{" "}
+          <a href="https://www.govinfo.gov/content/pkg/FR-2026-09-23/pdf/2026-19554.pdf" className="underline text-blue-600">
+            Federal Register, Vol. 91, No. 183 (PDF)
           </a>
         </li>
       </ul>
