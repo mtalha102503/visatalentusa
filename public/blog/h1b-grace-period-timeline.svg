@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="H-1B grace period timeline: Day 0 employment ends, decision gates on Days 14, 30 and 45, file by Day 59, deadline Day 60, and the three Day 61 branches">
+  <defs>
+    <linearGradient id="grace-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#grace-bg)" rx="16"/>
+
+  <text x="600" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">H-1B Grace Period: Your 60-Day Clock</text>
+  <text x="600" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Day 0 is your last day of paid employment — the clock starts the day after</text>
+
+  <!-- warning strip -->
+  <rect x="60" y="122" width="1080" height="56" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#92400e">Your real deadline = SHORTER of Day 60 or your I-94 expiry date</text>
+
+  <!-- timeline line -->
+  <line x1="80" y1="310" x2="1120" y2="310" stroke="#3b82f6" stroke-width="4"/>
+
+  <!-- Day 0 -->
+  <g>
+    <circle cx="150" cy="310" r="36" fill="#1e3a8a"/>
+    <text x="150" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Day 0</text>
+    <text x="150" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Employment ends</text>
+    <text x="150" y="408" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">last day of paid</text>
+    <text x="150" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">employment</text>
+  </g>
+
+  <!-- Day 14 -->
+  <g>
+    <circle cx="330" cy="310" r="36" fill="#3b82f6"/>
+    <text x="330" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">14</text>
+    <text x="330" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Gate 1 — Day 14</text>
+    <text x="330" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">employer in LCA or</text>
+    <text x="330" y="404" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">interview stage, or</text>
+    <text x="330" y="426" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">I-539 path started</text>
+  </g>
+
+  <!-- Day 30 -->
+  <g>
+    <circle cx="510" cy="310" r="36" fill="#3b82f6"/>
+    <text x="510" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">30</text>
+    <text x="510" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Gate 2 — Day 30</text>
+    <text x="510" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">no petition in motion?</text>
+    <text x="510" y="404" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">file the safety-net</text>
+    <text x="510" y="426" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">B-2 or dependent I-539</text>
+  </g>
+
+  <!-- Day 45 -->
+  <g>
+    <circle cx="690" cy="310" r="36" fill="#3b82f6"/>
+    <text x="690" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">45</text>
+    <text x="690" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Gate 3 — Day 45</text>
+    <text x="690" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">final decision point:</text>
+    <text x="690" y="404" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">pending I-539 or an</text>
+    <text x="690" y="426" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">orderly departure plan</text>
+  </g>
+
+  <!-- Day 59 -->
+  <g>
+    <circle cx="870" cy="310" r="36" fill="#d97706"/>
+    <text x="870" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">59</text>
+    <text x="870" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">FILE BY — Day 59</text>
+    <text x="870" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">filing must be RECEIVED</text>
+    <text x="870" y="404" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">by USCIS — “mailed on</text>
+    <text x="870" y="426" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Day 59” is not received</text>
+  </g>
+
+  <!-- Day 60 -->
+  <g>
+    <circle cx="1050" cy="310" r="36" fill="#dc2626"/>
+    <text x="1050" y="322" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">60</text>
+    <text x="1050" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Deadline</text>
+    <text x="1050" y="408" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">qualifying filing</text>
+    <text x="1050" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">received, or depart</text>
+  </g>
+
+  <!-- Day 61 branches box -->
+  <rect x="60" y="462" width="1080" height="104" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="600" y="496" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#1e3a8a">Day 61 — three branches</text>
+  <text x="240" y="532" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#166534">Filing pending → authorized stay</text>
+  <text x="600" y="532" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#dc2626">No filing → out of status</text>
+  <text x="960" y="532" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#92400e">Denied → presence accrues after denial</text>
+
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Grace period: 8 CFR 214.1(l)(2) — discretionary, once per validity period, no work without a separate authorization</text>
+</svg>

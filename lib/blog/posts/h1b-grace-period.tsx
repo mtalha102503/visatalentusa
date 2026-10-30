@@ -187,6 +187,16 @@ export default function H1BGracePeriodContent() {
         plan.
       </p>
 
+      <div className="overflow-hidden rounded-lg border border-slate-200">
+        <img
+          src="/blog/h1b-grace-period-timeline.svg"
+          alt="H-1B grace period timeline: Day 0 employment ends, decision gates on Days 14, 30 and 45, file by Day 59, deadline Day 60, and the three Day 61 branches"
+          className="h-auto w-full"
+          width={1200}
+          height={630}
+        />
+      </div>
+
       <h2>Day-by-Day Action Plan</h2>
       <h3>Day 0 — the day employment ends</h3>
       <ul>
