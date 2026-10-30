@@ -478,6 +478,78 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-grace-period",
+    title: "H-1B Grace Period After Layoff: The 60-Day Rule, Day-by-Day Plan & the 2026 Elimination Proposal",
+    excerpt:
+      "Laid off on H-1B? You have up to 60 consecutive calendar days — or until your I-94 ends, whichever is shorter — under 8 CFR 214.1(l)(2). The exact rule, when the clock starts, the four paths (new employer, B-2, dependent status, departure), H-4 EAD during the grace period, and the DHS proposal to eliminate it (comments due November 10, 2026).",
+    datePublished: "2026-10-30T00:00:00+00:00",
+    dateModified: "2026-10-30T00:00:00+00:00",
+    readingMinutes: 16,
+    tags: ["H-1B Grace Period", "H-1B Layoff", "Guides"],
+    faqs: [
+      {
+        question: "How long is the H-1B grace period after a layoff?",
+        answer: "Up to 60 consecutive calendar days, or until your authorized validity period (I-94) ends, whichever is shorter — under 8 CFR 214.1(l)(2). It is discretionary, applies once per authorized validity period, and does not itself authorize work.",
+      },
+      {
+        question: "When does the 60-day grace period start?",
+        answer: "The day after termination of employment, typically determined by the last day for which a salary or wage is paid. Severance paid after your last working day does not automatically move the clock; if you remain an active, paid employee on garden leave or a notice period, the date is fact-dependent.",
+      },
+      {
+        question: "Does severance pay extend the H-1B grace period?",
+        answer: "Not automatically. USCIS applies the \"last day salary or wage is paid\" test, and severance is generally compensation for job loss, not payment for services rendered. Lump-sum severance or PTO paid after your last working day does not by itself push the start date later.",
+      },
+      {
+        question: "Can I work during the 60-day grace period?",
+        answer: "No — the grace period preserves status, not work authorization. The exception is a separate authorization: an eligible H-1B worker may begin work for a new employer immediately after USCIS receives a nonfrivolous I-129 petition (portability). A valid dependent EAD or a compelling circumstances EAD are other separate bases.",
+      },
+      {
+        question: "Can I change employers during the grace period, and when can I start work?",
+        answer: "Yes. Your new employer files Form I-129 with a certified LCA before your grace period ends. If you are eligible for portability, you may begin work immediately after USCIS receives the nonfrivolous petition — the legal trigger is receipt by USCIS, not approval and not the receipt notice (though many attorneys advise waiting for the notice as a safety practice). If the petition is denied, portability work authorization ends.",
+      },
+      {
+        question: "What happens if I don't find a job within 60 days?",
+        answer: "It depends on whether you filed something in time. A timely, nonfrivolous filing pending past Day 60 keeps you in a period of authorized stay. With no qualifying filing, you are out of status after the grace period ends and should depart by the deadline to avoid unlawful-presence accrual.",
+      },
+      {
+        question: "What happens on day 61?",
+        answer: "Day 61 is not an automatic 3-year bar. With a timely filing pending, you remain in authorized stay; unlawful presence is tolled while it is pending and restarts the day after a denial. With no filing, you are out of status and accruing risk; the 3-year and 10-year bars attach on departure after more than 180 days or one year or more of unlawful presence, respectively.",
+      },
+      {
+        question: "Can I travel outside the US during the grace period?",
+        answer: "You can depart, but departure ends the grace period immediately and it cannot be recaptured on re-entry. Re-entry requires a new status basis and CBP admission, which is discretionary. Do not travel on the assumption that your old status will still be waiting when you return.",
+      },
+      {
+        question: "Can my H-4 spouse keep working on H-4 EAD during the grace period?",
+        answer: "Yes — USCIS states directly that an H-4 spouse's EAD or employment authorization incident to status remains valid during the maximum 60-day grace period. But when the grace period ends without a new basis, derivative H-4 status ends with it, and the EAD becomes invalid for work even if the card's printed expiry date is later.",
+      },
+      {
+        question: "Can I change to B-2, H-4, or F-1 status during the grace period?",
+        answer: "Yes, by filing Form I-539 before the grace period ends. A timely, nonfrivolous filing gives you a period of authorized stay while it is pending, but the new status itself requires approval. B-2 does not permit work; H-4 work requires a separate approved H-4 EAD.",
+      },
+      {
+        question: "Is the grace period automatic, or can USCIS deny or shorten it?",
+        answer: "It is discretionary — the regulation says DHS may eliminate or shorten it as a matter of discretion, and USCIS decides when adjudicating your later filing. There is no form to apply for it. Ask for a favorable exercise of discretion in your later filing's cover letter.",
+      },
+      {
+        question: "Can I use the grace period more than once?",
+        answer: "Once per authorized validity period. A new employer and a new validity period can give rise to a fresh grace period on a later termination. Returning to the same employer on the same petition does not reset it.",
+      },
+      {
+        question: "Does the grace period apply if I quit instead of being laid off?",
+        answer: "Yes. USCIS confirms the grace period may apply to both voluntary and involuntary cessation of employment. Resignation counts the same way a layoff does — the clock still runs from the day after employment ends.",
+      },
+      {
+        question: "What is the difference between the 60-day and 10-day grace periods?",
+        answer: "The 60-day period (8 CFR 214.1(l)(2)) applies when employment ends before the validity period ends — a layoff, resignation, or termination. The 10-day period (8 CFR 214.1(l)(1)) attaches to the edges of a completed validity period: up to 10 days before it begins and 10 days after it ends. The 10-day period does not cover a mid-petition layoff, and it cannot be stacked onto the 60 days.",
+      },
+      {
+        question: "Has the 60-day grace period been eliminated in 2026?",
+        answer: "No. DHS has only proposed eliminating it (91 FR 57807, September 11, 2026, docket USCIS-2026-0364, comments due November 10, 2026). The current rule in 8 CFR 214.1(l)(2) remains in effect until a final rule is published with its own effective date.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
