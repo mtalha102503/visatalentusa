@@ -550,6 +550,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-lca",
+    title: "H-1B LCA Guide 2026: The Employer Filing Playbook, From Wage Check to Certified LCA",
+    excerpt:
+      "End-to-end employer guide to the Labor Condition Application: choosing the SOC code and wage, filing ETA Form 9035/9035E in FLAG, every worksite case, the posting notice in full, denial and correction, validity and amendment triggers, and the Public Access File — without repeating the salary guide's wage-level tables.",
+    datePublished: "2026-11-02T00:00:00+00:00",
+    dateModified: "2026-11-02T00:00:00+00:00",
+    readingMinutes: 22,
+    tags: ["H-1B LCA", "H-1B Guides", "Guides"],
+    faqs: [
+      {
+        question: "How long does LCA certification take?",
+        answer: "DOL reviews LCAs within seven working days for completeness and obvious errors or inaccuracies. That is a review deadline, not a merits decision — and a filing returned for errors restarts the clock when the corrected version is submitted.",
+      },
+      {
+        question: "How long is a certified LCA valid?",
+        answer: "A certified H-1B LCA is valid for up to three years, but the end date written on the LCA controls, and the employment period in the petition cannot run past it. A new period of employment needs a new LCA.",
+      },
+      {
+        question: "What is the difference between the LCA and the H-1B petition?",
+        answer: "The LCA is the employer's attestation filing with the Department of Labor, covering wages, working conditions, no strike or lockout, and notice. The petition is Form I-129 filed with USCIS, which decides whether the job is a specialty occupation and the worker is qualified. The certified LCA must come first; the petition cannot be filed without it.",
+      },
+      {
+        question: "Does a certified LCA guarantee USCIS approval?",
+        answer: "No. Certification means only that DOL found the form complete with no obvious inaccuracies. USCIS adjudicates the petition separately and can issue a request for evidence or deny it — including where the petition does not match the certified LCA on wage, worksite, or duties.",
+      },
+      {
+        question: "What must the posting notice say, and how long must it stay up?",
+        answer: "The notice must state that H-1B workers are sought, how many, in which classification, at what wages, for what period, and at which locations, plus that the LCA is available for public inspection and the Wage and Hour Division complaint statement. It must be given on or within 30 days before filing. A posted or bulletin-board notice runs for 10 days; individual direct notice, such as a single email to each affected employee, counts once. Union workplaces give notice to the bargaining representative instead.",
+      },
+      {
+        question: "Do I need a new LCA if the worker moves to a new worksite?",
+        answer: "It depends on the move. Within the same area of intended employment, with unchanged job terms, no new LCA is needed — but post the existing LCA notice at the new site. Outside the area, a new LCA plus an amended petition filed before the move are required. Short-term placements outside the area need neither, but only up to 30 workdays in a year (60 where the worker keeps a workstation and ties at the permanent site), with the required wage and travel and lodging costs covered.",
+      },
+      {
+        question: "What goes in the Public Access File?",
+        answer: "The certified LCA, the worker's rate of pay, a description of the actual wage system, the prevailing wage rate and its source, documentation of the notice given to workers, and evidence that the H-1B worker received a copy of the LCA. Keep it at the principal U.S. office or the worksite, make it available to any interested party who asks, and retain it for the full period the regulation sets.",
+      },
+      {
+        question: "What happens if the LCA is denied?",
+        answer: "The petition cannot proceed without a certified LCA, so a denial stops the case at DOL. The fix is a corrected filing addressing the error — wage, occupation, worksite, or notice — which restarts the seven-working-day review. Common causes are a wage below the required wage, a SOC code that does not match the duties, and a worksite missing or mismatched to its wage area.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
