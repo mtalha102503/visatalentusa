@@ -594,6 +594,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h4-visa-guide",
+    title: "H-4 Visa Guide 2026: Stamping, Status, Work Rules, and the Age-21 Playbook",
+    excerpt:
+      "Complete H-4 visa guide for H-1B spouses and children: who qualifies, the stamp-vs-status-vs-I-94 distinction, step-by-step consular stamping and Form I-539 extensions, the 2025 stamping and interview-waiver changes, work and study rules, the age-21 playbook, and 221(g) delays — sourced to USCIS and the State Department.",
+    datePublished: "2026-11-03T00:00:00+00:00",
+    dateModified: "2026-11-03T00:00:00+00:00",
+    readingMinutes: 24,
+    tags: ["H-4 Visa", "H-1B Guides", "Guides"],
+    faqs: [
+      {
+        question: "What is an H-4 visa?",
+        answer: "The H-4 is the dependent visa for the spouse and unmarried children under 21 of an H-category worker, most commonly an H-1B worker. It lets them live in the US for as long as the principal keeps valid status. It is not a work visa and it is not independent of the principal's status.",
+      },
+      {
+        question: "Who can apply for an H-4 visa?",
+        answer: "A lawful spouse and unmarried children under 21 of an H-1B, H-1B1, H-2A, H-2B, or H-3 worker. Parents, siblings, unmarried partners, and children who have turned 21 or married cannot qualify, regardless of the relationship.",
+      },
+      {
+        question: "Can H-4 visa holders work in the US?",
+        answer: "Not on H-4 status alone. Only certain spouses — those whose principal has an approved I-140, or holds H-1B status extended beyond six years under AC21 — can apply for an Employment Authorization Document (EAD). H-4 children cannot work under this rule at any age. See our H-4 EAD guide for the full process.",
+      },
+      {
+        question: "How do I apply for an H-4 visa stamp?",
+        answer: "Complete Form DS-160 (one per applicant, including children), pay the $205 H-category visa fee, book an interview at a consulate in your country of nationality or legal residence, attend with the documents in the checklist above, and check your I-94 record after entry.",
+      },
+      {
+        question: "What documents do I need for H-4 stamping?",
+        answer: "Passport valid 6+ months, DS-160 confirmation, appointment letter, the marriage certificate (original + copy) for a spouse or birth certificates for children, and the principal's I-797 approval notice, recent pay stubs, employment verification letter, and visa stamp copy. Extra marriage proof helps if the marriage is under two years old. The full checklist is in the documents section above.",
+      },
+      {
+        question: "Is dropbox available for H-4 renewals?",
+        answer: "Do not count on it. Interview-waiver (\"dropbox\") eligibility narrowed sharply through 2025, and most H-1B/H-4 applicants are now called for in-person interviews. Some consulates may still offer it in narrow cases — check your consulate's current instructions and keep an interview plan ready.",
+      },
+      {
+        question: "How do I extend H-4 status inside the US?",
+        answer: "File Form I-539 with USCIS before the current status expires, with proof of the relationship and of the principal's current status. A timely filing lets you remain in an authorized period of stay while USCIS decides. It does not grant work authorization.",
+      },
+      {
+        question: "What happens when my child turns 21 on H-4?",
+        answer: "H-4 eligibility ends on the 21st birthday. Plan 12+ months ahead: for most children in school, the next status is F-1, which needs an I-20 and a change-of-status filing with enough lead time. The Child Status Protection Act helps green-card cases — it does not freeze H-4 age. See the age-out playbook above.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
