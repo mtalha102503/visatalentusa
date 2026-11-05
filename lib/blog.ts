@@ -645,7 +645,7 @@ export const blogPosts: BlogPostMeta[] = [
       "H-1B visa cost, broken down by employer type: every USCIS fee from Form G-1055 (edition 10/26/26), who pays what by law, transfer, extension and amendment totals, dependent costs, and the 2026 fee changes that are in effect, blocked, or only proposed.",
     datePublished: "2026-11-05T00:00:00+00:00",
     dateModified: "2026-11-05T00:00:00+00:00",
-    readingMinutes: 51,
+    readingMinutes: 37,
     tags: ["H-1B Visa Cost", "H-1B Guides", "Guides"],
     faqs: [
       {
