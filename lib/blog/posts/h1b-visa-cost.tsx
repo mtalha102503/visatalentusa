@@ -166,11 +166,8 @@ export default function H1BVisaCostContent() {
 
       <h2>Every H-1B fee, in one table</h2>
       <p>
-        Eight government fees make up the H-1B cost, plus the consular
-        fee for the visa stamp itself. None of them is optional except
-        premium processing. The table below is the reference for the
-        whole guide: the amount, who it applies to, and when it
-        applies.
+        The table below lists eight fees and explains when each one
+        applies. None of them is optional except premium processing.
       </p>
       <div className="overflow-x-auto rounded-lg border border-slate-200">
         <table>
