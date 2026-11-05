@@ -638,6 +638,50 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-visa-cost",
+    title: "H-1B Visa Cost 2026: How Much Does It Really Cost to Sponsor an H-1B Worker?",
+    excerpt:
+      "H-1B visa cost, broken down by employer type: every USCIS fee from Form G-1055 (edition 10/26/26), who pays what by law, transfer, extension and amendment totals, dependent costs, and the 2026 fee changes that are in effect, blocked, or only proposed.",
+    datePublished: "2026-11-05T00:00:00+00:00",
+    dateModified: "2026-11-05T00:00:00+00:00",
+    readingMinutes: 51,
+    tags: ["H-1B Visa Cost", "H-1B Guides", "Guides"],
+    faqs: [
+      {
+        question: "How much does an H-1B visa cost in total?",
+        answer: "For a regular employer, a new cap-subject petition costs $3,545 online ($3,595 on paper), or $6,510 with premium processing. A small for-profit employer pays $2,225 (a small nonprofit that owes ACWIA pays $1,925 for a new cap-subject petition), and a university or ACWIA-exempt nonprofit filing a cap-exempt petition pays $960. Those are USCIS fees only — attorney fees are separate.",
+      },
+      {
+        question: "Who pays H-1B fees — the employer or the employee?",
+        answer: "The employer files the petition and pays the petition fees. The worker can never pay any part of the ACWIA training fee or the $500 fraud fee, in any form. Other petition costs are the employer's business expenses and cannot be shifted to the worker if they would push pay below the required wage. The worker normally pays only personal costs, such as the $205 consular fee and dependents' applications.",
+      },
+      {
+        question: "How much does an H-1B transfer cost?",
+        answer: "A regular employer pays $3,330 online ($3,380 on paper), or $6,295 with premium processing. A small for-profit employer pays $2,010 (a small nonprofit pays $1,710) and an ACWIA-exempt nonprofit pays $960. There is no $215 registration fee on a transfer, because a previously counted worker has already been counted against the cap. If the worker's only H-1B employment was cap-exempt and never counted, the cap may still apply.",
+      },
+      {
+        question: "How much does an H-1B extension cost?",
+        answer: "A first extension for a regular employer costs $2,830 online; a second or later extension costs $1,330, because the ACWIA fee drops off after the first extension. A small for-profit employer pays $1,510 for a first extension and $760 for a second or later one (a small nonprofit pays $1,210 for a first extension). A covered employer adds $4,000 to either.",
+      },
+      {
+        question: "Is the $100,000 H-1B fee still in effect?",
+        answer: "No. As of November 5, 2026, it is blocked by a Massachusetts court's vacatur of the implementing guidance (June 8, 2026) and a California preliminary injunction (September 30, 2026), and it is not being collected. The government has appealed, and USCIS says it still plans to collect the payment if the orders are lifted.",
+      },
+      {
+        question: "Is the $103,265 H-1B fee in effect?",
+        answer: "No. It is a proposed rule published August 25, 2026 (91 FR 54817, Docket USCIS-2026-0298). Comments closed September 24, 2026, and no final rule or effective date has been published. Nothing is owed. It would apply to cap-subject petitions only, not to cap-exempt petitions — and, on the best available secondary reading, not to a transfer by a worker who was already counted against the cap. A never-counted worker moving to a cap-subject employer would be filing a cap-subject petition, so the fee would apply to them if the rule is finalized as proposed.",
+      },
+      {
+        question: "How much is premium processing in 2026, and what does it guarantee?",
+        answer: "Premium processing costs $2,965 since March 1, 2026, up from $2,805. It guarantees a USCIS action — approval, denial, RFE, or NOID — within 15 business days, not an approval. An RFE or NOID stops the clock, and a new 15-business-day period starts on the response. The fee is refunded only if USCIS takes no qualifying action in time.",
+      },
+      {
+        question: "How much does an H-4 visa cost?",
+        answer: "At a consulate abroad, $205 per dependent — the MRV fee, with no reciprocity fee for Indian or Chinese nationals. Inside the US, one $470 paper Form I-539 covers a whole family on Form I-539A forms; filing online costs $420 per person, because online I-539 accepts a single applicant only. An H-4 EAD for a qualifying spouse costs $520 on paper; category (c)(26) cannot be filed online.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
