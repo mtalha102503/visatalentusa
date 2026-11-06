@@ -682,6 +682,78 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-change-of-status",
+    title: "H-1B Change of Status in 2026: F-1 to H-1B, Cap-Gap, and How to File",
+    excerpt:
+      "H-1B change of status, start to finish: who can change status to H-1B and who cannot, the F-1 to H-1B journey, cap-gap to April 1, every 2026 fee with the arithmetic, processing times, the travel rule, H-4 dependents, what happens if the request is denied, and the 2026 changes that are in effect, blocked, or only proposed.",
+    datePublished: "2026-11-06T00:00:00+00:00",
+    dateModified: "2026-11-06T00:00:00+00:00",
+    readingMinutes: 38,
+    tags: ["H-1B Change of Status", "H-1B Guides", "Guides"],
+    faqs: [
+      {
+        question: "What is H-1B change of status?",
+        answer:
+          "Change of status is a change of nonimmigrant classification for a person already lawfully in the United States, without leaving the country. For H-1B, the worker's employer files Form I-129 asking USCIS to change the worker's status, and if USCIS approves it, the new status takes effect on the start date on the approval notice. It is governed by section 248 of the Immigration and Nationality Act and 8 CFR Part 248.",
+      },
+      {
+        question: "Can I change status from F-1 to H-1B without leaving the US?",
+        answer:
+          "Yes — it is the most common change of status to H-1B. Your employer registers you in the March lottery, and if you are selected, files Form I-129 with a certified LCA requesting a change of status. If approved, your status changes to H-1B on the validity start date printed on the approval notice — October 1 is the earliest start date for cap-subject cases, not an automatic effective date for every approval. Work authorization begins when the change of status takes effect, as shown on the notice, not merely because the petition was approved. Cap-gap extends your F-1 status — and your OPT work authorization, if OPT was valid when the petition was filed — until April 1 of the fiscal year requested, or the approved petition's validity start date, whichever is earlier.",
+      },
+      {
+        question: "What is cap-gap, and how long does it last?",
+        answer:
+          "Cap-gap is the automatic extension of an F-1 student's status while a cap-subject H-1B petition is pending, so the student does not fall out of status between OPT expiry and October 1. Since January 17, 2025 it runs until April 1 of the fiscal year requested, or the approved petition's start date, whichever is earlier. If OPT was valid when the petition was filed, work authorization extends too; if the student was already in the 60-day grace period, status extends but work authorization does not.",
+      },
+      {
+        question: "Does the H-1B fee apply to change of status?",
+        answer:
+          "Yes. The regular USCIS fees apply in full to a change-of-status petition — it is the same I-129 petition, filed by the employer, with the same $215 registration, I-129 base fee, Asylum Program Fee, fraud fee and ACWIA fee. There is no separate change-of-status fee and no discount. The $100,000 proclamation payment does not apply to a change of status USCIS grants for a worker inside the US, and it is not currently being collected at all. The proposed $103,265 fee, if finalized, would apply to cap-subject change-of-status petitions.",
+      },
+      {
+        question: "How long does H-1B change of status take?",
+        answer:
+          "The calendar for a cap-subject F-1 to H-1B case is about seven months from March registration to the October 1 start date, and the start date cannot be moved earlier even if USCIS approves the petition in April or May. USCIS adjudication of the I-129 itself has no fixed timeline; premium processing guarantees an action within 15 business days for $2,965. As of November 6, 2026, the USCIS Case Processing Times tool showed 10 months for Form I-129, H-1B change of status in the US, at Service Center Operations (SCOPS) — 80% of cases completed within 10 months.",
+      },
+      {
+        question: "Can I travel while my change of status is pending?",
+        answer:
+          "No — do not travel. Leaving the United States while the change-of-status request is pending abandons the request. The petition can still be approved, but only for consular notification, which means leaving, getting a visa stamp, and re-entering. Departure before adjudication can also make the $100,000 proclamation payment apply. After the petition and the change of status are both approved, travel and readmission in F-1 status before October 1 is generally allowed.",
+      },
+      {
+        question: "What happens if my change of status is denied?",
+        answer:
+          "If the change of status is denied but the petition is approved, the petition is approved for consular notification only — you do not get H-1B status from it, and you must depart, get an H-1B visa, and re-enter. You keep any prior status you still hold, and if cap-gap applied, a 60-day grace period runs from the denial — unless the denial was for a status violation, misrepresentation or fraud, in which case there is no grace period. There is no appeal from a denied change of status request. If both the petition and the request are denied, your options are a still-valid prior status, the 60-day grace period, a timely Form I-539 to another status, a new petition, or departure.",
+      },
+      {
+        question: "Do my dependents need separate applications?",
+        answer:
+          "Yes. A spouse and unmarried children under 21 change to H-4 status on their own Form I-539 — they are not covered by the worker's I-129 alone. The fee is $470 on paper for the whole family, or $420 per person online. File the I-539s packaged together with the I-129 so USCIS adjudicates them together. Only the spouse may apply for H-4 work authorization, and only with an approved I-140 or AC21 beyond-six-year H-1B status.",
+      },
+      {
+        question: "What is the H-1B registration fee, and is it refunded if I am not selected?",
+        answer:
+          "The registration fee is $215 per beneficiary, paid by the employer in the March registration window for cap-subject petitions. It is never refunded — not if the beneficiary is not selected, and not if duplicate registrations are invalidated. It is charged only once, at registration; a selected beneficiary's petition does not carry a second registration fee.",
+      },
+      {
+        question: "Does the $100,000 fee apply to change of status?",
+        answer:
+          "No, not to a change of status USCIS grants for a worker inside the United States. It does apply if USCIS finds the worker ineligible for change of status, or if the worker departs before adjudication. And in practice it is not being collected at all as of November 2026, because a Massachusetts court vacated the implementing guidance and a California court enjoined enforcement under both proclamations, while the government appeals. The proclamations run to September 21, 2027, so the status can change.",
+      },
+      {
+        question: "Can a B-1/B-2 visitor change status to H-1B?",
+        answer:
+          "The regulation does not bar it — B-1/B-2 is not in the barred categories of 8 CFR 248.2. But a visitor who acts inconsistently with visitor status shortly after entering faces the preconceived-intent problem: State Department guidance says conduct inconsistent with visitor status within 90 days of entry can support a presumption of willful misrepresentation. It is guidance for consular officers, not a USCIS rule. Filing the change-of-status application alone is not enough to trigger the presumption — what matters is conduct inconsistent with visitor status and what the person actually told officers at entry.",
+      },
+      {
+        question: "What is the difference between change of status and consular processing?",
+        answer:
+          "Change of status happens inside the US: the employer files Form I-129, USCIS approves it with a new I-94 attached, and status changes on the start date without travel — and cap-gap covers the wait for F-1 students. Consular processing happens abroad: the petition is approved for consular notification, the worker gets a visa stamp at a US embassy or consulate, and is admitted in H-1B status. There is no cap-gap on the consular route, and the worker cannot work until admitted.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
