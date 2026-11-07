@@ -754,6 +754,78 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-visa-slots-india",
+    title: "H-1B Visa Slots in India 2026: Current Wait Times, Why Appointments Vanished, and What to Do",
+    excerpt:
+      "H-1B visa slots in India are scarce, but the picture is more complicated than the headlines: the official forecast says 1 to 6.5 months by consulate, while the live booking calendar often shows nothing at all. This guide covers the current wait times, the dated timeline of why slots vanished, how booking works now, emergency appointments, and what to do — and what not to do — while you wait.",
+    datePublished: "2026-11-07T00:00:00+00:00",
+    dateModified: "2026-11-07T00:00:00+00:00",
+    readingMinutes: 26,
+    tags: ["H-1B Visa Slots", "H-1B Stamping", "India"],
+    faqs: [
+      {
+        question: "Are H-1B visa slots available in India right now?",
+        answer:
+          "The official forecast says the next petition-based appointment is 1 to 6.5 months away by post, but the live booking calendar often shows no bookable H-1B interview date. There is no official H-1B-only wait time. Book any date you can, then reschedule into cancellations — but remember you get one free reschedule, so check the rescheduling allowance shown in your account before changing an appointment.",
+      },
+      {
+        question: "When will H-1B visa slots open in India?",
+        answer:
+          "Nobody knows, and no official reopening date exists. The State Department says posts release additional slots regularly, but no weekday pattern has been found and releases are irregular. Check the official portal yourself, at different times of day.",
+      },
+      {
+        question: "How do I check H-1B visa slot availability in India?",
+        answer:
+          "Two places: the State Department's Global Visa Wait Times table, which gives the official forecast by post, and the official booking portal reached from the embassy or consulate's own visa page. Treat tracker sites and slot-alert apps only as a prompt to check the official portal, and never share your login with one.",
+      },
+      {
+        question: "Can I book my H-1B interview at any consulate in India?",
+        answer:
+          "For renewals, generally yes — applicants may attend any post regardless of home city, so check all five posts for availability. First-time H and L interviews are principally centralized in Hyderabad, so a first-timer has less choice of post. Book through the portal's family and dependent option if family members are traveling with you, and schedule according to the capacity available.",
+      },
+      {
+        question: "Is Dropbox available for H-1B visa stamping in India?",
+        answer:
+          "No. Dropbox is the interview-waiver process, and it ended for H-1B and H-4 effective September 2, 2025. Every H-1B renewal now needs an in-person interview, regardless of prior visa history or how recently the last visa expired.",
+      },
+      {
+        question: "Can I get my H-1B stamped in another country?",
+        answer:
+          "Since September 6, 2025, applicants are told to schedule in their country of nationality or residence. Applying elsewhere may mean it is harder to qualify, significantly longer waits, and fees that are not refunded or transferred. Existing third-country appointments were generally not cancelled.",
+      },
+      {
+        question: "How do I request an emergency appointment?",
+        answer:
+          "First complete the DS-160, pay the fee, and schedule the first available regular interview. Only then submit an expedited request through the portal, and do not cancel the existing appointment while you wait. Funerals, medical emergencies, urgent business travel and school start dates may support an expedited request, subject to local criteria; weddings, graduations, conferences and tourism do not. A separate Mission India Emergency Request process exists for appointments cancelled in December 2025, with a rebooking window after approval — law-firm summaries describe it as 10 days.",
+      },
+      {
+        question: "How much is the H-1B visa fee in India?",
+        answer:
+          "The MRV fee is $205, paid in rupees at the consular exchange rate — at the rate in effect on May 25, 2026 (Rs 98 to the dollar), that worked out to Rs 20,090, but treat it as a dated example, not a guaranteed current amount. Indian nationals pay a $0 reciprocity fee. The receipt is valid 365 days to schedule an interview. The $250 Visa Integrity Fee is provided for by statute at issuance — budget for it, but confirm at your post, because collection in India was not independently confirmed.",
+      },
+      {
+        question: "What if my appointment was cancelled?",
+        answer:
+          "In the December 2025 mass cancellations, interviews were moved to March–April 2026, then to October 2026, then to 2027, while biometrics appointments continued on their original dates. Do not appear on the old date. The Mission India Emergency Request process gives a rebooking window after approval — law-firm summaries describe it as 10 days — and slots may still not be available inside that window. Follow the deadline stated in your approval notice.",
+      },
+      {
+        question: "Do I need to keep my social media public?",
+        answer:
+          "Yes. Since December 15, 2025, all H-1B applicants and H-4 dependents must set all social-media profiles to public for the online-presence review, and list the handles used in the last five years on the DS-160. Officers do not ask for passwords.",
+      },
+      {
+        question: "Will the $100,000 fee apply to me?",
+        answer:
+          "Only for certain new petitions: those filed on or after September 21, 2025 for beneficiaries outside the US without a valid H-1B visa, or requesting consular notification. It does not apply where USCIS grants the requested change of status, extension or amendment in the US, and later visa stamping alone does not re-trigger it. Leaving the US while a change-of-status petition is pending converts it to consular notification, which can trigger the fee. In practice it is not being collected at all as of November 2026, because of court orders — but the proclamation runs to September 21, 2027 and appeals are pending.",
+      },
+      {
+        question: "How long is the MRV fee receipt valid?",
+        answer:
+          "365 days from payment to schedule an interview. The interview itself may fall later if it is booked inside that window. If no interview is scheduled within a year, the receipt expires and the fee must be paid again.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
