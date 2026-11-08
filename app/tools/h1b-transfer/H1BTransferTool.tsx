@@ -4,17 +4,22 @@ import { useMemo, useState } from "react";
 
 /* ------------------------------------------------------------------ */
 /* USCIS fee schedule for H-1B change-of-employer ("transfer")         */
-/* petitions. Amounts reflect the USCIS fee schedule in effect; the    */
-/* $100K proclamation fee is presented as an opt-in toggle because its */
-/* legal status has been uncertain. Always verify current fees at      */
-/* uscis.gov before filing.                                            */
+/* petitions, per the G-1055 fee schedule (edition 10/26/26). Base     */
+/* filing fees are the ONLINE rates (paper filing is $780 for a        */
+/* regular employer). The $100K proclamation fee is presented as an    */
+/* opt-in toggle because its legal status has been uncertain. Always   */
+/* verify current fees at uscis.gov before filing.                     */
 /* ------------------------------------------------------------------ */
 const FEES = {
-  baseFiling: 460, // Form I-129
+  baseRegular: 730, // Form I-129, online filing, regular employer
+  baseSmallNonprofit: 460, // Form I-129, small employer or nonprofit
   acwiaSmall: 750, // 1–25 employees
   acwiaLarge: 1500, // 26+ employees
+  asylumRegular: 600, // Asylum Program fee, regular employer
+  asylumSmall: 300, // Asylum Program fee, 1–25 employees
+  asylumNonprofit: 0, // nonprofits are exempt from the Asylum Program fee
   fraudPrevention: 500, // change of employer petitions
-  premium: 2805, // Form I-907, 15 business days
+  premium: 2965, // Form I-907, 15 business days (since Mar 1, 2026)
   proclamation100k: 100000, // Sept 2025 proclamation — status uncertain
 };
 
@@ -42,15 +47,33 @@ const TABS: { id: TabId; label: string; desc: string }[] = [
 
 function FeeCalculator() {
   const [size, setSize] = useState<"small" | "large">("large");
+  const [orgType, setOrgType] = useState<"forProfit" | "nonprofit">("forProfit");
   const [premium, setPremium] = useState(false);
   const [include100k, setInclude100k] = useState(false);
 
   const rows = useMemo(() => {
+    const baseFee =
+      orgType === "nonprofit"
+        ? FEES.baseSmallNonprofit
+        : size === "small"
+          ? FEES.baseSmallNonprofit
+          : FEES.baseRegular;
+    const asylumFee =
+      orgType === "nonprofit"
+        ? FEES.asylumNonprofit
+        : size === "small"
+          ? FEES.asylumSmall
+          : FEES.asylumRegular;
     const list: { label: string; amount: number; note: string }[] = [
       {
         label: "Form I-129 base filing fee",
-        amount: FEES.baseFiling,
-        note: "Paid by the petitioning employer on every H-1B petition.",
+        amount: baseFee,
+        note:
+          orgType === "nonprofit"
+            ? "Online filing rate for nonprofit petitioners ($460). Paper filing is also $460 for nonprofits."
+            : size === "small"
+              ? "Online filing rate for employers with 25 or fewer full-time employees ($460)."
+              : "Online filing rate for a regular employer ($730). Paper filing is $780.",
       },
       {
         label: "ACWIA training fee",
@@ -59,6 +82,16 @@ function FeeCalculator() {
           size === "small"
             ? "Employers with 25 or fewer full-time employees pay $750."
             : "Employers with 26+ full-time employees pay $1,500.",
+      },
+      {
+        label: "Asylum Program fee",
+        amount: asylumFee,
+        note:
+          orgType === "nonprofit"
+            ? "Nonprofit organizations are exempt from the Asylum Program fee."
+            : size === "small"
+              ? "Employers with 25 or fewer full-time employees pay $300."
+              : "Employers with 26+ full-time employees pay $600.",
       },
       {
         label: "Fraud prevention & detection fee",
@@ -70,7 +103,7 @@ function FeeCalculator() {
       list.push({
         label: "Premium processing (Form I-907)",
         amount: FEES.premium,
-        note: "Optional. USCIS decision within 15 business days.",
+        note: "Optional. USCIS must take an agency action — approval, denial, RFE, or notice of intent to deny — within 15 business days.",
       });
     }
     if (include100k) {
@@ -81,7 +114,7 @@ function FeeCalculator() {
       });
     }
     return list;
-  }, [size, premium, include100k]);
+  }, [size, orgType, premium, include100k]);
 
   const total = rows.reduce((a, r) => a + r.amount, 0);
 
@@ -111,7 +144,36 @@ function FeeCalculator() {
             ))}
           </div>
           <p className="mt-2 text-xs text-slate-500">
-            Employer size sets the ACWIA training fee ($750 vs $1,500).
+            Employer size sets the ACWIA training fee ($750 vs $1,500) and
+            the Asylum Program fee ($300 vs $600 for for-profit employers).
+          </p>
+        </div>
+
+        <div className="rounded-lg border border-slate-200 bg-white p-5">
+          <p className="font-semibold text-slate-900">Employer type</p>
+          <div className="mt-3 flex gap-2">
+            {(
+              [
+                { v: "forProfit", l: "For-profit" },
+                { v: "nonprofit", l: "Nonprofit" },
+              ] as const
+            ).map((o) => (
+              <button
+                key={o.v}
+                onClick={() => setOrgType(o.v)}
+                className={`flex-1 rounded-lg border px-3 py-2.5 text-sm font-semibold transition-colors ${
+                  orgType === o.v
+                    ? "border-blue-600 bg-blue-50 text-blue-800"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                }`}
+              >
+                {o.l}
+              </button>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-slate-500">
+            Type sets the I-129 base fee ($730 vs $460) and the Asylum
+            Program fee (nonprofits are exempt).
           </p>
         </div>
 
@@ -128,7 +190,8 @@ function FeeCalculator() {
               <span className="font-semibold">Premium processing</span> (+
               {fmt(FEES.premium)})
               <span className="block text-xs text-slate-500">
-                15-business-day USCIS decision instead of months of waiting.
+                15-business-day USCIS agency action instead of months of
+                waiting.
               </span>
             </span>
           </label>
@@ -181,10 +244,13 @@ function FeeCalculator() {
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-slate-500">
-        Estimates only, based on the USCIS fee schedule. Employers — not
-        workers — must pay the ACWIA and fraud fees by law; premium processing
-        may be paid by either party. Fees change: verify at uscis.gov before
-        filing. Not legal advice.
+        Estimates only, based on the USCIS fee schedule (G-1055, edition
+        10/26/26). Employers — not workers — must pay the I-129, ACWIA,
+        asylum, and fraud fees by law; premium processing may be paid by
+        either party. Certain nonprofits (universities and affiliated
+        research organizations) are exempt from the ACWIA fee entirely —
+        totals above assume an ordinary nonprofit. Fees change: verify at
+        uscis.gov before filing. Not legal advice.
       </p>
     </div>
   );

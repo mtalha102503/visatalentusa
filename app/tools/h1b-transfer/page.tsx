@@ -46,11 +46,11 @@ const FAQS = [
   },
   {
     q: "How much does an H-1B transfer cost?",
-    a: "For the employer, typical government fees are the $460 I-129 filing fee, a $750 or $1,500 ACWIA training fee (depending on employer size), and a $500 fraud prevention fee — roughly $1,710 to $2,460 before optional premium processing ($2,805). By law the employer must pay the ACWIA and fraud fees; the worker cannot be asked to cover them. Use the fee calculator above for an exact breakdown.",
+    a: "For the employer, typical government fees are the I-129 filing fee ($730 for a regular employer, $460 for a small employer or nonprofit), a $750 or $1,500 ACWIA training fee (depending on employer size), a $600 / $300 / $0 Asylum Program fee (regular / small / nonprofit), and a $500 fraud prevention fee — roughly $1,710 to $3,330 before optional premium processing ($2,965). By law the employer must pay the I-129, ACWIA, asylum, and fraud fees; the worker cannot be asked to cover them. Use the fee calculator above for an exact breakdown.",
   },
   {
     q: "How long does an H-1B transfer take?",
-    a: "With regular processing, expect roughly 2–4 months from filing to approval, varying by service center. With premium processing ($2,805), USCIS guarantees a decision — approval, denial, or RFE — within 15 business days. Importantly, under AC21 portability you may begin working for the new employer as soon as the petition is filed (receipt issued), without waiting for approval.",
+    a: "With regular processing, expect roughly 2–4 months from filing to approval, varying by service center. With premium processing ($2,965), USCIS guarantees an agency action — approval, denial, RFE, or notice of intent to deny — within 15 business days. Importantly, under AC21 portability you may begin working for the new employer as soon as the petition is filed (receipt issued), without waiting for approval.",
   },
   {
     q: "Can I start working for the new employer before approval?",
@@ -123,7 +123,7 @@ export default function H1BTransferPage() {
           {
             "@type": "HowToStep",
             name: "Calculate the fees",
-            text: "Select the new employer's size and options like premium processing to see the full USCIS fee breakdown the employer will pay.",
+            text: "Select the new employer's size and type, plus options like premium processing, to see the full USCIS fee breakdown the employer will pay.",
           },
           {
             "@type": "HowToStep",
@@ -200,7 +200,7 @@ export default function H1BTransferPage() {
             {
               n: 1,
               t: "Calculate the fees",
-              d: "Open the Fee Calculator tab and select the new employer's size — that sets the ACWIA training fee ($750 vs $1,500). Toggle premium processing to see the 15-day option. The breakdown shows every USCIS fee line by line.",
+              d: "Open the Fee Calculator tab and select the new employer's size and type — size sets the ACWIA training fee ($750 vs $1,500) and the Asylum Program fee, while type sets the I-129 base fee ($730 vs $460). Toggle premium processing ($2,965) to see the 15-day option. The breakdown shows every USCIS fee line by line.",
             },
             {
               n: 2,
@@ -321,7 +321,16 @@ export default function H1BTransferPage() {
             <tbody className="text-slate-700">
               <tr>
                 <td className="border border-slate-200 px-4 py-2.5 font-semibold">
-                  Form I-129 base filing fee
+                  Form I-129 base filing fee (regular employer, online)
+                </td>
+                <td className="border border-slate-200 px-4 py-2.5">$730</td>
+                <td className="border border-slate-200 px-4 py-2.5">
+                  Employer
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-slate-200 px-4 py-2.5 font-semibold">
+                  Form I-129 base filing fee (small employer or nonprofit)
                 </td>
                 <td className="border border-slate-200 px-4 py-2.5">$460</td>
                 <td className="border border-slate-200 px-4 py-2.5">
@@ -348,6 +357,17 @@ export default function H1BTransferPage() {
               </tr>
               <tr>
                 <td className="border border-slate-200 px-4 py-2.5 font-semibold">
+                  Asylum Program fee
+                </td>
+                <td className="border border-slate-200 px-4 py-2.5">
+                  $600 (regular) / $300 (small) / $0 (nonprofit)
+                </td>
+                <td className="border border-slate-200 px-4 py-2.5">
+                  Employer (by law)
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-slate-200 px-4 py-2.5 font-semibold">
                   Fraud prevention &amp; detection fee
                 </td>
                 <td className="border border-slate-200 px-4 py-2.5">$500</td>
@@ -359,7 +379,7 @@ export default function H1BTransferPage() {
                 <td className="border border-slate-200 px-4 py-2.5 font-semibold">
                   Premium processing (optional)
                 </td>
-                <td className="border border-slate-200 px-4 py-2.5">$2,805</td>
+                <td className="border border-slate-200 px-4 py-2.5">$2,965</td>
                 <td className="border border-slate-200 px-4 py-2.5">
                   Employer or worker
                 </td>
@@ -368,10 +388,13 @@ export default function H1BTransferPage() {
           </table>
         </div>
         <p className="mt-3 text-sm text-slate-500">
-          Fee schedule per USCIS — verify current amounts at uscis.gov before
-          filing, as fees change. The 2025 proclamation&apos;s $100,000 fee is
-          intentionally excluded from this table pending legal clarity; toggle
-          it in the calculator above to see the arithmetic.
+          Fee schedule per USCIS (G-1055, edition 10/26/26) — verify current
+          amounts at uscis.gov before filing, as fees change. Base filing
+          fees are the online rates; paper filing is $780 for a regular
+          employer ($460 for small employers and nonprofits). The 2025
+          proclamation&apos;s $100,000 fee is intentionally excluded from
+          this table pending legal clarity; toggle it in the calculator
+          above to see the arithmetic.
         </p>
 
         <h3 className="mt-8 text-xl font-bold text-slate-900">
