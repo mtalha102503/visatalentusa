@@ -826,6 +826,79 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "stem-opt",
+    title: "STEM OPT Guide 2026: The 24-Month Extension, How to Apply, and What's Actually Changing",
+    excerpt:
+      "STEM OPT is still 24 months — no rule has cut it to one year. This guide covers who qualifies, the I-983 training plan, how to file Form I-765, the 150-day unemployment clock, travel, cap-gap, and the 2026 fee proposal and court cases that are actually changing things.",
+    datePublished: "2026-11-08T00:00:00+00:00",
+    dateModified: "2026-11-08T00:00:00+00:00",
+    readingMinutes: 32,
+    tags: ["STEM OPT", "OPT", "F-1 Visa"],
+    faqs: [
+      {
+        question: "Is STEM OPT now just one year instead of two?",
+        answer:
+          "No. STEM OPT is still a 24-month extension, and we found no rule, proposal or bill to cut it to 12 months as of November 8, 2026. The section above explains where the rumor came from — a DHS review letter, a misread fee proposal, and confusion with 12-month non-STEM OPT.",
+      },
+      {
+        question: "How long is STEM OPT?",
+        answer:
+          "24 months, on top of 12 months of initial post-completion OPT — 36 months of work authorization in total for a STEM graduate who qualifies. It replaced the old 17-month STEM OPT extension in May 2016.",
+      },
+      {
+        question: "Who qualifies for STEM OPT?",
+        answer:
+          "An F-1 student in a valid period of post-completion OPT who holds a bachelor's, master's or doctoral degree in a field on the DHS STEM list, from an accredited and SEVP-certified school, working at least 20 hours a week in a job directly related to the degree, for an E-Verify employer. Students on OPT from a non-STEM degree may qualify using a previous STEM degree from a U.S. institution, if it was conferred within 10 years of the DSO recommendation and they have not already used a STEM OPT extension on it.",
+      },
+      {
+        question: "When can I apply for STEM OPT?",
+        answer:
+          "Up to 90 days before your current OPT employment authorization expires, and within 60 days of the date your DSO enters the recommendation into SEVIS. USCIS must receive your Form I-765 no later than your current post-completion OPT end date. You cannot apply during the 60-day grace period after OPT ends.",
+      },
+      {
+        question: "How much does STEM OPT cost?",
+        answer:
+          "Form I-765 costs $470 if you file online and $520 if you file on paper, from the USCIS Fee Schedule. Premium processing (Form I-907) is an optional $1,780, and USCIS must take adjudicative action within 30 business days — it does not guarantee approval or EAD delivery within that period. The proposed $70,000 OPT fee is covered in the question below.",
+      },
+      {
+        question: "What is the I-983 training plan?",
+        answer:
+          "A formal training plan you complete with your employer before your DSO can recommend the extension. It states your learning objectives, how the training will achieve them, how your performance will be evaluated, and your employer's attestations. You complete Section 1 and sign the student certification in Section 2, and your employer completes Section 3 and signs the certifications in Sections 4 and 6; Section 5, the training plan itself, is completed by you and your employer together. Your DSO reviews it for completeness but does not approve it. The full breakdown, including the 12- and 24-month evaluations and the new-employer rule, is in the I-983 Training Plan section above.",
+      },
+      {
+        question: "Can I be self-employed on STEM OPT?",
+        answer:
+          "No. You cannot be self-employed on STEM OPT, and you cannot work on a volunteer or unpaid basis. The employer signing the I-983 must be a separate entity that employs you and provides the training. You can work for a start-up or small business if all the requirements are met.",
+      },
+      {
+        question: "How many days of unemployment am I allowed on STEM OPT?",
+        answer:
+          "150 days in total across your whole OPT period — 90 days on initial OPT plus 60 more on STEM OPT, counted cumulatively. If you used 40 days before your first job, you have 110 left, not 150. Exceeding the limit violates your F-1 status.",
+      },
+      {
+        question: "Can I travel on STEM OPT?",
+        answer:
+          "Yes, with your EAD in hand, an I-20 endorsed for travel and signed by your DSO, a valid passport and a valid F-1 visa. Universities advise the travel signature is valid for six months on OPT or STEM OPT. Avoid traveling while your I-765 is pending, and never travel while a change-of-status petition is pending — that abandons the change of status.",
+      },
+      {
+        question: "Can I get a second STEM OPT extension?",
+        answer:
+          "Yes, if you earn another qualifying STEM degree at a higher educational level and are in a valid period of post-completion OPT based on that degree. Each extension needs a fresh I-983, a fresh DSO recommendation and a fresh Form I-765. A second degree at the same level does not qualify.",
+      },
+      {
+        question:
+          "What happens to my STEM OPT if my H-1B petition is picked in the lottery?",
+        answer:
+          "If your employer files a timely cap-subject H-1B petition requesting a change of status while you are on OPT or STEM OPT, cap-gap automatically extends your F-1 status and your work authorization until April 1 of the fiscal year, or the validity start date of the approved petition, whichever is earlier. No new EAD is issued — your proof is an updated I-20 with a cap-gap notation. Do not travel abroad before the change-of-status petition is approved.",
+      },
+      {
+        question: "Does the proposed $70,000 OPT fee apply to me now?",
+        answer:
+          "No. It is only a proposal, published October 8, 2026, with comments due November 9, 2026 — there is no final rule, no effective date, and nothing is owed today. If it ever takes effect, the school would pay it before recommending you, not you. The full proposal is in the 2026 rules tracker above.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
