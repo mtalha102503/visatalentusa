@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getTitles } from "@/lib/data";
+import { getTitles, getSponsorSlugMap } from "@/lib/data";
 import SponsorMatchSearch from "./SponsorMatchSearch";
 
 export const metadata: Metadata = {
@@ -74,6 +74,7 @@ const FAQS = [
 export default async function SponsorMatchPage() {
   const titles = await getTitles();
   const sorted = [...titles].sort((a, b) => b.total_cases - a.total_cases);
+  const sponsorSlugs = await getSponsorSlugMap();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -162,7 +163,7 @@ export default async function SponsorMatchPage() {
       </div>
 
       <div className="mt-8">
-        <SponsorMatchSearch titles={sorted} />
+        <SponsorMatchSearch titles={sorted} sponsorSlugs={sponsorSlugs} />
       </div>
 
       {/* Popular titles - internal links to SEO pages */}

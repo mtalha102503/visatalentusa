@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTitles, getSiteStats, type TitleEntry } from "@/lib/data";
+import { getTitles, getSiteStats, getSponsorSlugMap, slugifyEmployerName, type TitleEntry } from "@/lib/data";
 import { formatNum, formatUSD } from "@/lib/format";
 
 const BASE = "https://visatalentusa.com";
@@ -281,6 +281,28 @@ function relatedTitles(t: TitleEntry, titles: TitleEntry[]): TitleEntry[] {
   return out;
 }
 
+/** Employer name in the top-10 table: a link only when the sponsor has a
+ * live page (canonical slug from the loaded index); otherwise plain text,
+ * so the page never links to a 404. */
+function SponsorLink({
+  name,
+  slugMap,
+}: {
+  name: string;
+  slugMap: Record<string, string>;
+}) {
+  const canonical = slugMap[slugifyEmployerName(name)];
+  if (!canonical) return <span className="text-slate-800">{name}</span>;
+  return (
+    <Link
+      href={`/sponsors/${canonical}`}
+      className="text-blue-700 underline underline-offset-2 hover:text-blue-900"
+    >
+      {name}
+    </Link>
+  );
+}
+
 export default async function TitleReportPage({
   params,
 }: {
@@ -292,6 +314,7 @@ export default async function TitleReportPage({
   if (!t) notFound();
 
   const stats = await getSiteStats();
+  const sponsorSlugs = await getSponsorSlugMap();
   const ctx: TitleContext = {
     rank: rankOf(t, titles),
     rate: certRate(t),
@@ -452,12 +475,7 @@ export default async function TitleReportPage({
               <tr key={e.employer} className="border-t border-slate-100">
                 <td className="px-4 py-2.5 text-slate-500">{i + 1}</td>
                 <td className="px-4 py-2.5 font-medium">
-                  <Link
-                    href={`/sponsors/${e.employer.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`}
-                    className="text-blue-700 underline underline-offset-2 hover:text-blue-900"
-                  >
-                    {e.employer}
-                  </Link>
+                  <SponsorLink name={e.employer} slugMap={sponsorSlugs} />
                 </td>
                 <td className="px-4 py-2.5 text-right tabular-nums text-slate-700">
                   {formatNum(e.cases)}

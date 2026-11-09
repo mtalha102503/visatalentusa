@@ -33,7 +33,35 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "employer";
 }
 
-export default function SponsorMatchSearch({ titles }: { titles: TitleEntry[] }) {
+/** Employer name in the results table: a link only when the sponsor has a
+ * live page (canonical slug from the loaded index, passed from the server);
+ * otherwise plain text, so the finder never links to a 404. */
+function SponsorLink({
+  name,
+  slugMap,
+}: {
+  name: string;
+  slugMap: Record<string, string>;
+}) {
+  const canonical = slugMap[slugify(name)];
+  if (!canonical) return <span className="text-slate-800">{name}</span>;
+  return (
+    <Link
+      href={`/sponsors/${canonical}`}
+      className="text-blue-700 underline underline-offset-2 hover:text-blue-900"
+    >
+      {name}
+    </Link>
+  );
+}
+
+export default function SponsorMatchSearch({
+  titles,
+  sponsorSlugs,
+}: {
+  titles: TitleEntry[];
+  sponsorSlugs: Record<string, string>;
+}) {
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<TitleEntry | null>(null);
   const [open, setOpen] = useState(false);
@@ -157,12 +185,7 @@ export default function SponsorMatchSearch({ titles }: { titles: TitleEntry[] })
                   <tr key={e.employer} className="border-t border-slate-100">
                     <td className="px-4 py-2.5 text-slate-500">{i + 1}</td>
                     <td className="px-4 py-2.5 font-medium">
-                      <Link
-                        href={`/sponsors/${slugify(e.employer)}`}
-                        className="text-blue-700 underline underline-offset-2 hover:text-blue-900"
-                      >
-                        {e.employer}
-                      </Link>
+                      <SponsorLink name={e.employer} slugMap={sponsorSlugs} />
                     </td>
                     <td className="px-4 py-2.5 text-right tabular-nums text-slate-700">
                       {formatNum(e.cases)}

@@ -63,6 +63,35 @@ export async function getSearchIndex(): Promise<IndexEntry[]> {
   return readJson<IndexEntry[]>("index.json");
 }
 
+/** Slugify an employer display name (same rule title pages used to build links). */
+export function slugifyEmployerName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+/**
+ * Canonical sponsor-page slug by slugified employer name — but ONLY for
+ * employers that actually have a live page (i.e. are in the loaded search
+ * index). Employers with no page yet are absent, so callers render them as
+ * plain text instead of linking to a 404. Ambiguous keys (two loaded
+ * sponsors slugifying identically) are dropped so a link can never point at
+ * the wrong employer. This also fixes the -2 dedupe suffix: the canonical
+ * slug (e.g. citi-2) is used, not the slugified name (citi).
+ */
+export async function getSponsorSlugMap(): Promise<Record<string, string>> {
+  const index = await getSearchIndex();
+  const byName = new Map<string, string>();
+  const ambiguous = new Set<string>();
+  for (const e of index) {
+    const key = slugifyEmployerName(e.name);
+    if (!key || key === "employer") continue;
+    const prev = byName.get(key);
+    if (prev !== undefined && prev !== e.slug) ambiguous.add(key);
+    else byName.set(key, e.slug);
+  }
+  for (const k of ambiguous) byName.delete(k);
+  return Object.fromEntries(byName);
+}
+
 export async function getSponsor(slug: string): Promise<Sponsor | null> {
   try {
     return readJson<Sponsor>(`${slug}.json`);
