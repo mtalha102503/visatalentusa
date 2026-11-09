@@ -20,6 +20,17 @@ export default function H1BGracePeriodContent() {
       </p>
 
       <div className="rounded-lg border border-amber-200 bg-amber-50 p-5">
+        <p className="font-semibold text-amber-900">Update — November 9, 2026: comments close tomorrow night</p>
+        <p className="mt-2 text-sm text-amber-900">
+          Comments on DHS&apos;s proposal to eliminate the 60-day grace period close tomorrow, November 10, 2026, at 11:59 p.m. Eastern Time. If the rule is finalized as proposed, workers who lose their jobs would have no grace period to find a new employer or file a new petition. Submit a comment on the{" "}
+          <a href="https://www.regulations.gov/docket/USCIS-2026-0364" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Federal eRulemaking Portal (docket USCIS-2026-0364)</a>{" "}
+          — and this{" "}
+          <a href="https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">step-by-step guide from Reddy Neumann Brown PC</a>{" "}
+          explains how to write a comment that counts, with a free template. The grace period described in this guide is still in effect today — the proposal is not law yet.
+        </p>
+      </div>
+
+      <div className="rounded-lg border border-amber-200 bg-amber-50 p-5">
         <p className="font-semibold text-amber-900">Key facts (last checked October 30, 2026)</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-amber-900">
           <li><strong>Rule:</strong> 8 CFR 214.1(l)(2) — up to 60 consecutive calendar days or until I-94 expiry, whichever is shorter, once per authorized validity period</li>
