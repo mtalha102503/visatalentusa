@@ -899,6 +899,78 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "duration-of-status",
+    title: "Duration of Status (D/S) Guide 2026: What It Is, the Blocked Rule, and What to Do Now",
+    excerpt:
+      "Duration of status is still in effect — a federal court blocked the DHS rule that would have replaced it with fixed admission periods on September 14, 2026. This guide explains what D/S means on your I-94, how to stay in status, grace periods, unlawful presence, and the full litigation timeline.",
+    datePublished: "2026-11-10T00:00:00+00:00",
+    dateModified: "2026-11-10T00:00:00+00:00",
+    readingMinutes: 37,
+    tags: ["Duration of Status", "F-1 Visa", "J-1 Visa"],
+    faqs: [
+      {
+        question: "What is duration of status?",
+        answer:
+          "Duration of status, or D/S, is an admission for F-1 students, J-1 exchange visitors and their dependents, and I media representatives, in which Form I-94 shows 'D/S' instead of a fixed departure date. Your authorized stay lasts as long as you maintain the conditions of your status — full-time study for F-1, the approved exchange program for J-1 — rather than until a calendar date.",
+      },
+      {
+        question: "Is duration of status still in effect?",
+        answer:
+          "Yes. DHS published a final rule on July 17, 2026 (91 FR 44976) that would replace D/S with fixed admission periods of up to four years, but Judge Saylor of the District of Massachusetts blocked it nationwide on September 14, 2026, one day before it was due to take effect. D/S is still the law as of November 10, 2026.",
+      },
+      {
+        question: "What does D/S mean on my I-94?",
+        answer:
+          "It means you were admitted for the duration of your status, with no fixed end date. Check it after every entry on the CBP I-94 website. If your F-1 or J-1 record shows a calendar date instead of D/S, tell your DSO or Responsible Officer immediately — a date on an F-1 or J-1 record is a mistake that needs correcting.",
+      },
+      {
+        question: "How long can I stay in the United States on duration of status?",
+        answer:
+          "As long as you maintain your status. There is no fixed limit while D/S applies: you stay through your program, any authorized practical training, and the grace period that follows. Your stay ends when your status ends — when you finish your program and the grace period runs out, when your SEVIS record is terminated, or when you stop maintaining status.",
+      },
+      {
+        question: "What is the 60-day grace period for F-1 students?",
+        answer:
+          "After you complete your program and any authorized OPT, you have 60 days to depart, transfer to another school, or apply for a change of status. You may not work during the grace period. After an authorized early withdrawal the period is 15 days. After a status violation there is no grace period at all. J-1 exchange visitors get 30 days. Do not confuse the F-1 grace period with the H-1B 60-day grace period — they are different rules for different people.",
+      },
+      {
+        question: "What happens if I fall out of status?",
+        answer:
+          "For F-1 students: your DSO can terminate your SEVIS record, and the termination takes effect immediately, with no grace period. Your options are reinstatement through Form I-539, departure and re-entry on a new I-20, or a change to another status if you qualify. Reinstatement generally must be filed within five months of the violation, and you must show the violation was beyond your control, that you have no record of repeated or willful violations, and that you have not worked without authorization. For J-1 exchange visitors, reinstatement is a separate process: your sponsor's Responsible Officer corrects minor or technical infractions, and for substantive violations the sponsor must apply to the Department of State under 22 CFR 62.45. Some violations cannot be reinstated, including unauthorized employment.",
+      },
+      {
+        question: "When do I start accruing unlawful presence?",
+        answer:
+          "Under the formal-finding rule, a D/S nonimmigrant begins accruing unlawful presence only the day after USCIS denies the benefit request in which it found a status violation, or the day after an immigration judge's order. That rule comes from the 2009 USCIS guidance, is written into the Adjudicator's Field Manual and the USCIS Policy Manual, and is backed by the permanent nationwide injunction in Guilford College v. Wolf. One sentence on a general USCIS webpage reads differently — it says D/S nonimmigrants 'generally begin accruing unlawful presence the day after their status ends.' The general webpage wording should be read alongside the detailed USCIS guidance discussed above; it should not, by itself, be treated as evidence of a policy change. Get advice before departing, because departure is what triggers the 3-year and 10-year bars.",
+      },
+      {
+        question: "What is the 3-year and 10-year bar?",
+        answer:
+          "Under INA 212(a)(9)(B), accruing more than 180 days but less than one year of unlawful presence in a single stay and then departing triggers a 3-year bar on returning to the United States. Accruing one year or more and departing triggers a 10-year bar. The bars are triggered by departure, not by accrual alone, which is why leaving the country without advice can turn a fixable problem into a years-long absence.",
+      },
+      {
+        question: "What would the blocked rule change for students?",
+        answer:
+          "It would replace D/S with a fixed admission of up to four years, require Form I-539 extensions with USCIS to stay longer, cut the F-1 grace period from 60 days to 30 days, require post-completion OPT to start within 30 days of the program end date, restrict graduate program changes and transfers, cap language training at 24 months, and admit I-visa media representatives for up to 240 days. Students already in D/S would keep it until the later of their EAD expiry or program end date, capped at November 14, 2030 for F-1 and October 15, 2030 for J-1.",
+      },
+      {
+        question: "When will the court decide the duration of status case?",
+        answer:
+          "Summary judgment briefing in the district court finished on November 2, 2026, so Judge Saylor can rule at any time, and no hearing or ruling date has been set. On November 3, the government asked the First Circuit to pause its appeal for 30 days so the district court can rule first; the plaintiffs consented, and the request is awaiting the court's approval. If the pause is not granted, the plaintiffs' First Circuit response is due December 9, 2026.",
+      },
+      {
+        question: "Do I need to file Form I-539 to extend my F-1 or J-1 status now?",
+        answer:
+          "No. While the rule is blocked, F-1 and J-1 students extend their stay through their school or program — a new or extended I-20 or DS-2019 — not through USCIS. Form I-539 is used for reinstatement after a violation, and for changes to another status. If you do file an I-539 or I-765 for another reason, use the 08/28/24 edition of the I-539 and the 08/21/25 edition of the I-765; the 09/15/26 editions built for the blocked rule are not accepted.",
+      },
+      {
+        question: "How does duration of status connect to H-1B?",
+        answer:
+          "D/S is the first step in the F-1 to H-1B pipeline: study, then up to 12 months of OPT, then 24 months of STEM OPT for a qualifying degree, then an H-1B petition. If an employer files a timely cap-subject H-1B petition requesting a change of status while you are on OPT, cap-gap automatically extends your F-1 status and work authorization until April 1 of the fiscal year, or the validity start date of the approved petition, whichever is earlier. Do not travel abroad while a change-of-status petition is pending — that abandons the change of status.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
