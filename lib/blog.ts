@@ -971,6 +971,58 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "ibm-ends-h1b-sponsorship",
+    title: "IBM Ends H-1B and Green Card Sponsorship for Most IBM Consulting Roles",
+    excerpt:
+      "IBM is ending H-1B and green card sponsorship for most roles in IBM Consulting, its largest division — here is what staff were told, who is covered, what IBM's own sponsorship numbers show, and what affected workers can do before the reported December 31, 2026 company deadline.",
+    datePublished: "2026-11-11T00:00:00+00:00",
+    dateModified: "2026-11-11T00:00:00+00:00",
+    readingMinutes: 16,
+    tags: ["IBM", "H-1B Sponsorship", "H-1B Transfer"],
+    faqs: [
+      {
+        question: "Is IBM ending H-1B sponsorship completely?",
+        answer:
+          "No. IBM is discontinuing visa and green card sponsorship for a majority of roles in IBM Consulting, its largest division. The announcement, as reported by Bloomberg and confirmed by Reuters, covers IBM Consulting only — not IBM as a whole.",
+      },
+      {
+        question: "What were affected IBM Consulting workers told?",
+        answer:
+          "According to an internal document shared with managers and seen by Bloomberg, affected workers can continue working with IBM outside the United States, or they must leave the company by the end of the year, December 31, 2026.",
+      },
+      {
+        question: "How many IBM workers are affected?",
+        answer:
+          "IBM has not disclosed the number of affected workers. No verified count exists, and any specific figure circulating without an IBM source should be treated as unverified.",
+      },
+      {
+        question: "Why is IBM ending sponsorship for most consulting roles?",
+        answer:
+          "IBM said skill availability and client needs have evolved. The company said IBM Consulting used U.S. high-skilled visa programs to address skill shortages, but that its participation in those programs has been declining for years.",
+      },
+      {
+        question: "Was IBM's sponsorship already falling before the announcement?",
+        answer:
+          "Yes. IBM recorded 1,236 LCA records in our dataset in FY2026 through Q3, down 49.8% from 2,460 LCA records in the same period of FY2025. For the full years, IBM recorded 2,895 LCA records in FY2025 and 3,231 in FY2024. These are LCA records in our dataset, drawn from U.S. Department of Labor disclosure data.",
+      },
+      {
+        question: "What is IBM's LCA certification rate?",
+        answer:
+          "In FY2026 through Q3, 1,232 of IBM's 1,236 LCA records in our dataset were certified and none were denied, an LCA certification rate of 99.68%. In FY2025 the LCA certification rate was 99.38%, with 2,877 of 2,895 records certified.",
+      },
+      {
+        question: "Can an affected worker transfer their H-1B to a new employer?",
+        answer:
+          "Yes, if a new employer files for them and the worker is eligible. Under H-1B portability, an eligible worker may begin employment after the new employer properly files a nonfrivolous Form I-129 petition, or on the requested start date, whichever is later — approval is not required first. If employment ends before a transfer is filed, the 60-day grace period under 8 CFR 214.1(l)(2) is still in effect today, although the Department of Homeland Security has proposed eliminating it and comments on that proposal closed on November 10, 2026.",
+      },
+      {
+        question: "Is the $100,000 H-1B fee part of this?",
+        answer:
+          "The one-time $100,000 fee on new H-1B petitions, announced in Proclamation 10973 on September 19, 2025, is blocked by court order and is not being collected. IBM did not cite the fee in its stated reasons; it pointed to evolving skill availability and client needs.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
