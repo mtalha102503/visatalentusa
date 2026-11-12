@@ -13,20 +13,16 @@ export default function H1BGracePeriodContent() {
         keep your status, but you <strong>cannot work</strong> — unless a
         separate authorization applies, such as H-1B portability when a new
         employer files a nonfrivolous I-129. And one urgent warning: DHS has{" "}
-        <em>proposed</em> eliminating this grace period entirely (comments due
-        November 10, 2026). That proposal is <strong>not law yet</strong> — the
+        <em>proposed</em> eliminating this grace period entirely (comments closed November 10, 2026). That proposal is <strong>not law yet</strong> — the
         current rule still applies. This guide gives you the rule exactly as
         written, a day-by-day plan, and what to do about the proposal.
       </p>
 
       <div className="rounded-lg border border-amber-200 bg-amber-50 p-5">
-        <p className="font-semibold text-amber-900">Update — November 9, 2026: comments close tomorrow night</p>
+        <p className="font-semibold text-amber-900">Update — November 11, 2026: comments closed, DHS reviewing</p>
         <p className="mt-2 text-sm text-amber-900">
-          Comments on DHS&apos;s proposal to eliminate the 60-day grace period close tomorrow, November 10, 2026, at 11:59 p.m. Eastern Time. If the rule is finalized as proposed, workers who lose their jobs would have no grace period to find a new employer or file a new petition. Submit a comment on the{" "}
-          <a href="https://www.regulations.gov/docket/USCIS-2026-0364" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Federal eRulemaking Portal (docket USCIS-2026-0364)</a>{" "}
-          — and this{" "}
-          <a href="https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">step-by-step guide from Reddy Neumann Brown PC</a>{" "}
-          explains how to write a comment that counts, with a free template. The grace period described in this guide is still in effect today — the proposal is not law yet.
+          Public comments on DHS&apos;s proposal to eliminate the 60-day grace period closed on November 10, 2026, at 11:59 p.m. Eastern Time. DHS is now reviewing the comments. The grace period described in this guide is still in effect — nothing changes until DHS publishes a final rule. You can read the proposal on the{" "}
+          <a href="https://www.regulations.gov/docket/USCIS-2026-0364" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Federal eRulemaking Portal (docket USCIS-2026-0364)</a>.
         </p>
       </div>
 
@@ -38,7 +34,7 @@ export default function H1BGracePeriodContent() {
           <li><strong>No work during the grace period</strong> unless a separate authorization applies — H-1B portability begins when USCIS <em>receives</em> a new nonfrivolous I-129, not on approval</li>
           <li><strong>Clock start:</strong> the day after termination, typically the last day for which a salary or wage is paid — severance paid after your last working day does not automatically move it</li>
           <li><strong>Who it covers:</strong> E-1, E-2, E-3, H-1B, H-1B1, L-1, O-1, and TN workers and their dependents</li>
-          <li><strong>2026 proposal (NOT law):</strong> DHS proposes deleting 214.1(l)(2) — 91 FR 57807, September 11, 2026, docket USCIS-2026-0364, comments due November 10, 2026</li>
+          <li><strong>2026 proposal (NOT law):</strong> DHS proposes deleting 214.1(l)(2) — 91 FR 57807, September 11, 2026, docket USCIS-2026-0364, comments closed November 10, 2026; DHS reviewing</li>
           <li><strong>H-4 spouses:</strong> an H-4 EAD remains valid <em>during</em> the grace period, per USCIS — but not after it ends without a new basis</li>
         </ul>
       </div>
@@ -521,7 +517,7 @@ export default function H1BGracePeriodContent() {
           <li><strong>Title:</strong> "Eliminating the Discretionary 60-Day Grace Period"</li>
           <li><strong>Citation:</strong> 91 FR 57807, Federal Register Vol. 91, No. 175, Friday, September 11, 2026 (FR Doc. 2026-18631)</li>
           <li><strong>Docket:</strong> USCIS-2026-0364; RIN 1615-AD22; 8 CFR Parts 204 and 214</li>
-          <li><strong>Comments due:</strong> November 10, 2026, before midnight Eastern Time, via the Federal eRulemaking Portal (regulations.gov) only — mailed and hand-delivered comments are not accepted at this time</li>
+          <li><strong>Comments closed:</strong> November 10, 2026, 11:59 p.m. Eastern Time.</li>
           <li><strong>What it would delete:</strong> 8 CFR 214.1(l)(2) — the up-to-60-day discretionary grace period — restoring the pre-2017 policy of no grace period</li>
           <li><strong>Status as of October 30, 2026:</strong> proposal only. No final rule, no effective date. The current rule remains in effect.</li>
         </ul>
@@ -543,10 +539,7 @@ export default function H1BGracePeriodContent() {
         exist — but do not assume a future cushion either. If a job loss is
         possible, get the safety-net filing (I-539) ready <em>before</em> you
         need it.</li>
-        <li>If you can quantify business impact, consider commenting on
-        docket USCIS-2026-0364 before November 10, 2026. DHS must review
-        comments before deciding to finalize, modify, or abandon the
-        proposal.</li>
+        <li>Comments on docket USCIS-2026-0364 closed November 10, 2026. DHS must review comments before deciding to finalize, modify, or abandon the proposal.</li>
         <li>Track the docket on regulations.gov and watch for a final rule —
         a final rule would set its own effective date, and controversial
         rules routinely take many months and face litigation.</li>
@@ -576,7 +569,7 @@ export default function H1BGracePeriodContent() {
             <tr><td>There's a 90-day / 120-day / 180-day grace period.</td><td>No. Those figures come from old confusion and an unimplemented recommendation. The regulation says 60.</td></tr>
             <tr><td>The 10-day period covers my layoff.</td><td>No. The 10-day period attaches to the edges of a completed validity period, not to a mid-petition termination — and it cannot be stacked onto the 60 days.</td></tr>
             <tr><td>I can travel and come back on my grace period.</td><td>No. Departure ends the grace period immediately; it cannot be recaptured. Re-entry needs a new status basis and CBP admission.</td></tr>
-            <tr><td>The grace period has already been eliminated (2026 proposal).</td><td>No. Proposal only, comments due November 10, 2026, no final rule. The current rule still applies.</td></tr>
+            <tr><td>The grace period has already been eliminated (2026 proposal).</td><td>No. Proposal only, comments closed November 10, 2026, no final rule. The current rule still applies.</td></tr>
             <tr><td>Filing I-539 gives me the new status.</td><td>No. A timely, nonfrivolous filing gives a period of authorized stay while pending; the status itself requires approval.</td></tr>
             <tr><td>If I miss Day 60 by one day I'm automatically barred for 3 years.</td><td>No. Bars attach on departure after unlawful presence accrues (more than 180 days → 3-year bar; one year or more → 10-year bar). A timely filing pending past Day 60 means authorized stay, not unlawful presence.</td></tr>
           </tbody>
@@ -784,7 +777,7 @@ export default function H1BGracePeriodContent() {
       <h3>Has the 60-day grace period been eliminated in 2026?</h3>
       <p>
         No. DHS has only proposed eliminating it (91 FR 57807, September 11,
-        2026, docket USCIS-2026-0364, comments due November 10, 2026). The
+        2026, docket USCIS-2026-0364, comments closed November 10, 2026). The
         current rule in 8 CFR 214.1(l)(2) remains in effect until a final
         rule is published with its own effective date.
       </p>
@@ -794,15 +787,14 @@ export default function H1BGracePeriodContent() {
         <li><a href="https://www.uscis.gov/archive/options-for-nonimmigrant-workers-following-termination-of-employment-0" className="text-blue-700 underline underline-offset-2">U.S. Citizenship and Immigration Services — Options for Nonimmigrant Workers Following Termination of Employment (archived page, as cited in research)</a></li>
         <li><a href="https://www.law.cornell.edu/cfr/text/8/214.1" className="text-blue-700 underline underline-offset-2">Cornell Legal Information Institute — 8 CFR 214.1 (regulation text, including (l)(1) and (l)(2))</a></li>
         <li><a href="https://regulations.justia.com/regulations/fedreg/2026/09/11/2026-18631.html" className="text-blue-700 underline underline-offset-2">Federal Register via Justia — "Eliminating the Discretionary 60-Day Grace Period," 91 FR 57807, September 11, 2026 (FR Doc. 2026-18631)</a></li>
-        <li><a href="https://www.regulations.gov/docket/USCIS-2026-0364" className="text-blue-700 underline underline-offset-2">Federal eRulemaking Portal (regulations.gov) — Docket USCIS-2026-0364 (comments due November 10, 2026)</a></li>
+        <li><a href="https://www.regulations.gov/docket/USCIS-2026-0364" className="text-blue-700 underline underline-offset-2">Federal eRulemaking Portal (regulations.gov) — Docket USCIS-2026-0364 (comments closed November 10, 2026)</a></li>
         <li><a href="https://i94.cbp.dhs.gov" className="text-blue-700 underline underline-offset-2">U.S. Customs and Border Protection — I-94 website (retrieve your most recent I-94 record)</a></li>
       </ul>
 
       <p className="text-sm text-slate-500">
         <em>
-          Last checked: October 30, 2026. This guide will need re-checking
-          after November 10, 2026 (comment deadline for the elimination
-          proposal) and again if a final rule publishes. This is general
+          Last checked: November 11, 2026. Comments closed November 10, 2026; DHS
+          is reviewing. Re-check if a final rule publishes. This is general
           information, not legal advice — consult a qualified immigration
           attorney for your specific situation.
         </em>
