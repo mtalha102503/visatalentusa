@@ -1023,6 +1023,66 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "h1b-to-green-card",
+    title: "H-1B to Green Card: The Complete Pathway Guide (2026)",
+    excerpt:
+      "The full H-1B to green card pathway — PERM, I-140, priority dates, I-485, fees, timelines, and AC21 rules — with November 2026 Visa Bulletin dates and USCIS fees verified from official sources.",
+    datePublished: "2026-11-13T00:00:00+00:00",
+    dateModified: "2026-11-13T00:00:00+00:00",
+    readingMinutes: 36,
+    tags: ["H-1B to Green Card", "Green Card", "H-1B Guides"],
+    faqs: [
+      {
+        question: "Does H-1B lead to a green card?",
+        answer: "Yes, but the H-1B itself never converts. Your employer must sponsor you through PERM labor certification and an I-140 petition, and then you wait for your priority date to become current in the Visa Bulletin before filing Form I-485. Workers with extraordinary ability (EB-1A) or a national interest waiver (EB-2 NIW) can self-petition instead.",
+      },
+      {
+        question: "How long does it take from H-1B to green card?",
+        answer: "There is no single official figure. The PWD, recruitment, PERM and I-140 processing — about three months in the PWD queue, one to three months of recruitment, about ten to twelve months of PERM review, and fifteen business days for a premium-processed I-140 — adds up to roughly a year and a half from the agencies' own figures. But that is not a separate wait followed by another wait: the priority-date queue runs from PERM acceptance, so the processing and the queue overlap — while the PERM and I-140 are being processed, the queue is already moving. The bulletin wait then dominates: in November 2026, EB-2 India stands at November 1, 2013 and EB-3 India at January 22, 2014.",
+      },
+      {
+        question: "How much does a green card cost from H-1B?",
+        answer: "For one adult, employer-sponsored: $3,645 in government fees by paper ($3,495 online) — I-140 with the Asylum Program Fee plus I-485, I-765, and I-131. Premium processing adds $2,965. A self-petitioner (EB-1A or NIW) pays $3,345 by paper. Attorney fees are separate and there is no official range for them.",
+      },
+      {
+        question: "Can I apply for a green card without my employer?",
+        answer: "For EB-2 and EB-3, no — the employer must file the PERM and the I-140. For EB-1A (extraordinary ability) and EB-2 NIW (national interest waiver), yes — you can self-petition with no job offer and no PERM. An NIW is still an EB-2 petition, so it waits in the EB-2 queue.",
+      },
+      {
+        question: "Can I change jobs during the green card process?",
+        answer: "Eligible H-1B workers may change employers through a qualifying new petition — an H-1B transfer — subject to the portability conditions. What changes is whether your green-card case survives. If no I-485 is pending yet, a job change does not by itself end the original case — it can continue if the original employer's permanent job offer and your intent to accept it remain. But if the original employer withdraws the offer and INA 204(j) portability is unavailable, the new employer starts over with a new PERM and I-140 (an approved I-140's priority date is retained for the new petition). If the I-485 has already been pending 180 days, AC21 portability can apply even while the I-140 is still pending — provided the petition is later approved and was approvable when filed — and lets you move to a same or similar job with any employer (or self-employment) via Form I-485 Supplement J, with no new PERM or I-140.",
+      },
+      {
+        question: "What happens if I lose my job during the process?",
+        answer: "On H-1B, the 60-day grace period may apply — up to 60 consecutive days, or until the end of your authorized validity period, whichever is shorter, once per authorized validity period, at DHS's discretion — giving you time to find a new sponsor or another status. If your I-140 is already approved, your priority date is retained — a new employer files a new PERM and I-140 to use it, unless you port under INA 204(j) after the I-485 has been pending 180 days. If the I-140 is approved and your date is backlogged, AC21 three-year H-1B extensions can keep you in status while a new employer starts the process.",
+      },
+      {
+        question: "Can I travel while my I-485 is pending?",
+        answer: "Only with Advance Parole ($630 paper / $580 online), or under the H-1B exception — valid H-1B status, a valid visa, and a return to the same employer. Departing without Advance Parole is deemed abandonment of the I-485, unless an applicable exception applies (for example, the H-1B/L-1 exception above). If you travel on Advance Parole, CBP may also collect a $1,050 Immigration Parole Fee at the port of entry.",
+      },
+      {
+        question: "What is the difference between Final Action Dates and Dates for Filing?",
+        answer: "Final Action Dates decide when a visa number is actually available and a green card can be approved. Dates for Filing are an earlier cutoff that lets applicants file Form I-485 sooner when USCIS allows it. For November 2026, USCIS directs applicants to use the Dates for Filing chart. For consular processing, Final Action Dates govern when the visa can be issued — but Dates for Filing govern when the National Visa Center starts collecting documents.",
+      },
+      {
+        question: "Can my spouse and children get green cards too?",
+        answer: "Yes — a spouse and unmarried children under 21 can apply as derivatives with the principal applicant, each filing their own Form I-485 (a child under 14 filing with a parent pays $950 by paper or $900 online). They share the principal's priority date and category.",
+      },
+      {
+        question: "What if my priority date retrogresses after I file I-485?",
+        answer: "Your pending I-485 is not denied — it waits, and it cannot be approved until the Final Action Date advances past your priority date again. Your EAD and Advance Parole remain renewable while the case pends. Filing under Dates for Filing does not protect against retrogression of the Final Action Date.",
+      },
+      {
+        question: "Does the $100,000 H-1B fee affect my green card?",
+        answer: "No. The $100,000 payment is blocked by court order and is not being collected, and it was never a fee on PERM, I-140, I-485, H-1B extensions, or change-of-employer petitions. It does not change any green-card step.",
+      },
+      {
+        question: "Do I need premium processing for the I-140?",
+        answer: "No — it is optional and costs $2,965. It guarantees an action within 15 business days for most covered I-140 classifications — 45 business days for EB-1C and EB-2 NIW — (approval, denial, RFE, or Notice of Intent to Deny), not an approval. It is useful when you need the I-140 approved quickly, which makes the priority date retainable sooner, or to get AC21 one-year extensions moving, but it does not change the outcome or the bulletin wait.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

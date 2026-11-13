@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The six stages from H-1B to green card: prevailing wage determination, recruitment, PERM labor certification, I-140 petition, Visa Bulletin wait, and I-485 adjustment of status">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#pbg)" rx="16"/>
+
+  <text x="600" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="#1e3a8a">H-1B to Green Card: The Six Stages</text>
+  <text x="600" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" fill="#64748b">Employer-sponsored route (EB-2 / EB-3) — from prevailing wage to the green card</text>
+
+  <!-- pathway line -->
+  <line x1="60" y1="290" x2="1140" y2="290" stroke="#3b82f6" stroke-width="4"/>
+
+  <!-- 1 PWD -->
+  <g>
+    <circle cx="100" cy="290" r="36" fill="#1d4ed8"/>
+    <text x="100" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">1</text>
+    <text x="100" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Prevailing Wage</text>
+    <text x="100" y="396" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Determination</text>
+    <text x="100" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">DOL sets the wage</text>
+    <text x="100" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Queue: Aug 2026 requests</text>
+  </g>
+
+  <!-- 2 Recruitment -->
+  <g>
+    <circle cx="292" cy="290" r="36" fill="#1d4ed8"/>
+    <text x="292" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">2</text>
+    <text x="292" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Recruitment</text>
+    <text x="292" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Test the U.S. market</text>
+    <text x="292" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">30-day job order + ads</text>
+  </g>
+
+  <!-- 3 PERM -->
+  <g>
+    <circle cx="484" cy="290" r="36" fill="#1d4ed8"/>
+    <text x="484" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">3</text>
+    <text x="484" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">PERM</text>
+    <text x="484" y="396" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Labor Certification</text>
+    <text x="484" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">No qualified U.S. workers</text>
+    <text x="484" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Analyst review ~300–360 days</text>
+  </g>
+
+  <!-- 4 I-140 -->
+  <g>
+    <circle cx="676" cy="290" r="36" fill="#16a34a"/>
+    <text x="676" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">4</text>
+    <text x="676" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Form I-140</text>
+    <text x="676" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Priority date retainable</text>
+    <text x="676" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">15 business days (premium)</text>
+  </g>
+
+  <!-- 5 Bulletin wait -->
+  <g>
+    <circle cx="868" cy="290" r="36" fill="#f59e0b"/>
+    <text x="868" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">5</text>
+    <text x="868" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Visa Bulletin Wait</text>
+    <text x="868" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Priority date must turn</text>
+    <text x="868" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">current — years for India</text>
+  </g>
+
+  <!-- 6 I-485 -->
+  <g>
+    <rect x="1004" y="254" width="112" height="72" rx="12" fill="#16a34a"/>
+    <text x="1060" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#ffffff">6</text>
+    <text x="1060" y="310" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">I-485</text>
+    <text x="1060" y="372" text-anchor="middle" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#1e3a8a">Green Card</text>
+    <text x="1060" y="424" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">Adjustment of status</text>
+    <text x="1060" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#64748b">or consular processing</text>
+  </g>
+
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#475569">The priority date is set when DOL accepts the PERM (Stage 3) — everything after that is waiting for the Visa Bulletin.</text>
+  <text x="600" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" fill="#475569">EB-1A and EB-2 NIW skip Stages 1–3 and self-petition — but still wait in the bulletin queue.</text>
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#93c5fd">VisaTalentUSA.com • Sources: DOL FLAG processing times (Oct 31, 2026); USCIS fee schedule G-1055 (Oct 28, 2026)</text>
+</svg>
