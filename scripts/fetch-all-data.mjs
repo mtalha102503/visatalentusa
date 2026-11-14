@@ -65,7 +65,7 @@ const index = fy2026.map((r) => ({
   name: r.display_name,
   cases: r.total_cases,
   approval_rate: r.approval_rate ?? null,
-  median_wage: r.median_wage ?? null,
+  median_wage: r.median_wage_annual ?? null, // h1b_employers has no median_wage column
 }));
 fs.writeFileSync(path.join(OUT_DIR, "index.json"), JSON.stringify(index));
 console.log(`Wrote index.json (${index.length} entries)`);
@@ -207,6 +207,25 @@ for (;;) {
 }
 // Keep top 500
 titleRows = titleRows.slice(0, 500);
+// De-suffix: the upstream dedupe gives the primary title group a "-2" slug
+// when a junk/edge row (e.g. ". Software Engineer", 1 case) holds the clean
+// slug. Give the highest-cases row of each base slug the clean slug — but
+// only when no clean row exists in this set, so genuine collisions keep
+// their suffixed slug.
+{
+  const byBase = new Map();
+  for (const r of titleRows) {
+    const base = r.slug.replace(/-\d+$/, "");
+    if (!base) continue;
+    if (!byBase.has(base)) byBase.set(base, []);
+    byBase.get(base).push(r);
+  }
+  for (const [base, rows] of byBase) {
+    if (rows.some((r) => r.slug === base)) continue;
+    rows.sort((a, b) => b.total_cases - a.total_cases);
+    rows[0].slug = base;
+  }
+}
 const titles = titleRows.map((r) => ({
   slug: r.slug,
   title: r.display_title,

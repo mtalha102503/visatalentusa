@@ -116,6 +116,7 @@ export function composeIntro(
 export interface Faq {
   q: string;
   a: string;
+  link?: { href: string; label: string };
 }
 
 /** Data-driven FAQs — unique per employer. */
@@ -164,8 +165,21 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
     faqs.push({
       q: `What are the H-1B lottery odds at ${name}?`,
       a: `No employer can guarantee lottery selection, but wage levels matter: under the 2026 wage-weighted system, Level I filings get 1 entry while Level IV get 4. Based on ${name}'s FY2026 (through Q3) wage mix, its candidates averaged an estimated ${avgEntries.toFixed(1)} entries per filing. Higher-wage offers at the same employer carry better odds.`,
+      link: { href: "/blog/h1b-lottery", label: "H-1B lottery guide" },
     });
   }
+
+  faqs.push({
+    q: `How much does it cost to sponsor an H-1B worker at ${name}?`,
+    a: `The employer pays the H-1B petition filing fees — not the worker. The total depends on employer size and petition type; our H-1B visa cost guide breaks down the full employer and worker share, including premium processing.`,
+    link: { href: "/blog/h1b-visa-cost", label: "H-1B visa cost guide" },
+  });
+
+  faqs.push({
+    q: `Can ${name} sponsor a green card after H-1B?`,
+    a: `H-1B sponsorship can lead to employer-sponsored permanent residence through PERM labor certification and Form I-140. Our H-1B to Green Card guide covers the full pathway, timelines, and fees.`,
+    link: { href: "/blog/h1b-to-green-card", label: "H-1B to Green Card guide" },
+  });
 
   return faqs;
 }

@@ -1116,5 +1116,5 @@ export const AUTHOR: AuthorInfo = {
     "Muhammad Talha is the founder of HireSkys, the remote-jobs platform behind VisaTalentUSA. He built VisaTalentUSA to turn the U.S. Department of Labor's public H-1B disclosure files — millions of Labor Condition Application records — into a searchable database anyone can use.",
     "His work focuses on the data behind U.S. work visas: which employers actually sponsor H-1B workers, what they pay, how wage levels affect the lottery, and how policy changes — the wage-weighted selection rule, the $100,000 fee — show up in real filing behavior. Every guide on this site is written from that filing data and checked against official USCIS and Department of Labor sources.",
   ],
-  sameAs: ["https://www.hireskys.com"],
+  sameAs: ["https://www.hireskys.com", "https://github.com/mtalha102503"],
 };

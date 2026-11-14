@@ -330,6 +330,16 @@ export default async function SponsorPage({
           <div key={f.q} className="rounded-lg border border-slate-200 p-5">
             <h3 className="font-semibold text-slate-900">{f.q}</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">{f.a}</p>
+            {f.link ? (
+              <p className="mt-2 text-sm">
+                <Link
+                  href={f.link.href}
+                  className="text-blue-700 hover:underline"
+                >
+                  {f.link.label} →
+                </Link>
+              </p>
+            ) : null}
           </div>
         ))}
       </div>

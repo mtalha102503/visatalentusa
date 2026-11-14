@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getTitles, getSiteStats, getSponsorSlugMap, slugifyEmployerName, type TitleEntry } from "@/lib/data";
 import { formatNum, formatUSD } from "@/lib/format";
 
@@ -311,7 +311,14 @@ export default async function TitleReportPage({
   const { slug } = await params;
   const titles = await getTitles();
   const t = titles.find((x) => x.slug === slug);
-  if (!t) notFound();
+  if (!t) {
+    // Legacy "-2" (or "-N") slug from the old dedupe: redirect to the clean slug.
+    const base = slug.replace(/-\d+$/, "");
+    if (base !== slug && titles.some((x) => x.slug === base)) {
+      permanentRedirect(`/tools/sponsor-match/${base}`);
+    }
+    notFound();
+  }
 
   const stats = await getSiteStats();
   const sponsorSlugs = await getSponsorSlugMap();
