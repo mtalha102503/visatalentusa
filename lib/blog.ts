@@ -1083,6 +1083,59 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+
+    {
+      slug: "green-card-renewal",
+      title: "Green Card Renewal 2026: Form I-90 Fees, Timeline & Steps",
+      excerpt:
+        "Green card renewal with Form I-90: the $415 online / $465 paper fee, the 6-month filing window, the 36-month receipt extension, step-by-step filing, processing times, and how to prove your status while you wait — all checked against USCIS sources.",
+      datePublished: "2026-11-16T00:00:00+00:00",
+      dateModified: "2026-11-16T00:00:00+00:00",
+      readingMinutes: 30,
+      tags: ["Green Card Renewal", "Green Card", "Guides"],
+      faqs: [
+        {
+          question: "How much does it cost to renew a green card in 2026?",
+          answer:
+            "$415 if you file online, $465 if you file on paper — biometrics included, with no separate biometrics fee. Three cases pay $0: a card that was never received, a card with incorrect information caused by a DHS error, and a child who turned 14 whose card expires after their 16th birthday, if the application is filed within 30 days of the 14th birthday. The fee has not changed since April 1, 2024. A fee waiver is available on Form I-912 for those who qualify — paper filing is the safe route, and USCIS recently listed a PDF-upload option for I-912, so confirm the accepted method on the day you file.",
+        },
+        {
+          question: "When should I file Form I-90?",
+          answer:
+            "Within six months of the expiration date printed on your card. If your card has already expired, you can still file at any time — there is no deadline and no late penalty for the filing itself. Do not file more than six months early under the expiry reason: the application may be denied and the fee is not refunded.",
+        },
+        {
+          question: "How long does green card renewal take?",
+          answer:
+            "USCIS's processing-times tool currently shows 80% of 10-year renewals completed within 10.5 months, and 80% of initial issuances and replacements within 6 months. A limited tracked sample (85 cases on Casetracker.io) shows a median of about 7.1 months — a median across a small sample, not comparable to the USCIS 80th-percentile figures. There is no premium processing for Form I-90, and USCIS republishes its figures regularly, so check the tool on the day you file.",
+        },
+        {
+          question: "Does the I-797C receipt extend my green card?",
+          answer:
+            "Yes — for a renewal filing. A properly filed I-90 receipt notice for renewing an expiring or expired card automatically extends your card for 36 months from the expiration date printed on it, when shown together with the expired card. The extension applies to a renewal filing, not to every I-90 replacement receipt. The extension took effect September 10, 2024 — before that it was 24 months. If the 36 months run out while your case is still pending, request an ADIT stamp through the USCIS Contact Center.",
+        },
+        {
+          question: "Can I work and travel while my renewal is pending?",
+          answer:
+            "Yes, with the expired card together with the I-797C receipt notice. The combination is an acceptable List A document for Form I-9 employment verification and is accepted for re-entry after temporary travel abroad, for the 36-month extension period. Carry the original receipt notice when you travel, and confirm your airline's boarding policy in advance.",
+        },
+        {
+          question: "I have a 2-year conditional green card — do I file I-90?",
+          answer:
+            "No, not to renew it. A marriage-based conditional card's conditions are removed with Form I-751, and an EB-5 conditional card's with Form I-829. A joint I-751 filing must be made in the 90 days before the card's 2nd anniversary; a waiver of the joint filing requirement may be filed before, during, or after the 90-day window, at any time until a final order of removal is issued. If the petitioning spouse or stepparent died, the conditional resident files individually — an individual filing request, not a waiver. An I-90 filed in that 90-day joint-filing window is denied. Form I-90 is for conditional residents only as a replacement for a lost, stolen, damaged or incorrect card that is not expiring within 90 days.",
+        },
+        {
+          question: "What if my green card is lost or stolen while I'm abroad?",
+          answer:
+            "If you were temporarily abroad for less than one year, file Form I-131A, Application for Travel Document (Carrier Documentation), in person at a U.S. Embassy or Consulate — the fee is $575 — to get carrier documentation back to the United States. If your card is merely expired (a 10-year card) and you have been abroad less than one year, you may not need Form I-131A at all, but check with the airline first.",
+        },
+        {
+          question: "What happens if my I-90 is denied?",
+          answer:
+            "You cannot appeal an I-90 denial. You can file a motion to reopen (new facts) or a motion to reconsider (USCIS applied the law incorrectly) on Form I-290B within 30 days of the decision (33 days if it was mailed); the fee is $800. Or you can file a new I-90 if you can establish eligibility, with a new fee. Follow the options and deadline in your denial notice itself.",
+        },
+      ],
+    },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
