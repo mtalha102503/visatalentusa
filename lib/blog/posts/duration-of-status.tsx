@@ -11,15 +11,49 @@ export default function DurationOfStatusContent() {
         Department of Homeland Security published a final rule that
         would end D/S and replace it with fixed admission periods of
         up to four years. One day before it was due to take effect, a
-        federal court blocked it nationwide. As of November 10, 2026,
-        duration of status is still the law, the 60-day F-1 grace
+        federal court blocked it nationwide — and on November 16,
+        2026, the same court vacated the rule in its entirety. As of
+        November 17, 2026, duration of status is still the law, the
+        60-day F-1 grace
         period still applies, and no F-1 or J-1 student needs to file
         an extension of stay. This guide explains what D/S is, how to
         keep it, what ends it, the unlawful presence rules that follow
         a violation, and the full litigation timeline — with the
-        court&rsquo;s next steps and the F-1 to H-1B path that
+        what happens next and the F-1 to H-1B path that
         follows graduation.
       </p>
+
+      <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-5">
+        <p className="font-semibold text-emerald-900">
+          Update — November 17, 2026: the rule was vacated
+        </p>
+        <p className="mt-2 text-sm text-emerald-900">
+          On November 16, 2026, Judge F. Dennis Saylor IV of the U.S.
+          District Court for the District of Massachusetts granted the
+          plaintiffs&rsquo; motion for summary judgment and vacated
+          the DHS final rule (91 FR 44976) in its entirety under the
+          Administrative Procedure Act — arbitrary, capricious, an
+          abuse of discretion, and otherwise not in accordance with
+          law. Duration of status remains the law nationwide: the
+          60-day F-1 grace period still applies, and no F-1 or J-1
+          student needs to file an extension of stay. The government
+          has until January 15, 2027 to appeal the final judgment to
+          the First Circuit; only a stay granted on appeal could bring
+          the rule back into effect while the case runs. As of
+          November 17, 2026, no appeal had been filed and neither DHS
+          nor USCIS had published a statement about the vacatur. Read
+          the court&rsquo;s order (ECF No. 73){" "}
+          <a
+            href="https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600"
+          >
+            here (PDF)
+          </a>
+          .
+        </p>
+      </div>
 
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
         <p className="font-semibold text-slate-900">In this guide</p>
@@ -27,7 +61,7 @@ export default function DurationOfStatusContent() {
           <li>
             <a href="#status-2026" className="underline text-blue-600">
               Duration of status in 2026 — what is in effect, proposed,
-              or blocked
+              or vacated
             </a>
           </li>
           <li>
@@ -76,7 +110,7 @@ export default function DurationOfStatusContent() {
           </li>
           <li>
             <a href="#the-2026-rule" className="underline text-blue-600">
-              The 2026 rule that would end duration of status
+              The 2026 rule that would have ended duration of status
             </a>
           </li>
           <li>
@@ -84,8 +118,8 @@ export default function DurationOfStatusContent() {
               href="#litigation-tracker"
               className="underline text-blue-600"
             >
-              Litigation tracker — how the rule was blocked, and what
-              happens next
+              Litigation tracker — how the rule was blocked, then
+              vacated, and what happens next
             </a>
           </li>
           <li>
@@ -135,7 +169,8 @@ export default function DurationOfStatusContent() {
             <strong>Duration of status is still in effect.</strong>{" "}
             The DHS final rule that would end it (91 FR 44976) was
             blocked by a nationwide preliminary injunction on
-            September 14, 2026.
+            September 14, 2026 — and vacated in its entirety on
+            November 16, 2026.
           </li>
           <li>
             <strong>D/S means no fixed end date.</strong> Your Form
@@ -147,14 +182,14 @@ export default function DurationOfStatusContent() {
           <li>
             <strong>F-1 grace period is still 60 days</strong> after
             completing your program and any authorized OPT. J-1 is
-            30 days. The blocked rule would cut the F-1 grace period
-            to 30 days.
+            30 days. The vacated rule would have cut the F-1 grace
+            period to 30 days.
           </li>
           <li>
             <strong>No extension of stay is needed today.</strong>{" "}
             F-1 and J-1 students extend their stay through their
-            school or program, not through USCIS. The blocked rule
-            would change that to a Form I-539 filing.
+            school or program, not through USCIS. The vacated rule
+            would have changed that to a Form I-539 filing.
           </li>
           <li>
             <strong>About 1.18 million international students</strong>{" "}
@@ -175,25 +210,25 @@ export default function DurationOfStatusContent() {
         </ul>
       </div>
 
-      <h2 id="status-2026">Duration of status in 2026 — what is in effect, proposed, or blocked</h2>
+      <h2 id="status-2026">Duration of status in 2026 — what is in effect, proposed, or vacated</h2>
       <p>
         Four different 2026 developments get mixed up in social media
         posts about student visas. They are not the same thing, and
         none of them changes anything for students today. The one
-        that would — the fixed-admission rule — is blocked. This
-        table is the short version; the detail is in the sections
-        below.
+        that would — the fixed-admission rule — was vacated on
+        November 16, 2026. This table is the short version; the
+        detail is in the sections below.
       </p>
       <div className="overflow-x-auto rounded-lg border border-slate-200">
         <table>
           <caption className="sr-only">
             Status of duration of status rules and proposals as of
-            November 10, 2026
+            November 17, 2026
           </caption>
           <thead>
             <tr>
               <th scope="col">Rule or proposal</th>
-              <th scope="col">Status on November 10, 2026</th>
+              <th scope="col">Status on November 17, 2026</th>
             </tr>
           </thead>
           <tbody>
@@ -211,23 +246,23 @@ export default function DurationOfStatusContent() {
                 I-539 extensions, 30-day grace)
               </td>
               <td>
-                Blocked by a nationwide preliminary injunction on
-                September 14, 2026 — see the litigation tracker below.
+                Vacated in its entirety on November 16, 2026 — see
+                the litigation tracker below.
               </td>
             </tr>
             <tr>
               <td>F-1 grace period after program completion and OPT</td>
               <td>
-                60 days, in effect. The blocked rule would cut it to
-                30 days.
+                60 days, in effect. The vacated rule would have cut it
+                to 30 days.
               </td>
             </tr>
             <tr>
               <td>Extension of stay for F-1 and J-1 students</td>
               <td>
                 Not required today. Extensions run through the school
-                (I-20) or program (DS-2019). The blocked rule would
-                require a Form I-539 filing with USCIS.
+                (I-20) or program (DS-2019). The vacated rule would have
+                required a Form I-539 filing with USCIS.
               </td>
             </tr>
             <tr>
@@ -246,7 +281,7 @@ export default function DurationOfStatusContent() {
               <td>
                 The 08/28/24 edition of Form I-539 and the 08/21/25
                 edition of Form I-765 remain the ones to file. The
-                09/15/26 editions built for the blocked rule are not
+                09/15/26 editions built for the vacated rule are not
                 accepted.
               </td>
             </tr>
@@ -749,7 +784,7 @@ export default function DurationOfStatusContent() {
         decision to make with a lawyer, not alone.
       </p>
 
-      <h2 id="the-2026-rule">The 2026 rule that would end duration of status</h2>
+      <h2 id="the-2026-rule">The 2026 rule that would have ended duration of status</h2>
       <p>
         On July 17, 2026, the Department of Homeland Security
         published a final rule titled &ldquo;Establishing a Fixed
@@ -762,11 +797,12 @@ export default function DurationOfStatusContent() {
           className="underline text-blue-600"
         >
           91 FR 44976
-        </a>). It is the most significant change to student
-        immigration in nearly fifty years — and it is not in effect.
-        This section describes what the rule would do, so you can
-        tell the difference between the law today and the law that
-        might come.
+        </a>). It would have been the most significant change to
+        student immigration in nearly fifty years — but on November
+        16, 2026, a federal court vacated it in its entirety, so it
+        never took effect. This section describes what the rule would
+        have done, so you can tell the difference between the law
+        today and the law that would have come.
       </p>
       <p>
         The rule replaces duration of status with a fixed admission
@@ -812,13 +848,13 @@ export default function DurationOfStatusContent() {
       <div className="overflow-x-auto rounded-lg border border-slate-200">
         <table>
           <caption className="sr-only">
-            Duration of status today versus the blocked fixed-admission rule
+            Duration of status today versus the vacated fixed-admission rule
           </caption>
           <thead>
             <tr>
               <th scope="col">Area</th>
               <th scope="col">Today — duration of status</th>
-              <th scope="col">If the rule takes effect</th>
+              <th scope="col">If the rule had taken effect</th>
             </tr>
           </thead>
           <tbody>
@@ -912,18 +948,20 @@ export default function DurationOfStatusContent() {
         for its duration. An I-765 filed on or before March 18, 2027
         would not require a separate Form I-539; after that date, an
         I-539 must be filed with the I-765 if the I-765 has not yet
-        been approved. Both of those dates were tied to the original
-        September 15, 2026 start date, so treat them as uncertain
-        until a court or a new Federal Register notice sets a new
-        timeline.
+        been approved. Both of those dates died with the rule: they
+        were tied to the September 15, 2026 start date, and the rule
+        was vacated before it ever took effect, so no transition clock
+        ever started. They would matter again only if a court
+        reinstates the rule or DHS issues a new one.
       </p>
 
-      <h2 id="litigation-tracker">Litigation tracker — how the rule was blocked, and what happens next</h2>
+      <h2 id="litigation-tracker">Litigation tracker — how the rule was blocked, then vacated, and what happens next</h2>
       <p>
-        The rule has never taken effect, and whether it ever does is
-        now a question for two courts. The timeline below is current
-        as of November 10, 2026, and the status line at the top of
-        this guide will be updated if it changes.
+        The rule never took effect. On November 16, 2026, the
+        district court vacated it in its entirety. Whether it ever
+        comes back is now a question for the First Circuit — and only
+        a stay could bring it back while an appeal runs. The timeline
+        below is current as of November 17, 2026.
       </p>
 
       <svg
@@ -937,12 +975,11 @@ export default function DurationOfStatusContent() {
           Litigation timeline: the D/S final rule was published July
           17, 2026, blocked nationwide on September 14, appealed on
           September 30, summary judgment briefing finished November
-          2, and the government asked to pause its appeal on November
-          3. The plaintiffs&apos; First Circuit response is due
-          December 9 if the pause is not granted.
+          2, the pause was granted November 13, and the rule was
+          vacated November 16.
         </title>
         <text x="20" y="24" fontSize="15" fontWeight="700" fill="#0f172a">
-          The rule in court — July to December 2026
+          The rule in court — July to November 2026
         </text>
         <line x1="40" y1="110" x2="840" y2="110" stroke="#2f6df6" strokeWidth="3" />
         <circle cx="40" cy="110" r="7" fill="#2f6df6" />
@@ -967,7 +1004,7 @@ export default function DurationOfStatusContent() {
           Nov 3
         </text>
         <text x="840" y="88" fontSize="13" fontWeight="700" fill="#0f172a" textAnchor="middle">
-          Dec 9
+          Nov 16
         </text>
         <text x="40" y="140" fontSize="12" fill="#334155" textAnchor="middle">
           Rule
@@ -1000,19 +1037,19 @@ export default function DurationOfStatusContent() {
           requested
         </text>
         <text x="840" y="140" fontSize="12" fill="#334155" textAnchor="middle">
-          Response
+          Rule
         </text>
         <text x="840" y="158" fontSize="12" fill="#334155" textAnchor="middle">
-          due*
+          vacated
         </text>
         <text x="20" y="200" fontSize="12" fill="#64748b">
-          *December 9 is the scheduled date for the plaintiffs&apos;
-          First Circuit response if the court does not grant the
-          November 3 pause request.
+          *November 16, 2026: Judge Saylor vacated the rule in its
+          entirety under the APA.
         </text>
         <text x="20" y="220" fontSize="12" fill="#64748b">
-          The rule remains blocked under the current order. Future
-          court orders may change that position.
+          Duration of status remains the law nationwide. The
+          government has until January 15, 2027 to appeal; only a stay
+          could change that position before an appeal is decided.
         </text>
       </svg>
 
@@ -1067,8 +1104,8 @@ export default function DurationOfStatusContent() {
                 from implementing it. He finds the challengers likely
                 to succeed on the claim that the rule is arbitrary
                 and capricious, and that it would cause immediate and
-                irreparable harm. He declines, for now, to strike
-                the rule down.
+                irreparable harm. He declines at that stage to strike
+                the rule down — he does so on November 16 (see below).
               </td>
             </tr>
             <tr>
@@ -1121,8 +1158,8 @@ export default function DurationOfStatusContent() {
             <tr>
               <td>November 2, 2026</td>
               <td>
-                Summary judgment briefing is complete. Judge Saylor
-                can now rule. No hearing or ruling date has been set.
+                Summary judgment briefing is complete. The court rules
+                two weeks later.
               </td>
             </tr>
             <tr>
@@ -1131,44 +1168,65 @@ export default function DurationOfStatusContent() {
                 The government asks the First Circuit to pause its
                 appeal for 30 days and drop the November 9 deadline
                 for its opening brief, so the district court can rule
-                first. The plaintiffs consent. The request needs the
-                court&rsquo;s approval, and it would not change the
-                preliminary relief in place.
+                first. The plaintiffs consent. The First Circuit grants
+                the request on November 13, 2026.
               </td>
             </tr>
             <tr>
-              <td>December 9, 2026</td>
+              <td>November 13, 2026</td>
               <td>
-                Scheduled date for the plaintiffs&rsquo; First
-                Circuit response brief, if the pause is not granted.
-                The government&rsquo;s reply would follow 10 days
-                later.
+                The First Circuit grants the 30-day abeyance of the
+                preliminary-injunction appeal. The plaintiffs&rsquo;
+                response, due December 9, is no longer scheduled.
+              </td>
+            </tr>
+            <tr>
+              <td>November 16, 2026</td>
+              <td>
+                Judge Saylor grants the plaintiffs&rsquo; summary
+                judgment and denies the government&rsquo;s. The final
+                rule (91 FR 44976) is vacated in its entirety under
+                APA &sect;706 — arbitrary, capricious, an abuse of
+                discretion. Final judgment is entered. Duration of
+                status remains the law nationwide.
+              </td>
+            </tr>
+            <tr>
+              <td>January 15, 2027</td>
+              <td>
+                Computed deadline for the government to appeal the
+                final judgment to the First Circuit (60 days under
+                FRAP 4(a)(1)(B)). No appeal had been filed as of
+                November 17, 2026.
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <p>
-        What happens next has three branches, and only one of them
-        changes anything for students. If Judge Saylor strikes the
-        rule down, the litigation moves to the First Circuit on a
-        final judgment, and D/S continues while the appeal runs. If
-        he upholds the rule, the plaintiffs could appeal, and the
-        September 14 injunction stays in force unless a court lifts
-        it — the rule does not spring into effect on its own. If the
-        First Circuit reverses the injunction, the rule could take
-        effect with little advance notice, and anyone entering the
-        United States after that date would be admitted under fixed
-        periods. That last branch is why the practical advice in the
-        next section is to keep your documents in order now, while
-        nothing has changed, rather than to wait for a court date.
+        Judge Saylor has struck the rule down, so the posture has
+        flipped: duration of status continues, and the rule can only
+        come back through an appeal or a new rulemaking. Three things
+        could still change the position. First, the government can
+        appeal the final judgment to the First Circuit until January
+        15, 2027 — and if it does, it could ask for a stay; only a
+        stay granted by the district court or the First Circuit would
+        let DHS enforce the rule again while the appeal runs. As of
+        November 17, 2026, no appeal or stay request had been filed.
+        Second, the old preliminary-injunction appeal is in abeyance
+        and may become moot now that a final judgment exists. Third,
+        DHS could start a new rulemaking that tries to answer the
+        court&rsquo;s objections. None of those has happened yet,
+        which is why the practical advice in the next section is to
+        keep your documents in order now, while nothing has changed,
+        rather than to wait for a court date.
       </p>
 
       <h2 id="what-to-do-now">What to do now — a checklist for F-1 and J-1 students</h2>
       <p>
         Nothing in this guide requires you to file anything today.
-        The rule is blocked, and the law in effect is the law that
-        applied before July 2026. What it does require is keeping
+        The rule was vacated on November 16, 2026, and the law in
+        effect is the law that applied before July 2026. What it does require is keeping
         your record clean, because the cases that go wrong in this
         area often start with a record that was allowed to go stale.
       </p>
@@ -1200,15 +1258,17 @@ export default function DurationOfStatusContent() {
         </li>
         <li>
           <strong>Do not file Form I-539 to extend F-1 or J-1
-          status</strong> while the rule is blocked. If you see a
-          school or a social media post telling you to file one for
-          an F-1 extension, check the date on the source — it may be
-          describing the blocked rule as if it were law.
+          status.</strong> The rule that would have required it was
+          vacated on November 16, 2026. If you see a school or a
+          social media post telling you to file one for an F-1
+          extension, check the date on the source — it may be
+          describing the vacated rule as if it were law.
         </li>
         <li>
-          <strong>Be careful about travel while the litigation is
-          pending.</strong> Re-entry under D/S is normal today, but
-          if the injunction is lifted, anyone entering after that
+          <strong>Be careful about travel while the appeal window is
+          open.</strong> Re-entry under D/S is normal today, but if
+          the First Circuit reverses the vacatur on appeal and a court
+          lets the rule back into effect, anyone entering after that
           date would be admitted under fixed periods. Keep your
           I-20 travel signature current, carry your financial
           documents, and check the status of the case before a long
@@ -1370,9 +1430,10 @@ export default function DurationOfStatusContent() {
         Yes. DHS published a final rule on July 17, 2026 (91 FR
         44976) that would replace D/S with fixed admission periods of
         up to four years, but Judge Saylor of the District of
-        Massachusetts blocked it nationwide on September 14, 2026,
-        one day before it was due to take effect. D/S is still the
-        law as of November 10, 2026.
+        Massachusetts first blocked it nationwide on September 14,
+        2026, one day before it was due to take effect — and on
+        November 16, 2026, he vacated the rule in its entirety. D/S
+        is still the law as of November 17, 2026.
       </p>
 
       <h3>What does D/S mean on my I-94?</h3>
@@ -1457,42 +1518,46 @@ export default function DurationOfStatusContent() {
         can turn a fixable problem into a years-long absence.
       </p>
 
-      <h3>What would the blocked rule change for students?</h3>
+      <h3>What would the vacated rule have changed for students?</h3>
       <p>
-        It would replace D/S with a fixed admission of up to four
-        years, require Form I-539 extensions with USCIS to stay
+        It would have replaced D/S with a fixed admission of up to
+        four years, required Form I-539 extensions with USCIS to stay
         longer, cut the F-1 grace period from 60 days to 30 days,
-        require post-completion OPT to start within 30 days of the
-        program end date, restrict graduate program changes and
-        transfers, cap language training at 24 months, and admit
+        required post-completion OPT to start within 30 days of the
+        program end date, restricted graduate program changes and
+        transfers, capped language training at 24 months, and admitted
         I-visa media representatives for up to 240 days. Students
-        already in D/S would keep it until the later of their EAD
+        already in D/S would have kept it until the later of their EAD
         expiry or program end date, capped at November 14, 2030 for
-        F-1 and October 15, 2030 for J-1.
+        F-1 and October 15, 2030 for J-1. The rule was vacated on
+        November 16, 2026, so none of this took effect — the
+        transition dates above no longer apply.
       </p>
 
-      <h3>When will the court decide the duration of status case?</h3>
+      <h3>What did the court decide, and what happens next?</h3>
       <p>
-        Summary judgment briefing in the district court finished on
-        November 2, 2026, so Judge Saylor can rule at any time, and
-        no hearing or ruling date has been set. On November 3, the
-        government asked the First Circuit to pause its appeal for 30
-        days so the district court can rule first; the plaintiffs
-        consented, and the request is awaiting the court&rsquo;s
-        approval. If the pause is not granted, the plaintiffs&rsquo;
-        First Circuit response is due December 9, 2026.
+        On November 16, 2026, Judge Saylor granted the plaintiffs&rsquo;
+        summary judgment and vacated the rule in its entirety under
+        the APA — arbitrary, capricious, an abuse of discretion.
+        Duration of status remains the law nationwide. The government
+        has until January 15, 2027 to appeal the final judgment to the
+        First Circuit; only a stay granted on appeal could bring the
+        rule back into effect while the case runs. DHS could also try
+        a new rulemaking. As of November 17, 2026, no appeal had been
+        filed and neither DHS nor USCIS had published a statement
+        about the vacatur.
       </p>
 
       <h3>Do I need to file Form I-539 to extend my F-1 or J-1 status now?</h3>
       <p>
-        No. While the rule is blocked, F-1 and J-1 students extend
+        No. The rule was vacated, so F-1 and J-1 students extend
         their stay through their school or program — a new or
         extended I-20 or DS-2019 — not through USCIS. Form I-539 is
         used for reinstatement after a violation, and for changes to
         another status. If you do file an I-539 or I-765 for another
         reason, use the 08/28/24 edition of the I-539 and the 08/21/25
         edition of the I-765; the 09/15/26 editions built for the
-        blocked rule are not accepted.
+        vacated rule are not accepted.
       </p>
 
       <h3>How does duration of status connect to H-1B?</h3>
@@ -1522,7 +1587,8 @@ export default function DurationOfStatusContent() {
             Admission, 91 FR 44976 (July 17, 2026)
           </a>{" "}
           — the Duration of Status final rule, blocked by injunction
-          on September 14, 2026.
+          on September 14, 2026 and vacated in its entirety on
+          November 16, 2026.
         </li>
         <li>
           <a
@@ -1536,7 +1602,21 @@ export default function DurationOfStatusContent() {
           </a>{" "}
           — the case docket and timeline for Presidents&rsquo;
           Alliance v. DHS, No. 1:26-cv-13799, including the November
-          3 pause request.
+          16 vacatur order (ECF No. 73).
+        </li>
+        <li>
+          <a
+            href="https://www.presidentsalliance.org/wp-content/uploads/2026/11/2026-11-16-District-Judge-dckt-73_0.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600"
+          >
+            Memorandum and Order on Cross-Motions for Summary Judgment
+            (ECF No. 73), Presidents&rsquo; Alliance v. DHS, No.
+            1:26-cv-13799 (D. Mass. Nov. 16, 2026) (PDF)
+          </a>{" "}
+          — the November 16, 2026 order vacating the final rule in
+          its entirety under the APA.
         </li>
         <li>
           <a
@@ -1576,8 +1656,9 @@ export default function DurationOfStatusContent() {
           </a>{" "}
           — the regulation governing F-1 status, reinstatement under
           (f)(16), and cap-gap under (f)(5)(vi). Note that the eCFR
-          currently shows the blocked rule text as current law, with
-          no note about the injunction.
+          showed the rule text as current law with no note about the
+          injunction before the vacatur; whether it has been updated
+          since had not been checked as of November 17, 2026.
         </li>
         <li>
           <a
@@ -1645,13 +1726,13 @@ export default function DurationOfStatusContent() {
 
       <p className="text-sm text-slate-500">
         <em>
-          Published: November 10, 2026. Status last checked: November
-          10, 2026. The litigation in this guide is moving — the
-          district court can rule at any time, and the First Circuit
-          is deciding whether to pause the appeal. Fees, rules, and
-          court orders change — confirm them on the linked USCIS and
-          DHS pages before filing. Not legal advice — consult an
-          immigration attorney for your case.
+          Published: November 10, 2026. Updated: November 17, 2026 —
+          the rule was vacated on November 16, 2026. Status last
+          checked: November 17, 2026. The government has until January
+          15, 2027 to appeal the final judgment to the First Circuit.
+          Fees, rules, and court orders change — confirm them on the
+          linked USCIS and DHS pages before filing. Not legal advice —
+          consult an immigration attorney for your case.
         </em>
       </p>
     </>

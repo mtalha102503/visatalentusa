@@ -901,12 +901,12 @@ export const blogPosts: BlogPostMeta[] = [
   },
   {
     slug: "duration-of-status",
-    title: "Duration of Status (D/S) Guide 2026: What It Is, the Blocked Rule, and What to Do Now",
+    title: "Duration of Status (D/S) Guide 2026: What It Is, the Vacated Rule, and What to Do Now",
     excerpt:
-      "Duration of status is still in effect — a federal court blocked the DHS rule that would have replaced it with fixed admission periods on September 14, 2026. This guide explains what D/S means on your I-94, how to stay in status, grace periods, unlawful presence, and the full litigation timeline.",
+      "Duration of status is still in effect — a federal court vacated the DHS rule that would have replaced it with fixed admission periods on November 16, 2026. This guide explains what D/S means on your I-94, how to stay in status, grace periods, unlawful presence, and the full litigation timeline.",
     datePublished: "2026-11-10T00:00:00+00:00",
-    dateModified: "2026-11-10T00:00:00+00:00",
-    readingMinutes: 37,
+    dateModified: "2026-11-17T00:00:00+00:00",
+    readingMinutes: 39,
     tags: ["Duration of Status", "F-1 Visa", "J-1 Visa"],
     faqs: [
       {
@@ -917,7 +917,7 @@ export const blogPosts: BlogPostMeta[] = [
       {
         question: "Is duration of status still in effect?",
         answer:
-          "Yes. DHS published a final rule on July 17, 2026 (91 FR 44976) that would replace D/S with fixed admission periods of up to four years, but Judge Saylor of the District of Massachusetts blocked it nationwide on September 14, 2026, one day before it was due to take effect. D/S is still the law as of November 10, 2026.",
+          "Yes. DHS published a final rule on July 17, 2026 (91 FR 44976) that would replace D/S with fixed admission periods of up to four years, but Judge Saylor of the District of Massachusetts first blocked it nationwide on September 14, 2026, one day before it was due to take effect — and on November 16, 2026, he vacated the rule in its entirety. D/S is still the law as of November 17, 2026.",
       },
       {
         question: "What does D/S mean on my I-94?",
@@ -950,19 +950,19 @@ export const blogPosts: BlogPostMeta[] = [
           "Under INA 212(a)(9)(B), accruing more than 180 days but less than one year of unlawful presence in a single stay and then departing triggers a 3-year bar on returning to the United States. Accruing one year or more and departing triggers a 10-year bar. The bars are triggered by departure, not by accrual alone, which is why leaving the country without advice can turn a fixable problem into a years-long absence.",
       },
       {
-        question: "What would the blocked rule change for students?",
+        question: "What would the vacated rule have changed for students?",
         answer:
-          "It would replace D/S with a fixed admission of up to four years, require Form I-539 extensions with USCIS to stay longer, cut the F-1 grace period from 60 days to 30 days, require post-completion OPT to start within 30 days of the program end date, restrict graduate program changes and transfers, cap language training at 24 months, and admit I-visa media representatives for up to 240 days. Students already in D/S would keep it until the later of their EAD expiry or program end date, capped at November 14, 2030 for F-1 and October 15, 2030 for J-1.",
+          "It would have replaced D/S with a fixed admission of up to four years, required Form I-539 extensions with USCIS to stay longer, cut the F-1 grace period from 60 days to 30 days, required post-completion OPT to start within 30 days of the program end date, restricted graduate program changes and transfers, capped language training at 24 months, and admitted I-visa media representatives for up to 240 days. Students already in D/S would have kept it until the later of their EAD expiry or program end date, capped at November 14, 2030 for F-1 and October 15, 2030 for J-1. The rule was vacated on November 16, 2026, so none of this took effect — the transition dates above no longer apply.",
       },
       {
-        question: "When will the court decide the duration of status case?",
+        question: "What did the court decide, and what happens next?",
         answer:
-          "Summary judgment briefing in the district court finished on November 2, 2026, so Judge Saylor can rule at any time, and no hearing or ruling date has been set. On November 3, the government asked the First Circuit to pause its appeal for 30 days so the district court can rule first; the plaintiffs consented, and the request is awaiting the court's approval. If the pause is not granted, the plaintiffs' First Circuit response is due December 9, 2026.",
+          "On November 16, 2026, Judge Saylor granted the plaintiffs' summary judgment and vacated the rule in its entirety under the APA — arbitrary, capricious, an abuse of discretion. Duration of status remains the law nationwide. The government has until January 15, 2027 to appeal the final judgment to the First Circuit; only a stay granted on appeal could bring the rule back into effect while the case runs. DHS could also try a new rulemaking. As of November 17, 2026, no appeal had been filed and neither DHS nor USCIS had published a statement about the vacatur.",
       },
       {
         question: "Do I need to file Form I-539 to extend my F-1 or J-1 status now?",
         answer:
-          "No. While the rule is blocked, F-1 and J-1 students extend their stay through their school or program — a new or extended I-20 or DS-2019 — not through USCIS. Form I-539 is used for reinstatement after a violation, and for changes to another status. If you do file an I-539 or I-765 for another reason, use the 08/28/24 edition of the I-539 and the 08/21/25 edition of the I-765; the 09/15/26 editions built for the blocked rule are not accepted.",
+          "No. The rule was vacated, so F-1 and J-1 students extend their stay through their school or program — a new or extended I-20 or DS-2019 — not through USCIS. Form I-539 is used for reinstatement after a violation, and for changes to another status. If you do file an I-539 or I-765 for another reason, use the 08/28/24 edition of the I-539 and the 08/21/25 edition of the I-765; the 09/15/26 editions built for the vacated rule are not accepted.",
       },
       {
         question: "How does duration of status connect to H-1B?",
@@ -1133,6 +1133,59 @@ export const blogPosts: BlogPostMeta[] = [
           question: "What happens if my I-90 is denied?",
           answer:
             "You cannot appeal an I-90 denial. You can file a motion to reopen (new facts) or a motion to reconsider (USCIS applied the law incorrectly) on Form I-290B within 30 days of the decision (33 days if it was mailed); the fee is $800. Or you can file a new I-90 if you can establish eligibility, with a new fee. Follow the options and deadline in your denial notice itself.",
+        },
+      ],
+    },
+
+    {
+      slug: "perm-overhaul-2026",
+      title: "PERM Overhaul 2026: DOL's Proposed Rule Explained — Schedule A, 90-Day Recruitment, 2-Year Layoff Bar",
+      excerpt:
+        "DOL's November 17, 2026 proposal is the first comprehensive PERM rewrite since 2005: Schedule A would be eliminated, 90-day minimum recruitment, a 2-year layoff bar, and a recruitment report with every application. Full guide with verified Federal Register details, the January 19, 2027 comment deadline, and what to do now.",
+      datePublished: "2026-11-17T00:00:00+00:00",
+      dateModified: "2026-11-17T00:00:00+00:00",
+      readingMinutes: 23,
+      tags: ["PERM", "Green Card", "Policy News"],
+      faqs: [
+        {
+          question: "Is the PERM overhaul in effect now?",
+          answer:
+            "No. The November 17, 2026 publication is a notice of proposed rulemaking. The current PERM rules — including the Schedule A shortcut — still apply. DOL must accept comments until January 19, 2027, review them, and publish a final rule before anything changes.",
+        },
+        {
+          question: "When is the comment deadline for the PERM proposed rule?",
+          answer:
+            "January 19, 2027. Sixty days after the November 17 publication is January 16, a Saturday, and January 18 is Martin Luther King Jr. Day, so the Federal Register rolled the deadline to the next business day, Tuesday, January 19. Comments go to regulations.gov under docket ETA-2026-0133.",
+        },
+        {
+          question: "What happens to Schedule A nurses and physical therapists?",
+          answer:
+            "If the rule is finalized as proposed, they lose the shortcut and go through the full PERM process — prevailing wage determination, 90-day recruitment, and DOL certification — before the I-140. The shortcut still applies today. The proposal's transition text would process applications submitted before February 16, 2027 under the old rules, but that date is as drafted and may shift — and the proposal does not address Schedule A cases already filed with USCIS, so no outcome for those cases should be assumed.",
+        },
+        {
+          question: "What is the 90-day recruitment rule?",
+          answer:
+            "Under the proposal, the 90-day rule covers the SWA job order, employer website, and job search website ads — plus social media ads where the employer customarily uses social media for that occupation. Each of those must run at least 90 calendar days, or longer if that is the employer's customary practice. The job-fair/campus/placement-office step is different: at least one job fair, on-campus recruitment event, or college, university, or trade-school placement office is required while the SWA job order is active, but the event itself has no 90-day requirement. Recruitment under the covered steps must finish 30 to 60 days before filing.",
+        },
+        {
+          question: "What is the 2-year layoff bar?",
+          answer:
+            "An employer that laid off a U.S. worker in the same or similar occupation in the area of intended employment of the place(s) of employment within two years before filing would be prohibited from filing a PERM application at all — up from today's six-month notification rule. The bar runs through I-140 approval, and a layoff during that window triggers a five-business-day notice to DOL and an offer of the job to the laid-off worker. \"Layoff\" is defined in the proposal as an involuntary separation without cause or prejudice, so a genuine for-cause termination is not a layoff — but no further exceptions are stated for separations that do meet the definition.",
+        },
+        {
+          question: "I have a PERM pending — does this proposal affect my case?",
+          answer:
+            "No, not while it is only a proposal. And under the transition as drafted, applications submitted before February 16, 2027 would be processed under the old rules. One gap the proposal does not address: Schedule A cases already filed with USCIS as uncertified ETA-9089s with I-140s. The document says nothing about them, so neither outcome should be assumed.",
+        },
+        {
+          question: "Does the rule raise prevailing wages?",
+          answer:
+            "No. Wage levels and the OEWS-based methodology are unchanged by this proposal. It only changes PWD processing — electronic filing, the PWD before recruitment, no redetermination step. The wage-levels increase is a separate DOL proposal (RIN 1205-AC30) still under review.",
+        },
+        {
+          question: "When would the new PERM rules take effect?",
+          answer:
+            "Only after DOL publishes a final rule, which comes after the comment period closes on January 19, 2027. The proposal's transition text uses February 16, 2027 as the cutoff between old and new rules, but that date is anchored to the NPRM's publication and will presumably shift when the final rule publishes.",
         },
       ],
     },
