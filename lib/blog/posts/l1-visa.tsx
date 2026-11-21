@@ -1,3 +1,4 @@
+// Deploy trigger (2026-11-21): Git reconnect — no content change.
 import Link from "next/link";
 
 export default function L1VisaContent() {
