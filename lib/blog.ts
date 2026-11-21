@@ -1189,6 +1189,68 @@ export const blogPosts: BlogPostMeta[] = [
         },
       ],
     },
+    {
+      slug: "l1-visa",
+      title: "L-1 Visa 2026: The Complete Guide — L-1A vs L-1B, Fees, and the Green Card Path",
+      excerpt:
+        "The complete L-1 visa guide for 2026: L-1A vs L-1B eligibility, blanket petitions, new-office transfers, every government fee from $1,195, premium processing, USCIS approval and RFE rates, and the L-1A to EB-1C green card path — all verified against USCIS and State Department sources.",
+      datePublished: "2026-11-21T00:00:00+00:00",
+      dateModified: "2026-11-21T00:00:00+00:00",
+      readingMinutes: 36,
+      tags: ["L-1 Visa", "Work Visas", "Green Card"],
+      faqs: [
+        {
+          question: "What is the L-1 visa?",
+          answer:
+            "The L-1 is a nonimmigrant work visa for intracompany transferees — employees of a multinational company who transfer from a foreign office to a related U.S. office. L-1A covers managers and executives (up to 7 years); L-1B covers specialized-knowledge workers (up to 5 years). There is no annual cap, no lottery, no labor certification, and no prevailing-wage requirement.",
+        },
+        {
+          question: "What is the difference between L-1A and L-1B?",
+          answer:
+            "L-1A is for managers and executives, with a 7-year maximum stay and a green card path through EB-1C with no PERM. L-1B is for workers with specialized knowledge of the company's products, services, or processes, with a 5-year maximum stay and a green card path through EB-2 or EB-3 with PERM. Both need one continuous year abroad in the last three years and the same qualifying corporate relationship.",
+        },
+        {
+          question: "How long can I stay in the U.S. on an L-1 visa?",
+          answer:
+            "Up to 7 years on L-1A and 5 years on L-1B. The first approval is up to 3 years (1 year for a new office), with extensions of up to 2 years at a time. Time in H and L status combines toward the same maximum. After the maximum, you must spend one year abroad before a new L or H petition can be approved.",
+        },
+        {
+          question: "How much does the L-1 visa cost?",
+          answer:
+            "A first petition costs a regular employer $2,485 in USCIS fees ($1,385 I-129 + $600 Asylum Program Fee + $500 fraud prevention fee), $1,495 for a small employer, and $1,195 for a nonprofit. Covered employers add $4,500. Premium processing is $2,965 extra for an adjudicative action within 15 business days — not guaranteed approval or a final decision — and each visa applicant pays a $205 consular fee.",
+        },
+        {
+          question: "Is there a lottery or annual cap for the L-1 visa?",
+          answer:
+            "No. The L-1 has no annual numerical limit and no registration lottery. A qualifying employer can file at any time of year. This is one of the biggest differences from the H-1B, which is capped at 85,000 a year and allocated by lottery.",
+        },
+        {
+          question: "Can my spouse work in the U.S. on an L-2 visa?",
+          answer:
+            "Yes. Since November 12, 2021, L-2 spouses are employment-authorized incident to status — they can work for any employer without a separate work permit. An EAD is optional, mainly as proof of work authorization. L-2 children can attend school but cannot work.",
+        },
+        {
+          question: "Can the L-1 visa lead to a green card?",
+          answer:
+            "Yes. For L-1A, EB-1C is a first-preference category for multinational managers and executives, with no PERM labor certification — though final timing still depends on the Visa Bulletin for the beneficiary's country of birth. The U.S. employer must have been doing business for at least one year, and the role must be a permanent managerial or executive position. L-1B holders generally go through EB-2 or EB-3 with PERM. The L-1 is dual intent, so pursuing a green card does not hurt your status.",
+        },
+        {
+          question: "What is the L-1 visa approval rate?",
+          answer:
+            "In the first three quarters of fiscal year 2026 (October 1, 2025 to June 30, 2026), USCIS approved 91.2% of decided L-1A petitions and 91.3% of decided L-1B petitions. About one in four L-1A petitions (25.9%) and nearly one in three L-1B petitions (29.4%) received a request for evidence, and roughly seven in ten of those were still approved. At the consulate, 96.1% of L-1 visa applications were issued in fiscal year 2024.",
+        },
+        {
+          question: "What is a blanket L petition?",
+          answer:
+            "A blanket L petition is a single USCIS approval covering a whole company group. To qualify, the petitioner must do commercial trade or services, have a U.S. office doing business for at least one year, have three or more branches, subsidiaries, or affiliates, and meet one size test: 10+ approved L petitions in the last 12 months, $25M+ in U.S. sales, or 1,000+ U.S. employees. Each transfer then goes through the consulate on Form I-129S, with no individual USCIS petition.",
+        },
+        {
+          question: "How long does L-1 processing take?",
+          answer:
+            "Regular processing has no fixed timeline and routinely takes several months, depending on the service center. Premium processing (Form I-907, $2,965) guarantees an adjudicative action within 15 business days for L-1A, L-1B, and blanket L petitions — an approval, denial, RFE, or notice of intent to deny. An RFE stops and restarts the clock. Blanket cases can be faster overall because the consulate adjudicates the I-129S directly.",
+        },
+      ],
+    },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
