@@ -1251,6 +1251,73 @@ export const blogPosts: BlogPostMeta[] = [
         },
       ],
     },
+{
+    slug: "o1-visa",
+    title: "O-1 Visa 2026: The Complete Guide — Requirements, Fees, and the Green Card Path",
+    excerpt:
+      "The complete O-1 visa guide for 2026: O-1A vs O-1B eligibility and the 8 and 6 criteria, who can file, the advisory opinion, every government fee from $530 with worked totals, premium processing, and the O-1 to EB-1A green card path — all verified against USCIS, the State Department, and the Federal Register.",
+    datePublished: "2026-11-23T00:00:00+00:00",
+    dateModified: "2026-11-23T00:00:00+00:00",
+    readingMinutes: 45,
+    tags: ["O-1 Visa", "Work Visas", "Green Card"],
+    faqs: [
+      {
+        question: "Can I self-petition for an O-1 visa?",
+        answer:
+          "No. An O-1 beneficiary cannot file the petition for themselves. But USCIS clarified in its January 8, 2025 guidance (Policy Alert PA-2025-02) that a separate legal entity owned by the beneficiary — such as a corporation or LLC — may file the petition on their behalf. A U.S. employer or a U.S. agent can also file.",
+      },
+      {
+        question: "What are the O-1 government filing fees?",
+        answer:
+          "A first petition costs a regular employer $1,655 on paper ($1,055 I-129 fee + $600 Asylum Program Fee) or $1,605 online, $830 for a small employer (25 or fewer full-time-equivalent employees), and $530 for a nonprofit. Premium processing adds $2,965 for an adjudicative action within 15 business days, and each visa applicant pays a $205 consular fee. The $500 fraud prevention fee and the $4,500 9-11 fee do not apply to O petitions. See the fee table in the guide for the full breakdown, including I-539 fees for dependents.",
+      },
+      {
+        question: "How long does O-1 processing take?",
+        answer:
+          "With premium processing (Form I-907, $2,965), USCIS must take an adjudicative action within 15 business days — an approval, denial, notice of intent to deny, request for evidence, or fraud investigation. Without premium processing, USCIS does not publish a single national figure; check the USCIS processing-times tool for the I-129 (O) entry at the service center handling your petition, and allow separately for consular scheduling and any administrative processing. Premium processing covers only the USCIS stage. See the application section of the guide for the consular and change-of-status steps.",
+      },
+      {
+        question: "How long can I stay in the U.S. on an O-1 visa?",
+        answer:
+          "The initial approval is up to 3 years, with extensions of up to 1 year for the same event and up to 3 years for a new event — and no maximum length of stay. See the validity section for the full table, including the 10-day admission window and the 60-day grace period.",
+      },
+      {
+        question: "Can my spouse work in the U.S. on an O-3 visa?",
+        answer:
+          "No. O-3 dependents — the spouse and unmarried children under 21 of the O-1 or O-2 — may not work in the United States. They may study full-time or part-time.",
+      },
+      {
+        question: "Is the O-1 a dual-intent visa?",
+        answer:
+          "O-1 applicants must qualify for a temporary stay, but may also lawfully pursue permanent residence. Although O-1 is not among the statutory exceptions to INA 214(b), State Department guidance permits dual intent and does not require an unabandoned foreign residence. The 214(b) presumption still applies at the consulate. See the dual-intent section of the guide for the full explanation.",
+      },
+      {
+        question: "How do my spouse and children apply for O-3 status?",
+        answer:
+          "Spouses and unmarried children under 21 apply for an O-3 visa separately at a U.S. consulate abroad ($205 each). If they are already in the United States, they extend or change status by filing Form I-539, with Form I-539A for co-applicants. Eligible family members may apply together using paper Form I-539 and pay one $470 filing fee; online applicants file individually and pay $420 per application. An approved I-129 does not itself approve dependents, and O-3 status does not authorize employment.",
+      },
+      {
+        question: "O-1A vs O-1B — which one do I need?",
+        answer:
+          "O-1A is for extraordinary ability in the sciences, education, business, or athletics — one of the small percentage at the very top of the field, shown by a major, internationally recognized award or three of eight criteria. O-1B is for the arts (extraordinary ability shown by distinction) and for motion picture and television (extraordinary achievement), shown by a significant national or international award or nomination or three of six criteria. The classification follows the field and the work, not your preference. See the O-1A vs O-1B comparison in the guide for the full table.",
+      },
+      {
+        question: "Do I need a job offer or an LCA for an O-1?",
+        answer:
+          "You need a U.S. petitioner — an employer, an agent, or your own separate company or LLC — and a defined event or activity with a contract and an itinerary where required. You do not need a Labor Condition Application or a prevailing-wage determination: the O-1 has no LCA requirement at all.",
+      },
+      {
+        question: "Can I change employers on an O-1?",
+        answer:
+          "Yes, but the new employer must file a new I-129 petition — and you may not work for the new employer until it is approved. If the original petition was filed by an agent, the agent files an amended petition. A material change in the terms of employment also requires an amended I-129. For an artist or entertainer, additional performances or engagements may be added to the petition without an amended petition if they require an alien of O-1 caliber. There is no portability to an unrelated employer without a new petition.",
+      },
+      {
+        question: "What happens if I lose my O-1 job?",
+        answer:
+          "USCIS does not treat you as out of status solely because employment ended, for up to 60 days or until your validity period ends, whichever is shorter, once during each authorized validity period — but you may not work during that grace period, and USCIS may shorten or eliminate it. DHS has proposed removing this grace period; it is still in effect. If employment ends for reasons other than your voluntary resignation, the employer and the petitioner, if different, are liable for the reasonable cost of your return transportation to your last place of residence before entry.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
