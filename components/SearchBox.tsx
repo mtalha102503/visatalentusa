@@ -52,7 +52,7 @@ export default function SearchBox() {
 
   const goTo = (slug: string) => {
     setOpen(false);
-    router.push(`/sponsors/${slug}/`);
+    router.push(`/sponsors/${slug}`);
   };
 
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -97,7 +97,7 @@ export default function SearchBox() {
             results.map((r, i) => (
               <li key={r.slug}>
                 <Link
-                  href={`/sponsors/${r.slug}/`}
+                  href={`/sponsors/${r.slug}`}
                   onClick={() => setOpen(false)}
                   onMouseEnter={() => setHighlight(i)}
                   className={`flex items-center justify-between px-4 py-3 ${

@@ -107,7 +107,7 @@ export default function SponsorsClient({ sponsors }: { sponsors: IndexEntry[] })
                 <td className="px-4 py-2.5 text-slate-500">{i + 1}</td>
                 <td className="px-4 py-2.5">
                   <Link
-                    href={`/sponsors/${s.slug}/`}
+                    href={`/sponsors/${s.slug}`}
                     className="font-medium text-blue-700 underline underline-offset-2"
                   >
                     {s.name}

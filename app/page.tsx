@@ -68,7 +68,7 @@ export default async function Home() {
               <span key={e.slug}>
                 {i > 0 && " · "}
                 <Link
-                  href={`/sponsors/${e.slug}/`}
+                  href={`/sponsors/${e.slug}`}
                   className="text-blue-700 underline underline-offset-2"
                 >
                   {e.name}
@@ -134,7 +134,7 @@ export default async function Home() {
                   <td className="px-4 py-2.5 text-slate-500">{i + 1}</td>
                   <td className="px-4 py-2.5">
                     <Link
-                      href={`/sponsors/${e.slug}/`}
+                      href={`/sponsors/${e.slug}`}
                       className="font-medium text-blue-700 underline underline-offset-2 active:text-blue-900"
                     >
                       {e.name}

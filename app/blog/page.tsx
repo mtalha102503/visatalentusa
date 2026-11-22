@@ -50,7 +50,7 @@ export default function BlogIndex() {
             </div>
             <h2 className="mt-3 text-xl font-bold text-slate-900">
               <Link
-                href={`/blog/${post.slug}/`}
+                href={`/blog/${post.slug}`}
                 className="hover:text-blue-700 underline underline-offset-2"
               >
                 {post.title}
@@ -68,7 +68,7 @@ export default function BlogIndex() {
               <span>{post.readingMinutes} min read</span>
             </div>
             <Link
-              href={`/blog/${post.slug}/`}
+              href={`/blog/${post.slug}`}
               className="mt-4 inline-flex items-center text-sm font-semibold text-blue-700 underline underline-offset-2"
             >
               Read the guide →

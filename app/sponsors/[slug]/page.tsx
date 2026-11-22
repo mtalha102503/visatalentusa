@@ -117,7 +117,7 @@ export default async function SponsorPage({
   const mixOrder = ["I", "II", "III", "IV"];
   const mixTotal = mixOrder.reduce((a, l) => a + (y.wage_level_mix[l] ?? 0), 0);
 
-  const pageUrl = `https://visatalentusa.com/sponsors/${slug}/`;
+  const pageUrl = `https://visatalentusa.com/sponsors/${slug}`;
   const description = `${s.display_name} filed ${y.total_cases.toLocaleString()} H-1B applications in FY2026 (through Q3) with a ${y.approval_rate != null ? (y.approval_rate * 100).toFixed(2) : "—"}% LCA certification rate.`;
 
   const jsonLd = {
@@ -352,7 +352,7 @@ export default async function SponsorPage({
         {related.map((e) => (
           <Link
             key={e.slug}
-            href={`/sponsors/${e.slug}/`}
+            href={`/sponsors/${e.slug}`}
             className="rounded-lg border border-slate-200 bg-white p-4 hover:border-blue-300 hover:bg-blue-50/50"
           >
             <p className="font-medium text-blue-700">{e.name}</p>

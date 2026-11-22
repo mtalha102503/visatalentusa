@@ -113,7 +113,7 @@ export default async function SponsorsPage() {
           "@type": "ListItem",
           position: i + 1,
           name: s.name,
-          url: `https://visatalentusa.com/sponsors/${s.slug}/`,
+          url: `https://visatalentusa.com/sponsors/${s.slug}`,
         })),
       },
       {
