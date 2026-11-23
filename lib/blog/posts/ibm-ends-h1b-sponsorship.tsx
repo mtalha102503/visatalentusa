@@ -24,6 +24,32 @@ export default function IbmEndsH1bSponsorshipContent() {
         </p>
       </div>
 
+      <h2 id="status-update-nov-23">Status update — November 23, 2026</h2>
+
+      <p>
+        As of November 23, 2026, IBM has published no further details
+        since the November 10 announcement: no affected-worker count,
+        no list of exempt roles. The reported December 31, 2026
+        company deadline is now about five weeks away.
+      </p>
+
+      <p>
+        One point worth stating plainly: ending sponsorship does not by
+        itself cancel an existing H-1B approval, an approved Form I-140,
+        or a pending Form I-485. What ends is IBM&rsquo;s willingness
+        to file new petitions and green card cases for most consulting
+        roles — the options section below works through what that means
+        for each situation. Workers who take the relocation option and
+        spend a continuous year with IBM outside the United States in a
+        qualifying managerial, executive or specialized-knowledge role
+        could later return on an L-1 intracompany transfer, which is
+        not subject to the H-1B lottery; see our{" "}
+        <Link href="/blog/l1-visa" className="underline text-blue-600">
+          L-1 visa guide
+        </Link>
+        .
+      </p>
+
       <p>
         IBM has not disclosed how many workers are affected, and this
         guide does not estimate that number. What can be measured is
@@ -39,6 +65,14 @@ export default function IbmEndsH1bSponsorshipContent() {
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
         <p className="font-semibold text-slate-900">In this guide</p>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+          <li>
+            <a
+              href="#status-update-nov-23"
+              className="underline text-blue-600"
+            >
+              Status update — November 23, 2026
+            </a>
+          </li>
           <li>
             <a href="#what-happened" className="underline text-blue-600">
               What happened
@@ -914,7 +948,7 @@ export default function IbmEndsH1bSponsorshipContent() {
       <p className="text-sm text-slate-500">
         <em>
           Published: November 11, 2026. Status last checked: November
-          11, 2026. The situation in this guide is moving — IBM may
+          23, 2026. The situation in this guide is moving — IBM may
           publish further details, and court and rulemaking outcomes
           can change the rules described here. Confirm deadlines and
           options on the linked USCIS and Department of Labor pages

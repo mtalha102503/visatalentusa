@@ -977,7 +977,7 @@ export const blogPosts: BlogPostMeta[] = [
     excerpt:
       "IBM is ending H-1B and green card sponsorship for most roles in IBM Consulting, its largest division — here is what staff were told, who is covered, what IBM's own sponsorship numbers show, and what affected workers can do before the reported December 31, 2026 company deadline.",
     datePublished: "2026-11-11T00:00:00+00:00",
-    dateModified: "2026-11-11T00:00:00+00:00",
+    dateModified: "2026-11-23T00:00:00+00:00",
     readingMinutes: 16,
     tags: ["IBM", "H-1B Sponsorship", "H-1B Transfer"],
     faqs: [

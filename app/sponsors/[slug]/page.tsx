@@ -179,6 +179,28 @@ export default async function SponsorPage({
         {s.display_name} H-1B Visa Sponsorship Data 2026
       </h1>
 
+      {/* IBM sponsorship-change notice — IBM only (announced 10 Nov 2026) */}
+      {slug === "ibm" && (
+        <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5">
+          <p className="font-semibold text-amber-900">
+            November 10, 2026: IBM announced it will end visa and green
+            card sponsorship for most roles in IBM Consulting. The figures
+            on this page are IBM&rsquo;s FY2026 filings (through Q3) —
+            they describe past sponsorship, not future sponsorship for
+            consulting roles.
+          </p>
+          <p className="mt-2 text-sm">
+            <Link
+              href="/blog/ibm-ends-h1b-sponsorship"
+              className="text-blue-700 hover:underline"
+            >
+              What IBM announced, who it covers, and what affected workers
+              can do →
+            </Link>
+          </p>
+        </div>
+      )}
+
       {/* Analysis intro — original content derived from the employer's data */}
       <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
         {intro.map((p, i) => (

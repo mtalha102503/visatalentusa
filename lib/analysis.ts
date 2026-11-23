@@ -125,7 +125,10 @@ export function composeFaqs(s: Sponsor, y: YearData, rank: number): Faq[] {
   const faqs: Faq[] = [
     {
       q: `Does ${name} sponsor H-1B visas?`,
-      a: `Yes. ${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in FY2026 (through Q3), ranking #${rank} nationally. A labor condition application (LCA) is the required first step before an H-1B petition, so this filing volume is a strong signal of active sponsorship.`,
+      a:
+        s.slug === "ibm"
+          ? `Yes — on past filings. ${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in FY2026 (through Q3), ranking #${rank} nationally. But on November 10, 2026, IBM announced it will end visa and green card sponsorship for most roles in IBM Consulting, so these filings describe past sponsorship, not future sponsorship for consulting roles.`
+          : `Yes. ${name} filed ${formatNum(y.total_cases)} H-1B labor condition applications in FY2026 (through Q3), ranking #${rank} nationally. A labor condition application (LCA) is the required first step before an H-1B petition, so this filing volume is a strong signal of active sponsorship.`,
     },
     {
       q: `What is ${name}'s H-1B certification rate?`,
