@@ -1318,6 +1318,68 @@ export const blogPosts: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "e3-visa",
+    title: "E-3 Visa 2026: The Complete Guide — Requirements, Fees, Cap, and the Green Card Path",
+    excerpt:
+      "The complete E-3 visa guide for 2026: who qualifies, the 10,500 annual cap that has never been reached, the $315 consular fee and $1,615 I-129 total, the LCA and prevailing-wage rules, premium processing, unlimited 2-year renewals, E-3D spouse work rights, and the green-card path — all verified against USCIS, State Department, and Department of Labor sources.",
+    datePublished: "2026-11-26T00:00:00+00:00",
+    dateModified: "2026-11-26T00:00:00+00:00",
+    readingMinutes: 45,
+    tags: ["E-3 Visa", "Work Visas", "Green Card"],
+    faqs: [
+      {
+        question: "What is the E-3 visa?",
+        answer:
+          "The E-3 is a nonimmigrant work visa for Australian nationals coming to the United States to work in a specialty occupation — a job that requires a bachelor's degree or its equivalent in a specific field. Congress created it in 2005. It requires a U.S. employer, a certified Labor Condition Application, and a prevailing-wage salary, but it has no lottery, a 10,500 annual cap that has never been reached, and renewals with no maximum stay.",
+      },
+      {
+        question: "Who can apply for an E-3 visa?",
+        answer:
+          "You must be a national of Australia, hold a legitimate U.S. job offer in a specialty occupation, and possess the necessary academic or other qualifying credentials — a bachelor's degree or its equivalent in the specific specialty. Your employer must first obtain a certified Labor Condition Application from the Department of Labor. Your spouse and children do not need to be Australian to hold E-3D dependent status.",
+      },
+      {
+        question: "Is there a lottery or annual cap for the E-3 visa?",
+        answer:
+          "There is no lottery. There is an annual cap of 10,500 principal E-3 visas, but it has never been reached — the issuance figures are in the cap section of the guide. Extensions with the same employer and all dependents are exempt from the cap. You can apply at any time of year.",
+      },
+      {
+        question: "How much does the E-3 visa cost?",
+        answer:
+          "The consular visa fee is $315 per applicant (E category). The in-U.S. route's USCIS fees depend on the employer type — the worked totals are in the fees section of the guide. Premium processing is $2,965 extra for an adjudicative action within 15 business days. There is no $500 fraud prevention fee and no ACWIA fee on E-3 petitions.",
+      },
+      {
+        question: "How long can I stay in the U.S. on an E-3 visa?",
+        answer:
+          "There is no maximum stay. Initial admission is up to 2 years, with extensions in increments of up to 2 years each and no maximum number of extensions. Each 2-year block requires a fresh Labor Condition Application. If your employment ends, USCIS may consider you to be maintaining E-3 status for up to 60 days during the petition validity period.",
+      },
+      {
+        question: "Can my spouse work in the U.S. on an E-3D visa?",
+        answer:
+          "Yes. Since January 30, 2022, E-3D spouses are employment-authorized incident to status — they can work for any employer without a separate work permit. An EAD is optional, mainly as proof of work authorization. E-3D children under 21 may not work.",
+      },
+      {
+        question: "Can an E-3 visa lead to a green card?",
+        answer:
+          "The E-3 is not a dual-intent visa — you must intend to depart when your E-3 status expires. But an E-3 application may not be denied solely because you have an approved PERM labor certification or a filed or approved immigrant petition. The practical green-card route is PERM followed by EB-2 or EB-3, while you keep renewing the E-3 in 2-year increments.",
+      },
+      {
+        question: "What is the difference between the E-3 and the H-1B?",
+        answer:
+          "The E-3 is only for Australian nationals; the H-1B is open to any nationality. The E-3 has no lottery and a cap that has never been reached; the H-1B is capped at 85,000 and allocated by lottery. The E-3 has no maximum stay; the H-1B is limited to 6 years. The E-3D spouse can work from day one without an EAD; the H-4 spouse generally needs an EAD tied to an approved I-140. The H-1B is dual-intent; the E-3 is not. Both require an LCA and a prevailing-wage salary, and both charge $2,965 for premium processing.",
+      },
+      {
+        question: "Do I need a job offer to apply for an E-3 visa?",
+        answer:
+          "Yes. The E-3 is employer-sponsored. You need a legitimate job offer from a U.S. employer in a specialty occupation, and the employer must first obtain a certified Labor Condition Application from the Department of Labor. There is no self-petition and no way to enter on E-3 status and then look for work.",
+      },
+      {
+        question: "Can I change employers on an E-3 visa?",
+        answer:
+          "Yes. Your new employer must obtain a certified Labor Condition Application for the position and file a new Form I-129 petition, and the petition must be approved before you are authorized to work for the new employer — there is no H-1B-style portability. Alternatively, you can leave the United States and apply for a new E-3 visa at a consulate with the new employer's LCA and support letter. Changing employers counts against the 10,500 cap again, though the cap has never been reached.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
